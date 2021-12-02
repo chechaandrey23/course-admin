@@ -1,0 +1,53 @@
+<div  class="container-md">
+	<div class="row align-items-center justify-content-end">
+		<div class="col-auto align-self-end"><span>
+			<button class="btn btn-success" type="button" (click)="onCreate($event, modal_create)" [disabled]="addProcess">
+				<span *ngIf="addProcess" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+				<span>create</span>
+			</button>
+		</span></div>
+	</div>
+</div>
+<base-table #baseTable [fields]="fields" [querys]="querys" [service]="service" [isEdit]="true" [isCreate]="false" [isMore]="true" ></base-table>
+<ng-template #modal_create let-modal>
+<div class="modal-header">
+	<div>
+		<h4 class="modal-title" id="modal-basic-title">Create User Info</h4>
+	</div>
+	<div>
+		<a href="#" class="btn btn-danger text-decoration-none" (click)="$event.preventDefault();modal.dismiss('close');"><span>&times;</span></a>
+	</div>
+</div>
+<div class="modal-body">
+	<ng-container *ngIf="addError">
+		<div class="alert alert-danger"><span class="h3">{{addError}}</span></div>
+	</ng-container>
+	<ng-container *ngIf="!addProcess">
+		<form class="container-fluid" [formGroup]="modalForm">
+			<div class="row row-cols-1">
+				<div class="col row mt-1 mb-1 align-items-center">
+					<div class="col-auto" [style.width]="'30%'"><span class="h6">user ID</span></div>
+					<div class="col-auto" [style.width]="'70%'">
+						<base-field-edit [type]="'select'" [fn]="editReceiveFn" [control]="modalForm.get('userId')"></base-field-edit>
+					</div>
+				</div>
+			</div>
+		</form>
+	</ng-container>
+	<ng-container *ngIf="addProcess">
+		<div class="row justify-content-center">
+			<div class="col-auto spinner-border" style="width: 5rem; height: 5rem;" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+	</ng-container>
+</div>
+<div class="modal-footer justify-content-center">
+	<div class="col-auto">
+		<a href="#" class="btn btn-secondary text-decoration-none" (click)="$event.preventDefault();modal.dismiss('cancel');">Cancel</a>
+	</div>
+	<div class="col-auto">
+		<a href="#" class="btn btn-success text-decoration-none" (click)="onModalCreate($event)">Save</a>
+	</div>
+</div>
+</ng-template>
