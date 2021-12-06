@@ -1937,7 +1937,7 @@ class ImagesComponent {
       },
       editReceiveFn: () => {
         return new Promise((res, rej) => {
-          this.usersService.fetch('short-user-gets', {}).then(data => {
+          this.usersService.fetch('short-editor-gets', {}).then(data => {
             res(data.map(entry => {
               return {
                 value: entry.id,

@@ -39,7 +39,7 @@ export class ImagesComponent implements AfterViewInit {
 			return data.id;
 		}, editReceiveFn: () => {
 			return new Promise((res, rej) => {
-				this.usersService.fetch('short-user-gets', {}).then((data: any) => {
+				this.usersService.fetch('short-editor-gets', {}).then((data: any) => {
 					res(data.map((entry: any) => { return {value: entry.id, title: displayUser(entry)}}));
 				});
 			})
