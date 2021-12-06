@@ -159,7 +159,7 @@ export class ButtonModalComponent implements OnInit, OnDestroy {
 				this.fetchNewSave({
 					data: this.isFormData?this.getFormData():this.getFormValue(),
 					successFn: (result: any) => {
-						this.ended = true;
+						//this.ended = true;
 						if(this.added && typeof this.added.added === 'function') this.added.added(result);
 						this.modalNewRef?.hide();
 					},

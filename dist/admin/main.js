@@ -832,9 +832,9 @@ class ButtonModalComponent {
         this.fetchNewSave({
           data: this.isFormData ? this.getFormData() : this.getFormValue(),
           successFn: result => {
-            var _a;
+            var _a; //this.ended = true;
 
-            this.ended = true;
+
             if (this.added && typeof this.added.added === 'function') this.added.added(result);
             (_a = this.modalNewRef) === null || _a === void 0 ? void 0 : _a.hide();
           },
