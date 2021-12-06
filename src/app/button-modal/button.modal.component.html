@@ -1,0 +1,46 @@
+<button type="button" class="btn btn-success" [disabled]="newLoading" (click)="onNew($event, modal_new)">
+	<span *ngIf="newLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+	<span>{{titleButton}}</span>
+</button>
+<ng-template #modal_new let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title pull-left">Modal New Entry</h4>
+		<button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalNewRef?.hide()">
+			<span aria-hidden="true" class="visually-hidden">&times;</span>
+		</button>
+	</div>
+	<div class="modal-body">
+		<ng-container *ngIf="newError">
+			<alert [type]="'danger'" [dismissible]="true">{{newError}}</alert>
+		</ng-container>
+		<ng-container *ngIf="newLoading">
+			<div class="row justify-content-center">
+				<div class="col-auto spinner-border" style="width: 10rem; height: 10rem;" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+			</div>
+		</ng-container>
+		<ng-container *ngIf="!newLoading">
+			<form [formGroup]="newModalForm" *ngIf="!ended">
+				<div class="row row-cols-1">
+					<ng-container *ngFor="let newField of newFields; let i = index">
+						<div [class.view-table-hidden-field]="newField.type==='hidden'" class="col row mt-1 mb-1 align-items-center">
+							<div class="col-auto" [style.width]="'25%'"><span class="h6">{{newField.title}}</span></div>
+							<div class="col-auto" [style.width]="'75%'">
+								<edit-field 	[type]="newField.type" [fn]="newField.editReceiveFn" [valid]="!errors[newField.formControlName]"
+												[control]="newModalForm.get(newField.formControlName)"></edit-field>
+								<div *ngIf="errors[newField.formControlName]" class="alert alert-danger">
+									<div *ngIf="errors[newField.formControlName].required">This field must be filled</div>
+								</div>
+							</div>
+						</div>
+					</ng-container>
+				</div>
+			</form>
+		</ng-container>
+	</div>
+	<div class="modal-footer justify-content-center">
+		<button type="button" class="btn btn-secondary" (click)="modalNewRef?.hide()">Close</button>
+		<button type="button" class="btn btn-success" (click)="onModalNew($event)">Save</button>
+	</div>
+</ng-template>

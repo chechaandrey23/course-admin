@@ -12,30 +12,57 @@ import {GroupsService} from './groups.service';
 	styleUrls: []
 })
 export class GroupsComponent implements AfterViewInit {
-	constructor(private readonly groupsService:GroupsService) {
-		this.service = this.groupsService;
-	}
-	
-	@ViewChild('baseTable')
-	public baseTable: any;
-	
-	public querys: any = [
-		{namespace: 'gets', method: 'GET', success: (data:any) => this.baseTable.injectData(data)},
-		{namespace: 'add', method: 'POST', success: (data:any) => this.baseTable.injectOneData(data), error: (e: any) => this.baseTable.injectErrorAdd(e)},
-		{namespace: 'edit', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'remove', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'delete', method: 'POST', success: (data:any) => this.baseTable.filterData(data), error: (e: any) => this.baseTable.filterError(e)},
-	];
-	
+	constructor(private readonly groupsService:GroupsService) {}
+
+
+	@ViewChild('viewTable')
+	public viewTable: any;
+
+	@ViewChild('modalButton')
+	public modalButton: any;
+
 	public fields: any = [
-		{name: "id", title: "id", width: 5},
-		{name: "group", title: "group", width: 25, editTitle: 'Unique group name', editType: 'input', formControlName: 'group', editRequire: true, viewFn: (data: any) => {return data;}},
-		{name: "description", title: "description", width: 45, editTitle: 'Group description', editType: 'textarea', formControlName: 'description', editFn: (data: any) => {return data;}, editReceiveFn: async () => {}}
+		{name: "id", title: "id"},
+		{name: "group", title: "group"},
+		{name: "description", title: "description"}
 	];
-	
-	public service: any;
-	
+
+	public editFields: any = [
+		{name: 'id', title: 'id', type: 'hidden', formControlName: 'id', required: true},
+		{name: "group", title: "Unique group name", type: 'input', formControlName: 'group'},
+		{name: "description", title: "Groupt description", type: 'textarea', formControlName: 'description'}
+	];
+
+	public fetch: any = async (o: any) => {
+		await this.groupsService.fetch('gets', o);
+	}
+
+	public fetchMore: any = async (o: any) => {
+		await this.groupsService.fetch('gets', o);
+	}
+
+	public fetchEditSave: any = async(o: any) => {
+		await this.groupsService.fetch('edit', o);
+	}
+
+	public fetchNewSave: any = async(o: any) => {
+		await this.groupsService.fetch('add', o);
+	}
+
+	public fetchRemove: any = async(o: any) => {
+		await this.groupsService.fetch('remove', o);
+	}
+
+	public fetchRestore: any = async(o: any) => {
+		await this.groupsService.fetch('restore', o);
+	}
+
+	public fetchDelete: any = async(o: any) => {
+		await this.groupsService.fetch('delete', o);
+	}
+
 	ngAfterViewInit() {
-		this.baseTable.refreshSettings();
+		this.viewTable.refreshSettings();
+		this.modalButton.refreshSettings();
 	}
 }

@@ -12,31 +12,59 @@ import {LangsService} from './langs.service';
 	styleUrls: []
 })
 export class LangsComponent implements AfterViewInit {
-	constructor(private readonly groupsService:LangsService) {
-		this.service = this.groupsService;
-	}
-	
-	@ViewChild('baseTable')
-	public baseTable: any;
-	
-	public querys: any = [
-		{namespace: 'gets', method: 'GET', success: (data:any) => this.baseTable.injectData(data)},
-		{namespace: 'add', method: 'POST', success: (data:any) => this.baseTable.injectOneData(data), error: (e: any) => this.baseTable.injectErrorAdd(e)},
-		{namespace: 'edit', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'remove', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'delete', method: 'POST', success: (data:any) => this.baseTable.filterData(data), error: (e: any) => this.baseTable.filterError(e)},
-	];
-	
+	constructor(private readonly langsService:LangsService) {}
+
+
+	@ViewChild('viewTable')
+	public viewTable: any;
+
+	@ViewChild('modalButton')
+	public modalButton: any;
+
 	public fields: any = [
-		{name: "id", title: "id", width: 5},
-		{name: "lang", title: "lang", width: 10, editTitle: 'Unique lang name', editType: 'input', formControlName: 'lang', editRequire: true},
-		{name: "title", title: "title", width: 20, editTitle: 'display name', editType: 'input', formControlName: 'title'},
-		{name: "description", title: "description", width: 35, editTitle: 'Lang description', editType: 'textarea', formControlName: 'description', editFn: (data: any) => {return data;}, editReceiveFn: async () => {}}
+		{name: "id", title: "id"},
+		{name: "lang", title: "lang"},
+		{name: "title", title: "title"},
+		{name: "description", title: "description"}
 	];
-	
-	public service: any;
-	
+
+	public editFields: any = [
+		{name: 'id', title: 'id', type: 'hidden', formControlName: 'id', required: true},
+		{name: "lang", title: "Unique lang name", type: 'input', formControlName: 'lang'},
+		{name: "title", title: "display name", type: 'input', formControlName: 'title', editFn: (o: any) => {return o;}, editReceiveFn: async() => {}},
+		{name: "description", title: "Lang description", type: 'textarea', formControlName: 'description'}
+	];
+
+	public fetch: any = async (o: any) => {
+		await this.langsService.fetch('gets', o);
+	}
+
+	public fetchMore: any = async (o: any) => {
+		await this.langsService.fetch('gets', o);
+	}
+
+	public fetchEditSave: any = async(o: any) => {
+		await this.langsService.fetch('edit', o);
+	}
+
+	public fetchNewSave: any = async(o: any) => {
+		await this.langsService.fetch('add', o);
+	}
+
+	public fetchRemove: any = async(o: any) => {
+		await this.langsService.fetch('remove', o);
+	}
+
+	public fetchRestore: any = async(o: any) => {
+		await this.langsService.fetch('restore', o);
+	}
+
+	public fetchDelete: any = async(o: any) => {
+		await this.langsService.fetch('delete', o);
+	}
+
 	ngAfterViewInit() {
-		this.baseTable.refreshSettings();
+		this.viewTable.refreshSettings();
+		this.modalButton.refreshSettings();
 	}
 }

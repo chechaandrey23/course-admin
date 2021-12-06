@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+//import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {TooltipModule} from 'ngx-bootstrap/tooltip';
 
 //import {MatTableModule} from '@angular/material/table';
 
 import {AppRoutingModule} from './app-routing.module';
 
 import {AppComponent} from './app.component';
-import {MainComponent} from './main/main.component';
 
 //import {GroupsComponent} from './groups/groups.component';
 //import {TitlesComponent} from './titles/titles.component';
@@ -32,25 +32,29 @@ import {RatingsModule} from './ratings/ratings.module';
 import {LikesModule} from './likes/likes.module';
 import {CommentsModule} from './comments/comments.module';
 import {ImagesModule} from './images/images.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+import {RefreshTokensModule} from './refresh-tokens/refresh.tokens.module';
 
 //import {BaseFieldEditComponent} from './groups/base.field.edit.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		MainComponent,
-		
+
 		//GroupsComponent,
 		//TitlesComponent,
 		//RolesComponent,
-		
+
 		//BaseFieldEditComponent
 	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
 		HttpClientModule,
-		
+
+		RefreshTokensModule,
+
 		GroupsModule,
 		TitlesModule,
 		TitleGroupsModule,
@@ -67,10 +71,13 @@ import {ImagesModule} from './images/images.module';
 		LikesModule,
 		CommentsModule,
 		ImagesModule,
-		
-		NgbModule,
+
+		//NgbModule,
 		FormsModule,
-		ReactiveFormsModule
+		ReactiveFormsModule,
+		BrowserAnimationsModule,
+
+		TooltipModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

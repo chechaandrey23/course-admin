@@ -12,30 +12,57 @@ import {TitlesService} from './titles.service';
 	styleUrls: []
 })
 export class TitlesComponent implements AfterViewInit {
-	constructor(private readonly titlesService: TitlesService) {
-		this.service = this.titlesService;
-	}
-	
-	@ViewChild('baseTable')
-	public baseTable: any;
-	
-	public querys: any = [
-		{namespace: 'gets', method: 'GET', success: (data:any) => this.baseTable.injectData(data)},
-		{namespace: 'add', method: 'POST', success: (data:any) => this.baseTable.injectOneData(data), error: (e: any) => this.baseTable.injectErrorAdd(e)},
-		{namespace: 'edit', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'remove', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'delete', method: 'POST', success: (data:any) => this.baseTable.filterData(data), error: (e: any) => this.baseTable.filterError(e)},
-	];
-	
+	constructor(private readonly titlesService: TitlesService) {}
+
+
+	@ViewChild('viewTable')
+	public viewTable: any;
+
+	@ViewChild('modalButton')
+	public modalButton: any;
+
 	public fields: any = [
-		{name: "id", title: "id", width: 5},
-		{name: "title", title: "title", width: 25, editTitle: 'Unique title name', editType: 'input', formControlName: 'title', editRequire: true, viewFn: (data: any) => {return data;}},
-		{name: "description", title: "description", width: 45, editTitle: 'Title description', editType: 'textarea', formControlName: 'description', editFn: (data: any) => {return data;}}
+		{name: "id", title: "id"},
+		{name: "title", title: "title"},
+		{name: "description", title: "description"}
 	];
-	
-	public service: any;
-	
+
+	public editFields: any = [
+		{name: 'id', title: 'id', type: 'hidden', formControlName: 'id', required: true},
+		{name: "title", title: "Unique title name", type: 'input', formControlName: 'title'},
+		{name: "description", title: "Theme description", type: 'textarea', formControlName: 'description'}
+	];
+
+	public fetch: any = async (o: any) => {
+		await this.titlesService.fetch('gets', o);
+	}
+
+	public fetchMore: any = async (o: any) => {
+		await this.titlesService.fetch('gets', o);
+	}
+
+	public fetchEditSave: any = async(o: any) => {
+		await this.titlesService.fetch('edit', o);
+	}
+
+	public fetchNewSave: any = async(o: any) => {
+		await this.titlesService.fetch('add', o);
+	}
+
+	public fetchRemove: any = async(o: any) => {
+		await this.titlesService.fetch('remove', o);
+	}
+
+	public fetchRestore: any = async(o: any) => {
+		await this.titlesService.fetch('restore', o);
+	}
+
+	public fetchDelete: any = async(o: any) => {
+		await this.titlesService.fetch('delete', o);
+	}
+
 	ngAfterViewInit() {
-		this.baseTable.refreshSettings();
+		this.viewTable.refreshSettings();
+		this.modalButton.refreshSettings();
 	}
 }

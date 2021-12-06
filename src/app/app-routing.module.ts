@@ -18,6 +18,8 @@ import {LikesComponent} from './likes/likes.component';
 import {CommentsComponent} from './comments/comments.component';
 import {ImagesComponent} from './images/images.component';
 
+import {RefreshTokensComponent} from './refresh-tokens/refresh.tokens.component';
+
 const routes: Routes = [
 	{path: 'titles', component: TitlesComponent},
 	{path: 'title-groups', component: TitleGroupsComponent},
@@ -35,7 +37,8 @@ const routes: Routes = [
 	{path: 'likes', component: LikesComponent},
 	{path: 'comments', component: CommentsComponent},
 	{path: 'images', component: ImagesComponent},
-	{path: '', redirectTo: '/titles', pathMatch: 'full'}
+	{path: 'refresh-tokens', component: RefreshTokensComponent},
+	{path: '', redirectTo: '/users', pathMatch: 'full'}
 ];
 
 @NgModule({

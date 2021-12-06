@@ -5,29 +5,28 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {UserInfosComponent} from './user-infos.component';
 import {UserInfosService} from './user-infos.service';
 
-import {BaseTableModule} from '../base-table/base.table.module';
-
-import {BaseFieldEditModule} from '../base-field-edit/base.field.edit.module';
+import {ViewTableModule} from '../view-table/view.table.module';
+import {ButtonModalModule} from '../button-modal/button.modal.module';
 
 @NgModule({
 	imports: [
-		BaseTableModule,
 		FormsModule,
 		ReactiveFormsModule,
 		BrowserModule,
-		
-		BaseFieldEditModule
+
+		ViewTableModule,
+		ButtonModalModule
 	],
 	declarations: [
 		UserInfosComponent,
-		
+
 	],
 	providers: [
 		UserInfosService,
 	],
 	exports: [
 		UserInfosComponent,
-		
+
 	]
 })
 export class UserInfosModule {}

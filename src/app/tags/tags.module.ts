@@ -3,22 +3,24 @@ import {NgModule} from '@angular/core';
 import {TagsComponent} from './tags.component';
 import {TagsService} from './tags.service';
 
-import {BaseTableModule} from '../base-table/base.table.module';
+import {ViewTableModule} from '../view-table/view.table.module';
+import {ButtonModalModule} from '../button-modal/button.modal.module';
 
 @NgModule({
 	imports: [
-		BaseTableModule
+		ViewTableModule,
+		ButtonModalModule
 	],
 	declarations: [
 		TagsComponent,
-		
+
 	],
 	providers: [
 		TagsService,
 	],
 	exports: [
 		TagsComponent,
-		
+
 	]
 })
 export class TagsModule {}

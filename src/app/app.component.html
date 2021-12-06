@@ -1,1 +1,65 @@
-<main></main>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/users']" routerLinkActive="active">users</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/refresh-tokens']" routerLinkActive="active">refresh-tokens</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/user-infos']" routerLinkActive="active">user-infos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/user-roles']" routerLinkActive="active">user-roles</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/roles']" routerLinkActive="active">roles</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/reviews']" routerLinkActive="active">reviews</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/tags']" routerLinkActive="active">tags</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/review-tags']" routerLinkActive="active">review-tags</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/titles']" routerLinkActive="active">titles</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/title-groups']" routerLinkActive="active">title-groups</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/groups']" routerLinkActive="active">groups</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/themes']" routerLinkActive="active">themes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/langs']" routerLinkActive="active">langs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/ratings']" routerLinkActive="active">ratings</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/likes']" routerLinkActive="active">likes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/comments']" routerLinkActive="active">comments</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" [routerLink]="['/images']" routerLinkActive="active">images</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div>
+	<router-outlet></router-outlet>
+</div>

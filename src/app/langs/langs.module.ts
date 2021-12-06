@@ -3,22 +3,23 @@ import {NgModule} from '@angular/core';
 import {LangsComponent} from './langs.component';
 import {LangsService} from './langs.service';
 
-import {BaseTableModule} from '../base-table/base.table.module';
+import {ViewTableModule} from '../view-table/view.table.module';
+import {ButtonModalModule} from '../button-modal/button.modal.module';
 
 @NgModule({
 	imports: [
-		BaseTableModule
+		ViewTableModule,
+		ButtonModalModule
 	],
 	declarations: [
 		LangsComponent,
-		
+
 	],
 	providers: [
 		LangsService,
 	],
 	exports: [
 		LangsComponent,
-		
 	]
 })
 export class LangsModule {}

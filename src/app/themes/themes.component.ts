@@ -12,31 +12,59 @@ import {ThemesService} from './themes.service';
 	styleUrls: []
 })
 export class ThemesComponent implements AfterViewInit {
-	constructor(private readonly groupsService:ThemesService) {
-		this.service = this.groupsService;
-	}
-	
-	@ViewChild('baseTable')
-	public baseTable: any;
-	
-	public querys: any = [
-		{namespace: 'gets', method: 'GET', success: (data:any) => this.baseTable.injectData(data)},
-		{namespace: 'add', method: 'POST', success: (data:any) => this.baseTable.injectOneData(data), error: (e: any) => this.baseTable.injectErrorAdd(e)},
-		{namespace: 'edit', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'remove', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'delete', method: 'POST', success: (data:any) => this.baseTable.filterData(data), error: (e: any) => this.baseTable.filterError(e)},
-	];
-	
+	constructor(private readonly themesService:ThemesService) {}
+
+
+	@ViewChild('viewTable')
+	public viewTable: any;
+
+	@ViewChild('modalButton')
+	public modalButton: any;
+
 	public fields: any = [
-		{name: "id", title: "id", width: 5},
-		{name: "theme", title: "theme", width: 10, editTitle: 'Unique theme name', editType: 'input', formControlName: 'theme', editRequire: true},
-		{name: "title", title: "title", width: 20, editTitle: 'display name', editType: 'input', formControlName: 'title'},
-		{name: "description", title: "description", width: 35, editTitle: 'Theme description', editType: 'textarea', formControlName: 'description', editFn: (data: any) => {return data;}, editReceiveFn: async () => {}}
+		{name: "id", title: "id"},
+		{name: "theme", title: "theme"},
+		{name: "title", title: "title"},
+		{name: "description", title: "description"}
 	];
-	
-	public service: any;
-	
+
+	public editFields: any = [
+		{name: 'id', title: 'id', type: 'hidden', formControlName: 'id', required: true},
+		{name: "theme", title: "Unique theme name", type: 'input', formControlName: 'theme'},
+		{name: "title", title: "display name", type: 'input', formControlName: 'title', editFn: (o: any) => {return o;}, editReceiveFn: async() => {}},
+		{name: "description", title: "Theme description", type: 'textarea', formControlName: 'description'}
+	];
+
+	public fetch: any = async (o: any) => {
+		await this.themesService.fetch('gets', o);
+	}
+
+	public fetchMore: any = async (o: any) => {
+		await this.themesService.fetch('gets', o);
+	}
+
+	public fetchEditSave: any = async(o: any) => {
+		await this.themesService.fetch('edit', o);
+	}
+
+	public fetchNewSave: any = async(o: any) => {
+		await this.themesService.fetch('add', o);
+	}
+
+	public fetchRemove: any = async(o: any) => {
+		await this.themesService.fetch('remove', o);
+	}
+
+	public fetchRestore: any = async(o: any) => {
+		await this.themesService.fetch('restore', o);
+	}
+
+	public fetchDelete: any = async(o: any) => {
+		await this.themesService.fetch('delete', o);
+	}
+
 	ngAfterViewInit() {
-		this.baseTable.refreshSettings();
+		this.viewTable.refreshSettings();
+		this.modalButton.refreshSettings();
 	}
 }

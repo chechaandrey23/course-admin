@@ -1,0 +1,25 @@
+<ng-container *ngIf="fieldLoading">
+	<div class="row justify-content-center">
+		<div class="col-auto spinner-border" style="width: 2.5rem; height: 2.5rem;" role="status"></div>
+	</div>
+</ng-container>
+<div *ngIf="!fieldLoading">
+	<span *ngIf="type === 'hidden'"><input type="text" class="form-control" [class.is-invalid]="!valid" [formControl]="$any(control)" /></span>
+	<span *ngIf="type === 'input'"><input type="text" class="form-control" [class.is-invalid]="!valid" [formControl]="$any(control)" /></span>
+	<span *ngIf="type === 'password'"><input type="password" class="form-control" [class.is-invalid]="!valid" [formControl]="$any(control)" /></span>
+	<span *ngIf="type === 'textarea'"><textarea class="form-control" rows="5" [class.is-invalid]="!valid" [formControl]="$any(control)" ></textarea></span>
+	<span *ngIf="type === 'checkbox'"><input type="checkbox" class="form-control" [class.is-invalid]="!valid" [formControl]="$any(control)" /></span>
+	<span *ngIf="type === 'select-multiple'">
+		<select class="form-control" [class.is-invalid]="!valid" [formControl]="$any(control)" multiple>
+			<option *ngFor="let entry of data" [ngValue]="entry.value">{{entry.title}}</option>
+		</select>
+	</span>
+	<span *ngIf="type === 'select'">
+		<select class="form-control" [class.is-invalid]="!valid" [formControl]="$any(control)">
+			<option *ngFor="let entry of data" [ngValue]="entry.value">{{entry.title}}</option>
+		</select>
+	</span>
+	<span *ngIf="type === 'file-upload'">
+		<input class="form-control" type="file" multiple [class.is-invalid]="!valid" [formControl]="$any(control)" (change)="onFileChange($event)" accept="image/*" />
+	</span>
+</div>

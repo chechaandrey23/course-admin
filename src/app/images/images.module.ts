@@ -5,24 +5,24 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ImagesComponent} from './images.component';
 import {ImagesService} from './images.service';
 
-import {BaseTableModule} from '../base-table/base.table.module';
-
-import {BaseFieldEditModule} from '../base-field-edit/base.field.edit.module';
+import {ViewTableModule} from '../view-table/view.table.module';
+import {ButtonModalModule} from '../button-modal/button.modal.module';
 
 @NgModule({
 	imports: [
-		BaseTableModule,
+		ViewTableModule,
+		ButtonModalModule
 	],
 	declarations: [
 		ImagesComponent,
-		
+
 	],
 	providers: [
 		ImagesService,
 	],
 	exports: [
 		ImagesComponent,
-		
+
 	]
 })
 export class ImagesModule {}

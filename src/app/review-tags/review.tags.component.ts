@@ -12,25 +12,28 @@ import {ReviewTagsService} from './review.tags.service';
 	styleUrls: []
 })
 export class ReviewTagsComponent implements AfterViewInit {
-	constructor(private readonly reviewTagsService: ReviewTagsService) {
-		this.service = this.reviewTagsService;
-	}
-	
-	@ViewChild('baseTable')
-	public baseTable: any;
-	
-	public querys: any = [
-		{namespace: 'gets', method: 'GET', success: (data:any) => this.baseTable.injectData(data)},
-	];
-	
+	constructor(private readonly reviewTagsService: ReviewTagsService) {}
+
+
+	@ViewChild('viewTable')
+	public viewTable: any;
+
 	public fields: any = [
-		{name: "reviewId", title: "reviewId", width: 40},
-		{name: "tagId", title: "tagId", width: 35}
+		{name: "id", title: "id"},
+		{name: "review", title: "group/title", viewFn: (review: any) => (review?.id+' => '+review?.groupTitle?.group?.group+'/'+review?.groupTitle?.title?.title)},
+		{name: "tag", title: "tag", viewFn: (tag: any) => `${tag?.id} => ${tag?.tag}`},
+		{name: "selected", title: "selected"}
 	];
-	
-	public service: any;
-	
+
+	public fetch: any = async (o: any) => {
+		await this.reviewTagsService.fetch('gets', o);
+	}
+
+	public fetchMore: any = async (o: any) => {
+		await this.reviewTagsService.fetch('gets', o);
+	}
+
 	ngAfterViewInit() {
-		this.baseTable.refreshSettings();
+		this.viewTable.refreshSettings();
 	}
 }

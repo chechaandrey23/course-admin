@@ -1,5 +1,281 @@
-"use strict";
 (self["webpackChunkadmin"] = self["webpackChunkadmin"] || []).push([["vendor"],{
+
+/***/ 8111:
+/*!*****************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "__extends": () => (/* binding */ __extends),
+/* harmony export */   "__assign": () => (/* binding */ __assign),
+/* harmony export */   "__rest": () => (/* binding */ __rest),
+/* harmony export */   "__decorate": () => (/* binding */ __decorate),
+/* harmony export */   "__param": () => (/* binding */ __param),
+/* harmony export */   "__metadata": () => (/* binding */ __metadata),
+/* harmony export */   "__awaiter": () => (/* binding */ __awaiter),
+/* harmony export */   "__generator": () => (/* binding */ __generator),
+/* harmony export */   "__createBinding": () => (/* binding */ __createBinding),
+/* harmony export */   "__exportStar": () => (/* binding */ __exportStar),
+/* harmony export */   "__values": () => (/* binding */ __values),
+/* harmony export */   "__read": () => (/* binding */ __read),
+/* harmony export */   "__spread": () => (/* binding */ __spread),
+/* harmony export */   "__spreadArrays": () => (/* binding */ __spreadArrays),
+/* harmony export */   "__spreadArray": () => (/* binding */ __spreadArray),
+/* harmony export */   "__await": () => (/* binding */ __await),
+/* harmony export */   "__asyncGenerator": () => (/* binding */ __asyncGenerator),
+/* harmony export */   "__asyncDelegator": () => (/* binding */ __asyncDelegator),
+/* harmony export */   "__asyncValues": () => (/* binding */ __asyncValues),
+/* harmony export */   "__makeTemplateObject": () => (/* binding */ __makeTemplateObject),
+/* harmony export */   "__importStar": () => (/* binding */ __importStar),
+/* harmony export */   "__importDefault": () => (/* binding */ __importDefault),
+/* harmony export */   "__classPrivateFieldGet": () => (/* binding */ __classPrivateFieldGet),
+/* harmony export */   "__classPrivateFieldSet": () => (/* binding */ __classPrivateFieldSet)
+/* harmony export */ });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    if (typeof b !== "function" && b !== null)
+        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+var __createBinding = Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+});
+
+function __exportStar(m, o) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+/** @deprecated */
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+/** @deprecated */
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+}
+
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+}
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+var __setModuleDefault = Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
+}
+
+
+/***/ }),
 
 /***/ 1510:
 /*!***************************************************************************************!*\
@@ -7,6 +283,7 @@
   \***************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ModalDismissReasons": () => (/* binding */ ModalDismissReasons),
@@ -11519,12 +11796,7266 @@ NgbModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
 
 /***/ }),
 
+/***/ 2909:
+/*!*************************************!*\
+  !*** ./node_modules/axios/index.js ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(/*! ./lib/axios */ 343);
+
+/***/ }),
+
+/***/ 6709:
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/adapters/xhr.js ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./../utils */ 2589);
+var settle = __webpack_require__(/*! ./../core/settle */ 3044);
+var cookies = __webpack_require__(/*! ./../helpers/cookies */ 2044);
+var buildURL = __webpack_require__(/*! ./../helpers/buildURL */ 914);
+var buildFullPath = __webpack_require__(/*! ../core/buildFullPath */ 6475);
+var parseHeaders = __webpack_require__(/*! ./../helpers/parseHeaders */ 9459);
+var isURLSameOrigin = __webpack_require__(/*! ./../helpers/isURLSameOrigin */ 9389);
+var createError = __webpack_require__(/*! ../core/createError */ 6508);
+var defaults = __webpack_require__(/*! ../defaults */ 6454);
+var Cancel = __webpack_require__(/*! ../cancel/Cancel */ 8725);
+
+module.exports = function xhrAdapter(config) {
+  return new Promise(function dispatchXhrRequest(resolve, reject) {
+    var requestData = config.data;
+    var requestHeaders = config.headers;
+    var responseType = config.responseType;
+    var onCanceled;
+    function done() {
+      if (config.cancelToken) {
+        config.cancelToken.unsubscribe(onCanceled);
+      }
+
+      if (config.signal) {
+        config.signal.removeEventListener('abort', onCanceled);
+      }
+    }
+
+    if (utils.isFormData(requestData)) {
+      delete requestHeaders['Content-Type']; // Let the browser set it
+    }
+
+    var request = new XMLHttpRequest();
+
+    // HTTP basic authentication
+    if (config.auth) {
+      var username = config.auth.username || '';
+      var password = config.auth.password ? unescape(encodeURIComponent(config.auth.password)) : '';
+      requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
+    }
+
+    var fullPath = buildFullPath(config.baseURL, config.url);
+    request.open(config.method.toUpperCase(), buildURL(fullPath, config.params, config.paramsSerializer), true);
+
+    // Set the request timeout in MS
+    request.timeout = config.timeout;
+
+    function onloadend() {
+      if (!request) {
+        return;
+      }
+      // Prepare the response
+      var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
+      var responseData = !responseType || responseType === 'text' ||  responseType === 'json' ?
+        request.responseText : request.response;
+      var response = {
+        data: responseData,
+        status: request.status,
+        statusText: request.statusText,
+        headers: responseHeaders,
+        config: config,
+        request: request
+      };
+
+      settle(function _resolve(value) {
+        resolve(value);
+        done();
+      }, function _reject(err) {
+        reject(err);
+        done();
+      }, response);
+
+      // Clean up request
+      request = null;
+    }
+
+    if ('onloadend' in request) {
+      // Use onloadend if available
+      request.onloadend = onloadend;
+    } else {
+      // Listen for ready state to emulate onloadend
+      request.onreadystatechange = function handleLoad() {
+        if (!request || request.readyState !== 4) {
+          return;
+        }
+
+        // The request errored out and we didn't get a response, this will be
+        // handled by onerror instead
+        // With one exception: request that using file: protocol, most browsers
+        // will return status as 0 even though it's a successful request
+        if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf('file:') === 0)) {
+          return;
+        }
+        // readystate handler is calling before onerror or ontimeout handlers,
+        // so we should call onloadend on the next 'tick'
+        setTimeout(onloadend);
+      };
+    }
+
+    // Handle browser request cancellation (as opposed to a manual cancellation)
+    request.onabort = function handleAbort() {
+      if (!request) {
+        return;
+      }
+
+      reject(createError('Request aborted', config, 'ECONNABORTED', request));
+
+      // Clean up request
+      request = null;
+    };
+
+    // Handle low level network errors
+    request.onerror = function handleError() {
+      // Real errors are hidden from us by the browser
+      // onerror should only fire if it's a network error
+      reject(createError('Network Error', config, null, request));
+
+      // Clean up request
+      request = null;
+    };
+
+    // Handle timeout
+    request.ontimeout = function handleTimeout() {
+      var timeoutErrorMessage = config.timeout ? 'timeout of ' + config.timeout + 'ms exceeded' : 'timeout exceeded';
+      var transitional = config.transitional || defaults.transitional;
+      if (config.timeoutErrorMessage) {
+        timeoutErrorMessage = config.timeoutErrorMessage;
+      }
+      reject(createError(
+        timeoutErrorMessage,
+        config,
+        transitional.clarifyTimeoutError ? 'ETIMEDOUT' : 'ECONNABORTED',
+        request));
+
+      // Clean up request
+      request = null;
+    };
+
+    // Add xsrf header
+    // This is only done if running in a standard browser environment.
+    // Specifically not if we're in a web worker, or react-native.
+    if (utils.isStandardBrowserEnv()) {
+      // Add xsrf header
+      var xsrfValue = (config.withCredentials || isURLSameOrigin(fullPath)) && config.xsrfCookieName ?
+        cookies.read(config.xsrfCookieName) :
+        undefined;
+
+      if (xsrfValue) {
+        requestHeaders[config.xsrfHeaderName] = xsrfValue;
+      }
+    }
+
+    // Add headers to the request
+    if ('setRequestHeader' in request) {
+      utils.forEach(requestHeaders, function setRequestHeader(val, key) {
+        if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {
+          // Remove Content-Type if data is undefined
+          delete requestHeaders[key];
+        } else {
+          // Otherwise add header to the request
+          request.setRequestHeader(key, val);
+        }
+      });
+    }
+
+    // Add withCredentials to request if needed
+    if (!utils.isUndefined(config.withCredentials)) {
+      request.withCredentials = !!config.withCredentials;
+    }
+
+    // Add responseType to request if needed
+    if (responseType && responseType !== 'json') {
+      request.responseType = config.responseType;
+    }
+
+    // Handle progress if needed
+    if (typeof config.onDownloadProgress === 'function') {
+      request.addEventListener('progress', config.onDownloadProgress);
+    }
+
+    // Not all browsers support upload events
+    if (typeof config.onUploadProgress === 'function' && request.upload) {
+      request.upload.addEventListener('progress', config.onUploadProgress);
+    }
+
+    if (config.cancelToken || config.signal) {
+      // Handle cancellation
+      // eslint-disable-next-line func-names
+      onCanceled = function(cancel) {
+        if (!request) {
+          return;
+        }
+        reject(!cancel || (cancel && cancel.type) ? new Cancel('canceled') : cancel);
+        request.abort();
+        request = null;
+      };
+
+      config.cancelToken && config.cancelToken.subscribe(onCanceled);
+      if (config.signal) {
+        config.signal.aborted ? onCanceled() : config.signal.addEventListener('abort', onCanceled);
+      }
+    }
+
+    if (!requestData) {
+      requestData = null;
+    }
+
+    // Send the request
+    request.send(requestData);
+  });
+};
+
+
+/***/ }),
+
+/***/ 343:
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/axios.js ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./utils */ 2589);
+var bind = __webpack_require__(/*! ./helpers/bind */ 3289);
+var Axios = __webpack_require__(/*! ./core/Axios */ 3519);
+var mergeConfig = __webpack_require__(/*! ./core/mergeConfig */ 3671);
+var defaults = __webpack_require__(/*! ./defaults */ 6454);
+
+/**
+ * Create an instance of Axios
+ *
+ * @param {Object} defaultConfig The default config for the instance
+ * @return {Axios} A new instance of Axios
+ */
+function createInstance(defaultConfig) {
+  var context = new Axios(defaultConfig);
+  var instance = bind(Axios.prototype.request, context);
+
+  // Copy axios.prototype to instance
+  utils.extend(instance, Axios.prototype, context);
+
+  // Copy context to instance
+  utils.extend(instance, context);
+
+  // Factory for creating new instances
+  instance.create = function create(instanceConfig) {
+    return createInstance(mergeConfig(defaultConfig, instanceConfig));
+  };
+
+  return instance;
+}
+
+// Create the default instance to be exported
+var axios = createInstance(defaults);
+
+// Expose Axios class to allow class inheritance
+axios.Axios = Axios;
+
+// Expose Cancel & CancelToken
+axios.Cancel = __webpack_require__(/*! ./cancel/Cancel */ 8725);
+axios.CancelToken = __webpack_require__(/*! ./cancel/CancelToken */ 2731);
+axios.isCancel = __webpack_require__(/*! ./cancel/isCancel */ 6033);
+axios.VERSION = (__webpack_require__(/*! ./env/data */ 7060).version);
+
+// Expose all/spread
+axios.all = function all(promises) {
+  return Promise.all(promises);
+};
+axios.spread = __webpack_require__(/*! ./helpers/spread */ 7639);
+
+// Expose isAxiosError
+axios.isAxiosError = __webpack_require__(/*! ./helpers/isAxiosError */ 6678);
+
+module.exports = axios;
+
+// Allow use of default import syntax in TypeScript
+module.exports["default"] = axios;
+
+
+/***/ }),
+
+/***/ 8725:
+/*!*************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/Cancel.js ***!
+  \*************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/**
+ * A `Cancel` is an object that is thrown when an operation is canceled.
+ *
+ * @class
+ * @param {string=} message The message.
+ */
+function Cancel(message) {
+  this.message = message;
+}
+
+Cancel.prototype.toString = function toString() {
+  return 'Cancel' + (this.message ? ': ' + this.message : '');
+};
+
+Cancel.prototype.__CANCEL__ = true;
+
+module.exports = Cancel;
+
+
+/***/ }),
+
+/***/ 2731:
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/CancelToken.js ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var Cancel = __webpack_require__(/*! ./Cancel */ 8725);
+
+/**
+ * A `CancelToken` is an object that can be used to request cancellation of an operation.
+ *
+ * @class
+ * @param {Function} executor The executor function.
+ */
+function CancelToken(executor) {
+  if (typeof executor !== 'function') {
+    throw new TypeError('executor must be a function.');
+  }
+
+  var resolvePromise;
+
+  this.promise = new Promise(function promiseExecutor(resolve) {
+    resolvePromise = resolve;
+  });
+
+  var token = this;
+
+  // eslint-disable-next-line func-names
+  this.promise.then(function(cancel) {
+    if (!token._listeners) return;
+
+    var i;
+    var l = token._listeners.length;
+
+    for (i = 0; i < l; i++) {
+      token._listeners[i](cancel);
+    }
+    token._listeners = null;
+  });
+
+  // eslint-disable-next-line func-names
+  this.promise.then = function(onfulfilled) {
+    var _resolve;
+    // eslint-disable-next-line func-names
+    var promise = new Promise(function(resolve) {
+      token.subscribe(resolve);
+      _resolve = resolve;
+    }).then(onfulfilled);
+
+    promise.cancel = function reject() {
+      token.unsubscribe(_resolve);
+    };
+
+    return promise;
+  };
+
+  executor(function cancel(message) {
+    if (token.reason) {
+      // Cancellation has already been requested
+      return;
+    }
+
+    token.reason = new Cancel(message);
+    resolvePromise(token.reason);
+  });
+}
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+CancelToken.prototype.throwIfRequested = function throwIfRequested() {
+  if (this.reason) {
+    throw this.reason;
+  }
+};
+
+/**
+ * Subscribe to the cancel signal
+ */
+
+CancelToken.prototype.subscribe = function subscribe(listener) {
+  if (this.reason) {
+    listener(this.reason);
+    return;
+  }
+
+  if (this._listeners) {
+    this._listeners.push(listener);
+  } else {
+    this._listeners = [listener];
+  }
+};
+
+/**
+ * Unsubscribe from the cancel signal
+ */
+
+CancelToken.prototype.unsubscribe = function unsubscribe(listener) {
+  if (!this._listeners) {
+    return;
+  }
+  var index = this._listeners.indexOf(listener);
+  if (index !== -1) {
+    this._listeners.splice(index, 1);
+  }
+};
+
+/**
+ * Returns an object that contains a new `CancelToken` and a function that, when called,
+ * cancels the `CancelToken`.
+ */
+CancelToken.source = function source() {
+  var cancel;
+  var token = new CancelToken(function executor(c) {
+    cancel = c;
+  });
+  return {
+    token: token,
+    cancel: cancel
+  };
+};
+
+module.exports = CancelToken;
+
+
+/***/ }),
+
+/***/ 6033:
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/isCancel.js ***!
+  \***************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function isCancel(value) {
+  return !!(value && value.__CANCEL__);
+};
+
+
+/***/ }),
+
+/***/ 3519:
+/*!**********************************************!*\
+  !*** ./node_modules/axios/lib/core/Axios.js ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./../utils */ 2589);
+var buildURL = __webpack_require__(/*! ../helpers/buildURL */ 914);
+var InterceptorManager = __webpack_require__(/*! ./InterceptorManager */ 30);
+var dispatchRequest = __webpack_require__(/*! ./dispatchRequest */ 795);
+var mergeConfig = __webpack_require__(/*! ./mergeConfig */ 3671);
+var validator = __webpack_require__(/*! ../helpers/validator */ 574);
+
+var validators = validator.validators;
+/**
+ * Create a new instance of Axios
+ *
+ * @param {Object} instanceConfig The default config for the instance
+ */
+function Axios(instanceConfig) {
+  this.defaults = instanceConfig;
+  this.interceptors = {
+    request: new InterceptorManager(),
+    response: new InterceptorManager()
+  };
+}
+
+/**
+ * Dispatch a request
+ *
+ * @param {Object} config The config specific for this request (merged with this.defaults)
+ */
+Axios.prototype.request = function request(config) {
+  /*eslint no-param-reassign:0*/
+  // Allow for axios('example/url'[, config]) a la fetch API
+  if (typeof config === 'string') {
+    config = arguments[1] || {};
+    config.url = arguments[0];
+  } else {
+    config = config || {};
+  }
+
+  config = mergeConfig(this.defaults, config);
+
+  // Set config.method
+  if (config.method) {
+    config.method = config.method.toLowerCase();
+  } else if (this.defaults.method) {
+    config.method = this.defaults.method.toLowerCase();
+  } else {
+    config.method = 'get';
+  }
+
+  var transitional = config.transitional;
+
+  if (transitional !== undefined) {
+    validator.assertOptions(transitional, {
+      silentJSONParsing: validators.transitional(validators.boolean),
+      forcedJSONParsing: validators.transitional(validators.boolean),
+      clarifyTimeoutError: validators.transitional(validators.boolean)
+    }, false);
+  }
+
+  // filter out skipped interceptors
+  var requestInterceptorChain = [];
+  var synchronousRequestInterceptors = true;
+  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+    if (typeof interceptor.runWhen === 'function' && interceptor.runWhen(config) === false) {
+      return;
+    }
+
+    synchronousRequestInterceptors = synchronousRequestInterceptors && interceptor.synchronous;
+
+    requestInterceptorChain.unshift(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  var responseInterceptorChain = [];
+  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+    responseInterceptorChain.push(interceptor.fulfilled, interceptor.rejected);
+  });
+
+  var promise;
+
+  if (!synchronousRequestInterceptors) {
+    var chain = [dispatchRequest, undefined];
+
+    Array.prototype.unshift.apply(chain, requestInterceptorChain);
+    chain = chain.concat(responseInterceptorChain);
+
+    promise = Promise.resolve(config);
+    while (chain.length) {
+      promise = promise.then(chain.shift(), chain.shift());
+    }
+
+    return promise;
+  }
+
+
+  var newConfig = config;
+  while (requestInterceptorChain.length) {
+    var onFulfilled = requestInterceptorChain.shift();
+    var onRejected = requestInterceptorChain.shift();
+    try {
+      newConfig = onFulfilled(newConfig);
+    } catch (error) {
+      onRejected(error);
+      break;
+    }
+  }
+
+  try {
+    promise = dispatchRequest(newConfig);
+  } catch (error) {
+    return Promise.reject(error);
+  }
+
+  while (responseInterceptorChain.length) {
+    promise = promise.then(responseInterceptorChain.shift(), responseInterceptorChain.shift());
+  }
+
+  return promise;
+};
+
+Axios.prototype.getUri = function getUri(config) {
+  config = mergeConfig(this.defaults, config);
+  return buildURL(config.url, config.params, config.paramsSerializer).replace(/^\?/, '');
+};
+
+// Provide aliases for supported request methods
+utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, config) {
+    return this.request(mergeConfig(config || {}, {
+      method: method,
+      url: url,
+      data: (config || {}).data
+    }));
+  };
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  /*eslint func-names:0*/
+  Axios.prototype[method] = function(url, data, config) {
+    return this.request(mergeConfig(config || {}, {
+      method: method,
+      url: url,
+      data: data
+    }));
+  };
+});
+
+module.exports = Axios;
+
+
+/***/ }),
+
+/***/ 30:
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/core/InterceptorManager.js ***!
+  \***********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./../utils */ 2589);
+
+function InterceptorManager() {
+  this.handlers = [];
+}
+
+/**
+ * Add a new interceptor to the stack
+ *
+ * @param {Function} fulfilled The function to handle `then` for a `Promise`
+ * @param {Function} rejected The function to handle `reject` for a `Promise`
+ *
+ * @return {Number} An ID used to remove interceptor later
+ */
+InterceptorManager.prototype.use = function use(fulfilled, rejected, options) {
+  this.handlers.push({
+    fulfilled: fulfilled,
+    rejected: rejected,
+    synchronous: options ? options.synchronous : false,
+    runWhen: options ? options.runWhen : null
+  });
+  return this.handlers.length - 1;
+};
+
+/**
+ * Remove an interceptor from the stack
+ *
+ * @param {Number} id The ID that was returned by `use`
+ */
+InterceptorManager.prototype.eject = function eject(id) {
+  if (this.handlers[id]) {
+    this.handlers[id] = null;
+  }
+};
+
+/**
+ * Iterate over all the registered interceptors
+ *
+ * This method is particularly useful for skipping over any
+ * interceptors that may have become `null` calling `eject`.
+ *
+ * @param {Function} fn The function to call for each interceptor
+ */
+InterceptorManager.prototype.forEach = function forEach(fn) {
+  utils.forEach(this.handlers, function forEachHandler(h) {
+    if (h !== null) {
+      fn(h);
+    }
+  });
+};
+
+module.exports = InterceptorManager;
+
+
+/***/ }),
+
+/***/ 6475:
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/core/buildFullPath.js ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var isAbsoluteURL = __webpack_require__(/*! ../helpers/isAbsoluteURL */ 2304);
+var combineURLs = __webpack_require__(/*! ../helpers/combineURLs */ 5338);
+
+/**
+ * Creates a new URL by combining the baseURL with the requestedURL,
+ * only when the requestedURL is not already an absolute URL.
+ * If the requestURL is absolute, this function returns the requestedURL untouched.
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} requestedURL Absolute or relative URL to combine
+ * @returns {string} The combined full path
+ */
+module.exports = function buildFullPath(baseURL, requestedURL) {
+  if (baseURL && !isAbsoluteURL(requestedURL)) {
+    return combineURLs(baseURL, requestedURL);
+  }
+  return requestedURL;
+};
+
+
+/***/ }),
+
+/***/ 6508:
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/core/createError.js ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var enhanceError = __webpack_require__(/*! ./enhanceError */ 3491);
+
+/**
+ * Create an Error with the specified message, config, error code, request and response.
+ *
+ * @param {string} message The error message.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The created error.
+ */
+module.exports = function createError(message, config, code, request, response) {
+  var error = new Error(message);
+  return enhanceError(error, config, code, request, response);
+};
+
+
+/***/ }),
+
+/***/ 795:
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/core/dispatchRequest.js ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./../utils */ 2589);
+var transformData = __webpack_require__(/*! ./transformData */ 7555);
+var isCancel = __webpack_require__(/*! ../cancel/isCancel */ 6033);
+var defaults = __webpack_require__(/*! ../defaults */ 6454);
+var Cancel = __webpack_require__(/*! ../cancel/Cancel */ 8725);
+
+/**
+ * Throws a `Cancel` if cancellation has been requested.
+ */
+function throwIfCancellationRequested(config) {
+  if (config.cancelToken) {
+    config.cancelToken.throwIfRequested();
+  }
+
+  if (config.signal && config.signal.aborted) {
+    throw new Cancel('canceled');
+  }
+}
+
+/**
+ * Dispatch a request to the server using the configured adapter.
+ *
+ * @param {object} config The config that is to be used for the request
+ * @returns {Promise} The Promise to be fulfilled
+ */
+module.exports = function dispatchRequest(config) {
+  throwIfCancellationRequested(config);
+
+  // Ensure headers exist
+  config.headers = config.headers || {};
+
+  // Transform request data
+  config.data = transformData.call(
+    config,
+    config.data,
+    config.headers,
+    config.transformRequest
+  );
+
+  // Flatten headers
+  config.headers = utils.merge(
+    config.headers.common || {},
+    config.headers[config.method] || {},
+    config.headers
+  );
+
+  utils.forEach(
+    ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
+    function cleanHeaderConfig(method) {
+      delete config.headers[method];
+    }
+  );
+
+  var adapter = config.adapter || defaults.adapter;
+
+  return adapter(config).then(function onAdapterResolution(response) {
+    throwIfCancellationRequested(config);
+
+    // Transform response data
+    response.data = transformData.call(
+      config,
+      response.data,
+      response.headers,
+      config.transformResponse
+    );
+
+    return response;
+  }, function onAdapterRejection(reason) {
+    if (!isCancel(reason)) {
+      throwIfCancellationRequested(config);
+
+      // Transform response data
+      if (reason && reason.response) {
+        reason.response.data = transformData.call(
+          config,
+          reason.response.data,
+          reason.response.headers,
+          config.transformResponse
+        );
+      }
+    }
+
+    return Promise.reject(reason);
+  });
+};
+
+
+/***/ }),
+
+/***/ 3491:
+/*!*****************************************************!*\
+  !*** ./node_modules/axios/lib/core/enhanceError.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/**
+ * Update an Error with the specified config, error code, and response.
+ *
+ * @param {Error} error The error to update.
+ * @param {Object} config The config.
+ * @param {string} [code] The error code (for example, 'ECONNABORTED').
+ * @param {Object} [request] The request.
+ * @param {Object} [response] The response.
+ * @returns {Error} The error.
+ */
+module.exports = function enhanceError(error, config, code, request, response) {
+  error.config = config;
+  if (code) {
+    error.code = code;
+  }
+
+  error.request = request;
+  error.response = response;
+  error.isAxiosError = true;
+
+  error.toJSON = function toJSON() {
+    return {
+      // Standard
+      message: this.message,
+      name: this.name,
+      // Microsoft
+      description: this.description,
+      number: this.number,
+      // Mozilla
+      fileName: this.fileName,
+      lineNumber: this.lineNumber,
+      columnNumber: this.columnNumber,
+      stack: this.stack,
+      // Axios
+      config: this.config,
+      code: this.code,
+      status: this.response && this.response.status ? this.response.status : null
+    };
+  };
+  return error;
+};
+
+
+/***/ }),
+
+/***/ 3671:
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/core/mergeConfig.js ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ../utils */ 2589);
+
+/**
+ * Config-specific merge-function which creates a new config-object
+ * by merging two configuration objects together.
+ *
+ * @param {Object} config1
+ * @param {Object} config2
+ * @returns {Object} New object resulting from merging config2 to config1
+ */
+module.exports = function mergeConfig(config1, config2) {
+  // eslint-disable-next-line no-param-reassign
+  config2 = config2 || {};
+  var config = {};
+
+  function getMergedValue(target, source) {
+    if (utils.isPlainObject(target) && utils.isPlainObject(source)) {
+      return utils.merge(target, source);
+    } else if (utils.isPlainObject(source)) {
+      return utils.merge({}, source);
+    } else if (utils.isArray(source)) {
+      return source.slice();
+    }
+    return source;
+  }
+
+  // eslint-disable-next-line consistent-return
+  function mergeDeepProperties(prop) {
+    if (!utils.isUndefined(config2[prop])) {
+      return getMergedValue(config1[prop], config2[prop]);
+    } else if (!utils.isUndefined(config1[prop])) {
+      return getMergedValue(undefined, config1[prop]);
+    }
+  }
+
+  // eslint-disable-next-line consistent-return
+  function valueFromConfig2(prop) {
+    if (!utils.isUndefined(config2[prop])) {
+      return getMergedValue(undefined, config2[prop]);
+    }
+  }
+
+  // eslint-disable-next-line consistent-return
+  function defaultToConfig2(prop) {
+    if (!utils.isUndefined(config2[prop])) {
+      return getMergedValue(undefined, config2[prop]);
+    } else if (!utils.isUndefined(config1[prop])) {
+      return getMergedValue(undefined, config1[prop]);
+    }
+  }
+
+  // eslint-disable-next-line consistent-return
+  function mergeDirectKeys(prop) {
+    if (prop in config2) {
+      return getMergedValue(config1[prop], config2[prop]);
+    } else if (prop in config1) {
+      return getMergedValue(undefined, config1[prop]);
+    }
+  }
+
+  var mergeMap = {
+    'url': valueFromConfig2,
+    'method': valueFromConfig2,
+    'data': valueFromConfig2,
+    'baseURL': defaultToConfig2,
+    'transformRequest': defaultToConfig2,
+    'transformResponse': defaultToConfig2,
+    'paramsSerializer': defaultToConfig2,
+    'timeout': defaultToConfig2,
+    'timeoutMessage': defaultToConfig2,
+    'withCredentials': defaultToConfig2,
+    'adapter': defaultToConfig2,
+    'responseType': defaultToConfig2,
+    'xsrfCookieName': defaultToConfig2,
+    'xsrfHeaderName': defaultToConfig2,
+    'onUploadProgress': defaultToConfig2,
+    'onDownloadProgress': defaultToConfig2,
+    'decompress': defaultToConfig2,
+    'maxContentLength': defaultToConfig2,
+    'maxBodyLength': defaultToConfig2,
+    'transport': defaultToConfig2,
+    'httpAgent': defaultToConfig2,
+    'httpsAgent': defaultToConfig2,
+    'cancelToken': defaultToConfig2,
+    'socketPath': defaultToConfig2,
+    'responseEncoding': defaultToConfig2,
+    'validateStatus': mergeDirectKeys
+  };
+
+  utils.forEach(Object.keys(config1).concat(Object.keys(config2)), function computeConfigValue(prop) {
+    var merge = mergeMap[prop] || mergeDeepProperties;
+    var configValue = merge(prop);
+    (utils.isUndefined(configValue) && merge !== mergeDirectKeys) || (config[prop] = configValue);
+  });
+
+  return config;
+};
+
+
+/***/ }),
+
+/***/ 3044:
+/*!***********************************************!*\
+  !*** ./node_modules/axios/lib/core/settle.js ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var createError = __webpack_require__(/*! ./createError */ 6508);
+
+/**
+ * Resolve or reject a Promise based on response status.
+ *
+ * @param {Function} resolve A function that resolves the promise.
+ * @param {Function} reject A function that rejects the promise.
+ * @param {object} response The response.
+ */
+module.exports = function settle(resolve, reject, response) {
+  var validateStatus = response.config.validateStatus;
+  if (!response.status || !validateStatus || validateStatus(response.status)) {
+    resolve(response);
+  } else {
+    reject(createError(
+      'Request failed with status code ' + response.status,
+      response.config,
+      null,
+      response.request,
+      response
+    ));
+  }
+};
+
+
+/***/ }),
+
+/***/ 7555:
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/core/transformData.js ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./../utils */ 2589);
+var defaults = __webpack_require__(/*! ./../defaults */ 6454);
+
+/**
+ * Transform the data for a request or a response
+ *
+ * @param {Object|String} data The data to be transformed
+ * @param {Array} headers The headers for the request or response
+ * @param {Array|Function} fns A single function or Array of functions
+ * @returns {*} The resulting transformed data
+ */
+module.exports = function transformData(data, headers, fns) {
+  var context = this || defaults;
+  /*eslint no-param-reassign:0*/
+  utils.forEach(fns, function transform(fn) {
+    data = fn.call(context, data, headers);
+  });
+
+  return data;
+};
+
+
+/***/ }),
+
+/***/ 6454:
+/*!********************************************!*\
+  !*** ./node_modules/axios/lib/defaults.js ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./utils */ 2589);
+var normalizeHeaderName = __webpack_require__(/*! ./helpers/normalizeHeaderName */ 6248);
+var enhanceError = __webpack_require__(/*! ./core/enhanceError */ 3491);
+
+var DEFAULT_CONTENT_TYPE = {
+  'Content-Type': 'application/x-www-form-urlencoded'
+};
+
+function setContentTypeIfUnset(headers, value) {
+  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
+    headers['Content-Type'] = value;
+  }
+}
+
+function getDefaultAdapter() {
+  var adapter;
+  if (typeof XMLHttpRequest !== 'undefined') {
+    // For browsers use XHR adapter
+    adapter = __webpack_require__(/*! ./adapters/xhr */ 6709);
+  } else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
+    // For node use HTTP adapter
+    adapter = __webpack_require__(/*! ./adapters/http */ 6709);
+  }
+  return adapter;
+}
+
+function stringifySafely(rawValue, parser, encoder) {
+  if (utils.isString(rawValue)) {
+    try {
+      (parser || JSON.parse)(rawValue);
+      return utils.trim(rawValue);
+    } catch (e) {
+      if (e.name !== 'SyntaxError') {
+        throw e;
+      }
+    }
+  }
+
+  return (encoder || JSON.stringify)(rawValue);
+}
+
+var defaults = {
+
+  transitional: {
+    silentJSONParsing: true,
+    forcedJSONParsing: true,
+    clarifyTimeoutError: false
+  },
+
+  adapter: getDefaultAdapter(),
+
+  transformRequest: [function transformRequest(data, headers) {
+    normalizeHeaderName(headers, 'Accept');
+    normalizeHeaderName(headers, 'Content-Type');
+
+    if (utils.isFormData(data) ||
+      utils.isArrayBuffer(data) ||
+      utils.isBuffer(data) ||
+      utils.isStream(data) ||
+      utils.isFile(data) ||
+      utils.isBlob(data)
+    ) {
+      return data;
+    }
+    if (utils.isArrayBufferView(data)) {
+      return data.buffer;
+    }
+    if (utils.isURLSearchParams(data)) {
+      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+      return data.toString();
+    }
+    if (utils.isObject(data) || (headers && headers['Content-Type'] === 'application/json')) {
+      setContentTypeIfUnset(headers, 'application/json');
+      return stringifySafely(data);
+    }
+    return data;
+  }],
+
+  transformResponse: [function transformResponse(data) {
+    var transitional = this.transitional || defaults.transitional;
+    var silentJSONParsing = transitional && transitional.silentJSONParsing;
+    var forcedJSONParsing = transitional && transitional.forcedJSONParsing;
+    var strictJSONParsing = !silentJSONParsing && this.responseType === 'json';
+
+    if (strictJSONParsing || (forcedJSONParsing && utils.isString(data) && data.length)) {
+      try {
+        return JSON.parse(data);
+      } catch (e) {
+        if (strictJSONParsing) {
+          if (e.name === 'SyntaxError') {
+            throw enhanceError(e, this, 'E_JSON_PARSE');
+          }
+          throw e;
+        }
+      }
+    }
+
+    return data;
+  }],
+
+  /**
+   * A timeout in milliseconds to abort a request. If set to 0 (default) a
+   * timeout is not created.
+   */
+  timeout: 0,
+
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN',
+
+  maxContentLength: -1,
+  maxBodyLength: -1,
+
+  validateStatus: function validateStatus(status) {
+    return status >= 200 && status < 300;
+  },
+
+  headers: {
+    common: {
+      'Accept': 'application/json, text/plain, */*'
+    }
+  }
+};
+
+utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
+  defaults.headers[method] = {};
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
+});
+
+module.exports = defaults;
+
+
+/***/ }),
+
+/***/ 7060:
+/*!********************************************!*\
+  !*** ./node_modules/axios/lib/env/data.js ***!
+  \********************************************/
+/***/ ((module) => {
+
+module.exports = {
+  "version": "0.24.0"
+};
+
+/***/ }),
+
+/***/ 3289:
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/bind.js ***!
+  \************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function bind(fn, thisArg) {
+  return function wrap() {
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+    return fn.apply(thisArg, args);
+  };
+};
+
+
+/***/ }),
+
+/***/ 914:
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/buildURL.js ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./../utils */ 2589);
+
+function encode(val) {
+  return encodeURIComponent(val).
+    replace(/%3A/gi, ':').
+    replace(/%24/g, '$').
+    replace(/%2C/gi, ',').
+    replace(/%20/g, '+').
+    replace(/%5B/gi, '[').
+    replace(/%5D/gi, ']');
+}
+
+/**
+ * Build a URL by appending params to the end
+ *
+ * @param {string} url The base of the url (e.g., http://www.google.com)
+ * @param {object} [params] The params to be appended
+ * @returns {string} The formatted url
+ */
+module.exports = function buildURL(url, params, paramsSerializer) {
+  /*eslint no-param-reassign:0*/
+  if (!params) {
+    return url;
+  }
+
+  var serializedParams;
+  if (paramsSerializer) {
+    serializedParams = paramsSerializer(params);
+  } else if (utils.isURLSearchParams(params)) {
+    serializedParams = params.toString();
+  } else {
+    var parts = [];
+
+    utils.forEach(params, function serialize(val, key) {
+      if (val === null || typeof val === 'undefined') {
+        return;
+      }
+
+      if (utils.isArray(val)) {
+        key = key + '[]';
+      } else {
+        val = [val];
+      }
+
+      utils.forEach(val, function parseValue(v) {
+        if (utils.isDate(v)) {
+          v = v.toISOString();
+        } else if (utils.isObject(v)) {
+          v = JSON.stringify(v);
+        }
+        parts.push(encode(key) + '=' + encode(v));
+      });
+    });
+
+    serializedParams = parts.join('&');
+  }
+
+  if (serializedParams) {
+    var hashmarkIndex = url.indexOf('#');
+    if (hashmarkIndex !== -1) {
+      url = url.slice(0, hashmarkIndex);
+    }
+
+    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+  }
+
+  return url;
+};
+
+
+/***/ }),
+
+/***/ 5338:
+/*!*******************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/combineURLs.js ***!
+  \*******************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/**
+ * Creates a new URL by combining the specified URLs
+ *
+ * @param {string} baseURL The base URL
+ * @param {string} relativeURL The relative URL
+ * @returns {string} The combined URL
+ */
+module.exports = function combineURLs(baseURL, relativeURL) {
+  return relativeURL
+    ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '')
+    : baseURL;
+};
+
+
+/***/ }),
+
+/***/ 2044:
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/cookies.js ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./../utils */ 2589);
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs support document.cookie
+    (function standardBrowserEnv() {
+      return {
+        write: function write(name, value, expires, path, domain, secure) {
+          var cookie = [];
+          cookie.push(name + '=' + encodeURIComponent(value));
+
+          if (utils.isNumber(expires)) {
+            cookie.push('expires=' + new Date(expires).toGMTString());
+          }
+
+          if (utils.isString(path)) {
+            cookie.push('path=' + path);
+          }
+
+          if (utils.isString(domain)) {
+            cookie.push('domain=' + domain);
+          }
+
+          if (secure === true) {
+            cookie.push('secure');
+          }
+
+          document.cookie = cookie.join('; ');
+        },
+
+        read: function read(name) {
+          var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+          return (match ? decodeURIComponent(match[3]) : null);
+        },
+
+        remove: function remove(name) {
+          this.write(name, '', Date.now() - 86400000);
+        }
+      };
+    })() :
+
+  // Non standard browser env (web workers, react-native) lack needed support.
+    (function nonStandardBrowserEnv() {
+      return {
+        write: function write() {},
+        read: function read() { return null; },
+        remove: function remove() {}
+      };
+    })()
+);
+
+
+/***/ }),
+
+/***/ 2304:
+/*!*********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/**
+ * Determines whether the specified URL is absolute
+ *
+ * @param {string} url The URL to test
+ * @returns {boolean} True if the specified URL is absolute, otherwise false
+ */
+module.exports = function isAbsoluteURL(url) {
+  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+  // by any combination of letters, digits, plus, period, or hyphen.
+  return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
+};
+
+
+/***/ }),
+
+/***/ 6678:
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isAxiosError.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/**
+ * Determines whether the payload is an error thrown by Axios
+ *
+ * @param {*} payload The value to test
+ * @returns {boolean} True if the payload is an error thrown by Axios, otherwise false
+ */
+module.exports = function isAxiosError(payload) {
+  return (typeof payload === 'object') && (payload.isAxiosError === true);
+};
+
+
+/***/ }),
+
+/***/ 9389:
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
+  \***********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./../utils */ 2589);
+
+module.exports = (
+  utils.isStandardBrowserEnv() ?
+
+  // Standard browser envs have full support of the APIs needed to test
+  // whether the request URL is of the same origin as current location.
+    (function standardBrowserEnv() {
+      var msie = /(msie|trident)/i.test(navigator.userAgent);
+      var urlParsingNode = document.createElement('a');
+      var originURL;
+
+      /**
+    * Parse a URL to discover it's components
+    *
+    * @param {String} url The URL to be parsed
+    * @returns {Object}
+    */
+      function resolveURL(url) {
+        var href = url;
+
+        if (msie) {
+        // IE needs attribute set twice to normalize properties
+          urlParsingNode.setAttribute('href', href);
+          href = urlParsingNode.href;
+        }
+
+        urlParsingNode.setAttribute('href', href);
+
+        // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+        return {
+          href: urlParsingNode.href,
+          protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+          host: urlParsingNode.host,
+          search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+          hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+          hostname: urlParsingNode.hostname,
+          port: urlParsingNode.port,
+          pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
+            urlParsingNode.pathname :
+            '/' + urlParsingNode.pathname
+        };
+      }
+
+      originURL = resolveURL(window.location.href);
+
+      /**
+    * Determine if a URL shares the same origin as the current location
+    *
+    * @param {String} requestURL The URL to test
+    * @returns {boolean} True if URL shares the same origin, otherwise false
+    */
+      return function isURLSameOrigin(requestURL) {
+        var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
+        return (parsed.protocol === originURL.protocol &&
+            parsed.host === originURL.host);
+      };
+    })() :
+
+  // Non standard browser envs (web workers, react-native) lack needed support.
+    (function nonStandardBrowserEnv() {
+      return function isURLSameOrigin() {
+        return true;
+      };
+    })()
+);
+
+
+/***/ }),
+
+/***/ 6248:
+/*!***************************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/normalizeHeaderName.js ***!
+  \***************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ../utils */ 2589);
+
+module.exports = function normalizeHeaderName(headers, normalizedName) {
+  utils.forEach(headers, function processHeader(value, name) {
+    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
+      headers[normalizedName] = value;
+      delete headers[name];
+    }
+  });
+};
+
+
+/***/ }),
+
+/***/ 9459:
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/parseHeaders.js ***!
+  \********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var utils = __webpack_require__(/*! ./../utils */ 2589);
+
+// Headers whose duplicates are ignored by node
+// c.f. https://nodejs.org/api/http.html#http_message_headers
+var ignoreDuplicateOf = [
+  'age', 'authorization', 'content-length', 'content-type', 'etag',
+  'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
+  'last-modified', 'location', 'max-forwards', 'proxy-authorization',
+  'referer', 'retry-after', 'user-agent'
+];
+
+/**
+ * Parse headers into an object
+ *
+ * ```
+ * Date: Wed, 27 Aug 2014 08:58:49 GMT
+ * Content-Type: application/json
+ * Connection: keep-alive
+ * Transfer-Encoding: chunked
+ * ```
+ *
+ * @param {String} headers Headers needing to be parsed
+ * @returns {Object} Headers parsed into an object
+ */
+module.exports = function parseHeaders(headers) {
+  var parsed = {};
+  var key;
+  var val;
+  var i;
+
+  if (!headers) { return parsed; }
+
+  utils.forEach(headers.split('\n'), function parser(line) {
+    i = line.indexOf(':');
+    key = utils.trim(line.substr(0, i)).toLowerCase();
+    val = utils.trim(line.substr(i + 1));
+
+    if (key) {
+      if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
+        return;
+      }
+      if (key === 'set-cookie') {
+        parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
+      } else {
+        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
+      }
+    }
+  });
+
+  return parsed;
+};
+
+
+/***/ }),
+
+/***/ 7639:
+/*!**************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/spread.js ***!
+  \**************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/**
+ * Syntactic sugar for invoking a function and expanding an array for arguments.
+ *
+ * Common use case would be to use `Function.prototype.apply`.
+ *
+ *  ```js
+ *  function f(x, y, z) {}
+ *  var args = [1, 2, 3];
+ *  f.apply(null, args);
+ *  ```
+ *
+ * With `spread` this example can be re-written.
+ *
+ *  ```js
+ *  spread(function(x, y, z) {})([1, 2, 3]);
+ *  ```
+ *
+ * @param {Function} callback
+ * @returns {Function}
+ */
+module.exports = function spread(callback) {
+  return function wrap(arr) {
+    return callback.apply(null, arr);
+  };
+};
+
+
+/***/ }),
+
+/***/ 574:
+/*!*****************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/validator.js ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var VERSION = (__webpack_require__(/*! ../env/data */ 7060).version);
+
+var validators = {};
+
+// eslint-disable-next-line func-names
+['object', 'boolean', 'number', 'function', 'string', 'symbol'].forEach(function(type, i) {
+  validators[type] = function validator(thing) {
+    return typeof thing === type || 'a' + (i < 1 ? 'n ' : ' ') + type;
+  };
+});
+
+var deprecatedWarnings = {};
+
+/**
+ * Transitional option validator
+ * @param {function|boolean?} validator - set to false if the transitional option has been removed
+ * @param {string?} version - deprecated version / removed since version
+ * @param {string?} message - some message with additional info
+ * @returns {function}
+ */
+validators.transitional = function transitional(validator, version, message) {
+  function formatMessage(opt, desc) {
+    return '[Axios v' + VERSION + '] Transitional option \'' + opt + '\'' + desc + (message ? '. ' + message : '');
+  }
+
+  // eslint-disable-next-line func-names
+  return function(value, opt, opts) {
+    if (validator === false) {
+      throw new Error(formatMessage(opt, ' has been removed' + (version ? ' in ' + version : '')));
+    }
+
+    if (version && !deprecatedWarnings[opt]) {
+      deprecatedWarnings[opt] = true;
+      // eslint-disable-next-line no-console
+      console.warn(
+        formatMessage(
+          opt,
+          ' has been deprecated since v' + version + ' and will be removed in the near future'
+        )
+      );
+    }
+
+    return validator ? validator(value, opt, opts) : true;
+  };
+};
+
+/**
+ * Assert object's properties type
+ * @param {object} options
+ * @param {object} schema
+ * @param {boolean?} allowUnknown
+ */
+
+function assertOptions(options, schema, allowUnknown) {
+  if (typeof options !== 'object') {
+    throw new TypeError('options must be an object');
+  }
+  var keys = Object.keys(options);
+  var i = keys.length;
+  while (i-- > 0) {
+    var opt = keys[i];
+    var validator = schema[opt];
+    if (validator) {
+      var value = options[opt];
+      var result = value === undefined || validator(value, opt, options);
+      if (result !== true) {
+        throw new TypeError('option ' + opt + ' must be ' + result);
+      }
+      continue;
+    }
+    if (allowUnknown !== true) {
+      throw Error('Unknown option ' + opt);
+    }
+  }
+}
+
+module.exports = {
+  assertOptions: assertOptions,
+  validators: validators
+};
+
+
+/***/ }),
+
+/***/ 2589:
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/utils.js ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var bind = __webpack_require__(/*! ./helpers/bind */ 3289);
+
+// utils is a library of generic helper functions non-specific to axios
+
+var toString = Object.prototype.toString;
+
+/**
+ * Determine if a value is an Array
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Array, otherwise false
+ */
+function isArray(val) {
+  return toString.call(val) === '[object Array]';
+}
+
+/**
+ * Determine if a value is undefined
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if the value is undefined, otherwise false
+ */
+function isUndefined(val) {
+  return typeof val === 'undefined';
+}
+
+/**
+ * Determine if a value is a Buffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Buffer, otherwise false
+ */
+function isBuffer(val) {
+  return val !== null && !isUndefined(val) && val.constructor !== null && !isUndefined(val.constructor)
+    && typeof val.constructor.isBuffer === 'function' && val.constructor.isBuffer(val);
+}
+
+/**
+ * Determine if a value is an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+ */
+function isArrayBuffer(val) {
+  return toString.call(val) === '[object ArrayBuffer]';
+}
+
+/**
+ * Determine if a value is a FormData
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an FormData, otherwise false
+ */
+function isFormData(val) {
+  return (typeof FormData !== 'undefined') && (val instanceof FormData);
+}
+
+/**
+ * Determine if a value is a view on an ArrayBuffer
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+ */
+function isArrayBufferView(val) {
+  var result;
+  if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
+    result = ArrayBuffer.isView(val);
+  } else {
+    result = (val) && (val.buffer) && (val.buffer instanceof ArrayBuffer);
+  }
+  return result;
+}
+
+/**
+ * Determine if a value is a String
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a String, otherwise false
+ */
+function isString(val) {
+  return typeof val === 'string';
+}
+
+/**
+ * Determine if a value is a Number
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Number, otherwise false
+ */
+function isNumber(val) {
+  return typeof val === 'number';
+}
+
+/**
+ * Determine if a value is an Object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an Object, otherwise false
+ */
+function isObject(val) {
+  return val !== null && typeof val === 'object';
+}
+
+/**
+ * Determine if a value is a plain Object
+ *
+ * @param {Object} val The value to test
+ * @return {boolean} True if value is a plain Object, otherwise false
+ */
+function isPlainObject(val) {
+  if (toString.call(val) !== '[object Object]') {
+    return false;
+  }
+
+  var prototype = Object.getPrototypeOf(val);
+  return prototype === null || prototype === Object.prototype;
+}
+
+/**
+ * Determine if a value is a Date
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Date, otherwise false
+ */
+function isDate(val) {
+  return toString.call(val) === '[object Date]';
+}
+
+/**
+ * Determine if a value is a File
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a File, otherwise false
+ */
+function isFile(val) {
+  return toString.call(val) === '[object File]';
+}
+
+/**
+ * Determine if a value is a Blob
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Blob, otherwise false
+ */
+function isBlob(val) {
+  return toString.call(val) === '[object Blob]';
+}
+
+/**
+ * Determine if a value is a Function
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Function, otherwise false
+ */
+function isFunction(val) {
+  return toString.call(val) === '[object Function]';
+}
+
+/**
+ * Determine if a value is a Stream
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a Stream, otherwise false
+ */
+function isStream(val) {
+  return isObject(val) && isFunction(val.pipe);
+}
+
+/**
+ * Determine if a value is a URLSearchParams object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is a URLSearchParams object, otherwise false
+ */
+function isURLSearchParams(val) {
+  return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
+}
+
+/**
+ * Trim excess whitespace off the beginning and end of a string
+ *
+ * @param {String} str The String to trim
+ * @returns {String} The String freed of excess whitespace
+ */
+function trim(str) {
+  return str.trim ? str.trim() : str.replace(/^\s+|\s+$/g, '');
+}
+
+/**
+ * Determine if we're running in a standard browser environment
+ *
+ * This allows axios to run in a web worker, and react-native.
+ * Both environments support XMLHttpRequest, but not fully standard globals.
+ *
+ * web workers:
+ *  typeof window -> undefined
+ *  typeof document -> undefined
+ *
+ * react-native:
+ *  navigator.product -> 'ReactNative'
+ * nativescript
+ *  navigator.product -> 'NativeScript' or 'NS'
+ */
+function isStandardBrowserEnv() {
+  if (typeof navigator !== 'undefined' && (navigator.product === 'ReactNative' ||
+                                           navigator.product === 'NativeScript' ||
+                                           navigator.product === 'NS')) {
+    return false;
+  }
+  return (
+    typeof window !== 'undefined' &&
+    typeof document !== 'undefined'
+  );
+}
+
+/**
+ * Iterate over an Array or an Object invoking a function for each item.
+ *
+ * If `obj` is an Array callback will be called passing
+ * the value, index, and complete array for each item.
+ *
+ * If 'obj' is an Object callback will be called passing
+ * the value, key, and complete object for each property.
+ *
+ * @param {Object|Array} obj The object to iterate
+ * @param {Function} fn The callback to invoke for each item
+ */
+function forEach(obj, fn) {
+  // Don't bother if no value provided
+  if (obj === null || typeof obj === 'undefined') {
+    return;
+  }
+
+  // Force an array if not already something iterable
+  if (typeof obj !== 'object') {
+    /*eslint no-param-reassign:0*/
+    obj = [obj];
+  }
+
+  if (isArray(obj)) {
+    // Iterate over array values
+    for (var i = 0, l = obj.length; i < l; i++) {
+      fn.call(null, obj[i], i, obj);
+    }
+  } else {
+    // Iterate over object keys
+    for (var key in obj) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        fn.call(null, obj[key], key, obj);
+      }
+    }
+  }
+}
+
+/**
+ * Accepts varargs expecting each argument to be an object, then
+ * immutably merges the properties of each object and returns result.
+ *
+ * When multiple objects contain the same key the later object in
+ * the arguments list will take precedence.
+ *
+ * Example:
+ *
+ * ```js
+ * var result = merge({foo: 123}, {foo: 456});
+ * console.log(result.foo); // outputs 456
+ * ```
+ *
+ * @param {Object} obj1 Object to merge
+ * @returns {Object} Result of all merge properties
+ */
+function merge(/* obj1, obj2, obj3, ... */) {
+  var result = {};
+  function assignValue(val, key) {
+    if (isPlainObject(result[key]) && isPlainObject(val)) {
+      result[key] = merge(result[key], val);
+    } else if (isPlainObject(val)) {
+      result[key] = merge({}, val);
+    } else if (isArray(val)) {
+      result[key] = val.slice();
+    } else {
+      result[key] = val;
+    }
+  }
+
+  for (var i = 0, l = arguments.length; i < l; i++) {
+    forEach(arguments[i], assignValue);
+  }
+  return result;
+}
+
+/**
+ * Extends object a by mutably adding to it the properties of object b.
+ *
+ * @param {Object} a The object to be extended
+ * @param {Object} b The object to copy properties from
+ * @param {Object} thisArg The object to bind function to
+ * @return {Object} The resulting value of object a
+ */
+function extend(a, b, thisArg) {
+  forEach(b, function assignValue(val, key) {
+    if (thisArg && typeof val === 'function') {
+      a[key] = bind(val, thisArg);
+    } else {
+      a[key] = val;
+    }
+  });
+  return a;
+}
+
+/**
+ * Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
+ *
+ * @param {string} content with BOM
+ * @return {string} content value without BOM
+ */
+function stripBOM(content) {
+  if (content.charCodeAt(0) === 0xFEFF) {
+    content = content.slice(1);
+  }
+  return content;
+}
+
+module.exports = {
+  isArray: isArray,
+  isArrayBuffer: isArrayBuffer,
+  isBuffer: isBuffer,
+  isFormData: isFormData,
+  isArrayBufferView: isArrayBufferView,
+  isString: isString,
+  isNumber: isNumber,
+  isObject: isObject,
+  isPlainObject: isPlainObject,
+  isUndefined: isUndefined,
+  isDate: isDate,
+  isFile: isFile,
+  isBlob: isBlob,
+  isFunction: isFunction,
+  isStream: isStream,
+  isURLSearchParams: isURLSearchParams,
+  isStandardBrowserEnv: isStandardBrowserEnv,
+  forEach: forEach,
+  merge: merge,
+  extend: extend,
+  trim: trim,
+  stripBOM: stripBOM
+};
+
+
+/***/ }),
+
+/***/ 9262:
+/*!***************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/__ivy_ngcc__/alert/fesm2015/ngx-bootstrap-alert.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AlertComponent": () => (/* binding */ AlertComponent),
+/* harmony export */   "AlertConfig": () => (/* binding */ AlertConfig),
+/* harmony export */   "AlertModule": () => (/* binding */ AlertModule)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ 8111);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 4001);
+/* harmony import */ var ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-bootstrap/utils */ 7162);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 8267);
+
+
+
+
+
+
+
+
+function AlertComponent_ng_template_0_ng_template_1_Template(rf, ctx) { if (rf & 1) {
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AlertComponent_ng_template_0_ng_template_1_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r2.close(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "\u00D7");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Close");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+function AlertComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, AlertComponent_ng_template_0_ng_template_1_Template, 5, 0, "ng-template", 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"]("alert alert-" + ctx_r0.type);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx_r0.classes);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r0.dismissible);
+} }
+const _c0 = ["*"];
+class AlertConfig {
+    constructor() {
+        /** default alert type */
+        this.type = 'warning';
+        /** is alerts are dismissible by default */
+        this.dismissible = false;
+        /** default time before alert will dismiss */
+        this.dismissOnTimeout = undefined;
+    }
+}
+AlertConfig.ɵfac = function AlertConfig_Factory(t) { return new (t || AlertConfig)(); };
+AlertConfig.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function AlertConfig_Factory() { return new AlertConfig(); }, token: AlertConfig, providedIn: "root" });
+
+class AlertComponent {
+    constructor(_config, changeDetection) {
+        this.changeDetection = changeDetection;
+        /** Alert type.
+         * Provides one of four bootstrap supported contextual classes:
+         * `success`, `info`, `warning` and `danger`
+         */
+        this.type = 'warning';
+        /** If set, displays an inline "Close" button */
+        this.dismissible = false;
+        /** Is alert visible */
+        this.isOpen = true;
+        /** This event fires immediately after close instance method is called,
+         * $event is an instance of Alert component.
+         */
+        this.onClose = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        /** This event fires when alert closed, $event is an instance of Alert component */
+        this.onClosed = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.classes = '';
+        this.dismissibleChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        Object.assign(this, _config);
+        this.dismissibleChange.subscribe(( /*dismissible: boolean*/) => {
+            this.classes = this.dismissible ? 'alert-dismissible' : '';
+            this.changeDetection.markForCheck();
+        });
+    }
+    ngOnInit() {
+        if (this.dismissOnTimeout) {
+            // if dismissOnTimeout used as attr without binding, it will be a string
+            setTimeout(() => this.close(), parseInt(this.dismissOnTimeout, 10));
+        }
+    }
+    // todo: animation ` If the .fade and .in classes are present on the element,
+    // the alert will fade out before it is removed`
+    /**
+     * Closes an alert by removing it from the DOM.
+     */
+    close() {
+        if (!this.isOpen) {
+            return;
+        }
+        this.onClose.emit(this);
+        this.isOpen = false;
+        this.changeDetection.markForCheck();
+        this.onClosed.emit(this);
+    }
+}
+AlertComponent.ɵfac = function AlertComponent_Factory(t) { return new (t || AlertComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](AlertConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef)); };
+AlertComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AlertComponent, selectors: [["alert"], ["bs-alert"]], inputs: { type: "type", dismissible: "dismissible", isOpen: "isOpen", dismissOnTimeout: "dismissOnTimeout" }, outputs: { onClose: "onClose", onClosed: "onClosed" }, ngContentSelectors: _c0, decls: 1, vars: 1, consts: [[3, "ngIf"], ["role", "alert", 3, "ngClass"], ["type", "button", "aria-label", "Close", 1, "close", "btn-close", 3, "click"], ["aria-hidden", "true", 1, "visually-hidden"], [1, "sr-only", "visually-hidden"]], template: function AlertComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, AlertComponent_ng_template_0_Template, 3, 4, "ng-template", 0);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isOpen);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_1__.NgClass], encapsulation: 2, changeDetection: 0 });
+AlertComponent.ctorParameters = () => [
+    { type: AlertConfig },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef }
+];
+AlertComponent.propDecorators = {
+    type: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    dismissible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    dismissOnTimeout: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    isOpen: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    onClose: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }],
+    onClosed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }]
+};
+(0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_3__.OnChange)(),
+    (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Object)
+], AlertComponent.prototype, "dismissible", void 0);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AlertConfig, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return []; }, null); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AlertComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+        args: [{
+                selector: 'alert,bs-alert',
+                template: "<ng-template [ngIf]=\"isOpen\">\n  <div [class]=\"'alert alert-' + type\" role=\"alert\" [ngClass]=\"classes\">\n    <ng-template [ngIf]=\"dismissible\">\n      <button type=\"button\" class=\"close btn-close\" aria-label=\"Close\" (click)=\"close()\">\n        <span aria-hidden=\"true\" class=\"visually-hidden\">&times;</span>\n        <span class=\"sr-only visually-hidden\">Close</span>\n      </button>\n    </ng-template>\n    <ng-content></ng-content>\n  </div>\n</ng-template>\n",
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush
+            }]
+    }], function () { return [{ type: AlertConfig }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef }]; }, { type: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], dismissible: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], isOpen: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], onClose: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], onClosed: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], dismissOnTimeout: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }] }); })();
+
+class AlertModule {
+    static forRoot() {
+        return { ngModule: AlertModule, providers: [] };
+    }
+}
+AlertModule.ɵfac = function AlertModule_Factory(t) { return new (t || AlertModule)(); };
+AlertModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AlertModule });
+AlertModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule]] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AlertModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule],
+                declarations: [AlertComponent],
+                exports: [AlertComponent],
+                entryComponents: [AlertComponent]
+            }]
+    }], null, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AlertModule, { declarations: function () { return [AlertComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule]; }, exports: function () { return [AlertComponent]; } }); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+
+/***/ }),
+
+/***/ 3910:
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/__ivy_ngcc__/buttons/fesm2015/ngx-bootstrap-buttons.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ButtonCheckboxDirective": () => (/* binding */ ButtonCheckboxDirective),
+/* harmony export */   "ButtonRadioDirective": () => (/* binding */ ButtonRadioDirective),
+/* harmony export */   "ButtonRadioGroupDirective": () => (/* binding */ ButtonRadioGroupDirective),
+/* harmony export */   "ButtonsModule": () => (/* binding */ ButtonsModule),
+/* harmony export */   "ɵa": () => (/* binding */ CHECKBOX_CONTROL_VALUE_ACCESSOR),
+/* harmony export */   "ɵb": () => (/* binding */ RADIO_CONTROL_VALUE_ACCESSOR$1),
+/* harmony export */   "ɵc": () => (/* binding */ RADIO_CONTROL_VALUE_ACCESSOR)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 4001);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/forms */ 8346);
+
+
+
+// TODO: config: activeClass - Class to apply to the checked buttons
+
+const CHECKBOX_CONTROL_VALUE_ACCESSOR = {
+    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_0__.NG_VALUE_ACCESSOR,
+    useExisting: (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => ButtonCheckboxDirective),
+    multi: true
+};
+/**
+ * Add checkbox functionality to any element
+ */
+class ButtonCheckboxDirective {
+    constructor() {
+        /** Truthy value, will be set to ngModel */
+        this.btnCheckboxTrue = true;
+        /** Falsy value, will be set to ngModel */
+        this.btnCheckboxFalse = false;
+        this.state = false;
+        this.isDisabled = false;
+        this.onChange = Function.prototype;
+        this.onTouched = Function.prototype;
+    }
+    // view -> model
+    onClick() {
+        if (this.isDisabled) {
+            return;
+        }
+        this.toggle(!this.state);
+        this.onChange(this.value);
+    }
+    ngOnInit() {
+        this.toggle(this.trueValue === this.value);
+    }
+    get trueValue() {
+        return typeof this.btnCheckboxTrue !== 'undefined'
+            ? this.btnCheckboxTrue
+            : true;
+    }
+    get falseValue() {
+        return typeof this.btnCheckboxFalse !== 'undefined'
+            ? this.btnCheckboxFalse
+            : false;
+    }
+    toggle(state) {
+        this.state = state;
+        this.value = this.state ? this.trueValue : this.falseValue;
+    }
+    // ControlValueAccessor
+    // model -> view
+    writeValue(value) {
+        this.state = this.trueValue === value;
+        this.value = value ? this.trueValue : this.falseValue;
+    }
+    setDisabledState(isDisabled) {
+        this.isDisabled = isDisabled;
+    }
+    registerOnChange(fn) {
+        this.onChange = fn;
+    }
+    registerOnTouched(fn) {
+        this.onTouched = fn;
+    }
+}
+ButtonCheckboxDirective.ɵfac = function ButtonCheckboxDirective_Factory(t) { return new (t || ButtonCheckboxDirective)(); };
+ButtonCheckboxDirective.ɵdir = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: ButtonCheckboxDirective, selectors: [["", "btnCheckbox", ""]], hostVars: 3, hostBindings: function ButtonCheckboxDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function ButtonCheckboxDirective_click_HostBindingHandler() { return ctx.onClick(); });
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("aria-pressed", ctx.state);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("active", ctx.state);
+    } }, inputs: { btnCheckboxTrue: "btnCheckboxTrue", btnCheckboxFalse: "btnCheckboxFalse" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([CHECKBOX_CONTROL_VALUE_ACCESSOR])] });
+ButtonCheckboxDirective.propDecorators = {
+    btnCheckboxTrue: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input }],
+    btnCheckboxFalse: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input }],
+    state: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['class.active',] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['attr.aria-pressed',] }],
+    onClick: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['click',] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](ButtonCheckboxDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Directive,
+        args: [{
+                selector: '[btnCheckbox]',
+                providers: [CHECKBOX_CONTROL_VALUE_ACCESSOR]
+            }]
+    }], function () { return []; }, { btnCheckboxTrue: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }], btnCheckboxFalse: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }], state: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['class.active']
+        }, {
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['attr.aria-pressed']
+        }], 
+    // view -> model
+    onClick: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['click']
+        }] }); })();
+
+const RADIO_CONTROL_VALUE_ACCESSOR = {
+    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_0__.NG_VALUE_ACCESSOR,
+    useExisting: (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => ButtonRadioDirective),
+    multi: true
+};
+/**
+ * Create radio buttons or groups of buttons.
+ * A value of a selected button is bound to a variable specified via ngModel.
+ */
+class ButtonRadioDirective {
+    constructor(el, cdr, renderer, group) {
+        this.el = el;
+        this.cdr = cdr;
+        this.renderer = renderer;
+        this.group = group;
+        this.onChange = Function.prototype;
+        this.onTouched = Function.prototype;
+        /** If `true` — radio button can be unchecked */
+        this.uncheckable = false;
+        this.role = 'radio';
+        this._disabled = false;
+        this._hasFocus = false;
+    }
+    /** Current value of radio component or group */
+    get value() {
+        return this.group ? this.group.value : this._value;
+    }
+    set value(value) {
+        if (this.group) {
+            this.group.value = value;
+            return;
+        }
+        this._value = value;
+        this._onChange(value);
+    }
+    /** If `true` — radio button is disabled */
+    get disabled() {
+        return this._disabled;
+    }
+    set disabled(disabled) {
+        this.setDisabledState(disabled);
+    }
+    get controlOrGroupDisabled() {
+        return this.disabled || (this.group && this.group.disabled) ? true : undefined;
+    }
+    get hasDisabledClass() {
+        // Although the radio is disabled the active radio should still stand out.
+        // The disabled class will prevent this so don't add it on the active radio
+        return this.controlOrGroupDisabled && !this.isActive;
+    }
+    get isActive() {
+        return this.btnRadio === this.value;
+    }
+    get tabindex() {
+        if (this.controlOrGroupDisabled) {
+            // Disabled radio buttons should not receive focus
+            return undefined;
+        }
+        else if (this.isActive || this.group == null) {
+            return 0;
+        }
+        else {
+            return -1;
+        }
+    }
+    get hasFocus() {
+        return this._hasFocus;
+    }
+    toggleIfAllowed() {
+        if (!this.canToggle()) {
+            return;
+        }
+        if (this.uncheckable && this.btnRadio === this.value) {
+            this.value = undefined;
+        }
+        else {
+            this.value = this.btnRadio;
+        }
+    }
+    onSpacePressed(event) {
+        this.toggleIfAllowed();
+        event.preventDefault();
+    }
+    focus() {
+        this.el.nativeElement.focus();
+    }
+    onFocus() {
+        this._hasFocus = true;
+    }
+    onBlur() {
+        this._hasFocus = false;
+        this.onTouched();
+    }
+    canToggle() {
+        return !this.controlOrGroupDisabled && (this.uncheckable || this.btnRadio !== this.value);
+    }
+    ngOnChanges(changes) {
+        if ('uncheckable' in changes) {
+            this.uncheckable = this.uncheckable !== false && typeof this.uncheckable !== 'undefined';
+        }
+    }
+    _onChange(value) {
+        if (this.group) {
+            this.group.value = value;
+            return;
+        }
+        this.onTouched();
+        this.onChange(value);
+    }
+    // ControlValueAccessor
+    // model -> view
+    writeValue(value) {
+        this.value = value;
+        this.cdr.markForCheck();
+    }
+    registerOnChange(fn) {
+        this.onChange = fn;
+    }
+    registerOnTouched(fn) {
+        this.onTouched = fn;
+    }
+    setDisabledState(disabled) {
+        this._disabled = disabled;
+        if (disabled) {
+            this.renderer.setAttribute(this.el.nativeElement, 'disabled', 'disabled');
+            return;
+        }
+        this.renderer.removeAttribute(this.el.nativeElement, 'disabled');
+    }
+}
+ButtonRadioDirective.ɵfac = function ButtonRadioDirective_Factory(t) { return new (t || ButtonRadioDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"]((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => ButtonRadioGroupDirective), 8)); };
+ButtonRadioDirective.ɵdir = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: ButtonRadioDirective, selectors: [["", "btnRadio", ""]], hostVars: 8, hostBindings: function ButtonRadioDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function ButtonRadioDirective_click_HostBindingHandler() { return ctx.toggleIfAllowed(); })("keydown.space", function ButtonRadioDirective_keydown_space_HostBindingHandler($event) { return ctx.onSpacePressed($event); })("focus", function ButtonRadioDirective_focus_HostBindingHandler() { return ctx.onFocus(); })("blur", function ButtonRadioDirective_blur_HostBindingHandler() { return ctx.onBlur(); });
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("role", ctx.role)("aria-disabled", ctx.controlOrGroupDisabled)("aria-checked", ctx.isActive)("tabindex", ctx.tabindex);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("disabled", ctx.hasDisabledClass)("active", ctx.isActive);
+    } }, inputs: { uncheckable: "uncheckable", value: "value", disabled: "disabled", btnRadio: "btnRadio" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([RADIO_CONTROL_VALUE_ACCESSOR]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]] });
+ButtonRadioDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Renderer2 },
+    { type: ButtonRadioGroupDirective, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Optional }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Inject, args: [(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => ButtonRadioGroupDirective),] }] }
+];
+ButtonRadioDirective.propDecorators = {
+    btnRadio: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input }],
+    uncheckable: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input }],
+    value: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input }],
+    disabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input }],
+    controlOrGroupDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['attr.aria-disabled',] }],
+    hasDisabledClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['class.disabled',] }],
+    isActive: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['class.active',] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['attr.aria-checked',] }],
+    role: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['attr.role',] }],
+    tabindex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['attr.tabindex',] }],
+    toggleIfAllowed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['click',] }],
+    onSpacePressed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['keydown.space', ['$event'],] }],
+    onFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['focus',] }],
+    onBlur: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['blur',] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](ButtonRadioDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Directive,
+        args: [{
+                selector: '[btnRadio]',
+                providers: [RADIO_CONTROL_VALUE_ACCESSOR]
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Renderer2 }, { type: ButtonRadioGroupDirective, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Optional
+            }, {
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Inject,
+                args: [(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => ButtonRadioGroupDirective)]
+            }] }]; }, { uncheckable: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }], role: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['attr.role']
+        }], value: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }], disabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }], controlOrGroupDisabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['attr.aria-disabled']
+        }], hasDisabledClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['class.disabled']
+        }], isActive: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['class.active']
+        }, {
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['attr.aria-checked']
+        }], tabindex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['attr.tabindex']
+        }], toggleIfAllowed: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['click']
+        }], onSpacePressed: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['keydown.space', ['$event']]
+        }], onFocus: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['focus']
+        }], onBlur: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['blur']
+        }], btnRadio: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }] }); })();
+
+const RADIO_CONTROL_VALUE_ACCESSOR$1 = {
+    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_0__.NG_VALUE_ACCESSOR,
+    useExisting: (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => ButtonRadioGroupDirective),
+    multi: true
+};
+/**
+ * A group of radio buttons.
+ * A value of a selected button is bound to a variable specified via ngModel.
+ */
+class ButtonRadioGroupDirective {
+    constructor(cdr) {
+        this.cdr = cdr;
+        this.onChange = Function.prototype;
+        this.onTouched = Function.prototype;
+        this.role = 'radiogroup';
+        this._disabled = false;
+    }
+    get value() {
+        return this._value;
+    }
+    set value(value) {
+        this._value = value;
+        this.onChange(value);
+    }
+    get disabled() {
+        return this._disabled;
+    }
+    get tabindex() {
+        if (this._disabled) {
+            return null;
+        }
+        else {
+            return 0;
+        }
+    }
+    writeValue(value) {
+        this._value = value;
+        this.cdr.markForCheck();
+    }
+    registerOnChange(fn) {
+        this.onChange = fn;
+    }
+    registerOnTouched(fn) {
+        this.onTouched = fn;
+    }
+    setDisabledState(disabled) {
+        if (this.radioButtons) {
+            this._disabled = disabled;
+            this.radioButtons.forEach(buttons => {
+                buttons.setDisabledState(disabled);
+            });
+            this.cdr.markForCheck();
+        }
+    }
+    onFocus() {
+        if (this._disabled) {
+            return;
+        }
+        const activeRadio = this.getActiveOrFocusedRadio();
+        if (activeRadio) {
+            activeRadio.focus();
+            return;
+        }
+        if (this.radioButtons) {
+            const firstEnabled = this.radioButtons.find(r => !r.disabled);
+            if (firstEnabled) {
+                firstEnabled.focus();
+            }
+        }
+    }
+    onBlur() {
+        if (this.onTouched) {
+            this.onTouched();
+        }
+    }
+    selectNext(event) {
+        this.selectInDirection('next');
+        event.preventDefault();
+    }
+    selectPrevious(event) {
+        this.selectInDirection('previous');
+        event.preventDefault();
+    }
+    selectInDirection(direction) {
+        if (this._disabled) {
+            return;
+        }
+        function nextIndex(currentIndex, buttonRadioDirectives) {
+            const step = direction === 'next' ? 1 : -1;
+            let calcIndex = (currentIndex + step) % buttonRadioDirectives.length;
+            if (calcIndex < 0) {
+                calcIndex = buttonRadioDirectives.length - 1;
+            }
+            return calcIndex;
+        }
+        const activeRadio = this.getActiveOrFocusedRadio();
+        if (activeRadio && this.radioButtons) {
+            const buttonRadioDirectives = this.radioButtons.toArray();
+            const currentActiveIndex = buttonRadioDirectives.indexOf(activeRadio);
+            for (let i = nextIndex(currentActiveIndex, buttonRadioDirectives); i !== currentActiveIndex; i = nextIndex(i, buttonRadioDirectives)) {
+                if (buttonRadioDirectives[i].canToggle()) {
+                    buttonRadioDirectives[i].toggleIfAllowed();
+                    buttonRadioDirectives[i].focus();
+                    break;
+                }
+            }
+        }
+    }
+    getActiveOrFocusedRadio() {
+        if (!this.radioButtons) {
+            return void 0;
+        }
+        return this.radioButtons.find(button => button.isActive)
+            || this.radioButtons.find(button => button.hasFocus);
+    }
+}
+ButtonRadioGroupDirective.ɵfac = function ButtonRadioGroupDirective_Factory(t) { return new (t || ButtonRadioGroupDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef)); };
+ButtonRadioGroupDirective.ɵdir = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: ButtonRadioGroupDirective, selectors: [["", "btnRadioGroup", ""]], contentQueries: function ButtonRadioGroupDirective_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, ButtonRadioDirective, 4);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.radioButtons = _t);
+    } }, hostVars: 2, hostBindings: function ButtonRadioGroupDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("focus", function ButtonRadioGroupDirective_focus_HostBindingHandler() { return ctx.onFocus(); })("blur", function ButtonRadioGroupDirective_blur_HostBindingHandler() { return ctx.onBlur(); })("keydown.ArrowRight", function ButtonRadioGroupDirective_keydown_ArrowRight_HostBindingHandler($event) { return ctx.selectNext($event); })("keydown.ArrowDown", function ButtonRadioGroupDirective_keydown_ArrowDown_HostBindingHandler($event) { return ctx.selectNext($event); })("keydown.ArrowLeft", function ButtonRadioGroupDirective_keydown_ArrowLeft_HostBindingHandler($event) { return ctx.selectPrevious($event); })("keydown.ArrowUp", function ButtonRadioGroupDirective_keydown_ArrowUp_HostBindingHandler($event) { return ctx.selectPrevious($event); });
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("role", ctx.role)("tabindex", ctx.tabindex);
+    } }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([RADIO_CONTROL_VALUE_ACCESSOR$1])] });
+ButtonRadioGroupDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef }
+];
+ButtonRadioGroupDirective.propDecorators = {
+    role: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['attr.role',] }],
+    radioButtons: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ContentChildren, args: [(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => ButtonRadioDirective),] }],
+    tabindex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding, args: ['attr.tabindex',] }],
+    onFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['focus',] }],
+    onBlur: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['blur',] }],
+    selectNext: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['keydown.ArrowRight', ['$event'],] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['keydown.ArrowDown', ['$event'],] }],
+    selectPrevious: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['keydown.ArrowLeft', ['$event'],] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener, args: ['keydown.ArrowUp', ['$event'],] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](ButtonRadioGroupDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Directive,
+        args: [{
+                selector: '[btnRadioGroup]',
+                providers: [RADIO_CONTROL_VALUE_ACCESSOR$1]
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef }]; }, { role: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['attr.role']
+        }], tabindex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostBinding,
+            args: ['attr.tabindex']
+        }], onFocus: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['focus']
+        }], onBlur: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['blur']
+        }], selectNext: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['keydown.ArrowRight', ['$event']]
+        }, {
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['keydown.ArrowDown', ['$event']]
+        }], selectPrevious: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['keydown.ArrowLeft', ['$event']]
+        }, {
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.HostListener,
+            args: ['keydown.ArrowUp', ['$event']]
+        }], radioButtons: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ContentChildren,
+            args: [(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.forwardRef)(() => ButtonRadioDirective)]
+        }] }); })();
+
+class ButtonsModule {
+    static forRoot() {
+        return { ngModule: ButtonsModule, providers: [] };
+    }
+}
+ButtonsModule.ɵfac = function ButtonsModule_Factory(t) { return new (t || ButtonsModule)(); };
+ButtonsModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: ButtonsModule });
+ButtonsModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({});
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](ButtonsModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModule,
+        args: [{
+                declarations: [ButtonCheckboxDirective, ButtonRadioDirective, ButtonRadioGroupDirective],
+                exports: [ButtonCheckboxDirective, ButtonRadioDirective, ButtonRadioGroupDirective]
+            }]
+    }], null, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](ButtonsModule, { declarations: [ButtonCheckboxDirective, ButtonRadioDirective, ButtonRadioGroupDirective], exports: [ButtonCheckboxDirective, ButtonRadioDirective, ButtonRadioGroupDirective] }); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+
+/***/ }),
+
+/***/ 6303:
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/__ivy_ngcc__/component-loader/fesm2015/ngx-bootstrap-component-loader.js ***!
+  \*************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BsComponentRef": () => (/* binding */ BsComponentRef),
+/* harmony export */   "ComponentLoader": () => (/* binding */ ComponentLoader),
+/* harmony export */   "ComponentLoaderFactory": () => (/* binding */ ComponentLoaderFactory),
+/* harmony export */   "ContentRef": () => (/* binding */ ContentRef)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 4001);
+/* harmony import */ var ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-bootstrap/utils */ 7162);
+/* harmony import */ var ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-bootstrap/positioning */ 5044);
+
+
+
+
+
+
+class BsComponentRef {
+}
+
+/**
+ * @copyright Valor Software
+ * @copyright Angular ng-bootstrap team
+ */
+class ContentRef {
+    constructor(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    nodes, viewRef, 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    componentRef) {
+        this.nodes = nodes;
+        this.viewRef = viewRef;
+        this.componentRef = componentRef;
+    }
+}
+
+// todo: add delay support
+class ComponentLoader {
+    /**
+     * Do not use this directly, it should be instanced via
+     * `ComponentLoadFactory.attach`
+     * @internal
+     */
+    constructor(_viewContainerRef, _renderer, _elementRef, _injector, _componentFactoryResolver, _ngZone, _applicationRef, _posService) {
+        this._viewContainerRef = _viewContainerRef;
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this._injector = _injector;
+        this._componentFactoryResolver = _componentFactoryResolver;
+        this._ngZone = _ngZone;
+        this._applicationRef = _applicationRef;
+        this._posService = _posService;
+        this.onBeforeShow = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.onShown = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.onBeforeHide = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.onHidden = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this._providers = [];
+        this._isHiding = false;
+        /**
+         * A selector used if container element was not found
+         */
+        this.containerDefaultSelector = 'body';
+        this._listenOpts = {};
+        this._globalListener = Function.prototype;
+    }
+    get isShown() {
+        if (this._isHiding) {
+            return false;
+        }
+        return !!this._componentRef;
+    }
+    attach(compType) {
+        this._componentFactory = this._componentFactoryResolver
+            .resolveComponentFactory(compType);
+        return this;
+    }
+    // todo: add behaviour: to target element, `body`, custom element
+    to(container) {
+        this.container = container || this.container;
+        return this;
+    }
+    position(opts) {
+        if (!opts) {
+            return this;
+        }
+        this.attachment = opts.attachment || this.attachment;
+        this._elementRef = opts.target || this._elementRef;
+        return this;
+    }
+    provide(provider) {
+        this._providers.push(provider);
+        return this;
+    }
+    // todo: appendChild to element or document.querySelector(this.container)
+    show(opts = {}) {
+        this._subscribePositioning();
+        this._innerComponent = void 0;
+        if (!this._componentRef) {
+            this.onBeforeShow.emit();
+            this._contentRef = this._getContentRef(opts.content, opts.context, opts.initialState);
+            const injector = _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector.create({
+                providers: this._providers,
+                parent: this._injector
+            });
+            if (!this._componentFactory) {
+                return;
+            }
+            this._componentRef = this._componentFactory.create(injector, this._contentRef.nodes);
+            this._applicationRef.attachView(this._componentRef.hostView);
+            // this._componentRef = this._viewContainerRef
+            //   .createComponent(this._componentFactory, 0, injector, this._contentRef.nodes);
+            this.instance = this._componentRef.instance;
+            Object.assign(this._componentRef.instance, opts);
+            if (this.container instanceof _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef) {
+                this.container.nativeElement.appendChild(this._componentRef.location.nativeElement);
+            }
+            if (typeof this.container === 'string' && typeof document !== 'undefined') {
+                const selectedElement = document.querySelector(this.container) ||
+                    document.querySelector(this.containerDefaultSelector);
+                if (!selectedElement) {
+                    return;
+                }
+                selectedElement.appendChild(this._componentRef.location.nativeElement);
+            }
+            if (!this.container &&
+                this._elementRef &&
+                this._elementRef.nativeElement.parentElement) {
+                this._elementRef.nativeElement.parentElement.appendChild(this._componentRef.location.nativeElement);
+            }
+            // we need to manually invoke change detection since events registered
+            // via
+            // Renderer::listen() are not picked up by change detection with the
+            // OnPush strategy
+            if (this._contentRef.componentRef) {
+                this._innerComponent = this._contentRef.componentRef.instance;
+                this._contentRef.componentRef.changeDetectorRef.markForCheck();
+                this._contentRef.componentRef.changeDetectorRef.detectChanges();
+            }
+            this._componentRef.changeDetectorRef.markForCheck();
+            this._componentRef.changeDetectorRef.detectChanges();
+            this.onShown.emit(opts.id ? { id: opts.id } : this._componentRef.instance);
+        }
+        this._registerOutsideClick();
+        return this._componentRef;
+    }
+    hide(id) {
+        var _a, _b, _c;
+        if (!this._componentRef) {
+            return this;
+        }
+        this._posService.deletePositionElement(this._componentRef.location);
+        this.onBeforeHide.emit(this._componentRef.instance);
+        const componentEl = this._componentRef.location.nativeElement;
+        componentEl.parentNode.removeChild(componentEl);
+        if ((_a = this._contentRef) === null || _a === void 0 ? void 0 : _a.componentRef) {
+            this._contentRef.componentRef.destroy();
+        }
+        if (this._viewContainerRef && ((_b = this._contentRef) === null || _b === void 0 ? void 0 : _b.viewRef)) {
+            this._viewContainerRef.remove(this._viewContainerRef.indexOf(this._contentRef.viewRef));
+        }
+        if ((_c = this._contentRef) === null || _c === void 0 ? void 0 : _c.viewRef) {
+            this._contentRef.viewRef.destroy();
+        }
+        this._contentRef = void 0;
+        this._componentRef = void 0;
+        this._removeGlobalListener();
+        this.onHidden.emit(id ? { id } : null);
+        return this;
+    }
+    toggle() {
+        if (this.isShown) {
+            this.hide();
+            return;
+        }
+        this.show();
+    }
+    dispose() {
+        if (this.isShown) {
+            this.hide();
+        }
+        this._unsubscribePositioning();
+        if (this._unregisterListenersFn) {
+            this._unregisterListenersFn();
+        }
+    }
+    listen(listenOpts) {
+        var _a;
+        this.triggers = listenOpts.triggers || this.triggers;
+        this._listenOpts.outsideClick = listenOpts.outsideClick;
+        this._listenOpts.outsideEsc = listenOpts.outsideEsc;
+        listenOpts.target = listenOpts.target || ((_a = this._elementRef) === null || _a === void 0 ? void 0 : _a.nativeElement);
+        const hide = (this._listenOpts.hide = () => listenOpts.hide ? listenOpts.hide() : void this.hide());
+        const show = (this._listenOpts.show = (registerHide) => {
+            listenOpts.show ? listenOpts.show(registerHide) : this.show(registerHide);
+            registerHide();
+        });
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const toggle = (registerHide) => {
+            this.isShown ? hide() : show(registerHide);
+        };
+        if (this._renderer) {
+            this._unregisterListenersFn = (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.listenToTriggersV2)(this._renderer, {
+                target: listenOpts.target,
+                triggers: listenOpts.triggers,
+                show,
+                hide,
+                toggle
+            });
+        }
+        return this;
+    }
+    _removeGlobalListener() {
+        if (this._globalListener) {
+            this._globalListener();
+            this._globalListener = Function.prototype;
+        }
+    }
+    attachInline(vRef, 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    template) {
+        if (vRef && template) {
+            this._inlineViewRef = vRef.createEmbeddedView(template);
+        }
+        return this;
+    }
+    _registerOutsideClick() {
+        if (!this._componentRef || !this._componentRef.location) {
+            return;
+        }
+        // why: should run after first event bubble
+        if (this._listenOpts.outsideClick) {
+            const target = this._componentRef.location.nativeElement;
+            setTimeout(() => {
+                if (this._renderer && this._elementRef) {
+                    this._globalListener = (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.registerOutsideClick)(this._renderer, {
+                        targets: [target, this._elementRef.nativeElement],
+                        outsideClick: this._listenOpts.outsideClick,
+                        hide: () => this._listenOpts.hide && this._listenOpts.hide()
+                    });
+                }
+            });
+        }
+        if (this._listenOpts.outsideEsc && this._renderer && this._elementRef) {
+            const target = this._componentRef.location.nativeElement;
+            this._globalListener = (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.registerEscClick)(this._renderer, {
+                targets: [target, this._elementRef.nativeElement],
+                outsideEsc: this._listenOpts.outsideEsc,
+                hide: () => this._listenOpts.hide && this._listenOpts.hide()
+            });
+        }
+    }
+    getInnerComponent() {
+        return this._innerComponent;
+    }
+    _subscribePositioning() {
+        if (this._zoneSubscription || !this.attachment) {
+            return;
+        }
+        this.onShown.subscribe(() => {
+            var _a;
+            this._posService.position({
+                element: (_a = this._componentRef) === null || _a === void 0 ? void 0 : _a.location,
+                target: this._elementRef,
+                attachment: this.attachment,
+                appendToBody: this.container === 'body'
+            });
+        });
+        this._zoneSubscription = this._ngZone.onStable.subscribe(() => {
+            if (!this._componentRef) {
+                return;
+            }
+            this._posService.calcPosition();
+        });
+    }
+    _unsubscribePositioning() {
+        if (!this._zoneSubscription) {
+            return;
+        }
+        this._zoneSubscription.unsubscribe();
+        this._zoneSubscription = void 0;
+    }
+    _getContentRef(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    content, 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    context, 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    initialState) {
+        if (!content) {
+            return new ContentRef([]);
+        }
+        if (content instanceof _angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef) {
+            if (this._viewContainerRef) {
+                const _viewRef = this._viewContainerRef
+                    .createEmbeddedView(content, context);
+                _viewRef.markForCheck();
+                return new ContentRef([_viewRef.rootNodes], _viewRef);
+            }
+            const viewRef = content.createEmbeddedView({});
+            this._applicationRef.attachView(viewRef);
+            return new ContentRef([viewRef.rootNodes], viewRef);
+        }
+        if (typeof content === 'function') {
+            const contentCmptFactory = this._componentFactoryResolver.resolveComponentFactory(content);
+            const modalContentInjector = _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector.create({
+                providers: this._providers,
+                parent: this._injector
+            });
+            const componentRef = contentCmptFactory.create(modalContentInjector);
+            Object.assign(componentRef.instance, initialState);
+            this._applicationRef.attachView(componentRef.hostView);
+            return new ContentRef([[componentRef.location.nativeElement]], componentRef.hostView, componentRef);
+        }
+        const nodes = this._renderer
+            ? [this._renderer.createText(`${content}`)]
+            : [];
+        return new ContentRef([nodes]);
+    }
+}
+
+class ComponentLoaderFactory {
+    constructor(_componentFactoryResolver, _ngZone, _injector, _posService, _applicationRef) {
+        this._componentFactoryResolver = _componentFactoryResolver;
+        this._ngZone = _ngZone;
+        this._injector = _injector;
+        this._posService = _posService;
+        this._applicationRef = _applicationRef;
+    }
+    /**
+     *
+     * @param _elementRef
+     * @param _viewContainerRef
+     * @param _renderer
+     */
+    createLoader(_elementRef, _viewContainerRef, _renderer) {
+        return new ComponentLoader(_viewContainerRef, _renderer, _elementRef, this._injector, this._componentFactoryResolver, this._ngZone, this._applicationRef, this._posService);
+    }
+}
+ComponentLoaderFactory.ɵfac = function ComponentLoaderFactory_Factory(t) { return new (t || ComponentLoaderFactory)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef)); };
+ComponentLoaderFactory.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function ComponentLoaderFactory_Factory() { return new ComponentLoaderFactory((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver), (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__.INJECTOR), (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService), (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef)); }, token: ComponentLoaderFactory, providedIn: "root" });
+ComponentLoaderFactory.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector },
+    { type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ComponentLoaderFactory, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+        args: [{ providedIn: 'root' }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector }, { type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef }]; }, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+
+/***/ }),
+
+/***/ 9659:
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/__ivy_ngcc__/focus-trap/fesm2015/ngx-bootstrap-focus-trap.js ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FocusTrap": () => (/* binding */ FocusTrap),
+/* harmony export */   "FocusTrapDirective": () => (/* binding */ FocusTrapDirective),
+/* harmony export */   "FocusTrapModule": () => (/* binding */ FocusTrapModule),
+/* harmony export */   "ɵa": () => (/* binding */ FocusTrapFactory),
+/* harmony export */   "ɵb": () => (/* binding */ InteractivityChecker),
+/* harmony export */   "ɵc": () => (/* binding */ Platform),
+/* harmony export */   "ɵd": () => (/* binding */ FocusTrapManager)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 4001);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 8267);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ 8454);
+
+
+
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/** Injectable that ensures only the most recently enabled FocusTrap is active. */
+
+class FocusTrapManager {
+    constructor() {
+        // A stack of the FocusTraps on the page. Only the FocusTrap at the
+        // top of the stack is active.
+        this._focusTrapStack = [];
+    }
+    /**
+     * Disables the FocusTrap at the top of the stack, and then pushes
+     * the new FocusTrap onto the stack.
+     */
+    register(focusTrap) {
+        // Dedupe focusTraps that register multiple times.
+        this._focusTrapStack = this._focusTrapStack.filter((ft) => ft !== focusTrap);
+        let stack = this._focusTrapStack;
+        if (stack.length) {
+            stack[stack.length - 1]._disable();
+        }
+        stack.push(focusTrap);
+        focusTrap._enable();
+    }
+    /**
+     * Removes the FocusTrap from the stack, and activates the
+     * FocusTrap that is the new top of the stack.
+     */
+    deregister(focusTrap) {
+        focusTrap._disable();
+        const stack = this._focusTrapStack;
+        const i = stack.indexOf(focusTrap);
+        if (i !== -1) {
+            stack.splice(i, 1);
+            if (stack.length) {
+                stack[stack.length - 1]._enable();
+            }
+        }
+    }
+}
+FocusTrapManager.ɵfac = function FocusTrapManager_Factory(t) { return new (t || FocusTrapManager)(); };
+FocusTrapManager.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function FocusTrapManager_Factory() { return new FocusTrapManager(); }, token: FocusTrapManager, providedIn: "root" });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FocusTrapManager, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+        args: [{ providedIn: 'root' }]
+    }], function () { return []; }, null); })();
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+// Whether the current platform supports the V8 Break Iterator. The V8 check
+// is necessary to detect all Blink based browsers.
+let hasV8BreakIterator;
+// We need a try/catch around the reference to `Intl`, because accessing it in some cases can
+// cause IE to throw. These cases are tied to particular versions of Windows and can happen if
+// the consumer is providing a polyfilled `Map`. See:
+// https://github.com/Microsoft/ChakraCore/issues/3189
+// https://github.com/angular/components/issues/15687
+try {
+    hasV8BreakIterator = (typeof Intl !== 'undefined' && Intl.v8BreakIterator);
+}
+catch (_a) {
+    hasV8BreakIterator = false;
+}
+/**
+ * Service to detect the current platform by comparing the userAgent strings and
+ * checking browser-specific global properties.
+ */
+class Platform {
+    constructor(_platformId) {
+        this._platformId = _platformId;
+        // We want to use the Angular platform check because if the Document is shimmed
+        // without the navigator, the following checks will fail. This is preferred because
+        // sometimes the Document may be shimmed without the user's knowledge or intention
+        /** Whether the Angular application is being rendered in the browser. */
+        this.isBrowser = this._platformId ?
+            (0,_angular_common__WEBPACK_IMPORTED_MODULE_1__.isPlatformBrowser)(this._platformId) : typeof document === 'object' && !!document;
+        /** Whether the current browser is Microsoft Edge. */
+        this.EDGE = this.isBrowser && /(edge)/i.test(navigator.userAgent);
+        /** Whether the current rendering engine is Microsoft Trident. */
+        this.TRIDENT = this.isBrowser && /(msie|trident)/i.test(navigator.userAgent);
+        // EdgeHTML and Trident mock Blink specific things and need to be excluded from this check.
+        /** Whether the current rendering engine is Blink. */
+        this.BLINK = this.isBrowser && (!!(window.chrome || hasV8BreakIterator) &&
+            typeof CSS !== 'undefined' && !this.EDGE && !this.TRIDENT);
+        // Webkit is part of the userAgent in EdgeHTML, Blink and Trident. Therefore we need to
+        // ensure that Webkit runs standalone and is not used as another engine's base.
+        /** Whether the current rendering engine is WebKit. */
+        this.WEBKIT = this.isBrowser &&
+            /AppleWebKit/i.test(navigator.userAgent) && !this.BLINK && !this.EDGE && !this.TRIDENT;
+        /** Whether the current platform is Apple iOS. */
+        this.IOS = this.isBrowser && /iPad|iPhone|iPod/.test(navigator.userAgent) &&
+            !('MSStream' in window);
+        // It's difficult to detect the plain Gecko engine, because most of the browsers identify
+        // them self as Gecko-like browsers and modify the userAgent's according to that.
+        // Since we only cover one explicit Firefox case, we can simply check for Firefox
+        // instead of having an unstable check for Gecko.
+        /** Whether the current browser is Firefox. */
+        this.FIREFOX = this.isBrowser && /(firefox|minefield)/i.test(navigator.userAgent);
+        /** Whether the current platform is Android. */
+        // Trident on mobile adds the android platform to the userAgent to trick detections.
+        this.ANDROID = this.isBrowser && /android/i.test(navigator.userAgent) && !this.TRIDENT;
+        // Safari browsers will include the Safari keyword in their userAgent. Some browsers may fake
+        // this and just place the Safari keyword in the userAgent. To be more safe about Safari every
+        // Safari browser should also use Webkit as its layout engine.
+        /** Whether the current browser is Safari. */
+        this.SAFARI = this.isBrowser && /safari/i.test(navigator.userAgent) && this.WEBKIT;
+    }
+}
+Platform.ɵfac = function Platform_Factory(t) { return new (t || Platform)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.PLATFORM_ID)); };
+Platform.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function Platform_Factory() { return new Platform((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__.PLATFORM_ID)); }, token: Platform, providedIn: "root" });
+Platform.ctorParameters = () => [
+    { type: Object, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject, args: [_angular_core__WEBPACK_IMPORTED_MODULE_0__.PLATFORM_ID,] }] }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](Platform, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+        args: [{ providedIn: 'root' }]
+    }], function () { return [{ type: Object, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+                args: [_angular_core__WEBPACK_IMPORTED_MODULE_0__.PLATFORM_ID]
+            }] }]; }, null); })();
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Configuration for the isFocusable method.
+ */
+class IsFocusableConfig {
+    constructor() {
+        /**
+         * Whether to count an element as focusable even if it is not currently visible.
+         */
+        this.ignoreVisibility = false;
+    }
+}
+// The InteractivityChecker leans heavily on the ally.js accessibility utilities.
+// Methods like `isTabbable` are only covering specific edge-cases for the browsers which are
+// supported.
+/**
+ * Utility for checking the interactivity of an element, such as whether is is focusable or
+ * tabbable.
+ */
+class InteractivityChecker {
+    constructor(_platform) {
+        this._platform = _platform;
+    }
+    /**
+     * Gets whether an element is disabled.
+     *
+     * @param element Element to be checked.
+     * @returns Whether the element is disabled.
+     */
+    isDisabled(element) {
+        // This does not capture some cases, such as a non-form control with a disabled attribute or
+        // a form control inside of a disabled form, but should capture the most common cases.
+        return element.hasAttribute('disabled');
+    }
+    /**
+     * Gets whether an element is visible for the purposes of interactivity.
+     *
+     * This will capture states like `display: none` and `visibility: hidden`, but not things like
+     * being clipped by an `overflow: hidden` parent or being outside the viewport.
+     *
+     * @returns Whether the element is visible.
+     */
+    isVisible(element) {
+        return hasGeometry(element) && getComputedStyle(element).visibility === 'visible';
+    }
+    /**
+     * Gets whether an element can be reached via Tab key.
+     * Assumes that the element has already been checked with isFocusable.
+     *
+     * @param element Element to be checked.
+     * @returns Whether the element is tabbable.
+     */
+    isTabbable(element) {
+        // Nothing is tabbable on the server 😎
+        if (!this._platform.isBrowser) {
+            return false;
+        }
+        const frameElement = getFrameElement(getWindow(element));
+        if (frameElement) {
+            // Frame elements inherit their tabindex onto all child elements.
+            if (getTabIndexValue(frameElement) === -1) {
+                return false;
+            }
+            // Browsers disable tabbing to an element inside of an invisible frame.
+            if (!this.isVisible(frameElement)) {
+                return false;
+            }
+        }
+        let nodeName = element.nodeName.toLowerCase();
+        let tabIndexValue = getTabIndexValue(element);
+        if (element.hasAttribute('contenteditable')) {
+            return tabIndexValue !== -1;
+        }
+        if (nodeName === 'iframe' || nodeName === 'object') {
+            // The frame or object's content may be tabbable depending on the content, but it's
+            // not possibly to reliably detect the content of the frames. We always consider such
+            // elements as non-tabbable.
+            return false;
+        }
+        // In iOS, the browser only considers some specific elements as tabbable.
+        if (this._platform.WEBKIT && this._platform.IOS && !isPotentiallyTabbableIOS(element)) {
+            return false;
+        }
+        if (nodeName === 'audio') {
+            // Audio elements without controls enabled are never tabbable, regardless
+            // of the tabindex attribute explicitly being set.
+            if (!element.hasAttribute('controls')) {
+                return false;
+            }
+            // Audio elements with controls are by default tabbable unless the
+            // tabindex attribute is set to `-1` explicitly.
+            return tabIndexValue !== -1;
+        }
+        if (nodeName === 'video') {
+            // For all video elements, if the tabindex attribute is set to `-1`, the video
+            // is not tabbable. Note: We cannot rely on the default `HTMLElement.tabIndex`
+            // property as that one is set to `-1` in Chrome, Edge and Safari v13.1. The
+            // tabindex attribute is the source of truth here.
+            if (tabIndexValue === -1) {
+                return false;
+            }
+            // If the tabindex is explicitly set, and not `-1` (as per check before), the
+            // video element is always tabbable (regardless of whether it has controls or not).
+            if (tabIndexValue !== null) {
+                return true;
+            }
+            // Otherwise (when no explicit tabindex is set), a video is only tabbable if it
+            // has controls enabled. Firefox is special as videos are always tabbable regardless
+            // of whether there are controls or not.
+            return this._platform.FIREFOX || element.hasAttribute('controls');
+        }
+        return element.tabIndex >= 0;
+    }
+    /**
+     * Gets whether an element can be focused by the user.
+     *
+     * @param element Element to be checked.
+     * @param config The config object with options to customize this method's behavior
+     * @returns Whether the element is focusable.
+     */
+    isFocusable(element, config) {
+        // Perform checks in order of left to most expensive.
+        // Again, naive approach that does not capture many edge cases and browser quirks.
+        return isPotentiallyFocusable(element) && !this.isDisabled(element) &&
+            ((config === null || config === void 0 ? void 0 : config.ignoreVisibility) || this.isVisible(element));
+    }
+}
+InteractivityChecker.ɵfac = function InteractivityChecker_Factory(t) { return new (t || InteractivityChecker)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](Platform)); };
+InteractivityChecker.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function InteractivityChecker_Factory() { return new InteractivityChecker((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(Platform)); }, token: InteractivityChecker, providedIn: "root" });
+InteractivityChecker.ctorParameters = () => [
+    { type: Platform }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](InteractivityChecker, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+        args: [{ providedIn: 'root' }]
+    }], function () { return [{ type: Platform }]; }, null); })();
+/**
+ * Returns the frame element from a window object. Since browsers like MS Edge throw errors if
+ * the frameElement property is being accessed from a different host address, this property
+ * should be accessed carefully.
+ */
+function getFrameElement(window) {
+    try {
+        return window.frameElement;
+    }
+    catch (_a) {
+        return null;
+    }
+}
+/** Checks whether the specified element has any geometry / rectangles. */
+function hasGeometry(element) {
+    // Use logic from jQuery to check for an invisible element.
+    // See https://github.com/jquery/jquery/blob/master/src/css/hiddenVisibleSelectors.js#L12
+    return !!(element.offsetWidth || element.offsetHeight ||
+        (typeof element.getClientRects === 'function' && element.getClientRects().length));
+}
+/** Gets whether an element's  */
+function isNativeFormElement(element) {
+    let nodeName = element.nodeName.toLowerCase();
+    return nodeName === 'input' ||
+        nodeName === 'select' ||
+        nodeName === 'button' ||
+        nodeName === 'textarea';
+}
+/** Gets whether an element is an `<input type="hidden">`. */
+function isHiddenInput(element) {
+    return isInputElement(element) && element.type == 'hidden';
+}
+/** Gets whether an element is an anchor that has an href attribute. */
+function isAnchorWithHref(element) {
+    return isAnchorElement(element) && element.hasAttribute('href');
+}
+/** Gets whether an element is an input element. */
+function isInputElement(element) {
+    return element.nodeName.toLowerCase() == 'input';
+}
+/** Gets whether an element is an anchor element. */
+function isAnchorElement(element) {
+    return element.nodeName.toLowerCase() == 'a';
+}
+/** Gets whether an element has a valid tabindex. */
+function hasValidTabIndex(element) {
+    if (!element.hasAttribute('tabindex') || element.tabIndex === undefined) {
+        return false;
+    }
+    let tabIndex = element.getAttribute('tabindex');
+    // IE11 parses tabindex="" as the value "-32768"
+    if (tabIndex == '-32768') {
+        return false;
+    }
+    return !!(tabIndex && !isNaN(parseInt(tabIndex, 10)));
+}
+/**
+ * Returns the parsed tabindex from the element attributes instead of returning the
+ * evaluated tabindex from the browsers defaults.
+ */
+function getTabIndexValue(element) {
+    if (!hasValidTabIndex(element)) {
+        return null;
+    }
+    // See browser issue in Gecko https://bugzilla.mozilla.org/show_bug.cgi?id=1128054
+    const tabIndex = parseInt(element.getAttribute('tabindex') || '', 10);
+    return isNaN(tabIndex) ? -1 : tabIndex;
+}
+/** Checks whether the specified element is potentially tabbable on iOS */
+function isPotentiallyTabbableIOS(element) {
+    let nodeName = element.nodeName.toLowerCase();
+    let inputType = nodeName === 'input' && element.type;
+    return inputType === 'text'
+        || inputType === 'password'
+        || nodeName === 'select'
+        || nodeName === 'textarea';
+}
+/**
+ * Gets whether an element is potentially focusable without taking current visible/disabled state
+ * into account.
+ */
+function isPotentiallyFocusable(element) {
+    // Inputs are potentially focusable *unless* they're type="hidden".
+    if (isHiddenInput(element)) {
+        return false;
+    }
+    return isNativeFormElement(element) ||
+        isAnchorWithHref(element) ||
+        element.hasAttribute('contenteditable') ||
+        hasValidTabIndex(element);
+}
+/** Gets the parent window of a DOM node with regards of being inside of an iframe. */
+function getWindow(node) {
+    // ownerDocument is null if `node` itself *is* a document.
+    return node.ownerDocument && node.ownerDocument.defaultView || window;
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/** Coerces a data-bound value (typically a string) to a boolean. */
+function coerceBooleanProperty(value) {
+    return value != null && `${value}` !== 'false';
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Class that allows for trapping focus within a DOM element.
+ *
+ * This class currently uses a relatively simple approach to focus trapping.
+ * It assumes that the tab order is the same as DOM order, which is not necessarily true.
+ * Things like `tabIndex > 0`, flex `order`, and shadow roots can cause the two to misalign.
+ *
+ * @deprecated Use `ConfigurableFocusTrap` instead.
+ * @breaking-change for 11.0.0 Remove this class.
+ */
+class FocusTrap {
+    constructor(_element, _checker, _ngZone, _document, deferAnchors = false) {
+        this._element = _element;
+        this._checker = _checker;
+        this._ngZone = _ngZone;
+        this._document = _document;
+        this._hasAttached = false;
+        // Event listeners for the anchors. Need to be regular functions so that we can unbind them later.
+        this.startAnchorListener = () => this.focusLastTabbableElement();
+        this.endAnchorListener = () => this.focusFirstTabbableElement();
+        this._enabled = true;
+        if (!deferAnchors) {
+            this.attachAnchors();
+        }
+    }
+    /** Whether the focus trap is active. */
+    get enabled() {
+        return this._enabled;
+    }
+    set enabled(value) {
+        this._enabled = value;
+        if (this._startAnchor && this._endAnchor) {
+            this._toggleAnchorTabIndex(value, this._startAnchor);
+            this._toggleAnchorTabIndex(value, this._endAnchor);
+        }
+    }
+    /** Destroys the focus trap by cleaning up the anchors. */
+    destroy() {
+        const startAnchor = this._startAnchor;
+        const endAnchor = this._endAnchor;
+        if (startAnchor) {
+            startAnchor.removeEventListener('focus', this.startAnchorListener);
+            if (startAnchor.parentNode) {
+                startAnchor.parentNode.removeChild(startAnchor);
+            }
+        }
+        if (endAnchor) {
+            endAnchor.removeEventListener('focus', this.endAnchorListener);
+            if (endAnchor.parentNode) {
+                endAnchor.parentNode.removeChild(endAnchor);
+            }
+        }
+        this._startAnchor = this._endAnchor = null;
+        this._hasAttached = false;
+    }
+    /**
+     * Inserts the anchors into the DOM. This is usually done automatically
+     * in the constructor, but can be deferred for cases like directives with `*ngIf`.
+     * @returns Whether the focus trap managed to attach successfuly. This may not be the case
+     * if the target element isn't currently in the DOM.
+     */
+    attachAnchors() {
+        // If we're not on the browser, there can be no focus to trap.
+        if (this._hasAttached) {
+            return true;
+        }
+        this._ngZone.runOutsideAngular(() => {
+            if (!this._startAnchor) {
+                this._startAnchor = this._createAnchor();
+                this._startAnchor.addEventListener('focus', this.startAnchorListener);
+            }
+            if (!this._endAnchor) {
+                this._endAnchor = this._createAnchor();
+                this._endAnchor.addEventListener('focus', this.endAnchorListener);
+            }
+        });
+        if (this._element.parentNode) {
+            this._element.parentNode.insertBefore(this._startAnchor, this._element);
+            this._element.parentNode.insertBefore(this._endAnchor, this._element.nextSibling);
+            this._hasAttached = true;
+        }
+        return this._hasAttached;
+    }
+    /**
+     * Waits for the zone to stabilize, then either focuses the first element that the
+     * user specified, or the first tabbable element.
+     * @returns Returns a promise that resolves with a boolean, depending
+     * on whether focus was moved successfully.
+     */
+    focusInitialElementWhenReady() {
+        return new Promise(resolve => {
+            this._executeOnStable(() => resolve(this.focusInitialElement()));
+        });
+    }
+    /**
+     * Waits for the zone to stabilize, then focuses
+     * the first tabbable element within the focus trap region.
+     * @returns Returns a promise that resolves with a boolean, depending
+     * on whether focus was moved successfully.
+     */
+    focusFirstTabbableElementWhenReady() {
+        return new Promise(resolve => {
+            this._executeOnStable(() => resolve(this.focusFirstTabbableElement()));
+        });
+    }
+    /**
+     * Waits for the zone to stabilize, then focuses
+     * the last tabbable element within the focus trap region.
+     * @returns Returns a promise that resolves with a boolean, depending
+     * on whether focus was moved successfully.
+     */
+    focusLastTabbableElementWhenReady() {
+        return new Promise(resolve => {
+            this._executeOnStable(() => resolve(this.focusLastTabbableElement()));
+        });
+    }
+    /**
+     * Get the specified boundary element of the trapped region.
+     * @param bound The boundary to get (start or end of trapped region).
+     * @returns The boundary element.
+     */
+    _getRegionBoundary(bound) {
+        // Contains the deprecated version of selector, for temporary backwards comparability.
+        let markers = this._element.querySelectorAll(`[cdk-focus-region-${bound}], ` +
+            `[cdkFocusRegion${bound}], ` +
+            `[cdk-focus-${bound}]`);
+        for (let i = 0; i < markers.length; i++) {
+            // @breaking-change 8.0.0
+            if (markers[i].hasAttribute(`cdk-focus-${bound}`)) {
+                console.warn(`Found use of deprecated attribute 'cdk-focus-${bound}', ` +
+                    `use 'cdkFocusRegion${bound}' instead. The deprecated ` +
+                    `attribute will be removed in 8.0.0.`, markers[i]);
+            }
+            else if (markers[i].hasAttribute(`cdk-focus-region-${bound}`)) {
+                console.warn(`Found use of deprecated attribute 'cdk-focus-region-${bound}', ` +
+                    `use 'cdkFocusRegion${bound}' instead. The deprecated attribute ` +
+                    `will be removed in 8.0.0.`, markers[i]);
+            }
+        }
+        if (bound == 'start') {
+            return markers.length ? markers[0] : this._getFirstTabbableElement(this._element);
+        }
+        return markers.length ?
+            markers[markers.length - 1] : this._getLastTabbableElement(this._element);
+    }
+    /**
+     * Focuses the element that should be focused when the focus trap is initialized.
+     * @returns Whether focus was moved successfully.
+     */
+    focusInitialElement() {
+        // Contains the deprecated version of selector, for temporary backwards comparability.
+        const redirectToElement = this._element.querySelector(`[cdk-focus-initial], ` +
+            `[cdkFocusInitial]`);
+        if (redirectToElement) {
+            // @breaking-change 8.0.0
+            if (redirectToElement.hasAttribute(`cdk-focus-initial`)) {
+                console.warn(`Found use of deprecated attribute 'cdk-focus-initial', ` +
+                    `use 'cdkFocusInitial' instead. The deprecated attribute ` +
+                    `will be removed in 8.0.0`, redirectToElement);
+            }
+            // Warn the consumer if the element they've pointed to
+            // isn't focusable, when not in production mode.
+            if (!this._checker.isFocusable(redirectToElement)) {
+                const focusableChild = this._getFirstTabbableElement(redirectToElement);
+                focusableChild === null || focusableChild === void 0 ? void 0 : focusableChild.focus();
+                return !!focusableChild;
+            }
+            redirectToElement.focus();
+            return true;
+        }
+        return this.focusFirstTabbableElement();
+    }
+    /**
+     * Focuses the first tabbable element within the focus trap region.
+     * @returns Whether focus was moved successfully.
+     */
+    focusFirstTabbableElement() {
+        const redirectToElement = this._getRegionBoundary('start');
+        if (redirectToElement) {
+            redirectToElement.focus();
+        }
+        return !!redirectToElement;
+    }
+    /**
+     * Focuses the last tabbable element within the focus trap region.
+     * @returns Whether focus was moved successfully.
+     */
+    focusLastTabbableElement() {
+        const redirectToElement = this._getRegionBoundary('end');
+        if (redirectToElement) {
+            redirectToElement.focus();
+        }
+        return !!redirectToElement;
+    }
+    /**
+     * Checks whether the focus trap has successfully been attached.
+     */
+    hasAttached() {
+        return this._hasAttached;
+    }
+    /** Get the first tabbable element from a DOM subtree (inclusive). */
+    _getFirstTabbableElement(root) {
+        if (this._checker.isFocusable(root) && this._checker.isTabbable(root)) {
+            return root;
+        }
+        // Iterate in DOM order. Note that IE doesn't have `children` for SVG so we fall
+        // back to `childNodes` which includes text nodes, comments etc.
+        let children = root.children || root.childNodes;
+        for (let i = 0; i < children.length; i++) {
+            let tabbableChild = children[i].nodeType === this._document.ELEMENT_NODE ?
+                this._getFirstTabbableElement(children[i]) :
+                null;
+            if (tabbableChild) {
+                return tabbableChild;
+            }
+        }
+        return null;
+    }
+    /** Get the last tabbable element from a DOM subtree (inclusive). */
+    _getLastTabbableElement(root) {
+        if (this._checker.isFocusable(root) && this._checker.isTabbable(root)) {
+            return root;
+        }
+        // Iterate in reverse DOM order.
+        let children = root.children || root.childNodes;
+        for (let i = children.length - 1; i >= 0; i--) {
+            let tabbableChild = children[i].nodeType === this._document.ELEMENT_NODE ?
+                this._getLastTabbableElement(children[i]) :
+                null;
+            if (tabbableChild) {
+                return tabbableChild;
+            }
+        }
+        return null;
+    }
+    /** Creates an anchor element. */
+    _createAnchor() {
+        const anchor = this._document.createElement('div');
+        this._toggleAnchorTabIndex(this._enabled, anchor);
+        anchor.classList.add('cdk-visually-hidden');
+        anchor.classList.add('cdk-focus-trap-anchor');
+        anchor.setAttribute('aria-hidden', 'true');
+        return anchor;
+    }
+    /**
+     * Toggles the `tabindex` of an anchor, based on the enabled state of the focus trap.
+     * @param isEnabled Whether the focus trap is enabled.
+     * @param anchor Anchor on which to toggle the tabindex.
+     */
+    _toggleAnchorTabIndex(isEnabled, anchor) {
+        // Remove the tabindex completely, rather than setting it to -1, because if the
+        // element has a tabindex, the user might still hit it when navigating with the arrow keys.
+        isEnabled ? anchor.setAttribute('tabindex', '0') : anchor.removeAttribute('tabindex');
+    }
+    /**
+     * Toggles the`tabindex` of both anchors to either trap Tab focus or allow it to escape.
+     * @param enabled: Whether the anchors should trap Tab.
+     */
+    toggleAnchors(enabled) {
+        if (this._startAnchor && this._endAnchor) {
+            this._toggleAnchorTabIndex(enabled, this._startAnchor);
+            this._toggleAnchorTabIndex(enabled, this._endAnchor);
+        }
+    }
+    /** Executes a function when the zone is stable. */
+    _executeOnStable(fn) {
+        if (this._ngZone.isStable) {
+            fn();
+        }
+        else {
+            this._ngZone.onStable.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_2__.take)(1)).subscribe(fn);
+        }
+    }
+}
+/**
+ * Factory that allows easy instantiation of focus traps.
+ * @deprecated Use `ConfigurableFocusTrapFactory` instead.
+ * @breaking-change for 11.0.0 Remove this class.
+ */
+class FocusTrapFactory {
+    constructor(_checker, _ngZone, _document) {
+        this._checker = _checker;
+        this._ngZone = _ngZone;
+        this._document = _document;
+    }
+    /**
+     * Creates a focus-trapped region around the given element.
+     * @param element The element around which focus will be trapped.
+     * @param deferCaptureElements Defers the creation of focus-capturing elements to be done
+     *     manually by the user.
+     * @returns The created focus trap instance.
+     */
+    create(element, deferCaptureElements = false) {
+        return new FocusTrap(element, this._checker, this._ngZone, this._document, deferCaptureElements);
+    }
+}
+FocusTrapFactory.ɵfac = function FocusTrapFactory_Factory(t) { return new (t || FocusTrapFactory)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](InteractivityChecker), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT)); };
+FocusTrapFactory.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function FocusTrapFactory_Factory() { return new FocusTrapFactory((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(InteractivityChecker), (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT)); }, token: FocusTrapFactory, providedIn: "root" });
+FocusTrapFactory.ctorParameters = () => [
+    { type: InteractivityChecker },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject, args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT,] }] }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FocusTrapFactory, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+        args: [{ providedIn: 'root' }]
+    }], function () { return [{ type: InteractivityChecker }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone }, { type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+                args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT]
+            }] }]; }, null); })();
+/** Directive for trapping focus within a region. */
+class FocusTrapDirective {
+    constructor(_elementRef, _focusTrapFactory, _document) {
+        this._elementRef = _elementRef;
+        this._focusTrapFactory = _focusTrapFactory;
+        /** Previously focused element to restore focus to upon destroy when using autoCapture. */
+        this._previouslyFocusedElement = null;
+        this._autoCapture = false;
+        this._document = _document;
+        this.focusTrap = this._focusTrapFactory.create(this._elementRef.nativeElement, true);
+    }
+    /** Whether the focus trap is active. */
+    get enabled() {
+        return this.focusTrap.enabled;
+    }
+    set enabled(value) {
+        this.focusTrap.enabled = coerceBooleanProperty(value);
+    }
+    /**
+     * Whether the directive should automatically move focus into the trapped region upon
+     * initialization and return focus to the previous activeElement upon destruction.
+     */
+    get autoCapture() {
+        return this._autoCapture;
+    }
+    set autoCapture(value) {
+        this._autoCapture = coerceBooleanProperty(value);
+    }
+    ngOnDestroy() {
+        this.focusTrap.destroy();
+        // If we stored a previously focused element when using autoCapture, return focus to that
+        // element now that the trapped region is being destroyed.
+        if (this._previouslyFocusedElement) {
+            this._previouslyFocusedElement.focus();
+            this._previouslyFocusedElement = null;
+        }
+    }
+    ngAfterContentInit() {
+        this.focusTrap.attachAnchors();
+        if (this.autoCapture) {
+            this._captureFocus();
+        }
+    }
+    ngDoCheck() {
+        if (!this.focusTrap.hasAttached()) {
+            this.focusTrap.attachAnchors();
+        }
+    }
+    ngOnChanges(changes) {
+        const autoCaptureChange = changes['autoCapture'];
+        if (autoCaptureChange && !autoCaptureChange.firstChange && this.autoCapture &&
+            this.focusTrap.hasAttached()) {
+            this._captureFocus();
+        }
+    }
+    _captureFocus() {
+        this._previouslyFocusedElement = this._document.activeElement;
+        this.focusTrap.focusInitialElementWhenReady();
+    }
+}
+FocusTrapDirective.ɵfac = function FocusTrapDirective_Factory(t) { return new (t || FocusTrapDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](FocusTrapFactory), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT)); };
+FocusTrapDirective.ɵdir = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: FocusTrapDirective, selectors: [["", "focusTrap", ""]], inputs: { enabled: ["cdkTrapFocus", "enabled"], autoCapture: ["cdkTrapFocusAutoCapture", "autoCapture"] }, exportAs: ["focusTrap"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]] });
+FocusTrapDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef },
+    { type: FocusTrapFactory },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject, args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT,] }] }
+];
+FocusTrapDirective.propDecorators = {
+    enabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['cdkTrapFocus',] }],
+    autoCapture: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['cdkTrapFocusAutoCapture',] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FocusTrapDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+        args: [{
+                selector: '[focusTrap]',
+                exportAs: 'focusTrap'
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef }, { type: FocusTrapFactory }, { type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+                args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT]
+            }] }]; }, { enabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['cdkTrapFocus']
+        }], autoCapture: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['cdkTrapFocusAutoCapture']
+        }] }); })();
+
+class FocusTrapModule {
+    static forRoot() {
+        return {
+            ngModule: FocusTrapModule,
+            providers: [
+                FocusTrapManager,
+                Platform,
+                InteractivityChecker
+            ]
+        };
+    }
+}
+FocusTrapModule.ɵfac = function FocusTrapModule_Factory(t) { return new (t || FocusTrapModule)(); };
+FocusTrapModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: FocusTrapModule });
+FocusTrapModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule]] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FocusTrapModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule],
+                declarations: [FocusTrapDirective],
+                exports: [FocusTrapDirective]
+            }]
+    }], null, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](FocusTrapModule, { declarations: function () { return [FocusTrapDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule]; }, exports: function () { return [FocusTrapDirective]; } }); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+
+/***/ }),
+
+/***/ 482:
+/*!***************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/__ivy_ngcc__/modal/fesm2015/ngx-bootstrap-modal.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BsModalRef": () => (/* binding */ BsModalRef),
+/* harmony export */   "BsModalService": () => (/* binding */ BsModalService),
+/* harmony export */   "MODAL_CONFIG_DEFAULT_OVERRIDE": () => (/* binding */ MODAL_CONFIG_DEFAULT_OVERRIDE),
+/* harmony export */   "ModalBackdropComponent": () => (/* binding */ ModalBackdropComponent),
+/* harmony export */   "ModalBackdropOptions": () => (/* binding */ ModalBackdropOptions),
+/* harmony export */   "ModalContainerComponent": () => (/* binding */ ModalContainerComponent),
+/* harmony export */   "ModalDirective": () => (/* binding */ ModalDirective),
+/* harmony export */   "ModalModule": () => (/* binding */ ModalModule),
+/* harmony export */   "ModalOptions": () => (/* binding */ ModalOptions),
+/* harmony export */   "ɵa": () => (/* binding */ CLASS_NAME)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 4001);
+/* harmony import */ var ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-bootstrap/utils */ 7162);
+/* harmony import */ var ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-bootstrap/component-loader */ 6303);
+/* harmony import */ var ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-bootstrap/positioning */ 5044);
+/* harmony import */ var ngx_bootstrap_focus_trap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-bootstrap/focus-trap */ 9659);
+
+
+
+
+
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+
+
+
+const _c0 = ["*"];
+class BsModalRef {
+    constructor() {
+        /**
+         * Hides the modal
+         */
+        this.hide = () => void 0;
+        /**
+         * Sets new class to modal window
+         */
+        this.setClass = () => void 0;
+    }
+}
+BsModalRef.ɵfac = function BsModalRef_Factory(t) { return new (t || BsModalRef)(); };
+BsModalRef.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: BsModalRef, factory: BsModalRef.ɵfac });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsModalRef, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable
+    }], function () { return []; }, null); })();
+
+class ModalBackdropOptions {
+    constructor(options) {
+        this.animate = true;
+        Object.assign(this, options);
+    }
+}
+
+class ModalOptions {
+}
+ModalOptions.ɵfac = function ModalOptions_Factory(t) { return new (t || ModalOptions)(); };
+ModalOptions.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ModalOptions, factory: ModalOptions.ɵfac });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ModalOptions, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable
+    }], null, null); })();
+const modalConfigDefaults = {
+    backdrop: true,
+    keyboard: true,
+    focus: true,
+    show: false,
+    ignoreBackdropClick: false,
+    class: '',
+    animated: true,
+    initialState: {},
+    closeInterceptor: void 0
+};
+const MODAL_CONFIG_DEFAULT_OVERRIDE = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken('override-default-config');
+const CLASS_NAME = {
+    SCROLLBAR_MEASURER: 'modal-scrollbar-measure',
+    BACKDROP: 'modal-backdrop',
+    OPEN: 'modal-open',
+    FADE: 'fade',
+    IN: 'in',
+    SHOW: 'show' // bs4
+};
+const SELECTOR = {
+    DIALOG: '.modal-dialog',
+    DATA_TOGGLE: '[data-toggle="modal"]',
+    DATA_DISMISS: '[data-dismiss="modal"]',
+    FIXED_CONTENT: '.navbar-fixed-top, .navbar-fixed-bottom, .is-fixed'
+};
+const TRANSITION_DURATIONS = {
+    MODAL: 300,
+    BACKDROP: 150
+};
+const DISMISS_REASONS = {
+    BACKRDOP: 'backdrop-click',
+    ESC: 'esc',
+    BACK: 'browser-back-navigation-clicked'
+};
+
+class ModalContainerComponent {
+    constructor(options, _element, _renderer) {
+        this._element = _element;
+        this._renderer = _renderer;
+        this.isShown = false;
+        this.isAnimated = false;
+        this.isModalHiding = false;
+        this.clickStartedInContent = false;
+        this.config = Object.assign({}, options);
+    }
+    ngOnInit() {
+        if (this.isAnimated) {
+            this._renderer.addClass(this._element.nativeElement, CLASS_NAME.FADE);
+        }
+        this._renderer.setStyle(this._element.nativeElement, 'display', 'block');
+        setTimeout(() => {
+            this.isShown = true;
+            this._renderer.addClass(this._element.nativeElement, (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.isBs3)() ? CLASS_NAME.IN : CLASS_NAME.SHOW);
+        }, this.isAnimated ? TRANSITION_DURATIONS.BACKDROP : 0);
+        if (document && document.body) {
+            if (this.bsModalService && this.bsModalService.getModalsCount() === 1) {
+                this.bsModalService.checkScrollbar();
+                this.bsModalService.setScrollbar();
+            }
+            this._renderer.addClass(document.body, CLASS_NAME.OPEN);
+            this._renderer.setStyle(document.body, 'overflow-y', 'hidden');
+        }
+        if (this._element.nativeElement) {
+            this._element.nativeElement.focus();
+        }
+    }
+    onClickStarted(event) {
+        this.clickStartedInContent = event.target !== this._element.nativeElement;
+    }
+    onClickStop(event) {
+        var _a;
+        const clickedInBackdrop = event.target === this._element.nativeElement && !this.clickStartedInContent;
+        if (this.config.ignoreBackdropClick ||
+            this.config.backdrop === 'static' ||
+            !clickedInBackdrop) {
+            this.clickStartedInContent = false;
+            return;
+        }
+        (_a = this.bsModalService) === null || _a === void 0 ? void 0 : _a.setDismissReason(DISMISS_REASONS.BACKRDOP);
+        this.hide();
+    }
+    onPopState() {
+        var _a;
+        (_a = this.bsModalService) === null || _a === void 0 ? void 0 : _a.setDismissReason(DISMISS_REASONS.BACK);
+        this.hide();
+    }
+    onEsc(event) {
+        var _a, _b;
+        if (!this.isShown) {
+            return;
+        }
+        if (event.keyCode === 27 || event.key === 'Escape') {
+            event.preventDefault();
+        }
+        if (this.config.keyboard &&
+            this.level === ((_a = this.bsModalService) === null || _a === void 0 ? void 0 : _a.getModalsCount())) {
+            (_b = this.bsModalService) === null || _b === void 0 ? void 0 : _b.setDismissReason(DISMISS_REASONS.ESC);
+            this.hide();
+        }
+    }
+    ngOnDestroy() {
+        if (this.isShown) {
+            this._hide();
+        }
+    }
+    hide() {
+        if (this.isModalHiding || !this.isShown) {
+            return;
+        }
+        if (this.config.closeInterceptor) {
+            this.config.closeInterceptor().then(() => this._hide(), () => undefined);
+            return;
+        }
+        this._hide();
+    }
+    _hide() {
+        this.isModalHiding = true;
+        this._renderer.removeClass(this._element.nativeElement, (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.isBs3)() ? CLASS_NAME.IN : CLASS_NAME.SHOW);
+        setTimeout(() => {
+            var _a, _b;
+            this.isShown = false;
+            if (document &&
+                document.body &&
+                ((_a = this.bsModalService) === null || _a === void 0 ? void 0 : _a.getModalsCount()) === 1) {
+                this._renderer.removeClass(document.body, CLASS_NAME.OPEN);
+                this._renderer.setStyle(document.body, 'overflow-y', '');
+            }
+            (_b = this.bsModalService) === null || _b === void 0 ? void 0 : _b.hide(this.config.id);
+            this.isModalHiding = false;
+        }, this.isAnimated ? TRANSITION_DURATIONS.MODAL : 0);
+    }
+}
+ModalContainerComponent.ɵfac = function ModalContainerComponent_Factory(t) { return new (t || ModalContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ModalOptions), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2)); };
+ModalContainerComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModalContainerComponent, selectors: [["modal-container"]], hostAttrs: ["role", "dialog", "tabindex", "-1", 1, "modal"], hostVars: 3, hostBindings: function ModalContainerComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("mousedown", function ModalContainerComponent_mousedown_HostBindingHandler($event) { return ctx.onClickStarted($event); })("click", function ModalContainerComponent_click_HostBindingHandler($event) { return ctx.onClickStop($event); })("popstate", function ModalContainerComponent_popstate_HostBindingHandler() { return ctx.onPopState(); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresolveWindow"])("keydown.esc", function ModalContainerComponent_keydown_esc_HostBindingHandler($event) { return ctx.onEsc($event); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresolveWindow"]);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-modal", true)("aria-labelledby", ctx.config.ariaLabelledBy)("aria-describedby", ctx.config.ariaDescribedby);
+    } }, ngContentSelectors: _c0, decls: 3, vars: 2, consts: [["role", "document", "focusTrap", ""], [1, "modal-content"]], template: function ModalContainerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"]("modal-dialog" + (ctx.config.class ? " " + ctx.config.class : ""));
+    } }, directives: [ngx_bootstrap_focus_trap__WEBPACK_IMPORTED_MODULE_2__.FocusTrapDirective], encapsulation: 2 });
+ModalContainerComponent.ctorParameters = () => [
+    { type: ModalOptions },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2 }
+];
+ModalContainerComponent.propDecorators = {
+    onClickStarted: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener, args: ['mousedown', ['$event'],] }],
+    onClickStop: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener, args: ['click', ['$event'],] }],
+    onPopState: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener, args: ['window:popstate',] }],
+    onEsc: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener, args: ['window:keydown.esc', ['$event'],] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ModalContainerComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+        args: [{
+                selector: 'modal-container',
+                template: `
+    <div [class]="'modal-dialog' + (config.class ? ' ' + config.class : '')"
+         role="document"
+         focusTrap>
+      <div class="modal-content">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  `,
+                // eslint-disable-next-line @angular-eslint/no-host-metadata-property
+                host: {
+                    class: 'modal',
+                    role: 'dialog',
+                    tabindex: '-1',
+                    '[attr.aria-modal]': 'true',
+                    '[attr.aria-labelledby]': 'config.ariaLabelledBy',
+                    '[attr.aria-describedby]': 'config.ariaDescribedby'
+                }
+            }]
+    }], function () { return [{ type: ModalOptions }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2 }]; }, { onClickStarted: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['mousedown', ['$event']]
+        }], onClickStop: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['click', ['$event']]
+        }], onPopState: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['window:popstate']
+        }], onEsc: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['window:keydown.esc', ['$event']]
+        }] }); })();
+
+/** This component will be added as background layout for modals if enabled */
+class ModalBackdropComponent {
+    constructor(element, renderer) {
+        this._isAnimated = false;
+        this._isShown = false;
+        this.element = element;
+        this.renderer = renderer;
+    }
+    get isAnimated() {
+        return this._isAnimated;
+    }
+    set isAnimated(value) {
+        this._isAnimated = value;
+    }
+    get isShown() {
+        return this._isShown;
+    }
+    set isShown(value) {
+        this._isShown = value;
+        if (value) {
+            this.renderer.addClass(this.element.nativeElement, `${CLASS_NAME.IN}`);
+        }
+        else {
+            this.renderer.removeClass(this.element.nativeElement, `${CLASS_NAME.IN}`);
+        }
+        if (!(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.isBs3)()) {
+            if (value) {
+                this.renderer.addClass(this.element.nativeElement, `${CLASS_NAME.SHOW}`);
+            }
+            else {
+                this.renderer.removeClass(this.element.nativeElement, `${CLASS_NAME.SHOW}`);
+            }
+        }
+    }
+    ngOnInit() {
+        if (this.isAnimated) {
+            this.renderer.addClass(this.element.nativeElement, `${CLASS_NAME.FADE}`);
+            ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.reflow(this.element.nativeElement);
+        }
+        this.isShown = true;
+    }
+}
+ModalBackdropComponent.ɵfac = function ModalBackdropComponent_Factory(t) { return new (t || ModalBackdropComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2)); };
+ModalBackdropComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ModalBackdropComponent, selectors: [["bs-modal-backdrop"]], hostAttrs: [1, "modal-backdrop"], decls: 0, vars: 0, template: function ModalBackdropComponent_Template(rf, ctx) { }, encapsulation: 2 });
+ModalBackdropComponent.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2 }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ModalBackdropComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+        args: [{
+                selector: 'bs-modal-backdrop',
+                template: ' ',
+                // eslint-disable-next-line @angular-eslint/no-host-metadata-property
+                host: { class: CLASS_NAME.BACKDROP }
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2 }]; }, null); })();
+
+// todo: should we support enforce focus in?
+const TRANSITION_DURATION = 300;
+const BACKDROP_TRANSITION_DURATION = 150;
+/** Mark any code with directive to show it's content in modal */
+class ModalDirective {
+    constructor(_element, _viewContainerRef, _renderer, clf, modalDefaultOption) {
+        this._element = _element;
+        this._renderer = _renderer;
+        /** This event fires immediately when the `show` instance method is called. */
+        this.onShow = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        /** This event is fired when the modal has been made visible to the user
+         * (will wait for CSS transitions to complete)
+         */
+        this.onShown = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        /** This event is fired immediately when
+         * the hide instance method has been called.
+         */
+        this.onHide = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        /** This event is fired when the modal has finished being
+         * hidden from the user (will wait for CSS transitions to complete).
+         */
+        this.onHidden = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this._isShown = false;
+        this.isBodyOverflowing = false;
+        this.originalBodyPadding = 0;
+        this.scrollbarWidth = 0;
+        this.timerHideModal = 0;
+        this.timerRmBackDrop = 0;
+        this.isNested = false;
+        this.clickStartedInContent = false;
+        this._backdrop = clf.createLoader(_element, _viewContainerRef, _renderer);
+        this._config = modalDefaultOption || modalConfigDefaults;
+    }
+    /** allows to set modal configuration via element property */
+    set config(conf) {
+        this._config = this.getConfig(conf);
+    }
+    get config() {
+        return this._config;
+    }
+    get isShown() {
+        return this._isShown;
+    }
+    onClickStarted(event) {
+        this.clickStartedInContent = event.target !== this._element.nativeElement;
+    }
+    onClickStop(event) {
+        const clickedInBackdrop = event.target === this._element.nativeElement && !this.clickStartedInContent;
+        if (this.config.ignoreBackdropClick ||
+            this.config.backdrop === 'static' ||
+            !clickedInBackdrop) {
+            this.clickStartedInContent = false;
+            return;
+        }
+        this.dismissReason = DISMISS_REASONS.BACKRDOP;
+        this.hide(event);
+    }
+    // todo: consider preventing default and stopping propagation
+    onEsc(event) {
+        if (!this._isShown) {
+            return;
+        }
+        if (event.keyCode === 27 || event.key === 'Escape') {
+            event.preventDefault();
+        }
+        if (this.config.keyboard) {
+            this.dismissReason = DISMISS_REASONS.ESC;
+            this.hide();
+        }
+    }
+    ngOnDestroy() {
+        if (this._isShown) {
+            this._isShown = false;
+            this.hideModal();
+            this._backdrop.dispose();
+        }
+    }
+    ngOnInit() {
+        this._config = this._config || this.getConfig();
+        setTimeout(() => {
+            if (this._config.show) {
+                this.show();
+            }
+        }, 0);
+    }
+    /* Public methods */
+    /** Allows to manually toggle modal visibility */
+    toggle() {
+        return this._isShown ? this.hide() : this.show();
+    }
+    /** Allows to manually open modal */
+    show() {
+        this.dismissReason = void 0;
+        this.onShow.emit(this);
+        if (this._isShown) {
+            return;
+        }
+        clearTimeout(this.timerHideModal);
+        clearTimeout(this.timerRmBackDrop);
+        this._isShown = true;
+        this.checkScrollbar();
+        this.setScrollbar();
+        if (ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document && ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body) {
+            if (ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body.classList.contains(CLASS_NAME.OPEN)) {
+                this.isNested = true;
+            }
+            else {
+                this._renderer.addClass(ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body, CLASS_NAME.OPEN);
+                this._renderer.setStyle(ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body, 'overflow-y', 'hidden');
+            }
+        }
+        this.showBackdrop(() => {
+            this.showElement();
+        });
+    }
+    /** Check if we can close the modal */
+    hide(event) {
+        if (!this._isShown) {
+            return;
+        }
+        if (event) {
+            event.preventDefault();
+        }
+        if (this.config.closeInterceptor) {
+            this.config.closeInterceptor().then(() => this._hide(), () => undefined);
+            return;
+        }
+        this._hide();
+    }
+    /** Private methods @internal */
+    /**
+     *  Manually close modal
+     *  @internal
+     */
+    _hide() {
+        this.onHide.emit(this);
+        ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.window.clearTimeout(this.timerHideModal);
+        ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.window.clearTimeout(this.timerRmBackDrop);
+        this._isShown = false;
+        this._renderer.removeClass(this._element.nativeElement, CLASS_NAME.IN);
+        if (!(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.isBs3)()) {
+            this._renderer.removeClass(this._element.nativeElement, CLASS_NAME.SHOW);
+        }
+        // this._addClassIn = false;
+        if (this._config.animated) {
+            this.timerHideModal = ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.window.setTimeout(() => this.hideModal(), TRANSITION_DURATION);
+        }
+        else {
+            this.hideModal();
+        }
+    }
+    getConfig(config) {
+        return Object.assign({}, this._config, config);
+    }
+    /**
+     *  Show dialog
+     *  @internal
+     */
+    showElement() {
+        // todo: replace this with component loader usage
+        if (!this._element.nativeElement.parentNode ||
+            this._element.nativeElement.parentNode.nodeType !== Node.ELEMENT_NODE) {
+            // don't move modals dom position
+            if (ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document && ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body) {
+                ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body.appendChild(this._element.nativeElement);
+            }
+        }
+        this._renderer.setAttribute(this._element.nativeElement, 'aria-hidden', 'false');
+        this._renderer.setAttribute(this._element.nativeElement, 'aria-modal', 'true');
+        this._renderer.setStyle(this._element.nativeElement, 'display', 'block');
+        this._renderer.setProperty(this._element.nativeElement, 'scrollTop', 0);
+        if (this._config.animated) {
+            ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.Utils.reflow(this._element.nativeElement);
+        }
+        // this._addClassIn = true;
+        this._renderer.addClass(this._element.nativeElement, CLASS_NAME.IN);
+        if (!(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.isBs3)()) {
+            this._renderer.addClass(this._element.nativeElement, CLASS_NAME.SHOW);
+        }
+        const transitionComplete = () => {
+            if (this._config.focus) {
+                this._element.nativeElement.focus();
+            }
+            this.onShown.emit(this);
+        };
+        if (this._config.animated) {
+            setTimeout(transitionComplete, TRANSITION_DURATION);
+        }
+        else {
+            transitionComplete();
+        }
+    }
+    /** @internal */
+    hideModal() {
+        this._renderer.setAttribute(this._element.nativeElement, 'aria-hidden', 'true');
+        this._renderer.setStyle(this._element.nativeElement, 'display', 'none');
+        this.showBackdrop(() => {
+            if (!this.isNested) {
+                if (ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document && ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body) {
+                    this._renderer.removeClass(ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body, CLASS_NAME.OPEN);
+                    this._renderer.setStyle(ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body, 'overflow-y', '');
+                }
+                this.resetScrollbar();
+            }
+            this.resetAdjustments();
+            this.focusOtherModal();
+            this.onHidden.emit(this);
+        });
+    }
+    // todo: original show was calling a callback when done, but we can use
+    // promise
+    /** @internal */
+    showBackdrop(callback) {
+        if (this._isShown &&
+            this.config.backdrop &&
+            (!this.backdrop || !this.backdrop.instance.isShown)) {
+            this.removeBackdrop();
+            this._backdrop
+                .attach(ModalBackdropComponent)
+                .to('body')
+                .show({ isAnimated: this._config.animated });
+            this.backdrop = this._backdrop._componentRef;
+            if (!callback) {
+                return;
+            }
+            if (!this._config.animated) {
+                callback();
+                return;
+            }
+            setTimeout(callback, BACKDROP_TRANSITION_DURATION);
+        }
+        else if (!this._isShown && this.backdrop) {
+            this.backdrop.instance.isShown = false;
+            const callbackRemove = () => {
+                this.removeBackdrop();
+                if (callback) {
+                    callback();
+                }
+            };
+            if (this.backdrop.instance.isAnimated) {
+                this.timerRmBackDrop = ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.window.setTimeout(callbackRemove, BACKDROP_TRANSITION_DURATION);
+            }
+            else {
+                callbackRemove();
+            }
+        }
+        else if (callback) {
+            callback();
+        }
+    }
+    /** @internal */
+    removeBackdrop() {
+        this._backdrop.hide();
+    }
+    /** Events tricks */
+    // no need for it
+    // protected setEscapeEvent():void {
+    //   if (this._isShown && this._config.keyboard) {
+    //     $(this._element).on(Event.KEYDOWN_DISMISS, (event) => {
+    //       if (event.which === 27) {
+    //         this.hide()
+    //       }
+    //     })
+    //
+    //   } else if (!this._isShown) {
+    //     $(this._element).off(Event.KEYDOWN_DISMISS)
+    //   }
+    // }
+    // protected setResizeEvent():void {
+    // console.log(this.renderer.listenGlobal('', Event.RESIZE));
+    // if (this._isShown) {
+    //   $(window).on(Event.RESIZE, $.proxy(this._handleUpdate, this))
+    // } else {
+    //   $(window).off(Event.RESIZE)
+    // }
+    // }
+    focusOtherModal() {
+        if (this._element.nativeElement.parentElement == null) {
+            return;
+        }
+        const otherOpenedModals = this._element.nativeElement.parentElement.querySelectorAll('.in[bsModal]');
+        if (!otherOpenedModals.length) {
+            return;
+        }
+        otherOpenedModals[otherOpenedModals.length - 1].focus();
+    }
+    /** @internal */
+    resetAdjustments() {
+        this._renderer.setStyle(this._element.nativeElement, 'paddingLeft', '');
+        this._renderer.setStyle(this._element.nativeElement, 'paddingRight', '');
+    }
+    /** Scroll bar tricks */
+    /** @internal */
+    checkScrollbar() {
+        this.isBodyOverflowing = ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body.clientWidth < ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.window.innerWidth;
+        this.scrollbarWidth = this.getScrollbarWidth();
+    }
+    setScrollbar() {
+        if (!ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document) {
+            return;
+        }
+        this.originalBodyPadding = parseInt(ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.window.getComputedStyle(ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body)
+            .getPropertyValue('padding-right') || 0, 10);
+        if (this.isBodyOverflowing) {
+            ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body.style.paddingRight = `${this.originalBodyPadding +
+                this.scrollbarWidth}px`;
+        }
+    }
+    resetScrollbar() {
+        ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body.style.paddingRight = `${this.originalBodyPadding}px`;
+    }
+    // thx d.walsh
+    getScrollbarWidth() {
+        const scrollDiv = this._renderer.createElement('div');
+        this._renderer.addClass(scrollDiv, CLASS_NAME.SCROLLBAR_MEASURER);
+        this._renderer.appendChild(ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body, scrollDiv);
+        const scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+        this._renderer.removeChild(ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.document.body, scrollDiv);
+        return scrollbarWidth;
+    }
+}
+ModalDirective.ɵfac = function ModalDirective_Factory(t) { return new (t || ModalDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_3__.ComponentLoaderFactory), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](MODAL_CONFIG_DEFAULT_OVERRIDE, 8)); };
+ModalDirective.ɵdir = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: ModalDirective, selectors: [["", "bsModal", ""]], hostBindings: function ModalDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("mousedown", function ModalDirective_mousedown_HostBindingHandler($event) { return ctx.onClickStarted($event); })("mouseup", function ModalDirective_mouseup_HostBindingHandler($event) { return ctx.onClickStop($event); })("keydown.esc", function ModalDirective_keydown_esc_HostBindingHandler($event) { return ctx.onEsc($event); });
+    } }, inputs: { config: "config", closeInterceptor: "closeInterceptor" }, outputs: { onShow: "onShow", onShown: "onShown", onHide: "onHide", onHidden: "onHidden" }, exportAs: ["bs-modal"] });
+ModalDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2 },
+    { type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_3__.ComponentLoaderFactory },
+    { type: ModalOptions, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Optional }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject, args: [MODAL_CONFIG_DEFAULT_OVERRIDE,] }] }
+];
+ModalDirective.propDecorators = {
+    config: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    closeInterceptor: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    onShow: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }],
+    onShown: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }],
+    onHide: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }],
+    onHidden: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }],
+    onClickStarted: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener, args: ['mousedown', ['$event'],] }],
+    onClickStop: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener, args: ['mouseup', ['$event'],] }],
+    onEsc: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener, args: ['keydown.esc', ['$event'],] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ModalDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+        args: [{
+                selector: '[bsModal]',
+                exportAs: 'bs-modal'
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2 }, { type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_3__.ComponentLoaderFactory }, { type: ModalOptions, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Optional
+            }, {
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+                args: [MODAL_CONFIG_DEFAULT_OVERRIDE]
+            }] }]; }, { onShow: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], onShown: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], onHide: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], onHidden: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], config: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], onClickStarted: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['mousedown', ['$event']]
+        }], onClickStop: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['mouseup', ['$event']]
+        }], 
+    // todo: consider preventing default and stopping propagation
+    onEsc: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['keydown.esc', ['$event']]
+        }], closeInterceptor: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }] }); })();
+
+class BsModalService {
+    constructor(rendererFactory, clf, modalDefaultOption) {
+        this.clf = clf;
+        this.modalDefaultOption = modalDefaultOption;
+        this.onShow = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.onShown = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.onHide = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.onHidden = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.isBodyOverflowing = false;
+        this.originalBodyPadding = 0;
+        this.scrollbarWidth = 0;
+        this.modalsCount = 0;
+        this.loaders = [];
+        this._backdropLoader = this.clf.createLoader();
+        this._renderer = rendererFactory.createRenderer(null, null);
+        this.config = modalDefaultOption ?
+            (Object.assign({}, modalConfigDefaults, modalDefaultOption)) :
+            modalConfigDefaults;
+    }
+    /** Shows a modal */
+    show(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    content, config) {
+        this.modalsCount++;
+        this._createLoaders();
+        // must be different per every show() call
+        const id = (config === null || config === void 0 ? void 0 : config.id) || (new Date()).getUTCMilliseconds();
+        this.config = this.modalDefaultOption ?
+            Object.assign({}, modalConfigDefaults, this.modalDefaultOption, config) :
+            Object.assign({}, modalConfigDefaults, config);
+        this.config.id = id;
+        this._showBackdrop();
+        this.lastDismissReason = void 0;
+        return this._showModal(content);
+    }
+    hide(id) {
+        if (this.modalsCount === 1 || id == null) {
+            this._hideBackdrop();
+            this.resetScrollbar();
+        }
+        this.modalsCount = this.modalsCount >= 1 && id != null ? this.modalsCount - 1 : 0;
+        setTimeout(() => {
+            this._hideModal(id);
+            this.removeLoaders(id);
+        }, this.config.animated ? TRANSITION_DURATIONS.BACKDROP : 0);
+    }
+    _showBackdrop() {
+        const isBackdropEnabled = this.config.backdrop === true || this.config.backdrop === 'static';
+        const isBackdropInDOM = !this.backdropRef || !this.backdropRef.instance.isShown;
+        if (this.modalsCount === 1) {
+            this.removeBackdrop();
+            if (isBackdropEnabled && isBackdropInDOM) {
+                this._backdropLoader
+                    .attach(ModalBackdropComponent)
+                    .to('body')
+                    .show({ isAnimated: this.config.animated });
+                this.backdropRef = this._backdropLoader._componentRef;
+            }
+        }
+    }
+    _hideBackdrop() {
+        if (!this.backdropRef) {
+            return;
+        }
+        this.backdropRef.instance.isShown = false;
+        const duration = this.config.animated ? TRANSITION_DURATIONS.BACKDROP : 0;
+        setTimeout(() => this.removeBackdrop(), duration);
+    }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    _showModal(content) {
+        var _a;
+        const modalLoader = this.loaders[this.loaders.length - 1];
+        if (this.config && this.config.providers) {
+            for (const provider of this.config.providers) {
+                modalLoader.provide(provider);
+            }
+        }
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const bsModalRef = new BsModalRef();
+        const modalContainerRef = modalLoader
+            .provide({ provide: ModalOptions, useValue: this.config })
+            .provide({ provide: BsModalRef, useValue: bsModalRef })
+            .attach(ModalContainerComponent)
+            .to('body');
+        bsModalRef.hide = () => { var _a; return (_a = modalContainerRef.instance) === null || _a === void 0 ? void 0 : _a.hide(); };
+        bsModalRef.setClass = (newClass) => {
+            if (modalContainerRef.instance) {
+                modalContainerRef.instance.config.class = newClass;
+            }
+        };
+        bsModalRef.onHidden = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        bsModalRef.onHide = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this.copyEvent(modalLoader.onBeforeHide, bsModalRef.onHide);
+        this.copyEvent(modalLoader.onHidden, bsModalRef.onHidden);
+        // call 'show' method after assign setClass in bsModalRef.
+        // it makes modal component's bsModalRef available to call setClass method
+        modalContainerRef.show({
+            content,
+            isAnimated: this.config.animated,
+            initialState: this.config.initialState,
+            bsModalService: this,
+            id: this.config.id
+        });
+        if (modalContainerRef.instance) {
+            modalContainerRef.instance.level = this.getModalsCount();
+            bsModalRef.content = modalLoader.getInnerComponent();
+            bsModalRef.id = (_a = modalContainerRef.instance.config) === null || _a === void 0 ? void 0 : _a.id;
+        }
+        return bsModalRef;
+    }
+    _hideModal(id) {
+        if (id != null) {
+            const indexToRemove = this.loaders.findIndex(loader => { var _a; return ((_a = loader.instance) === null || _a === void 0 ? void 0 : _a.config.id) === id; });
+            const modalLoader = this.loaders[indexToRemove];
+            if (modalLoader) {
+                modalLoader.hide(id);
+            }
+        }
+        else {
+            this.loaders.forEach((loader) => {
+                if (loader.instance) {
+                    loader.hide(loader.instance.config.id);
+                }
+            });
+        }
+    }
+    getModalsCount() {
+        return this.modalsCount;
+    }
+    setDismissReason(reason) {
+        this.lastDismissReason = reason;
+    }
+    removeBackdrop() {
+        this._renderer.removeClass(document.body, CLASS_NAME.OPEN);
+        this._renderer.setStyle(document.body, 'overflow-y', '');
+        this._backdropLoader.hide();
+        this.backdropRef = void 0;
+    }
+    /** Checks if the body is overflowing and sets scrollbar width */
+    /** @internal */
+    checkScrollbar() {
+        this.isBodyOverflowing = document.body.clientWidth < window.innerWidth;
+        this.scrollbarWidth = this.getScrollbarWidth();
+    }
+    setScrollbar() {
+        if (!document) {
+            return;
+        }
+        this.originalBodyPadding = parseInt(window
+            .getComputedStyle(document.body)
+            .getPropertyValue('padding-right') || '0', 10);
+        if (this.isBodyOverflowing) {
+            document.body.style.paddingRight = `${this.originalBodyPadding +
+                this.scrollbarWidth}px`;
+        }
+    }
+    resetScrollbar() {
+        document.body.style.paddingRight = `${this.originalBodyPadding}px`;
+    }
+    // thx d.walsh
+    getScrollbarWidth() {
+        const scrollDiv = this._renderer.createElement('div');
+        this._renderer.addClass(scrollDiv, CLASS_NAME.SCROLLBAR_MEASURER);
+        this._renderer.appendChild(document.body, scrollDiv);
+        const scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+        this._renderer.removeChild(document.body, scrollDiv);
+        return scrollbarWidth;
+    }
+    _createLoaders() {
+        const loader = this.clf.createLoader();
+        this.copyEvent(loader.onBeforeShow, this.onShow);
+        this.copyEvent(loader.onShown, this.onShown);
+        this.copyEvent(loader.onBeforeHide, this.onHide);
+        this.copyEvent(loader.onHidden, this.onHidden);
+        this.loaders.push(loader);
+    }
+    removeLoaders(id) {
+        if (id != null) {
+            const indexToRemove = this.loaders.findIndex(loader => { var _a; return ((_a = loader.instance) === null || _a === void 0 ? void 0 : _a.config.id) === id; });
+            if (indexToRemove >= 0) {
+                this.loaders.splice(indexToRemove, 1);
+                this.loaders.forEach((loader, i) => {
+                    if (loader.instance) {
+                        loader.instance.level = i + 1;
+                    }
+                });
+            }
+        }
+        else {
+            this.loaders.splice(0, this.loaders.length);
+        }
+    }
+    copyEvent(from, to) {
+        from.subscribe((data) => {
+            to.emit(this.lastDismissReason || data);
+        });
+    }
+}
+BsModalService.ɵfac = function BsModalService_Factory(t) { return new (t || BsModalService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.RendererFactory2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_3__.ComponentLoaderFactory), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](MODAL_CONFIG_DEFAULT_OVERRIDE, 8)); };
+BsModalService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: BsModalService, factory: BsModalService.ɵfac });
+BsModalService.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.RendererFactory2 },
+    { type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_3__.ComponentLoaderFactory },
+    { type: ModalOptions, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Optional }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject, args: [MODAL_CONFIG_DEFAULT_OVERRIDE,] }] }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BsModalService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.RendererFactory2 }, { type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_3__.ComponentLoaderFactory }, { type: ModalOptions, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Optional
+            }, {
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+                args: [MODAL_CONFIG_DEFAULT_OVERRIDE]
+            }] }]; }, null); })();
+
+const focusTrapModule = ngx_bootstrap_focus_trap__WEBPACK_IMPORTED_MODULE_2__.FocusTrapModule.forRoot();
+class ModalModule {
+    static forRoot() {
+        return {
+            ngModule: ModalModule,
+            providers: [BsModalService, ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_3__.ComponentLoaderFactory, ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_4__.PositioningService]
+        };
+    }
+    static forChild() {
+        return {
+            ngModule: ModalModule,
+            providers: [BsModalService, ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_3__.ComponentLoaderFactory, ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_4__.PositioningService]
+        };
+    }
+}
+ModalModule.ɵfac = function ModalModule_Factory(t) { return new (t || ModalModule)(); };
+ModalModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: ModalModule });
+ModalModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[ngx_bootstrap_focus_trap__WEBPACK_IMPORTED_MODULE_2__.FocusTrapModule]] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ModalModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
+        args: [{
+                imports: [ngx_bootstrap_focus_trap__WEBPACK_IMPORTED_MODULE_2__.FocusTrapModule],
+                declarations: [
+                    ModalBackdropComponent,
+                    ModalDirective,
+                    ModalContainerComponent
+                ],
+                exports: [ModalBackdropComponent, ModalDirective],
+                entryComponents: [ModalBackdropComponent, ModalContainerComponent]
+            }]
+    }], null, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](ModalModule, { declarations: function () { return [ModalBackdropComponent, ModalDirective, ModalContainerComponent]; }, imports: function () { return [ngx_bootstrap_focus_trap__WEBPACK_IMPORTED_MODULE_2__.FocusTrapModule]; }, exports: function () { return [ModalBackdropComponent, ModalDirective]; } }); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+
+/***/ }),
+
+/***/ 5044:
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/__ivy_ngcc__/positioning/fesm2015/ngx-bootstrap-positioning.js ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PlacementForBs5": () => (/* binding */ PlacementForBs5),
+/* harmony export */   "Positioning": () => (/* binding */ Positioning),
+/* harmony export */   "PositioningService": () => (/* binding */ PositioningService),
+/* harmony export */   "checkMargins": () => (/* binding */ checkMargins),
+/* harmony export */   "positionElements": () => (/* binding */ positionElements)
+/* harmony export */ });
+/* harmony import */ var ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ngx-bootstrap/utils */ 7162);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 4001);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 8267);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 1883);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 5601);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 9429);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ 8365);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 5177);
+
+
+
+
+
+
+var MapPlacementInToRL;
+(function (MapPlacementInToRL) {
+    MapPlacementInToRL["top"] = "top";
+    MapPlacementInToRL["bottom"] = "bottom";
+    MapPlacementInToRL["left"] = "left";
+    MapPlacementInToRL["right"] = "right";
+    MapPlacementInToRL["auto"] = "auto";
+    MapPlacementInToRL["end"] = "right";
+    MapPlacementInToRL["start"] = "left";
+    MapPlacementInToRL["top left"] = "top left";
+    MapPlacementInToRL["top right"] = "top right";
+    MapPlacementInToRL["right top"] = "right top";
+    MapPlacementInToRL["right bottom"] = "right bottom";
+    MapPlacementInToRL["bottom right"] = "bottom right";
+    MapPlacementInToRL["bottom left"] = "bottom left";
+    MapPlacementInToRL["left bottom"] = "left bottom";
+    MapPlacementInToRL["left top"] = "left top";
+    MapPlacementInToRL["top start"] = "top left";
+    MapPlacementInToRL["top end"] = "top right";
+    MapPlacementInToRL["end top"] = "right top";
+    MapPlacementInToRL["end bottom"] = "right bottom";
+    MapPlacementInToRL["bottom end"] = "bottom right";
+    MapPlacementInToRL["bottom start"] = "bottom left";
+    MapPlacementInToRL["start bottom"] = "start bottom";
+    MapPlacementInToRL["start top"] = "left top";
+})(MapPlacementInToRL || (MapPlacementInToRL = {}));
+var PlacementForBs5;
+(function (PlacementForBs5) {
+    PlacementForBs5["top"] = "top";
+    PlacementForBs5["bottom"] = "bottom";
+    PlacementForBs5["left"] = "start";
+    PlacementForBs5["right"] = "end";
+    PlacementForBs5["auto"] = "auto";
+    PlacementForBs5["end"] = "end";
+    PlacementForBs5["start"] = "start";
+    PlacementForBs5["top left"] = "top start";
+    PlacementForBs5["top right"] = "top end";
+    PlacementForBs5["right top"] = "end top";
+    PlacementForBs5["right bottom"] = "end bottom";
+    PlacementForBs5["bottom right"] = "bottom end";
+    PlacementForBs5["bottom left"] = "bottom start";
+    PlacementForBs5["left bottom"] = "start bottom";
+    PlacementForBs5["left top"] = "start top";
+    PlacementForBs5["top start"] = "top start";
+    PlacementForBs5["top end"] = "top end";
+    PlacementForBs5["end top"] = "end top";
+    PlacementForBs5["end bottom"] = "end bottom";
+    PlacementForBs5["bottom end"] = "bottom end";
+    PlacementForBs5["bottom start"] = "bottom start";
+    PlacementForBs5["start bottom"] = "start bottom";
+    PlacementForBs5["start top"] = "start top";
+})(PlacementForBs5 || (PlacementForBs5 = {}));
+
+function getStyleComputedProperty(element, property) {
+    if (element.nodeType !== 1) {
+        return [];
+    }
+    // NOTE: 1 DOM access here
+    const window = element.ownerDocument.defaultView;
+    const css = window === null || window === void 0 ? void 0 : window.getComputedStyle(element, null);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    return property ? css && css[property] : css;
+}
+
+const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
+
+/**
+ * Determines if the browser is Internet Explorer
+ */
+// todo: valorkin fix and drop IE support :evil:
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const isIE11 = isBrowser && !!(window.MSInputMethodContext && document.documentMode);
+const isIE10 = isBrowser && !!(window.MSInputMethodContext && /MSIE 10/.test(navigator.userAgent));
+function isIE(version) {
+    if (version === 11) {
+        return isIE11;
+    }
+    if (version === 10) {
+        return isIE10;
+    }
+    return isIE11 || isIE10;
+}
+
+/**
+ * Returns the offset parent of the given element
+ */
+function getOffsetParent(element) {
+    if (!element) {
+        return document.documentElement;
+    }
+    const noOffsetParent = isIE(10) ? document.body : null;
+    // NOTE: 1 DOM access here
+    let offsetParent = element === null || element === void 0 ? void 0 : element.offsetParent;
+    // Skip hidden elements which don't have an offsetParent
+    let sibling = void 0;
+    while (offsetParent === noOffsetParent
+        && element.nextElementSibling
+        && sibling !== element.nextElementSibling) {
+        // todo: valorkin fix
+        sibling = element.nextElementSibling;
+        offsetParent = sibling.offsetParent;
+    }
+    const nodeName = offsetParent && offsetParent.nodeName;
+    if (!nodeName || nodeName === 'BODY' || nodeName === 'HTML') {
+        return sibling ? sibling.ownerDocument.documentElement : document.documentElement;
+    }
+    // .offsetParent will return the closest TH, TD or TABLE in case
+    if (offsetParent &&
+        ['TH', 'TD', 'TABLE'].indexOf(offsetParent.nodeName) !== -1 &&
+        getStyleComputedProperty(offsetParent, 'position') === 'static') {
+        return getOffsetParent(offsetParent);
+    }
+    return offsetParent;
+}
+
+// todo: valorkin fix
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function isOffsetContainer(element) {
+    const { nodeName } = element;
+    if (nodeName === 'BODY') {
+        return false;
+    }
+    return (nodeName === 'HTML' || getOffsetParent(element.firstElementChild) === element);
+}
+
+/**
+ * Finds the root node (document, shadowDOM root) of the given element
+ */
+function getRoot(node) {
+    if (node.parentNode !== null) {
+        return getRoot(node.parentNode);
+    }
+    return node;
+}
+
+/**
+ * Finds the offset parent common to the two provided nodes
+ */
+function findCommonOffsetParent(element1, element2) {
+    // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+    if (!element1 || !element1.nodeType || !element2 || !element2.nodeType) {
+        return document.documentElement;
+    }
+    // Here we make sure to give as "start" the element that comes first in the DOM
+    const order = element1.compareDocumentPosition(element2) & Node.DOCUMENT_POSITION_FOLLOWING;
+    const start = order ? element1 : element2;
+    const end = order ? element2 : element1;
+    // Get common ancestor container
+    const range = document.createRange();
+    range.setStart(start, 0);
+    range.setEnd(end, 0);
+    // todo: valorkin fix
+    const commonAncestorContainer = range.commonAncestorContainer;
+    // Both nodes are inside #document
+    if ((element1 !== commonAncestorContainer &&
+        element2 !== commonAncestorContainer) ||
+        start.contains(end)) {
+        if (isOffsetContainer(commonAncestorContainer)) {
+            return commonAncestorContainer;
+        }
+        return getOffsetParent(commonAncestorContainer);
+    }
+    // one of the nodes is inside shadowDOM, find which one
+    const element1root = getRoot(element1);
+    if (element1root.host) {
+        return findCommonOffsetParent(element1root.host, element2);
+    }
+    else {
+        return findCommonOffsetParent(element1, getRoot(element2).host);
+    }
+}
+
+/**
+ * Finds the first parent of an element that has a transformed property defined
+ */
+function getFixedPositionOffsetParent(element) {
+    // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+    if (!element || !element.parentElement || isIE()) {
+        return document.documentElement;
+    }
+    let el = element.parentElement;
+    while ((el === null || el === void 0 ? void 0 : el.parentElement) && getStyleComputedProperty(el, 'transform') === 'none') {
+        el = el.parentElement;
+    }
+    return el || document.documentElement;
+}
+
+/**
+ * Helper to detect borders of a given element
+ */
+function getBordersSize(styles, axis) {
+    const sideA = axis === 'x' ? 'Left' : 'Top';
+    const sideB = sideA === 'Left' ? 'Right' : 'Bottom';
+    return (parseFloat(styles[`border${sideA}Width`]) +
+        parseFloat(styles[`border${sideB}Width`]));
+}
+
+function getSize(axis, body, html, computedStyle) {
+    const _body = body;
+    const _html = html;
+    const _computedStyle = computedStyle;
+    return Math.max(_body[`offset${axis}`], _body[`scroll${axis}`], _html[`client${axis}`], _html[`offset${axis}`], _html[`scroll${axis}`], isIE(10)
+        ? (parseInt(_html[`offset${axis}`], 10) +
+            parseInt(_computedStyle[`margin${axis === 'Height' ? 'Top' : 'Left'}`], 10) +
+            parseInt(_computedStyle[`margin${axis === 'Height' ? 'Bottom' : 'Right'}`], 10))
+        : 0);
+}
+function getWindowSizes(document) {
+    const body = document.body;
+    const html = document.documentElement;
+    const computedStyle = isIE(10) ? getComputedStyle(html) : void 0;
+    return {
+        height: getSize('Height', body, html, computedStyle),
+        width: getSize('Width', body, html, computedStyle)
+    };
+}
+
+/**
+ * Gets the scroll value of the given element in the given side (top and left)
+ */
+function getScroll(element, side = 'top') {
+    const upperSide = side === 'top' ? 'scrollTop' : 'scrollLeft';
+    const nodeName = element.nodeName;
+    if (nodeName === 'BODY' || nodeName === 'HTML') {
+        const html = element.ownerDocument.documentElement;
+        const scrollingElement = element.ownerDocument.scrollingElement || html;
+        return scrollingElement[upperSide];
+    }
+    return element[upperSide];
+}
+
+function getClientRect(offsets) {
+    return Object.assign(Object.assign({}, offsets), { right: (offsets.left || 0) + offsets.width, bottom: (offsets.top || 0) + offsets.height });
+}
+
+/**
+ * Tells if a given input is a number
+ */
+function isNumeric(n) {
+    return n !== '' && !isNaN(parseFloat(n)) && isFinite(Number(n));
+}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function isNumber(value) {
+    return typeof value === 'number' || Object.prototype.toString.call(value) === '[object Number]';
+}
+
+/**
+ * Get bounding client rect of given element
+ */
+function getBoundingClientRect(element) {
+    const rect = element.getBoundingClientRect();
+    // IE10 10 FIX: Please, don't ask, the element isn't
+    // considered in DOM in some circumstances...
+    // This isn't reproducible in IE10 compatibility mode of IE11
+    try {
+        if (isIE(10)) {
+            const scrollTop = getScroll(element, 'top');
+            const scrollLeft = getScroll(element, 'left');
+            if (rect && isNumber(rect.top) && isNumber(rect.left) && isNumber(rect.bottom) && isNumber(rect.right)) {
+                rect.top += scrollTop;
+                rect.left += scrollLeft;
+                rect.bottom += scrollTop;
+                rect.right += scrollLeft;
+            }
+        }
+    }
+    catch (e) {
+        return rect;
+    }
+    if (!(rect && isNumber(rect.top) && isNumber(rect.left) && isNumber(rect.bottom) && isNumber(rect.right))) {
+        return rect;
+    }
+    const result = {
+        left: rect.left,
+        top: rect.top,
+        width: rect.right - rect.left,
+        height: rect.bottom - rect.top
+    };
+    // subtract scrollbar size from sizes
+    const sizes = element.nodeName === 'HTML' ? getWindowSizes(element.ownerDocument) : undefined;
+    const width = (sizes === null || sizes === void 0 ? void 0 : sizes.width) || element.clientWidth
+        || isNumber(result.right) && isNumber(result.left) && result.right - result.left || 0;
+    const height = (sizes === null || sizes === void 0 ? void 0 : sizes.height) || element.clientHeight
+        || isNumber(result.bottom) && isNumber(result.top) && result.bottom - result.top || 0;
+    let horizScrollbar = element.offsetWidth - width;
+    let vertScrollbar = element.offsetHeight - height;
+    // if an hypothetical scrollbar is detected, we must be sure it's not a `border`
+    // we make this check conditional for performance reasons
+    if (horizScrollbar || vertScrollbar) {
+        const styles = getStyleComputedProperty(element);
+        horizScrollbar -= getBordersSize(styles, 'x');
+        vertScrollbar -= getBordersSize(styles, 'y');
+        result.width -= horizScrollbar;
+        result.height -= vertScrollbar;
+    }
+    return getClientRect(result);
+}
+
+/**
+ * Returns the parentNode or the host of the element
+ */
+// todo: valorkin fix
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function getParentNode(element) {
+    if (element.nodeName === 'HTML') {
+        return element;
+    }
+    return element.parentNode || element.host;
+}
+
+/**
+ * Returns the scrolling parent of the given element
+ */
+// todo: valorkin fix
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function getScrollParent(element) {
+    // Return body, `getScroll` will take care to get the correct `scrollTop` from it
+    if (!element) {
+        return document.body;
+    }
+    switch (element.nodeName) {
+        case 'HTML':
+        case 'BODY':
+            return element.ownerDocument.body;
+        case '#document':
+            return element.body;
+        default:
+    }
+    // Firefox want us to check `-x` and `-y` variations as well
+    const { overflow, overflowX, overflowY } = getStyleComputedProperty(element);
+    if (/(auto|scroll|overlay)/.test(String(overflow) + String(overflowY) + String(overflowX))) {
+        return element;
+    }
+    return getScrollParent(getParentNode(element));
+}
+
+/**
+ * Sum or subtract the element scroll values (left and top) from a given rect object
+ */
+function includeScroll(rect, element, subtract = false) {
+    const scrollTop = getScroll(element, 'top');
+    const scrollLeft = getScroll(element, 'left');
+    const modifier = subtract ? -1 : 1;
+    if (isNumber(rect.top)) {
+        rect.top += scrollTop * modifier;
+    }
+    if (isNumber(rect.bottom)) {
+        rect.bottom += scrollTop * modifier;
+    }
+    if (isNumber(rect.left)) {
+        rect.left += scrollLeft * modifier;
+    }
+    if (isNumber(rect.right)) {
+        rect.right += scrollLeft * modifier;
+    }
+    return rect;
+}
+
+function getOffsetRectRelativeToArbitraryNode(children, parent, fixedPosition = false) {
+    var _a, _b, _c, _d, _e, _f;
+    const isIE10 = isIE(10);
+    const isHTML = parent.nodeName === 'HTML';
+    const childrenRect = getBoundingClientRect(children);
+    const parentRect = getBoundingClientRect(parent);
+    const scrollParent = getScrollParent(children);
+    const styles = getStyleComputedProperty(parent);
+    const borderTopWidth = parseFloat(styles.borderTopWidth);
+    const borderLeftWidth = parseFloat(styles.borderLeftWidth);
+    // In cases where the parent is fixed, we must ignore negative scroll in offset calc
+    if (fixedPosition && isHTML) {
+        parentRect.top = Math.max((_a = parentRect.top) !== null && _a !== void 0 ? _a : 0, 0);
+        parentRect.left = Math.max((_b = parentRect.left) !== null && _b !== void 0 ? _b : 0, 0);
+    }
+    let offsets = getClientRect({
+        top: ((_c = childrenRect.top) !== null && _c !== void 0 ? _c : 0) - ((_d = parentRect.top) !== null && _d !== void 0 ? _d : 0) - borderTopWidth,
+        left: ((_e = childrenRect.left) !== null && _e !== void 0 ? _e : 0) - ((_f = parentRect.left) !== null && _f !== void 0 ? _f : 0) - borderLeftWidth,
+        width: childrenRect.width,
+        height: childrenRect.height
+    });
+    offsets.marginTop = 0;
+    offsets.marginLeft = 0;
+    // Subtract margins of documentElement in case it's being used as parent
+    // we do this only on HTML because it's the only element that behaves
+    // differently when margins are applied to it. The margins are included in
+    // the box of the documentElement, in the other cases not.
+    if (!isIE10 && isHTML) {
+        const marginTop = parseFloat(styles.marginTop);
+        const marginLeft = parseFloat(styles.marginLeft);
+        if (isNumber(offsets.top)) {
+            offsets.top -= borderTopWidth - marginTop;
+        }
+        if (isNumber(offsets.bottom)) {
+            offsets.bottom -= borderTopWidth - marginTop;
+        }
+        if (isNumber(offsets.left)) {
+            offsets.left -= borderLeftWidth - marginLeft;
+        }
+        if (isNumber(offsets.right)) {
+            offsets.right -= borderLeftWidth - marginLeft;
+        }
+        // Attach marginTop and marginLeft because in some circumstances we may need them
+        offsets.marginTop = marginTop;
+        offsets.marginLeft = marginLeft;
+    }
+    if (isIE10 && !fixedPosition
+        ? parent.contains(scrollParent)
+        : parent === scrollParent && scrollParent.nodeName !== 'BODY') {
+        offsets = includeScroll(offsets, parent);
+    }
+    return offsets;
+}
+
+function getViewportOffsetRectRelativeToArtbitraryNode(element, excludeScroll = false) {
+    const html = element.ownerDocument.documentElement;
+    const relativeOffset = getOffsetRectRelativeToArbitraryNode(element, html);
+    const width = Math.max(html.clientWidth, window.innerWidth || 0);
+    const height = Math.max(html.clientHeight, window.innerHeight || 0);
+    const scrollTop = !excludeScroll ? getScroll(html) : 0;
+    const scrollLeft = !excludeScroll ? getScroll(html, 'left') : 0;
+    const offset = {
+        top: scrollTop - Number(relativeOffset === null || relativeOffset === void 0 ? void 0 : relativeOffset.top) + Number(relativeOffset === null || relativeOffset === void 0 ? void 0 : relativeOffset.marginTop),
+        left: scrollLeft - Number(relativeOffset === null || relativeOffset === void 0 ? void 0 : relativeOffset.left) + Number(relativeOffset === null || relativeOffset === void 0 ? void 0 : relativeOffset.marginLeft),
+        width,
+        height
+    };
+    return getClientRect(offset);
+}
+
+/**
+ * Check if the given element is fixed or is inside a fixed parent
+ */
+function isFixed(element) {
+    const nodeName = element.nodeName;
+    if (nodeName === 'BODY' || nodeName === 'HTML') {
+        return false;
+    }
+    if (getStyleComputedProperty(element, 'position') === 'fixed') {
+        return true;
+    }
+    return isFixed(getParentNode(element));
+}
+
+function getBoundaries(target, host, padding = 0, boundariesElement, fixedPosition = false) {
+    // NOTE: 1 DOM access here
+    let boundaries = { top: 0, left: 0 };
+    const offsetParent = fixedPosition ? getFixedPositionOffsetParent(target) : findCommonOffsetParent(target, host);
+    // Handle viewport case
+    if (boundariesElement === 'viewport') {
+        boundaries = getViewportOffsetRectRelativeToArtbitraryNode(offsetParent, fixedPosition);
+    }
+    else {
+        // Handle other cases based on DOM element used as boundaries
+        let boundariesNode;
+        if (boundariesElement === 'scrollParent') {
+            boundariesNode = getScrollParent(getParentNode(host));
+            if (boundariesNode.nodeName === 'BODY') {
+                boundariesNode = target.ownerDocument.documentElement;
+            }
+        }
+        else if (boundariesElement === 'window') {
+            boundariesNode = target.ownerDocument.documentElement;
+        }
+        else {
+            boundariesNode = boundariesElement;
+        }
+        const offsets = getOffsetRectRelativeToArbitraryNode(boundariesNode, offsetParent, fixedPosition);
+        // In case of HTML, we need a different computation
+        if (offsets && boundariesNode.nodeName === 'HTML' && !isFixed(offsetParent)) {
+            const { height, width } = getWindowSizes(target.ownerDocument);
+            if (isNumber(boundaries.top) && isNumber(offsets.top) && isNumber(offsets.marginTop)) {
+                boundaries.top += offsets.top - offsets.marginTop;
+            }
+            if (isNumber(boundaries.top)) {
+                boundaries.bottom = Number(height) + Number(offsets.top);
+            }
+            if (isNumber(boundaries.left) && isNumber(offsets.left) && isNumber(offsets.marginLeft)) {
+                boundaries.left += offsets.left - offsets.marginLeft;
+            }
+            if (isNumber(boundaries.top)) {
+                boundaries.right = Number(width) + Number(offsets.left);
+            }
+        }
+        else if (offsets) {
+            // for all the other DOM elements, this one is good
+            boundaries = offsets;
+        }
+    }
+    // Add paddings
+    if (isNumber(boundaries.left)) {
+        boundaries.left += padding;
+    }
+    if (isNumber(boundaries.top)) {
+        boundaries.top += padding;
+    }
+    if (isNumber(boundaries.right)) {
+        boundaries.right -= padding;
+    }
+    if (isNumber(boundaries.bottom)) {
+        boundaries.bottom -= padding;
+    }
+    return boundaries;
+}
+
+/**
+ * Utility used to transform the `auto` placement to the placement with more
+ * available space.
+ */
+function getArea({ width, height }) {
+    return width * height;
+}
+function computeAutoPlacement(placement, refRect, target, host, allowedPositions = ['top', 'bottom', 'right', 'left'], boundariesElement = 'viewport', padding = 0) {
+    var _a, _b, _c, _d;
+    if (placement.indexOf('auto') === -1) {
+        return placement;
+    }
+    const boundaries = getBoundaries(target, host, padding, boundariesElement);
+    const rects = {
+        top: {
+            width: (_a = boundaries.width) !== null && _a !== void 0 ? _a : 0,
+            height: refRect.top && boundaries.top ? refRect.top - boundaries.top : 0
+        },
+        right: {
+            width: boundaries.right && refRect.right ? boundaries.right - refRect.right : 0,
+            height: (_b = boundaries.height) !== null && _b !== void 0 ? _b : 0
+        },
+        bottom: {
+            width: (_c = boundaries.width) !== null && _c !== void 0 ? _c : 0,
+            height: boundaries.bottom && refRect.bottom ? boundaries.bottom - refRect.bottom : 0
+        },
+        left: {
+            width: refRect.left && boundaries.left ? refRect.left - boundaries.left : 0,
+            height: (_d = boundaries.height) !== null && _d !== void 0 ? _d : 0
+        }
+    };
+    const sortedAreas = Object.keys(rects)
+        .map((key) => (Object.assign(Object.assign({ key }, rects[key]), { area: getArea(rects[key]) })))
+        .sort((a, b) => b.area - a.area);
+    let filteredAreas = sortedAreas.filter(({ width, height }) => {
+        return width >= target.clientWidth
+            && height >= target.clientHeight;
+    });
+    filteredAreas = filteredAreas.filter((position) => {
+        return allowedPositions
+            .some((allowedPosition) => {
+            return allowedPosition === position.key;
+        });
+    });
+    const computedPlacement = filteredAreas.length > 0
+        ? filteredAreas[0].key
+        : sortedAreas[0].key;
+    const variation = placement.split(' ')[1];
+    // for tooltip on auto position
+    target.className = target.className.replace(/bs-tooltip-auto/g, `bs-tooltip-${(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__.getBsVer)().isBs5 ? PlacementForBs5[computedPlacement] : computedPlacement}`);
+    return computedPlacement + (variation ? `-${variation}` : '');
+}
+
+function getOffsets(data) {
+    var _a, _b, _c, _d;
+    return {
+        width: data.offsets.target.width,
+        height: data.offsets.target.height,
+        left: Math.floor((_a = data.offsets.target.left) !== null && _a !== void 0 ? _a : 0),
+        top: Math.round((_b = data.offsets.target.top) !== null && _b !== void 0 ? _b : 0),
+        bottom: Math.round((_c = data.offsets.target.bottom) !== null && _c !== void 0 ? _c : 0),
+        right: Math.floor((_d = data.offsets.target.right) !== null && _d !== void 0 ? _d : 0)
+    };
+}
+
+/**
+ * Get the opposite placement of the given one
+ */
+function getOppositePlacement(placement) {
+    const hash = { left: 'right', right: 'left', bottom: 'top', top: 'bottom' };
+    return placement.replace(/left|right|bottom|top/g, matched => hash[matched]);
+}
+
+/**
+ * Get the opposite placement variation of the given one
+ */
+function getOppositeVariation(variation) {
+    if (variation === 'right') {
+        return 'left';
+    }
+    else if (variation === 'left') {
+        return 'right';
+    }
+    return variation;
+}
+
+const parse = (value, def = 0) => value ? parseFloat(value) : def;
+const ɵ0 = parse;
+function getOuterSizes(element) {
+    const window = element.ownerDocument.defaultView;
+    const styles = window === null || window === void 0 ? void 0 : window.getComputedStyle(element);
+    const x = parse(styles === null || styles === void 0 ? void 0 : styles.marginTop) + parse(styles === null || styles === void 0 ? void 0 : styles.marginBottom);
+    const y = parse(styles === null || styles === void 0 ? void 0 : styles.marginLeft) + parse(styles === null || styles === void 0 ? void 0 : styles.marginRight);
+    return {
+        width: Number(element.offsetWidth) + y,
+        height: Number(element.offsetHeight) + x
+    };
+}
+
+/**
+ * Get offsets to the reference element
+ */
+function getReferenceOffsets(target, host, fixedPosition) {
+    const commonOffsetParent = fixedPosition
+        ? getFixedPositionOffsetParent(target)
+        : findCommonOffsetParent(target, host);
+    return getOffsetRectRelativeToArbitraryNode(host, commonOffsetParent, fixedPosition);
+}
+
+/**
+ * Get offsets to the target
+ */
+function getTargetOffsets(target, hostOffsets, position) {
+    var _a, _b, _c;
+    const placement = position.split(' ')[0];
+    // Get target node sizes
+    const targetRect = getOuterSizes(target);
+    // Add position, width and height to our offsets object
+    const targetOffsets = {
+        width: targetRect.width,
+        height: targetRect.height
+    };
+    // depending by the target placement we have to compute its offsets slightly differently
+    const isHoriz = ['right', 'left'].indexOf(placement) !== -1;
+    const mainSide = isHoriz ? 'top' : 'left';
+    const secondarySide = isHoriz ? 'left' : 'top';
+    const measurement = isHoriz ? 'height' : 'width';
+    const secondaryMeasurement = !isHoriz ? 'height' : 'width';
+    targetOffsets[mainSide] =
+        ((_a = hostOffsets[mainSide]) !== null && _a !== void 0 ? _a : 0) +
+            hostOffsets[measurement] / 2 -
+            targetRect[measurement] / 2;
+    targetOffsets[secondarySide] = placement === secondarySide
+        ? ((_b = hostOffsets[secondarySide]) !== null && _b !== void 0 ? _b : 0) - targetRect[secondaryMeasurement]
+        : (_c = hostOffsets[getOppositePlacement(secondarySide)]) !== null && _c !== void 0 ? _c : 0;
+    return targetOffsets;
+}
+
+function isModifierEnabled(options, modifierName) {
+    var _a;
+    return !!((_a = options.modifiers[modifierName]) === null || _a === void 0 ? void 0 : _a.enabled);
+}
+
+const availablePositions = {
+    top: ['top', 'top start', 'top end'],
+    bottom: ['bottom', 'bottom start', 'bottom end'],
+    start: ['start', 'start top', 'start bottom'],
+    end: ['end', 'end top', 'end bottom']
+};
+function checkPopoverMargin(placement, checkPosition) {
+    if (!(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__.getBsVer)().isBs5) {
+        return false;
+    }
+    return availablePositions[checkPosition].includes(placement);
+}
+function checkMargins(placement) {
+    if (!(0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__.getBsVer)().isBs5) {
+        return '';
+    }
+    if (checkPopoverMargin(placement, 'end')) {
+        return 'ms-2';
+    }
+    if (checkPopoverMargin(placement, 'start')) {
+        return 'me-2';
+    }
+    if (checkPopoverMargin(placement, 'top')) {
+        return 'mb-2';
+    }
+    if (checkPopoverMargin(placement, 'bottom')) {
+        return 'mt-2';
+    }
+    return '';
+}
+
+function updateContainerClass(data, renderer) {
+    const target = data.instance.target;
+    let containerClass = target.className;
+    const dataPlacement = (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_0__.getBsVer)().isBs5 ? PlacementForBs5[data.placement] : data.placement;
+    if (data.placementAuto) {
+        containerClass = containerClass.replace(/bs-popover-auto/g, `bs-popover-${dataPlacement}`);
+        containerClass = containerClass.replace(/ms-2|me-2|mb-2|mt-2/g, '');
+        containerClass = containerClass.replace(/bs-tooltip-auto/g, `bs-tooltip-${dataPlacement}`);
+        containerClass = containerClass.replace(/\sauto/g, ` ${dataPlacement}`);
+        if (containerClass.indexOf('popover') !== -1) {
+            containerClass = containerClass + ' ' + checkMargins(dataPlacement);
+        }
+        if (containerClass.indexOf('popover') !== -1 && containerClass.indexOf('popover-auto') === -1) {
+            containerClass += ' popover-auto';
+        }
+        if (containerClass.indexOf('tooltip') !== -1 && containerClass.indexOf('tooltip-auto') === -1) {
+            containerClass += ' tooltip-auto';
+        }
+    }
+    containerClass = containerClass.replace(/left|right|top|bottom|end|start/g, `${dataPlacement.split(' ')[0]}`);
+    if (renderer) {
+        renderer.setAttribute(target, 'class', containerClass);
+        return;
+    }
+    target.className = containerClass;
+}
+
+function setStyles(element, styles, renderer) {
+    if (!element || !styles) {
+        return;
+    }
+    Object.keys(styles).forEach((prop) => {
+        let unit = '';
+        // add unit if the value is numeric and is one of the following
+        if (['width', 'height', 'top', 'right', 'bottom', 'left'].indexOf(prop) !== -1 &&
+            isNumeric(styles[prop])) {
+            unit = 'px';
+        }
+        if (renderer) {
+            renderer.setStyle(element, prop, `${String(styles[prop])}${unit}`);
+            return;
+        }
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        element.style[prop] = String(styles[prop]) + unit;
+    });
+}
+
+function arrow(data) {
+    var _a, _b, _c, _d, _e, _f;
+    let targetOffsets = data.offsets.target;
+    // if arrowElement is a string, suppose it's a CSS selector
+    const arrowElement = data.instance.target.querySelector('.arrow');
+    // if arrowElement is not found, don't run the modifier
+    if (!arrowElement) {
+        return data;
+    }
+    const isVertical = ['left', 'right'].indexOf(data.placement.split(' ')[0]) !== -1;
+    const len = isVertical ? 'height' : 'width';
+    const sideCapitalized = isVertical ? 'Top' : 'Left';
+    const side = sideCapitalized.toLowerCase();
+    const altSide = isVertical ? 'left' : 'top';
+    const opSide = isVertical ? 'bottom' : 'right';
+    const arrowElementSize = getOuterSizes(arrowElement)[len];
+    const placementVariation = data.placement.split(' ')[1];
+    // top/left side
+    if (((_a = data.offsets.host[opSide]) !== null && _a !== void 0 ? _a : 0) - arrowElementSize < ((_b = targetOffsets[side]) !== null && _b !== void 0 ? _b : 0)) {
+        (targetOffsets)[side] -=
+            ((_c = targetOffsets[side]) !== null && _c !== void 0 ? _c : 0) - (((_d = data.offsets.host[opSide]) !== null && _d !== void 0 ? _d : 0) - arrowElementSize);
+    }
+    // bottom/right side
+    if (Number((data).offsets.host[side]) + Number(arrowElementSize) > ((_e = targetOffsets[opSide]) !== null && _e !== void 0 ? _e : 0)) {
+        (targetOffsets)[side] +=
+            Number((data).offsets.host[side]) + Number(arrowElementSize) - Number((targetOffsets)[opSide]);
+    }
+    targetOffsets = getClientRect(targetOffsets);
+    // Compute the sideValue using the updated target offsets
+    // take target margin in account because we don't have this info available
+    const css = getStyleComputedProperty(data.instance.target);
+    const targetMarginSide = parseFloat(css[`margin${sideCapitalized}`]) || 0;
+    const targetBorderSide = parseFloat(css[`border${sideCapitalized}Width`]) || 0;
+    // compute center of the target
+    let center;
+    if (!placementVariation) {
+        center = Number((data).offsets.host[side]) + Number(data.offsets.host[len] / 2 - arrowElementSize / 2);
+    }
+    else {
+        const targetBorderRadius = parseFloat(css.borderRadius) || 0;
+        const targetSideArrowOffset = Number(targetMarginSide + targetBorderSide + targetBorderRadius);
+        center = side === placementVariation ?
+            Number((data).offsets.host[side]) + targetSideArrowOffset :
+            Number((data).offsets.host[side]) + Number(data.offsets.host[len] - targetSideArrowOffset);
+    }
+    let sideValue = center - ((_f = targetOffsets[side]) !== null && _f !== void 0 ? _f : 0) - targetMarginSide - targetBorderSide;
+    // prevent arrowElement from being placed not contiguously to its target
+    sideValue = Math.max(Math.min(targetOffsets[len] - (arrowElementSize + 5), sideValue), 0);
+    data.offsets.arrow = {
+        [side]: Math.round(sideValue),
+        [altSide]: '' // make sure to unset any eventual altSide value from the DOM node
+    };
+    data.instance.arrow = arrowElement;
+    return data;
+}
+
+function flip(data) {
+    data.offsets.target = getClientRect(data.offsets.target);
+    if (!isModifierEnabled(data.options, 'flip')) {
+        data.offsets.target = Object.assign(Object.assign({}, data.offsets.target), getTargetOffsets(data.instance.target, data.offsets.host, data.placement));
+        return data;
+    }
+    const boundaries = getBoundaries(data.instance.target, data.instance.host, 0, // padding
+    'viewport', false // positionFixed
+    );
+    let placement = data.placement.split(' ')[0];
+    let variation = data.placement.split(' ')[1] || '';
+    const offsetsHost = data.offsets.host;
+    const target = data.instance.target;
+    const host = data.instance.host;
+    const adaptivePosition = computeAutoPlacement('auto', offsetsHost, target, host, data.options.allowedPositions);
+    const flipOrder = [placement, adaptivePosition];
+    flipOrder.forEach((step, index) => {
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r;
+        if (placement !== step || flipOrder.length === index + 1) {
+            return;
+        }
+        placement = data.placement.split(' ')[0];
+        // using floor because the host offsets may contain decimals we are not going to consider here
+        const overlapsRef = (placement === 'left' &&
+            Math.floor((_a = data.offsets.target.right) !== null && _a !== void 0 ? _a : 0) > Math.floor((_b = data.offsets.host.left) !== null && _b !== void 0 ? _b : 0)) ||
+            (placement === 'right' &&
+                Math.floor((_c = data.offsets.target.left) !== null && _c !== void 0 ? _c : 0) < Math.floor((_d = data.offsets.host.right) !== null && _d !== void 0 ? _d : 0)) ||
+            (placement === 'top' &&
+                Math.floor((_e = data.offsets.target.bottom) !== null && _e !== void 0 ? _e : 0) > Math.floor((_f = data.offsets.host.top) !== null && _f !== void 0 ? _f : 0)) ||
+            (placement === 'bottom' &&
+                Math.floor((_g = data.offsets.target.top) !== null && _g !== void 0 ? _g : 0) < Math.floor((_h = data.offsets.host.bottom) !== null && _h !== void 0 ? _h : 0));
+        const overflowsLeft = Math.floor((_j = data.offsets.target.left) !== null && _j !== void 0 ? _j : 0) < Math.floor((_k = boundaries.left) !== null && _k !== void 0 ? _k : 0);
+        const overflowsRight = Math.floor((_l = data.offsets.target.right) !== null && _l !== void 0 ? _l : 0) > Math.floor((_m = boundaries.right) !== null && _m !== void 0 ? _m : 0);
+        const overflowsTop = Math.floor((_o = data.offsets.target.top) !== null && _o !== void 0 ? _o : 0) < Math.floor((_p = boundaries.top) !== null && _p !== void 0 ? _p : 0);
+        const overflowsBottom = Math.floor((_q = data.offsets.target.bottom) !== null && _q !== void 0 ? _q : 0) > Math.floor((_r = boundaries.bottom) !== null && _r !== void 0 ? _r : 0);
+        const overflowsBoundaries = (placement === 'left' && overflowsLeft) ||
+            (placement === 'right' && overflowsRight) ||
+            (placement === 'top' && overflowsTop) ||
+            (placement === 'bottom' && overflowsBottom);
+        // flip the variation if required
+        const isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
+        const flippedVariation = ((isVertical && variation === 'left' && overflowsLeft) ||
+            (isVertical && variation === 'right' && overflowsRight) ||
+            (!isVertical && variation === 'left' && overflowsTop) ||
+            (!isVertical && variation === 'right' && overflowsBottom));
+        if (overlapsRef || overflowsBoundaries || flippedVariation) {
+            if (overlapsRef || overflowsBoundaries) {
+                placement = flipOrder[index + 1];
+            }
+            if (flippedVariation) {
+                variation = getOppositeVariation(variation);
+            }
+            data.placement = placement + (variation ? ` ${variation}` : '');
+            data.offsets.target = Object.assign(Object.assign({}, data.offsets.target), getTargetOffsets(data.instance.target, data.offsets.host, data.placement));
+        }
+    });
+    return data;
+}
+
+function initData(targetElement, hostElement, position, options) {
+    if (!targetElement || !hostElement) {
+        return;
+    }
+    const hostElPosition = getReferenceOffsets(targetElement, hostElement);
+    if (!position.match(/^(auto)*\s*(left|right|top|bottom|start|end)*$/)
+        && !position.match(/^(left|right|top|bottom|start|end)*(?: (left|right|top|bottom|start|end))*$/)) {
+        position = 'auto';
+    }
+    const placementAuto = !!position.match(/auto/g);
+    // support old placements 'auto left|right|top|bottom'
+    let placement = position.match(/auto\s(left|right|top|bottom|start|end)/)
+        ? position.split(' ')[1] || 'auto'
+        : position;
+    // Normalize placements that have identical main placement and variation ("right right" => "right").
+    const matches = placement.match(/^(left|right|top|bottom|start|end)* ?(?!\1)(left|right|top|bottom|start|end)?/);
+    if (matches) {
+        placement = matches[1] + (matches[2] ? ` ${matches[2]}` : '');
+    }
+    // "left right", "top bottom" etc. placements also considered incorrect.
+    if (['left right', 'right left', 'top bottom', 'bottom top'].indexOf(placement) !== -1) {
+        placement = 'auto';
+    }
+    placement = computeAutoPlacement(placement, hostElPosition, targetElement, hostElement, options ? options.allowedPositions : undefined);
+    const targetOffset = getTargetOffsets(targetElement, hostElPosition, placement);
+    return {
+        options: options || { modifiers: {} },
+        instance: {
+            target: targetElement,
+            host: hostElement,
+            arrow: void 0
+        },
+        offsets: {
+            target: targetOffset,
+            host: hostElPosition,
+            arrow: void 0
+        },
+        positionFixed: false,
+        placement,
+        placementAuto
+    };
+}
+
+function preventOverflow(data) {
+    var _a;
+    if (!isModifierEnabled(data.options, 'preventOverflow')) {
+        return data;
+    }
+    // NOTE: DOM access here
+    // resets the target Offsets's position so that the document size can be calculated excluding
+    // the size of the targetOffsets element itself
+    const transformProp = 'transform';
+    const targetStyles = data.instance.target.style; // assignment to help minification
+    const { top, left, [transformProp]: transform } = targetStyles;
+    targetStyles.top = '';
+    targetStyles.left = '';
+    targetStyles[transformProp] = '';
+    const boundaries = getBoundaries(data.instance.target, data.instance.host, 0, // padding
+    ((_a = data.options.modifiers.preventOverflow) === null || _a === void 0 ? void 0 : _a.boundariesElement) || 'scrollParent', false // positionFixed
+    );
+    // NOTE: DOM access here
+    // restores the original style properties after the offsets have been computed
+    targetStyles.top = top;
+    targetStyles.left = left;
+    targetStyles[transformProp] = transform;
+    const order = ['left', 'right', 'top', 'bottom'];
+    const check = {
+        primary(placement) {
+            var _a, _b, _c, _d;
+            let value = data.offsets.target[placement];
+            // options.escapeWithReference
+            if (((_a = data.offsets.target[placement]) !== null && _a !== void 0 ? _a : 0) < ((_b = boundaries[placement]) !== null && _b !== void 0 ? _b : 0)) {
+                value = Math.max((_c = data.offsets.target[placement]) !== null && _c !== void 0 ? _c : 0, (_d = boundaries[placement]) !== null && _d !== void 0 ? _d : 0);
+            }
+            return { [placement]: value };
+        },
+        secondary(placement) {
+            var _a, _b, _c, _d;
+            const mainSide = placement === 'right' ? 'left' : 'top';
+            let value = data.offsets.target[mainSide];
+            // escapeWithReference
+            if (((_a = data.offsets.target[placement]) !== null && _a !== void 0 ? _a : 0) < ((_b = boundaries[placement]) !== null && _b !== void 0 ? _b : 0)) {
+                value = Math.min((_c = data.offsets.target[mainSide]) !== null && _c !== void 0 ? _c : 0, ((_d = boundaries[placement]) !== null && _d !== void 0 ? _d : 0) -
+                    (placement === 'right' ? data.offsets.target.width : data.offsets.target.height));
+            }
+            return { [mainSide]: value };
+        }
+    };
+    order.forEach((placement) => {
+        const side = ['left', 'top', 'start'].indexOf(placement) !== -1 ? check['primary'] : check['secondary'];
+        data.offsets.target = Object.assign(Object.assign({}, data.offsets.target), side(placement));
+    });
+    return data;
+}
+
+function shift(data) {
+    var _a;
+    const placement = data.placement;
+    const basePlacement = placement.split(' ')[0];
+    const shiftVariation = placement.split(' ')[1];
+    if (shiftVariation) {
+        const { host, target } = data.offsets;
+        const isVertical = ['bottom', 'top'].indexOf(basePlacement) !== -1;
+        const side = isVertical ? 'left' : 'top';
+        const measurement = isVertical ? 'width' : 'height';
+        const shiftOffsets = {
+            start: { [side]: host[side] },
+            end: {
+                [side]: ((_a = host[side]) !== null && _a !== void 0 ? _a : 0) + host[measurement] - target[measurement]
+            }
+        };
+        data.offsets.target = Object.assign(Object.assign({}, target), {
+            [side]: (side === shiftVariation ? shiftOffsets.start[side] : shiftOffsets.end[side])
+        });
+    }
+    return data;
+}
+
+class Positioning {
+    position(hostElement, targetElement /*, round = true*/) {
+        return this.offset(hostElement, targetElement /*, false*/);
+    }
+    offset(hostElement, targetElement /*, round = true*/) {
+        return getReferenceOffsets(targetElement, hostElement);
+    }
+    positionElements(hostElement, targetElement, position, appendToBody, options) {
+        const chainOfModifiers = [flip, shift, preventOverflow, arrow];
+        const _position = MapPlacementInToRL[position];
+        const data = initData(targetElement, hostElement, _position, options);
+        if (!data) {
+            return;
+        }
+        return chainOfModifiers.reduce((modifiedData, modifier) => modifier(modifiedData), data);
+    }
+}
+const positionService = new Positioning();
+function positionElements(hostElement, targetElement, placement, appendToBody, options, renderer) {
+    const data = positionService.positionElements(hostElement, targetElement, placement, appendToBody, options);
+    if (!data) {
+        return;
+    }
+    const offsets = getOffsets(data);
+    setStyles(targetElement, {
+        'will-change': 'transform',
+        top: '0px',
+        left: '0px',
+        transform: `translate3d(${offsets.left}px, ${offsets.top}px, 0px)`
+    }, renderer);
+    if (data.instance.arrow) {
+        setStyles(data.instance.arrow, data.offsets.arrow, renderer);
+    }
+    updateContainerClass(data, renderer);
+}
+
+class PositioningService {
+    constructor(ngZone, rendererFactory, platformId) {
+        this.update$$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__.Subject();
+        this.positionElements = new Map();
+        this.isDisabled = false;
+        if ((0,_angular_common__WEBPACK_IMPORTED_MODULE_2__.isPlatformBrowser)(platformId)) {
+            ngZone.runOutsideAngular(() => {
+                this.triggerEvent$ = (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.merge)((0,rxjs__WEBPACK_IMPORTED_MODULE_4__.fromEvent)(window, 'scroll', { passive: true }), (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.fromEvent)(window, 'resize', { passive: true }), (0,rxjs__WEBPACK_IMPORTED_MODULE_5__.of)(0, rxjs__WEBPACK_IMPORTED_MODULE_6__.animationFrameScheduler), this.update$$);
+                this.triggerEvent$.subscribe(() => {
+                    if (this.isDisabled) {
+                        return;
+                    }
+                    this.positionElements
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                        .forEach((positionElement) => {
+                        positionElements(_getHtmlElement(positionElement.target), _getHtmlElement(positionElement.element), positionElement.attachment, positionElement.appendToBody, this.options, rendererFactory.createRenderer(null, null));
+                    });
+                });
+            });
+        }
+    }
+    position(options) {
+        this.addPositionElement(options);
+    }
+    get event$() {
+        return this.triggerEvent$;
+    }
+    disable() {
+        this.isDisabled = true;
+    }
+    enable() {
+        this.isDisabled = false;
+    }
+    addPositionElement(options) {
+        this.positionElements.set(_getHtmlElement(options.element), options);
+    }
+    calcPosition() {
+        this.update$$.next();
+    }
+    deletePositionElement(elRef) {
+        this.positionElements.delete(_getHtmlElement(elRef));
+    }
+    setOptions(options) {
+        this.options = options;
+    }
+}
+PositioningService.ɵfac = function PositioningService_Factory(t) { return new (t || PositioningService)(_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__.RendererFactory2), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__.PLATFORM_ID)); };
+PositioningService.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjectable"])({ factory: function PositioningService_Factory() { return new PositioningService((0,_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_7__.NgZone), (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_7__.RendererFactory2), (0,_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_7__.PLATFORM_ID)); }, token: PositioningService, providedIn: "root" });
+PositioningService.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.NgZone },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.RendererFactory2 },
+    { type: Number, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.Inject, args: [_angular_core__WEBPACK_IMPORTED_MODULE_7__.PLATFORM_ID,] }] }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](PositioningService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.Injectable,
+        args: [{ providedIn: 'root' }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.NgZone }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.RendererFactory2 }, { type: Number, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_7__.Inject,
+                args: [_angular_core__WEBPACK_IMPORTED_MODULE_7__.PLATFORM_ID]
+            }] }]; }, null); })();
+function _getHtmlElement(element) {
+    // it means that we got a selector
+    if (typeof element === 'string') {
+        return document.querySelector(element);
+    }
+    if (element instanceof _angular_core__WEBPACK_IMPORTED_MODULE_7__.ElementRef) {
+        return element.nativeElement;
+    }
+    return element !== null && element !== void 0 ? element : null;
+}
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+
+/***/ }),
+
+/***/ 2750:
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/__ivy_ngcc__/tooltip/fesm2015/ngx-bootstrap-tooltip.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TooltipConfig": () => (/* binding */ TooltipConfig),
+/* harmony export */   "TooltipContainerComponent": () => (/* binding */ TooltipContainerComponent),
+/* harmony export */   "TooltipDirective": () => (/* binding */ TooltipDirective),
+/* harmony export */   "TooltipModule": () => (/* binding */ TooltipModule)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 4001);
+/* harmony import */ var ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-bootstrap/utils */ 7162);
+/* harmony import */ var ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-bootstrap/positioning */ 5044);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 8111);
+/* harmony import */ var ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-bootstrap/component-loader */ 6303);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 7589);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ 8267);
+
+
+
+
+
+
+
+
+/** Default values provider for tooltip */
+
+
+
+
+const _c0 = ["*"];
+class TooltipConfig {
+    constructor() {
+        /** sets disable adaptive position */
+        this.adaptivePosition = true;
+        /** tooltip placement, supported positions: 'top', 'bottom', 'left', 'right' */
+        this.placement = 'top';
+        /** array of event names which triggers tooltip opening */
+        this.triggers = 'hover focus';
+        /** delay before showing the tooltip */
+        this.delay = 0;
+    }
+}
+TooltipConfig.ɵfac = function TooltipConfig_Factory(t) { return new (t || TooltipConfig)(); };
+TooltipConfig.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function TooltipConfig_Factory() { return new TooltipConfig(); }, token: TooltipConfig, providedIn: "root" });
+
+class TooltipContainerComponent {
+    constructor(config) {
+        Object.assign(this, config);
+    }
+    get _bsVersions() {
+        return (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.getBsVer)();
+    }
+    ngAfterViewInit() {
+        this.classMap = { in: false, fade: false };
+        if (this.placement) {
+            if (this._bsVersions.isBs5) {
+                this.placement = ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PlacementForBs5[this.placement];
+            }
+            this.classMap[this.placement] = true;
+        }
+        this.classMap[`tooltip-${this.placement}`] = true;
+        this.classMap.in = true;
+        if (this.animation) {
+            this.classMap.fade = true;
+        }
+        if (this.containerClass) {
+            this.classMap[this.containerClass] = true;
+        }
+    }
+}
+TooltipContainerComponent.ɵfac = function TooltipContainerComponent_Factory(t) { return new (t || TooltipContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TooltipConfig)); };
+TooltipContainerComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TooltipContainerComponent, selectors: [["bs-tooltip-container"]], hostAttrs: ["role", "tooltip"], hostVars: 7, hostBindings: function TooltipContainerComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("id", ctx.id);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"]("tooltip in tooltip-" + ctx.placement + " " + "bs-tooltip-" + ctx.placement + " " + ctx.placement + " " + ctx.containerClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("show", !ctx._bsVersions.isBs3)("bs3", ctx._bsVersions.isBs3);
+    } }, ngContentSelectors: _c0, decls: 3, vars: 0, consts: [[1, "tooltip-arrow", "arrow"], [1, "tooltip-inner"]], template: function TooltipContainerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: [".tooltip[_nghost-%COMP%] {\n      display: block;\n      pointer-events: none;\n    }\n    .bs3.tooltip.top[_nghost-%COMP%] > .arrow[_ngcontent-%COMP%] {\n      margin-left: -2px;\n    }\n    .bs3.tooltip.bottom[_nghost-%COMP%] {\n      margin-top: 0px;\n    }\n    .bs3.bs-tooltip-left[_nghost-%COMP%], .bs3.bs-tooltip-right[_nghost-%COMP%]{\n      margin: 0px;\n    }\n    .bs3.bs-tooltip-right[_nghost-%COMP%]   .arrow[_ngcontent-%COMP%], .bs3.bs-tooltip-left[_nghost-%COMP%]   .arrow[_ngcontent-%COMP%] {\n      margin: .3rem 0;\n    }"], changeDetection: 0 });
+TooltipContainerComponent.ctorParameters = () => [
+    { type: TooltipConfig }
+];
+
+let id = 0;
+class TooltipDirective {
+    constructor(_viewContainerRef, cis, config, _elementRef, _renderer, _positionService) {
+        this._elementRef = _elementRef;
+        this._renderer = _renderer;
+        this._positionService = _positionService;
+        this.tooltipId = id++;
+        /** sets disable adaptive position */
+        this.adaptivePosition = true;
+        /** Fired when tooltip content changes */
+        this.tooltipChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        /**
+         * Placement of a tooltip. Accepts: "top", "bottom", "left", "right"
+         */
+        this.placement = 'top';
+        /**
+         * Specifies events that should trigger. Supports a space separated list of
+         * event names.
+         */
+        this.triggers = 'hover focus';
+        /**
+         * Css class for tooltip container
+         */
+        this.containerClass = '';
+        /**
+         * Allows to disable tooltip
+         */
+        this.isDisabled = false;
+        /**
+         * Delay before showing the tooltip
+         */
+        this.delay = 0;
+        /** @deprecated - removed, will be added to configuration */
+        this.tooltipAnimation = true;
+        /** @deprecated */
+        this.tooltipFadeDuration = 150;
+        /** @deprecated */
+        this.tooltipStateChanged = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+        this._tooltip = cis
+            .createLoader(this._elementRef, _viewContainerRef, this._renderer)
+            .provide({ provide: TooltipConfig, useValue: config });
+        Object.assign(this, config);
+        this.onShown = this._tooltip.onShown;
+        this.onHidden = this._tooltip.onHidden;
+    }
+    /**
+     * Returns whether or not the tooltip is currently being shown
+     */
+    get isOpen() {
+        return this._tooltip.isShown;
+    }
+    set isOpen(value) {
+        if (value) {
+            this.show();
+        }
+        else {
+            this.hide();
+        }
+    }
+    /** @deprecated - please use `tooltip` instead */
+    set htmlContent(value) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipHtml was deprecated, please use `tooltip` instead');
+        this.tooltip = value;
+    }
+    /** @deprecated - please use `placement` instead */
+    // eslint-disable-next-line @angular-eslint/no-input-rename
+    set _placement(value) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipPlacement was deprecated, please use `placement` instead');
+        this.placement = value;
+    }
+    /** @deprecated - please use `isOpen` instead */
+    // eslint-disable-next-line @angular-eslint/no-input-rename
+    set _isOpen(value) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipIsOpen was deprecated, please use `isOpen` instead');
+        this.isOpen = value;
+    }
+    get _isOpen() {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipIsOpen was deprecated, please use `isOpen` instead');
+        return this.isOpen;
+    }
+    /** @deprecated - please use `isDisabled` instead */
+    // eslint-disable-next-line @angular-eslint/no-input-rename
+    set _enable(value) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipEnable was deprecated, please use `isDisabled` instead');
+        this.isDisabled = !value;
+    }
+    get _enable() {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipEnable was deprecated, please use `isDisabled` instead');
+        return this.isDisabled;
+    }
+    /** @deprecated - please use `container="body"` instead */
+    // eslint-disable-next-line @angular-eslint/no-input-rename
+    set _appendToBody(value) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipAppendToBody was deprecated, please use `container="body"` instead');
+        this.container = value ? 'body' : this.container;
+    }
+    get _appendToBody() {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipAppendToBody was deprecated, please use `container="body"` instead');
+        return this.container === 'body';
+    }
+    /** @deprecated - will replaced with customClass */
+    // eslint-disable-next-line @angular-eslint/no-input-rename
+    set _popupClass(value) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipClass deprecated');
+    }
+    /** @deprecated - removed */
+    // eslint-disable-next-line @angular-eslint/no-input-rename
+    set _tooltipContext(value) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipContext deprecated');
+    }
+    /** @deprecated */
+    // eslint-disable-next-line @angular-eslint/no-input-rename
+    set _tooltipPopupDelay(value) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipPopupDelay is deprecated, use `delay` instead');
+        this.delay = value;
+    }
+    /** @deprecated -  please use `triggers` instead */
+    get _tooltipTrigger() {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipTrigger was deprecated, please use `triggers` instead');
+        return this.triggers;
+    }
+    set _tooltipTrigger(value) {
+        (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.warnOnce)('tooltipTrigger was deprecated, please use `triggers` instead');
+        this.triggers = (value || '').toString();
+    }
+    ngOnInit() {
+        this._tooltip.listen({
+            triggers: this.triggers,
+            show: () => this.show()
+        });
+        this.tooltipChange.subscribe((value) => {
+            if (!value) {
+                this._tooltip.hide();
+            }
+        });
+        this.onShown.subscribe(() => {
+            this.setAriaDescribedBy();
+        });
+        this.onHidden.subscribe(() => {
+            this.setAriaDescribedBy();
+        });
+    }
+    setAriaDescribedBy() {
+        this._ariaDescribedby = this.isOpen ? `tooltip-${this.tooltipId}` : void 0;
+        if (this._ariaDescribedby) {
+            this._renderer.setAttribute(this._elementRef.nativeElement, 'aria-describedby', this._ariaDescribedby);
+        }
+        else {
+            this._renderer.removeAttribute(this._elementRef.nativeElement, 'aria-describedby');
+        }
+    }
+    /**
+     * Toggles an element’s tooltip. This is considered a “manual” triggering of
+     * the tooltip.
+     */
+    toggle() {
+        if (this.isOpen) {
+            return this.hide();
+        }
+        this.show();
+    }
+    /**
+     * Opens an element’s tooltip. This is considered a “manual” triggering of
+     * the tooltip.
+     */
+    show() {
+        this._positionService.setOptions({
+            modifiers: {
+                flip: {
+                    enabled: this.adaptivePosition
+                },
+                preventOverflow: {
+                    enabled: this.adaptivePosition,
+                    boundariesElement: this.boundariesElement || 'scrollParent'
+                }
+            }
+        });
+        if (this.isOpen ||
+            this.isDisabled ||
+            this._delayTimeoutId ||
+            !this.tooltip) {
+            return;
+        }
+        const showTooltip = () => {
+            if (this._delayTimeoutId) {
+                this._delayTimeoutId = undefined;
+            }
+            this._tooltip
+                .attach(TooltipContainerComponent)
+                .to(this.container)
+                .position({ attachment: this.placement })
+                .show({
+                content: this.tooltip,
+                placement: this.placement,
+                containerClass: this.containerClass,
+                id: `tooltip-${this.tooltipId}`
+            });
+        };
+        const cancelDelayedTooltipShowing = () => {
+            if (this._tooltipCancelShowFn) {
+                this._tooltipCancelShowFn();
+            }
+        };
+        if (this.delay) {
+            if (this._delaySubscription) {
+                this._delaySubscription.unsubscribe();
+            }
+            this._delaySubscription = (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.timer)(this.delay).subscribe(() => {
+                showTooltip();
+                cancelDelayedTooltipShowing();
+            });
+            if (this.triggers) {
+                (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.parseTriggers)(this.triggers)
+                    .forEach((trigger) => {
+                    if (!trigger.close) {
+                        return;
+                    }
+                    this._tooltipCancelShowFn = this._renderer.listen(this._elementRef.nativeElement, trigger.close, () => {
+                        var _a;
+                        (_a = this._delaySubscription) === null || _a === void 0 ? void 0 : _a.unsubscribe();
+                        cancelDelayedTooltipShowing();
+                    });
+                });
+            }
+        }
+        else {
+            showTooltip();
+        }
+    }
+    /**
+     * Closes an element’s tooltip. This is considered a “manual” triggering of
+     * the tooltip.
+     */
+    hide() {
+        var _a;
+        if (this._delayTimeoutId) {
+            clearTimeout(this._delayTimeoutId);
+            this._delayTimeoutId = undefined;
+        }
+        if (!this._tooltip.isShown) {
+            return;
+        }
+        if ((_a = this._tooltip.instance) === null || _a === void 0 ? void 0 : _a.classMap) {
+            this._tooltip.instance.classMap.in = false;
+        }
+        setTimeout(() => {
+            this._tooltip.hide();
+        }, this.tooltipFadeDuration);
+    }
+    ngOnDestroy() {
+        this._tooltip.dispose();
+        this.tooltipChange.unsubscribe();
+        if (this._delaySubscription) {
+            this._delaySubscription.unsubscribe();
+        }
+        this.onShown.unsubscribe();
+        this.onHidden.unsubscribe();
+    }
+}
+TooltipDirective.ɵfac = function TooltipDirective_Factory(t) { return new (t || TooltipDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_4__.ComponentLoaderFactory), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TooltipConfig), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService)); };
+TooltipDirective.ɵdir = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: TooltipDirective, selectors: [["", "tooltip", ""], ["", "tooltipHtml", ""]], inputs: { adaptivePosition: "adaptivePosition", placement: "placement", triggers: "triggers", containerClass: "containerClass", isDisabled: "isDisabled", delay: "delay", tooltipAnimation: "tooltipAnimation", tooltipFadeDuration: "tooltipFadeDuration", isOpen: "isOpen", htmlContent: ["tooltipHtml", "htmlContent"], tooltip: "tooltip", _placement: ["tooltipPlacement", "_placement"], _isOpen: ["tooltipIsOpen", "_isOpen"], _enable: ["tooltipEnable", "_enable"], _appendToBody: ["tooltipAppendToBody", "_appendToBody"], container: "container", _popupClass: ["tooltipClass", "_popupClass"], _tooltipContext: ["tooltipContext", "_tooltipContext"], _tooltipPopupDelay: ["tooltipPopupDelay", "_tooltipPopupDelay"], _tooltipTrigger: ["tooltipTrigger", "_tooltipTrigger"], boundariesElement: "boundariesElement" }, outputs: { tooltipChange: "tooltipChange", tooltipStateChanged: "tooltipStateChanged", onShown: "onShown", onHidden: "onHidden" }, exportAs: ["bs-tooltip"] });
+TooltipDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef },
+    { type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_4__.ComponentLoaderFactory },
+    { type: TooltipConfig },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2 },
+    { type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService }
+];
+TooltipDirective.propDecorators = {
+    adaptivePosition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    tooltip: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    tooltipChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }],
+    placement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    triggers: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    container: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    containerClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    boundariesElement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    isOpen: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    isDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    delay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    onShown: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }],
+    onHidden: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }],
+    htmlContent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['tooltipHtml',] }],
+    _placement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['tooltipPlacement',] }],
+    _isOpen: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['tooltipIsOpen',] }],
+    _enable: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['tooltipEnable',] }],
+    _appendToBody: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['tooltipAppendToBody',] }],
+    tooltipAnimation: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    _popupClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['tooltipClass',] }],
+    _tooltipContext: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['tooltipContext',] }],
+    _tooltipPopupDelay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['tooltipPopupDelay',] }],
+    tooltipFadeDuration: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input }],
+    _tooltipTrigger: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input, args: ['tooltipTrigger',] }],
+    tooltipStateChanged: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output }]
+};
+(0,tslib__WEBPACK_IMPORTED_MODULE_5__.__decorate)([
+    (0,ngx_bootstrap_utils__WEBPACK_IMPORTED_MODULE_1__.OnChange)(),
+    (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__metadata)("design:type", Object)
+], TooltipDirective.prototype, "tooltip", void 0);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TooltipConfig, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injectable,
+        args: [{ providedIn: 'root' }]
+    }], function () { return []; }, null); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TooltipContainerComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+        args: [{
+                selector: 'bs-tooltip-container',
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush,
+                // eslint-disable-next-line @angular-eslint/no-host-metadata-property
+                host: {
+                    '[class]': '"tooltip in tooltip-" + placement + " " + "bs-tooltip-" + placement + " " + placement + " " + containerClass',
+                    '[class.show]': '!_bsVersions.isBs3',
+                    '[class.bs3]': '_bsVersions.isBs3',
+                    '[attr.id]': 'this.id',
+                    role: 'tooltip'
+                },
+                template: `
+    <div class="tooltip-arrow arrow"></div>
+    <div class="tooltip-inner"><ng-content></ng-content></div>
+    `,
+                styles: [`
+    :host.tooltip {
+      display: block;
+      pointer-events: none;
+    }
+    :host.bs3.tooltip.top>.arrow {
+      margin-left: -2px;
+    }
+    :host.bs3.tooltip.bottom {
+      margin-top: 0px;
+    }
+    :host.bs3.bs-tooltip-left, :host.bs3.bs-tooltip-right{
+      margin: 0px;
+    }
+    :host.bs3.bs-tooltip-right .arrow, :host.bs3.bs-tooltip-left .arrow {
+      margin: .3rem 0;
+    }
+  `]
+            }]
+    }], function () { return [{ type: TooltipConfig }]; }, null); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TooltipDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+        args: [{
+                selector: '[tooltip], [tooltipHtml]',
+                exportAs: 'bs-tooltip'
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef }, { type: ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_4__.ComponentLoaderFactory }, { type: TooltipConfig }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2 }, { type: ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService }]; }, { adaptivePosition: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], tooltipChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], placement: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], triggers: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], containerClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], isDisabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], delay: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], tooltipAnimation: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], tooltipFadeDuration: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], tooltipStateChanged: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], onShown: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], onHidden: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+        }], isOpen: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], htmlContent: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipHtml']
+        }], tooltip: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], _placement: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipPlacement']
+        }], _isOpen: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipIsOpen']
+        }], _enable: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipEnable']
+        }], _appendToBody: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipAppendToBody']
+        }], container: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }], _popupClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipClass']
+        }], _tooltipContext: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipContext']
+        }], _tooltipPopupDelay: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipPopupDelay']
+        }], _tooltipTrigger: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipTrigger']
+        }], boundariesElement: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+        }] }); })();
+
+class TooltipModule {
+    static forRoot() {
+        return {
+            ngModule: TooltipModule,
+            providers: [ngx_bootstrap_component_loader__WEBPACK_IMPORTED_MODULE_4__.ComponentLoaderFactory, ngx_bootstrap_positioning__WEBPACK_IMPORTED_MODULE_2__.PositioningService]
+        };
+    }
+}
+TooltipModule.ɵfac = function TooltipModule_Factory(t) { return new (t || TooltipModule)(); };
+TooltipModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: TooltipModule });
+TooltipModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule]] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TooltipModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule],
+                declarations: [TooltipDirective, TooltipContainerComponent],
+                exports: [TooltipDirective],
+                entryComponents: [TooltipContainerComponent]
+            }]
+    }], null, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](TooltipModule, { declarations: function () { return [TooltipDirective, TooltipContainerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule]; }, exports: function () { return [TooltipDirective]; } }); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+
+/***/ }),
+
+/***/ 7162:
+/*!***************************************************************************************!*\
+  !*** ./node_modules/ngx-bootstrap/__ivy_ngcc__/utils/fesm2015/ngx-bootstrap-utils.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BsVerions": () => (/* binding */ BsVerions),
+/* harmony export */   "LinkedList": () => (/* binding */ LinkedList),
+/* harmony export */   "OnChange": () => (/* binding */ OnChange),
+/* harmony export */   "Trigger": () => (/* binding */ Trigger),
+/* harmony export */   "Utils": () => (/* binding */ Utils),
+/* harmony export */   "currentBsVersion": () => (/* binding */ currentBsVersion),
+/* harmony export */   "document": () => (/* binding */ document),
+/* harmony export */   "getBsVer": () => (/* binding */ getBsVer),
+/* harmony export */   "isBs3": () => (/* binding */ isBs3),
+/* harmony export */   "listenToTriggers": () => (/* binding */ listenToTriggers),
+/* harmony export */   "listenToTriggersV2": () => (/* binding */ listenToTriggersV2),
+/* harmony export */   "parseTriggers": () => (/* binding */ parseTriggers),
+/* harmony export */   "registerEscClick": () => (/* binding */ registerEscClick),
+/* harmony export */   "registerOutsideClick": () => (/* binding */ registerOutsideClick),
+/* harmony export */   "setTheme": () => (/* binding */ setTheme),
+/* harmony export */   "warnOnce": () => (/* binding */ warnOnce),
+/* harmony export */   "window": () => (/* binding */ win),
+/* harmony export */   "ɵa": () => (/* binding */ isBs4),
+/* harmony export */   "ɵb": () => (/* binding */ isBs5)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 4001);
+
+
+/**
+ * @copyright Valor Software
+ * @copyright Angular ng-bootstrap team
+ */
+class Trigger {
+    constructor(open, close) {
+        this.open = open;
+        this.close = close || open;
+    }
+    isManual() {
+        return this.open === 'manual' || this.close === 'manual';
+    }
+}
+
+const DEFAULT_ALIASES = {
+    hover: ['mouseover', 'mouseout'],
+    focus: ['focusin', 'focusout']
+};
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function parseTriggers(triggers, aliases = DEFAULT_ALIASES) {
+    const trimmedTriggers = (triggers || '').trim();
+    if (trimmedTriggers.length === 0) {
+        return [];
+    }
+    const parsedTriggers = trimmedTriggers
+        .split(/\s+/)
+        .map((trigger) => trigger.split(':'))
+        .map((triggerPair) => {
+        const alias = aliases[triggerPair[0]] || triggerPair;
+        return new Trigger(alias[0], alias[1]);
+    });
+    const manualTriggers = parsedTriggers.filter((triggerPair) => triggerPair.isManual());
+    if (manualTriggers.length > 1) {
+        throw new Error('Triggers parse error: only one manual trigger is allowed');
+    }
+    if (manualTriggers.length === 1 && parsedTriggers.length > 1) {
+        throw new Error('Triggers parse error: manual trigger can\'t be mixed with other triggers');
+    }
+    return parsedTriggers;
+}
+function listenToTriggers(renderer, 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+target, triggers, showFn, hideFn, toggleFn) {
+    const parsedTriggers = parseTriggers(triggers);
+    const listeners = [];
+    if (parsedTriggers.length === 1 && parsedTriggers[0].isManual()) {
+        return Function.prototype;
+    }
+    parsedTriggers.forEach((trigger) => {
+        if (trigger.open === trigger.close) {
+            listeners.push(renderer.listen(target, trigger.open, toggleFn));
+            return;
+        }
+        listeners.push(renderer.listen(target, trigger.open, showFn));
+        if (trigger.close) {
+            listeners.push(renderer.listen(target, trigger.close, hideFn));
+        }
+    });
+    return () => {
+        listeners.forEach((unsubscribeFn) => unsubscribeFn());
+    };
+}
+function listenToTriggersV2(renderer, options) {
+    const parsedTriggers = parseTriggers(options.triggers);
+    const target = options.target;
+    // do nothing
+    if (parsedTriggers.length === 1 && parsedTriggers[0].isManual()) {
+        return Function.prototype;
+    }
+    // all listeners
+    const listeners = [];
+    // lazy listeners registration
+    const _registerHide = [];
+    const registerHide = () => {
+        // add hide listeners to unregister array
+        _registerHide.forEach((fn) => listeners.push(fn()));
+        // register hide events only once
+        _registerHide.length = 0;
+    };
+    // register open\close\toggle listeners
+    parsedTriggers.forEach((trigger) => {
+        const useToggle = trigger.open === trigger.close;
+        const showFn = useToggle ? options.toggle : options.show;
+        if (!useToggle && trigger.close && options.hide) {
+            const _hide = renderer.listen(target, trigger.close, options.hide);
+            _registerHide.push(() => _hide);
+        }
+        if (showFn) {
+            listeners.push(renderer.listen(target, trigger.open, () => showFn(registerHide)));
+        }
+    });
+    return () => {
+        listeners.forEach((unsubscribeFn) => unsubscribeFn());
+    };
+}
+function registerOutsideClick(renderer, options) {
+    if (!options.outsideClick) {
+        return Function.prototype;
+    }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return renderer.listen('document', 'click', (event) => {
+        if (options.target && options.target.contains(event.target)) {
+            return;
+        }
+        if (options.targets &&
+            options.targets.some(target => target.contains(event.target))) {
+            return;
+        }
+        if (options.hide) {
+            options.hide();
+        }
+    });
+}
+function registerEscClick(renderer, options) {
+    if (!options.outsideEsc) {
+        return Function.prototype;
+    }
+    return renderer.listen('document', 'keyup.esc', (event) => {
+        if (options.target && options.target.contains(event.target)) {
+            return;
+        }
+        if (options.targets &&
+            options.targets.some(target => target.contains(event.target))) {
+            return;
+        }
+        if (options.hide) {
+            options.hide();
+        }
+    });
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * JS version of browser APIs. This library can only run in the browser.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const win = (typeof window !== 'undefined' && window) || {};
+const document = win.document;
+const location = win.location;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const gc = win.gc ? () => win.gc() : () => null;
+const performance = win.performance ? win.performance : null;
+const Event = win.Event;
+const MouseEvent = win.MouseEvent;
+const KeyboardEvent = win.KeyboardEvent;
+const EventTarget = win.EventTarget;
+const History = win.History;
+const Location = win.Location;
+const EventListener = win.EventListener;
+
+var BsVerions;
+(function (BsVerions) {
+    BsVerions["isBs3"] = "bs3";
+    BsVerions["isBs4"] = "bs4";
+    BsVerions["isBs5"] = "bs5";
+})(BsVerions || (BsVerions = {}));
+let guessedVersion;
+function _guessBsVersion() {
+    if (typeof win.document === 'undefined') {
+        return 'bs4';
+    }
+    const spanEl = win.document.createElement('span');
+    spanEl.innerText = 'testing bs version';
+    spanEl.classList.add('d-none');
+    spanEl.classList.add('visually-hidden');
+    win.document.head.appendChild(spanEl);
+    const rect = spanEl.getBoundingClientRect();
+    const overflowStyle = win.getComputedStyle(spanEl).overflow;
+    win.document.head.removeChild(spanEl);
+    if (!rect || (rect && rect.top !== 0)) {
+        return 'bs3';
+    }
+    if (overflowStyle && overflowStyle === 'hidden') {
+        return 'bs5';
+    }
+    return 'bs4';
+}
+function setTheme(theme) {
+    guessedVersion = theme;
+}
+// todo: in ngx-bootstrap, bs4 will became a default one
+function isBs3() {
+    if (typeof win === 'undefined') {
+        return true;
+    }
+    if (typeof win.__theme === 'undefined') {
+        if (guessedVersion) {
+            return guessedVersion === 'bs3';
+        }
+        guessedVersion = _guessBsVersion();
+        return guessedVersion === 'bs3';
+    }
+    return win.__theme === 'bs3';
+}
+function isBs4() {
+    if (isBs3())
+        return false;
+    if (guessedVersion)
+        return guessedVersion === 'bs4';
+    guessedVersion = _guessBsVersion();
+    return guessedVersion === 'bs4';
+}
+function isBs5() {
+    if (isBs3() || isBs4())
+        return false;
+    if (guessedVersion)
+        return guessedVersion === 'bs5';
+    guessedVersion = _guessBsVersion();
+    return guessedVersion === 'bs5';
+}
+function getBsVer() {
+    return {
+        isBs3: isBs3(),
+        isBs4: isBs4(),
+        isBs5: isBs5()
+    };
+}
+function currentBsVersion() {
+    const bsVer = getBsVer();
+    const resVersion = Object.keys(bsVer).find(key => bsVer[key]);
+    return BsVerions[resVersion];
+}
+
+class LinkedList {
+    constructor() {
+        this.length = 0;
+        this.asArray = [];
+        // Array methods overriding END
+    }
+    get(position) {
+        if (this.length === 0 || position < 0 || position >= this.length) {
+            return void 0;
+        }
+        let current = this.head;
+        for (let index = 0; index < position; index++) {
+            current = current === null || current === void 0 ? void 0 : current.next;
+        }
+        return current === null || current === void 0 ? void 0 : current.value;
+    }
+    add(value, position = this.length) {
+        if (position < 0 || position > this.length) {
+            throw new Error('Position is out of the list');
+        }
+        const node = {
+            value,
+            next: undefined,
+            previous: undefined
+        };
+        if (this.length === 0) {
+            this.head = node;
+            this.tail = node;
+            this.current = node;
+        }
+        else {
+            if (position === 0 && this.head) {
+                // first node
+                node.next = this.head;
+                this.head.previous = node;
+                this.head = node;
+            }
+            else if (position === this.length && this.tail) {
+                // last node
+                this.tail.next = node;
+                node.previous = this.tail;
+                this.tail = node;
+            }
+            else {
+                // node in middle
+                const currentPreviousNode = this.getNode(position - 1);
+                const currentNextNode = currentPreviousNode === null || currentPreviousNode === void 0 ? void 0 : currentPreviousNode.next;
+                if (currentPreviousNode && currentNextNode) {
+                    currentPreviousNode.next = node;
+                    currentNextNode.previous = node;
+                    node.previous = currentPreviousNode;
+                    node.next = currentNextNode;
+                }
+            }
+        }
+        this.length++;
+        this.createInternalArrayRepresentation();
+    }
+    remove(position = 0) {
+        var _a;
+        if (this.length === 0 || position < 0 || position >= this.length) {
+            throw new Error('Position is out of the list');
+        }
+        if (position === 0 && this.head) {
+            // first node
+            this.head = this.head.next;
+            if (this.head) {
+                // there is no second node
+                this.head.previous = undefined;
+            }
+            else {
+                // there is no second node
+                this.tail = undefined;
+            }
+        }
+        else if (position === this.length - 1 && ((_a = this.tail) === null || _a === void 0 ? void 0 : _a.previous)) {
+            // last node
+            this.tail = this.tail.previous;
+            this.tail.next = undefined;
+        }
+        else {
+            // middle node
+            const removedNode = this.getNode(position);
+            if ((removedNode === null || removedNode === void 0 ? void 0 : removedNode.next) && removedNode.previous) {
+                removedNode.next.previous = removedNode.previous;
+                removedNode.previous.next = removedNode.next;
+            }
+        }
+        this.length--;
+        this.createInternalArrayRepresentation();
+    }
+    set(position, value) {
+        if (this.length === 0 || position < 0 || position >= this.length) {
+            throw new Error('Position is out of the list');
+        }
+        const node = this.getNode(position);
+        if (node) {
+            node.value = value;
+            this.createInternalArrayRepresentation();
+        }
+    }
+    toArray() {
+        return this.asArray;
+    }
+    findAll(fn) {
+        let current = this.head;
+        const result = [];
+        if (!current) {
+            return result;
+        }
+        for (let index = 0; index < this.length; index++) {
+            if (!current) {
+                return result;
+            }
+            if (fn(current.value, index)) {
+                result.push({ index, value: current.value });
+            }
+            current = current.next;
+        }
+        return result;
+    }
+    // Array methods overriding start
+    push(...args) {
+        args.forEach((arg) => {
+            this.add(arg);
+        });
+        return this.length;
+    }
+    pop() {
+        if (this.length === 0) {
+            return;
+        }
+        const last = this.tail;
+        this.remove(this.length - 1);
+        return last === null || last === void 0 ? void 0 : last.value;
+    }
+    unshift(...args) {
+        args.reverse();
+        args.forEach((arg) => {
+            this.add(arg, 0);
+        });
+        return this.length;
+    }
+    shift() {
+        var _a;
+        if (this.length === 0) {
+            return undefined;
+        }
+        const lastItem = (_a = this.head) === null || _a === void 0 ? void 0 : _a.value;
+        this.remove();
+        return lastItem;
+    }
+    forEach(fn) {
+        let current = this.head;
+        for (let index = 0; index < this.length; index++) {
+            if (!current) {
+                return;
+            }
+            fn(current.value, index);
+            current = current.next;
+        }
+    }
+    indexOf(value) {
+        let current = this.head;
+        let position = -1;
+        for (let index = 0; index < this.length; index++) {
+            if (!current) {
+                return position;
+            }
+            if (current.value === value) {
+                position = index;
+                break;
+            }
+            current = current.next;
+        }
+        return position;
+    }
+    some(fn) {
+        let current = this.head;
+        let result = false;
+        while (current && !result) {
+            if (fn(current.value)) {
+                result = true;
+                break;
+            }
+            current = current.next;
+        }
+        return result;
+    }
+    every(fn) {
+        let current = this.head;
+        let result = true;
+        while (current && result) {
+            if (!fn(current.value)) {
+                result = false;
+            }
+            current = current.next;
+        }
+        return result;
+    }
+    toString() {
+        return '[Linked List]';
+    }
+    find(fn) {
+        let current = this.head;
+        for (let index = 0; index < this.length; index++) {
+            if (!current) {
+                return;
+            }
+            if (fn(current.value, index)) {
+                return current.value;
+            }
+            current = current.next;
+        }
+    }
+    findIndex(fn) {
+        let current = this.head;
+        for (let index = 0; index < this.length; index++) {
+            if (!current) {
+                return -1;
+            }
+            if (fn(current.value, index)) {
+                return index;
+            }
+            current = current.next;
+        }
+        return -1;
+    }
+    getNode(position) {
+        if (this.length === 0 || position < 0 || position >= this.length) {
+            throw new Error('Position is out of the list');
+        }
+        let current = this.head;
+        for (let index = 0; index < position; index++) {
+            current = current === null || current === void 0 ? void 0 : current.next;
+        }
+        return current;
+    }
+    createInternalArrayRepresentation() {
+        const outArray = [];
+        let current = this.head;
+        while (current) {
+            outArray.push(current.value);
+            current = current.next;
+        }
+        this.asArray = outArray;
+    }
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function OnChange() {
+    const sufix = 'Change';
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return function OnChangeHandler(target, propertyKey) {
+        const _key = ` __${propertyKey}Value`;
+        Object.defineProperty(target, propertyKey, {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            get() {
+                return this[_key];
+            },
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            set(value) {
+                const prevValue = this[_key];
+                this[_key] = value;
+                if (prevValue !== value && this[propertyKey + sufix]) {
+                    this[propertyKey + sufix].emit(value);
+                }
+            }
+        });
+    };
+}
+
+class Utils {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    static reflow(element) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ((bs) => bs)(element.offsetHeight);
+    }
+    // source: https://github.com/jquery/jquery/blob/master/src/css/var/getStyles.js
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    static getStyles(elem) {
+        // Support: IE <=11 only, Firefox <=30 (#15098, #14150)
+        // IE throws on elements created in popups
+        // FF meanwhile throws on frame elements through "defaultView.getComputedStyle"
+        let view = elem.ownerDocument.defaultView;
+        if (!view || !view.opener) {
+            view = win;
+        }
+        return view.getComputedStyle(elem);
+    }
+    static stackOverflowConfig() {
+        const bsVer = currentBsVersion();
+        return {
+            crossorigin: bsVer !== 'bs3' ? "anonymous" : undefined,
+            integrity: bsVer === 'bs5' ? 'sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We' : bsVer === 'bs4' ? 'sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2' : undefined,
+            cdnLink: bsVer === 'bs5' ? 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' : bsVer === 'bs4' ? 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css' : 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+        };
+    }
+}
+
+const _messagesHash = {};
+const _hideMsg = typeof console === 'undefined' || !('warn' in console);
+function warnOnce(msg) {
+    if (!(0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.isDevMode)() || _hideMsg || msg in _messagesHash) {
+        return;
+    }
+    _messagesHash[msg] = true;
+    console.warn(msg);
+}
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+
+/***/ }),
+
 /***/ 266:
 /*!****************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/BehaviorSubject.js ***!
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "BehaviorSubject": () => (/* binding */ BehaviorSubject)
@@ -11573,6 +19104,7 @@ class BehaviorSubject extends _Subject__WEBPACK_IMPORTED_MODULE_0__.Subject {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "InnerSubscriber": () => (/* binding */ InnerSubscriber)
@@ -11609,6 +19141,7 @@ class InnerSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscribe
   \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "NotificationKind": () => (/* binding */ NotificationKind),
@@ -11699,6 +19232,7 @@ Notification.undefinedValueNotification = new Notification('N', undefined);
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Observable": () => (/* binding */ Observable)
@@ -11824,6 +19358,7 @@ function getPromiseCtor(promiseCtor) {
   \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "empty": () => (/* binding */ empty)
@@ -11855,6 +19390,7 @@ const empty = {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "OuterSubscriber": () => (/* binding */ OuterSubscriber)
@@ -11882,6 +19418,7 @@ class OuterSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscribe
   \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Scheduler": () => (/* binding */ Scheduler)
@@ -11906,6 +19443,7 @@ Scheduler.now = () => Date.now();
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SubjectSubscriber": () => (/* binding */ SubjectSubscriber),
@@ -12071,6 +19609,7 @@ class AnonymousSubject extends Subject {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SubjectSubscription": () => (/* binding */ SubjectSubscription)
@@ -12111,6 +19650,7 @@ class SubjectSubscription extends _Subscription__WEBPACK_IMPORTED_MODULE_0__.Sub
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Subscriber": () => (/* binding */ Subscriber),
@@ -12353,6 +19893,7 @@ class SafeSubscriber extends Subscriber {
   \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Subscription": () => (/* binding */ Subscription)
@@ -12507,6 +20048,7 @@ function flattenUnsubscriptionErrors(errors) {
   \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "config": () => (/* binding */ config)
@@ -12538,6 +20080,7 @@ const config = {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "SimpleInnerSubscriber": () => (/* binding */ SimpleInnerSubscriber),
@@ -12636,6 +20179,7 @@ function innerSubscribe(result, innerSubscriber) {
   \*********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ConnectableObservable": () => (/* binding */ ConnectableObservable),
@@ -12784,6 +20328,7 @@ class RefCountSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_4__.Subscr
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "combineLatest": () => (/* binding */ combineLatest),
@@ -12893,6 +20438,7 @@ class CombineLatestSubscriber extends _OuterSubscriber__WEBPACK_IMPORTED_MODULE_
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "concat": () => (/* binding */ concat)
@@ -12914,6 +20460,7 @@ function concat(...observables) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "defer": () => (/* binding */ defer)
@@ -12948,6 +20495,7 @@ function defer(observableFactory) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "EMPTY": () => (/* binding */ EMPTY),
@@ -12972,6 +20520,7 @@ function emptyScheduled(scheduler) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "forkJoin": () => (/* binding */ forkJoin)
@@ -13051,6 +20600,7 @@ function forkJoinInternal(sources, keys) {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "from": () => (/* binding */ from)
@@ -13082,6 +20632,7 @@ function from(input, scheduler) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "fromArray": () => (/* binding */ fromArray)
@@ -13110,6 +20661,7 @@ function fromArray(input, scheduler) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "fromEvent": () => (/* binding */ fromEvent)
@@ -13189,6 +20741,7 @@ function isEventTarget(sourceObj) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "merge": () => (/* binding */ merge)
@@ -13229,6 +20782,7 @@ function merge(...observables) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "NEVER": () => (/* binding */ NEVER),
@@ -13252,6 +20806,7 @@ function never() {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "of": () => (/* binding */ of)
@@ -13282,6 +20837,7 @@ function of(...args) {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "race": () => (/* binding */ race),
@@ -13365,6 +20921,7 @@ class RaceSubscriber extends _OuterSubscriber__WEBPACK_IMPORTED_MODULE_2__.Outer
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "throwError": () => (/* binding */ throwError)
@@ -13392,6 +20949,7 @@ function dispatch({ error, subscriber }) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "timer": () => (/* binding */ timer)
@@ -13446,6 +21004,7 @@ function dispatch(state) {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "zip": () => (/* binding */ zip),
@@ -13663,6 +21222,7 @@ class ZipBufferIterator extends _innerSubscribe__WEBPACK_IMPORTED_MODULE_4__.Sim
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "catchError": () => (/* binding */ catchError)
@@ -13720,6 +21280,7 @@ class CatchSubscriber extends _innerSubscribe__WEBPACK_IMPORTED_MODULE_0__.Simpl
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "concatAll": () => (/* binding */ concatAll)
@@ -13739,6 +21300,7 @@ function concatAll() {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "concatMap": () => (/* binding */ concatMap)
@@ -13758,6 +21320,7 @@ function concatMap(project, resultSelector) {
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "defaultIfEmpty": () => (/* binding */ defaultIfEmpty)
@@ -13802,6 +21365,7 @@ class DefaultIfEmptySubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "delay": () => (/* binding */ delay)
@@ -13902,6 +21466,7 @@ class DelayMessage {
   \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "distinctUntilChanged": () => (/* binding */ distinctUntilChanged)
@@ -13970,6 +21535,7 @@ class DistinctUntilChangedSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODUL
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "endWith": () => (/* binding */ endWith)
@@ -13991,6 +21557,7 @@ function endWith(...array) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "filter": () => (/* binding */ filter)
@@ -14042,6 +21609,7 @@ class FilterSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscrib
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "finalize": () => (/* binding */ finalize)
@@ -14077,6 +21645,7 @@ class FinallySubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscri
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "first": () => (/* binding */ first)
@@ -14107,6 +21676,7 @@ function first(predicate, defaultValue) {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "last": () => (/* binding */ last)
@@ -14137,6 +21707,7 @@ function last(predicate, defaultValue) {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "map": () => (/* binding */ map),
@@ -14190,6 +21761,7 @@ class MapSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscriber 
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "mergeAll": () => (/* binding */ mergeAll)
@@ -14211,6 +21783,7 @@ function mergeAll(concurrent = Number.POSITIVE_INFINITY) {
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "mergeMap": () => (/* binding */ mergeMap),
@@ -14314,6 +21887,7 @@ const flatMap = mergeMap;
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "multicast": () => (/* binding */ multicast),
@@ -14364,6 +21938,7 @@ class MulticastOperator {
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "refCount": () => (/* binding */ refCount)
@@ -14430,6 +22005,7 @@ class RefCountSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscr
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scan": () => (/* binding */ scan)
@@ -14502,6 +22078,7 @@ class ScanSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscriber
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "share": () => (/* binding */ share)
@@ -14528,6 +22105,7 @@ function share() {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "skip": () => (/* binding */ skip)
@@ -14567,6 +22145,7 @@ class SkipSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscriber
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "startWith": () => (/* binding */ startWith)
@@ -14595,6 +22174,7 @@ function startWith(...array) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "switchMap": () => (/* binding */ switchMap)
@@ -14680,6 +22260,7 @@ class SwitchMapSubscriber extends _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__.S
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "take": () => (/* binding */ take)
@@ -14739,6 +22320,7 @@ class TakeSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_2__.Subscriber
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "takeLast": () => (/* binding */ takeLast)
@@ -14813,6 +22395,7 @@ class TakeLastSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_2__.Subscr
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "takeUntil": () => (/* binding */ takeUntil)
@@ -14858,6 +22441,7 @@ class TakeUntilSubscriber extends _innerSubscribe__WEBPACK_IMPORTED_MODULE_0__.S
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "tap": () => (/* binding */ tap)
@@ -14943,6 +22527,7 @@ class TapSubscriber extends _Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscriber 
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "throwIfEmpty": () => (/* binding */ throwIfEmpty)
@@ -15003,6 +22588,7 @@ function defaultErrorFactory() {
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "withLatestFrom": () => (/* binding */ withLatestFrom)
@@ -15091,6 +22677,7 @@ class WithLatestFromSubscriber extends _OuterSubscriber__WEBPACK_IMPORTED_MODULE
   \************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduleArray": () => (/* binding */ scheduleArray)
@@ -15126,6 +22713,7 @@ function scheduleArray(input, scheduler) {
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduleIterable": () => (/* binding */ scheduleIterable)
@@ -15187,6 +22775,7 @@ function scheduleIterable(input, scheduler) {
   \*****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduleObservable": () => (/* binding */ scheduleObservable)
@@ -15221,6 +22810,7 @@ function scheduleObservable(input, scheduler) {
   \**************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "schedulePromise": () => (/* binding */ schedulePromise)
@@ -15253,6 +22843,7 @@ function schedulePromise(input, scheduler) {
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "scheduled": () => (/* binding */ scheduled)
@@ -15300,6 +22891,7 @@ function scheduled(input, scheduler) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Action": () => (/* binding */ Action)
@@ -15318,12 +22910,94 @@ class Action extends _Subscription__WEBPACK_IMPORTED_MODULE_0__.Subscription {
 
 /***/ }),
 
+/***/ 113:
+/*!*******************************************************************************!*\
+  !*** ./node_modules/rxjs/_esm2015/internal/scheduler/AnimationFrameAction.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnimationFrameAction": () => (/* binding */ AnimationFrameAction)
+/* harmony export */ });
+/* harmony import */ var _AsyncAction__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncAction */ 7150);
+
+class AnimationFrameAction extends _AsyncAction__WEBPACK_IMPORTED_MODULE_0__.AsyncAction {
+    constructor(scheduler, work) {
+        super(scheduler, work);
+        this.scheduler = scheduler;
+        this.work = work;
+    }
+    requestAsyncId(scheduler, id, delay = 0) {
+        if (delay !== null && delay > 0) {
+            return super.requestAsyncId(scheduler, id, delay);
+        }
+        scheduler.actions.push(this);
+        return scheduler.scheduled || (scheduler.scheduled = requestAnimationFrame(() => scheduler.flush(null)));
+    }
+    recycleAsyncId(scheduler, id, delay = 0) {
+        if ((delay !== null && delay > 0) || (delay === null && this.delay > 0)) {
+            return super.recycleAsyncId(scheduler, id, delay);
+        }
+        if (scheduler.actions.length === 0) {
+            cancelAnimationFrame(id);
+            scheduler.scheduled = undefined;
+        }
+        return undefined;
+    }
+}
+
+
+/***/ }),
+
+/***/ 2124:
+/*!**********************************************************************************!*\
+  !*** ./node_modules/rxjs/_esm2015/internal/scheduler/AnimationFrameScheduler.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnimationFrameScheduler": () => (/* binding */ AnimationFrameScheduler)
+/* harmony export */ });
+/* harmony import */ var _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncScheduler */ 7916);
+
+class AnimationFrameScheduler extends _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__.AsyncScheduler {
+    flush(action) {
+        this.active = true;
+        this.scheduled = undefined;
+        const { actions } = this;
+        let error;
+        let index = -1;
+        let count = actions.length;
+        action = action || actions.shift();
+        do {
+            if (error = action.execute(action.state, action.delay)) {
+                break;
+            }
+        } while (++index < count && (action = actions.shift()));
+        this.active = false;
+        if (error) {
+            while (++index < count && (action = actions.shift())) {
+                action.unsubscribe();
+            }
+            throw error;
+        }
+    }
+}
+
+
+/***/ }),
+
 /***/ 7150:
 /*!**********************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/scheduler/AsyncAction.js ***!
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AsyncAction": () => (/* binding */ AsyncAction)
@@ -15418,6 +23092,7 @@ class AsyncAction extends _Action__WEBPACK_IMPORTED_MODULE_0__.Action {
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AsyncScheduler": () => (/* binding */ AsyncScheduler)
@@ -15472,12 +23147,35 @@ class AsyncScheduler extends _Scheduler__WEBPACK_IMPORTED_MODULE_0__.Scheduler {
 
 /***/ }),
 
+/***/ 5177:
+/*!*************************************************************************!*\
+  !*** ./node_modules/rxjs/_esm2015/internal/scheduler/animationFrame.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "animationFrameScheduler": () => (/* binding */ animationFrameScheduler),
+/* harmony export */   "animationFrame": () => (/* binding */ animationFrame)
+/* harmony export */ });
+/* harmony import */ var _AnimationFrameAction__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AnimationFrameAction */ 113);
+/* harmony import */ var _AnimationFrameScheduler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AnimationFrameScheduler */ 2124);
+
+
+const animationFrameScheduler = new _AnimationFrameScheduler__WEBPACK_IMPORTED_MODULE_0__.AnimationFrameScheduler(_AnimationFrameAction__WEBPACK_IMPORTED_MODULE_1__.AnimationFrameAction);
+const animationFrame = animationFrameScheduler;
+
+
+/***/ }),
+
 /***/ 2119:
 /*!****************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/scheduler/async.js ***!
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "asyncScheduler": () => (/* binding */ asyncScheduler),
@@ -15499,6 +23197,7 @@ const async = asyncScheduler;
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getSymbolIterator": () => (/* binding */ getSymbolIterator),
@@ -15523,6 +23222,7 @@ const $$iterator = iterator;
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "observable": () => (/* binding */ observable)
@@ -15538,6 +23238,7 @@ const observable = (() => typeof Symbol === 'function' && Symbol.observable || '
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "rxSubscriber": () => (/* binding */ rxSubscriber),
@@ -15557,6 +23258,7 @@ const $$rxSubscriber = rxSubscriber;
   \*****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ArgumentOutOfRangeError": () => (/* binding */ ArgumentOutOfRangeError)
@@ -15582,6 +23284,7 @@ const ArgumentOutOfRangeError = ArgumentOutOfRangeErrorImpl;
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "EmptyError": () => (/* binding */ EmptyError)
@@ -15607,6 +23310,7 @@ const EmptyError = EmptyErrorImpl;
   \*****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ObjectUnsubscribedError": () => (/* binding */ ObjectUnsubscribedError)
@@ -15632,6 +23336,7 @@ const ObjectUnsubscribedError = ObjectUnsubscribedErrorImpl;
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "UnsubscriptionError": () => (/* binding */ UnsubscriptionError)
@@ -15660,6 +23365,7 @@ const UnsubscriptionError = UnsubscriptionErrorImpl;
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "canReportError": () => (/* binding */ canReportError)
@@ -15691,6 +23397,7 @@ function canReportError(observer) {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "hostReportError": () => (/* binding */ hostReportError)
@@ -15708,6 +23415,7 @@ function hostReportError(err) {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "identity": () => (/* binding */ identity)
@@ -15725,6 +23433,7 @@ function identity(x) {
   \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isArray": () => (/* binding */ isArray)
@@ -15740,6 +23449,7 @@ const isArray = (() => Array.isArray || ((x) => x && typeof x.length === 'number
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isArrayLike": () => (/* binding */ isArrayLike)
@@ -15755,6 +23465,7 @@ const isArrayLike = ((x) => x && typeof x.length === 'number' && typeof x !== 'f
   \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isDate": () => (/* binding */ isDate)
@@ -15772,6 +23483,7 @@ function isDate(value) {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isFunction": () => (/* binding */ isFunction)
@@ -15789,6 +23501,7 @@ function isFunction(x) {
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isInteropObservable": () => (/* binding */ isInteropObservable)
@@ -15808,6 +23521,7 @@ function isInteropObservable(input) {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isIterable": () => (/* binding */ isIterable)
@@ -15827,6 +23541,7 @@ function isIterable(input) {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isNumeric": () => (/* binding */ isNumeric)
@@ -15846,6 +23561,7 @@ function isNumeric(val) {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isObject": () => (/* binding */ isObject)
@@ -15863,6 +23579,7 @@ function isObject(x) {
   \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isPromise": () => (/* binding */ isPromise)
@@ -15880,6 +23597,7 @@ function isPromise(value) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isScheduler": () => (/* binding */ isScheduler)
@@ -15897,6 +23615,7 @@ function isScheduler(value) {
   \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "noop": () => (/* binding */ noop)
@@ -15912,6 +23631,7 @@ function noop() { }
   \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "pipe": () => (/* binding */ pipe),
@@ -15943,6 +23663,7 @@ function pipeFromArray(fns) {
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "subscribeTo": () => (/* binding */ subscribeTo)
@@ -15995,6 +23716,7 @@ const subscribeTo = (result) => {
   \**********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "subscribeToArray": () => (/* binding */ subscribeToArray)
@@ -16015,6 +23737,7 @@ const subscribeToArray = (array) => (subscriber) => {
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "subscribeToIterable": () => (/* binding */ subscribeToIterable)
@@ -16060,6 +23783,7 @@ const subscribeToIterable = (iterable) => (subscriber) => {
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "subscribeToObservable": () => (/* binding */ subscribeToObservable)
@@ -16085,6 +23809,7 @@ const subscribeToObservable = (obj) => (subscriber) => {
   \************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "subscribeToPromise": () => (/* binding */ subscribeToPromise)
@@ -16111,6 +23836,7 @@ const subscribeToPromise = (promise) => (subscriber) => {
   \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "subscribeToResult": () => (/* binding */ subscribeToResult)
@@ -16140,6 +23866,7 @@ function subscribeToResult(outerSubscriber, result, outerValue, outerIndex, inne
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "toSubscriber": () => (/* binding */ toSubscriber)
@@ -16174,6 +23901,7 @@ function toSubscriber(nextOrObserver, error, complete) {
   \*********************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ _asyncToGenerator)
@@ -16216,12 +23944,7005 @@ function _asyncToGenerator(fn) {
 
 /***/ }),
 
+/***/ 6755:
+/*!******************************************************************!*\
+  !*** ./node_modules/@angular/animations/fesm2020/animations.mjs ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AUTO_STYLE": () => (/* binding */ AUTO_STYLE),
+/* harmony export */   "AnimationBuilder": () => (/* binding */ AnimationBuilder),
+/* harmony export */   "AnimationFactory": () => (/* binding */ AnimationFactory),
+/* harmony export */   "NoopAnimationPlayer": () => (/* binding */ NoopAnimationPlayer),
+/* harmony export */   "animate": () => (/* binding */ animate),
+/* harmony export */   "animateChild": () => (/* binding */ animateChild),
+/* harmony export */   "animation": () => (/* binding */ animation),
+/* harmony export */   "group": () => (/* binding */ group),
+/* harmony export */   "keyframes": () => (/* binding */ keyframes),
+/* harmony export */   "query": () => (/* binding */ query),
+/* harmony export */   "sequence": () => (/* binding */ sequence),
+/* harmony export */   "stagger": () => (/* binding */ stagger),
+/* harmony export */   "state": () => (/* binding */ state),
+/* harmony export */   "style": () => (/* binding */ style),
+/* harmony export */   "transition": () => (/* binding */ transition),
+/* harmony export */   "trigger": () => (/* binding */ trigger),
+/* harmony export */   "useAnimation": () => (/* binding */ useAnimation),
+/* harmony export */   "ɵAnimationGroupPlayer": () => (/* binding */ AnimationGroupPlayer),
+/* harmony export */   "ɵPRE_STYLE": () => (/* binding */ ɵPRE_STYLE)
+/* harmony export */ });
+/**
+ * @license Angular v13.0.3
+ * (c) 2010-2021 Google LLC. https://angular.io/
+ * License: MIT
+ */
+
+/**
+ * An injectable service that produces an animation sequence programmatically within an
+ * Angular component or directive.
+ * Provided by the `BrowserAnimationsModule` or `NoopAnimationsModule`.
+ *
+ * @usageNotes
+ *
+ * To use this service, add it to your component or directive as a dependency.
+ * The service is instantiated along with your component.
+ *
+ * Apps do not typically need to create their own animation players, but if you
+ * do need to, follow these steps:
+ *
+ * 1. Use the `build()` method to create a programmatic animation using the
+ * `animate()` function. The method returns an `AnimationFactory` instance.
+ *
+ * 2. Use the factory object to create an `AnimationPlayer` and attach it to a DOM element.
+ *
+ * 3. Use the player object to control the animation programmatically.
+ *
+ * For example:
+ *
+ * ```ts
+ * // import the service from BrowserAnimationsModule
+ * import {AnimationBuilder} from '@angular/animations';
+ * // require the service as a dependency
+ * class MyCmp {
+ *   constructor(private _builder: AnimationBuilder) {}
+ *
+ *   makeAnimation(element: any) {
+ *     // first define a reusable animation
+ *     const myAnimation = this._builder.build([
+ *       style({ width: 0 }),
+ *       animate(1000, style({ width: '100px' }))
+ *     ]);
+ *
+ *     // use the returned factory object to create a player
+ *     const player = myAnimation.create(element);
+ *
+ *     player.play();
+ *   }
+ * }
+ * ```
+ *
+ * @publicApi
+ */
+class AnimationBuilder {
+}
+/**
+ * A factory object returned from the `AnimationBuilder`.`build()` method.
+ *
+ * @publicApi
+ */
+class AnimationFactory {
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Specifies automatic styling.
+ *
+ * @publicApi
+ */
+const AUTO_STYLE = '*';
+/**
+ * Creates a named animation trigger, containing a  list of `state()`
+ * and `transition()` entries to be evaluated when the expression
+ * bound to the trigger changes.
+ *
+ * @param name An identifying string.
+ * @param definitions  An animation definition object, containing an array of `state()`
+ * and `transition()` declarations.
+ *
+ * @return An object that encapsulates the trigger data.
+ *
+ * @usageNotes
+ * Define an animation trigger in the `animations` section of `@Component` metadata.
+ * In the template, reference the trigger by name and bind it to a trigger expression that
+ * evaluates to a defined animation state, using the following format:
+ *
+ * `[@triggerName]="expression"`
+ *
+ * Animation trigger bindings convert all values to strings, and then match the
+ * previous and current values against any linked transitions.
+ * Booleans can be specified as `1` or `true` and `0` or `false`.
+ *
+ * ### Usage Example
+ *
+ * The following example creates an animation trigger reference based on the provided
+ * name value.
+ * The provided animation value is expected to be an array consisting of state and
+ * transition declarations.
+ *
+ * ```typescript
+ * @Component({
+ *   selector: "my-component",
+ *   templateUrl: "my-component-tpl.html",
+ *   animations: [
+ *     trigger("myAnimationTrigger", [
+ *       state(...),
+ *       state(...),
+ *       transition(...),
+ *       transition(...)
+ *     ])
+ *   ]
+ * })
+ * class MyComponent {
+ *   myStatusExp = "something";
+ * }
+ * ```
+ *
+ * The template associated with this component makes use of the defined trigger
+ * by binding to an element within its template code.
+ *
+ * ```html
+ * <!-- somewhere inside of my-component-tpl.html -->
+ * <div [@myAnimationTrigger]="myStatusExp">...</div>
+ * ```
+ *
+ * ### Using an inline function
+ * The `transition` animation method also supports reading an inline function which can decide
+ * if its associated animation should be run.
+ *
+ * ```typescript
+ * // this method is run each time the `myAnimationTrigger` trigger value changes.
+ * function myInlineMatcherFn(fromState: string, toState: string, element: any, params: {[key:
+ string]: any}): boolean {
+ *   // notice that `element` and `params` are also available here
+ *   return toState == 'yes-please-animate';
+ * }
+ *
+ * @Component({
+ *   selector: 'my-component',
+ *   templateUrl: 'my-component-tpl.html',
+ *   animations: [
+ *     trigger('myAnimationTrigger', [
+ *       transition(myInlineMatcherFn, [
+ *         // the animation sequence code
+ *       ]),
+ *     ])
+ *   ]
+ * })
+ * class MyComponent {
+ *   myStatusExp = "yes-please-animate";
+ * }
+ * ```
+ *
+ * ### Disabling Animations
+ * When true, the special animation control binding `@.disabled` binding prevents
+ * all animations from rendering.
+ * Place the  `@.disabled` binding on an element to disable
+ * animations on the element itself, as well as any inner animation triggers
+ * within the element.
+ *
+ * The following example shows how to use this feature:
+ *
+ * ```typescript
+ * @Component({
+ *   selector: 'my-component',
+ *   template: `
+ *     <div [@.disabled]="isDisabled">
+ *       <div [@childAnimation]="exp"></div>
+ *     </div>
+ *   `,
+ *   animations: [
+ *     trigger("childAnimation", [
+ *       // ...
+ *     ])
+ *   ]
+ * })
+ * class MyComponent {
+ *   isDisabled = true;
+ *   exp = '...';
+ * }
+ * ```
+ *
+ * When `@.disabled` is true, it prevents the `@childAnimation` trigger from animating,
+ * along with any inner animations.
+ *
+ * ### Disable animations application-wide
+ * When an area of the template is set to have animations disabled,
+ * **all** inner components have their animations disabled as well.
+ * This means that you can disable all animations for an app
+ * by placing a host binding set on `@.disabled` on the topmost Angular component.
+ *
+ * ```typescript
+ * import {Component, HostBinding} from '@angular/core';
+ *
+ * @Component({
+ *   selector: 'app-component',
+ *   templateUrl: 'app.component.html',
+ * })
+ * class AppComponent {
+ *   @HostBinding('@.disabled')
+ *   public animationsDisabled = true;
+ * }
+ * ```
+ *
+ * ### Overriding disablement of inner animations
+ * Despite inner animations being disabled, a parent animation can `query()`
+ * for inner elements located in disabled areas of the template and still animate
+ * them if needed. This is also the case for when a sub animation is
+ * queried by a parent and then later animated using `animateChild()`.
+ *
+ * ### Detecting when an animation is disabled
+ * If a region of the DOM (or the entire application) has its animations disabled, the animation
+ * trigger callbacks still fire, but for zero seconds. When the callback fires, it provides
+ * an instance of an `AnimationEvent`. If animations are disabled,
+ * the `.disabled` flag on the event is true.
+ *
+ * @publicApi
+ */
+function trigger(name, definitions) {
+    return { type: 7 /* Trigger */, name, definitions, options: {} };
+}
+/**
+ * Defines an animation step that combines styling information with timing information.
+ *
+ * @param timings Sets `AnimateTimings` for the parent animation.
+ * A string in the format "duration [delay] [easing]".
+ *  - Duration and delay are expressed as a number and optional time unit,
+ * such as "1s" or "10ms" for one second and 10 milliseconds, respectively.
+ * The default unit is milliseconds.
+ *  - The easing value controls how the animation accelerates and decelerates
+ * during its runtime. Value is one of  `ease`, `ease-in`, `ease-out`,
+ * `ease-in-out`, or a `cubic-bezier()` function call.
+ * If not supplied, no easing is applied.
+ *
+ * For example, the string "1s 100ms ease-out" specifies a duration of
+ * 1000 milliseconds, and delay of 100 ms, and the "ease-out" easing style,
+ * which decelerates near the end of the duration.
+ * @param styles Sets AnimationStyles for the parent animation.
+ * A function call to either `style()` or `keyframes()`
+ * that returns a collection of CSS style entries to be applied to the parent animation.
+ * When null, uses the styles from the destination state.
+ * This is useful when describing an animation step that will complete an animation;
+ * see "Animating to the final state" in `transitions()`.
+ * @returns An object that encapsulates the animation step.
+ *
+ * @usageNotes
+ * Call within an animation `sequence()`, `{@link animations/group group()}`, or
+ * `transition()` call to specify an animation step
+ * that applies given style data to the parent animation for a given amount of time.
+ *
+ * ### Syntax Examples
+ * **Timing examples**
+ *
+ * The following examples show various `timings` specifications.
+ * - `animate(500)` : Duration is 500 milliseconds.
+ * - `animate("1s")` : Duration is 1000 milliseconds.
+ * - `animate("100ms 0.5s")` : Duration is 100 milliseconds, delay is 500 milliseconds.
+ * - `animate("5s ease-in")` : Duration is 5000 milliseconds, easing in.
+ * - `animate("5s 10ms cubic-bezier(.17,.67,.88,.1)")` : Duration is 5000 milliseconds, delay is 10
+ * milliseconds, easing according to a bezier curve.
+ *
+ * **Style examples**
+ *
+ * The following example calls `style()` to set a single CSS style.
+ * ```typescript
+ * animate(500, style({ background: "red" }))
+ * ```
+ * The following example calls `keyframes()` to set a CSS style
+ * to different values for successive keyframes.
+ * ```typescript
+ * animate(500, keyframes(
+ *  [
+ *   style({ background: "blue" }),
+ *   style({ background: "red" })
+ *  ])
+ * ```
+ *
+ * @publicApi
+ */
+function animate(timings, styles = null) {
+    return { type: 4 /* Animate */, styles, timings };
+}
+/**
+ * @description Defines a list of animation steps to be run in parallel.
+ *
+ * @param steps An array of animation step objects.
+ * - When steps are defined by `style()` or `animate()`
+ * function calls, each call within the group is executed instantly.
+ * - To specify offset styles to be applied at a later time, define steps with
+ * `keyframes()`, or use `animate()` calls with a delay value.
+ * For example:
+ *
+ * ```typescript
+ * group([
+ *   animate("1s", style({ background: "black" })),
+ *   animate("2s", style({ color: "white" }))
+ * ])
+ * ```
+ *
+ * @param options An options object containing a delay and
+ * developer-defined parameters that provide styling defaults and
+ * can be overridden on invocation.
+ *
+ * @return An object that encapsulates the group data.
+ *
+ * @usageNotes
+ * Grouped animations are useful when a series of styles must be
+ * animated at different starting times and closed off at different ending times.
+ *
+ * When called within a `sequence()` or a
+ * `transition()` call, does not continue to the next
+ * instruction until all of the inner animation steps have completed.
+ *
+ * @publicApi
+ */
+function group(steps, options = null) {
+    return { type: 3 /* Group */, steps, options };
+}
+/**
+ * Defines a list of animation steps to be run sequentially, one by one.
+ *
+ * @param steps An array of animation step objects.
+ * - Steps defined by `style()` calls apply the styling data immediately.
+ * - Steps defined by `animate()` calls apply the styling data over time
+ *   as specified by the timing data.
+ *
+ * ```typescript
+ * sequence([
+ *   style({ opacity: 0 }),
+ *   animate("1s", style({ opacity: 1 }))
+ * ])
+ * ```
+ *
+ * @param options An options object containing a delay and
+ * developer-defined parameters that provide styling defaults and
+ * can be overridden on invocation.
+ *
+ * @return An object that encapsulates the sequence data.
+ *
+ * @usageNotes
+ * When you pass an array of steps to a
+ * `transition()` call, the steps run sequentially by default.
+ * Compare this to the `{@link animations/group group()}` call, which runs animation steps in
+ *parallel.
+ *
+ * When a sequence is used within a `{@link animations/group group()}` or a `transition()` call,
+ * execution continues to the next instruction only after each of the inner animation
+ * steps have completed.
+ *
+ * @publicApi
+ **/
+function sequence(steps, options = null) {
+    return { type: 2 /* Sequence */, steps, options };
+}
+/**
+ * Declares a key/value object containing CSS properties/styles that
+ * can then be used for an animation `state`, within an animation `sequence`,
+ * or as styling data for calls to `animate()` and `keyframes()`.
+ *
+ * @param tokens A set of CSS styles or HTML styles associated with an animation state.
+ * The value can be any of the following:
+ * - A key-value style pair associating a CSS property with a value.
+ * - An array of key-value style pairs.
+ * - An asterisk (*), to use auto-styling, where styles are derived from the element
+ * being animated and applied to the animation when it starts.
+ *
+ * Auto-styling can be used to define a state that depends on layout or other
+ * environmental factors.
+ *
+ * @return An object that encapsulates the style data.
+ *
+ * @usageNotes
+ * The following examples create animation styles that collect a set of
+ * CSS property values:
+ *
+ * ```typescript
+ * // string values for CSS properties
+ * style({ background: "red", color: "blue" })
+ *
+ * // numerical pixel values
+ * style({ width: 100, height: 0 })
+ * ```
+ *
+ * The following example uses auto-styling to allow an element to animate from
+ * a height of 0 up to its full height:
+ *
+ * ```
+ * style({ height: 0 }),
+ * animate("1s", style({ height: "*" }))
+ * ```
+ *
+ * @publicApi
+ **/
+function style(tokens) {
+    return { type: 6 /* Style */, styles: tokens, offset: null };
+}
+/**
+ * Declares an animation state within a trigger attached to an element.
+ *
+ * @param name One or more names for the defined state in a comma-separated string.
+ * The following reserved state names can be supplied to define a style for specific use
+ * cases:
+ *
+ * - `void` You can associate styles with this name to be used when
+ * the element is detached from the application. For example, when an `ngIf` evaluates
+ * to false, the state of the associated element is void.
+ *  - `*` (asterisk) Indicates the default state. You can associate styles with this name
+ * to be used as the fallback when the state that is being animated is not declared
+ * within the trigger.
+ *
+ * @param styles A set of CSS styles associated with this state, created using the
+ * `style()` function.
+ * This set of styles persists on the element once the state has been reached.
+ * @param options Parameters that can be passed to the state when it is invoked.
+ * 0 or more key-value pairs.
+ * @return An object that encapsulates the new state data.
+ *
+ * @usageNotes
+ * Use the `trigger()` function to register states to an animation trigger.
+ * Use the `transition()` function to animate between states.
+ * When a state is active within a component, its associated styles persist on the element,
+ * even when the animation ends.
+ *
+ * @publicApi
+ **/
+function state(name, styles, options) {
+    return { type: 0 /* State */, name, styles, options };
+}
+/**
+ * Defines a set of animation styles, associating each style with an optional `offset` value.
+ *
+ * @param steps A set of animation styles with optional offset data.
+ * The optional `offset` value for a style specifies a percentage of the total animation
+ * time at which that style is applied.
+ * @returns An object that encapsulates the keyframes data.
+ *
+ * @usageNotes
+ * Use with the `animate()` call. Instead of applying animations
+ * from the current state
+ * to the destination state, keyframes describe how each style entry is applied and at what point
+ * within the animation arc.
+ * Compare [CSS Keyframe Animations](https://www.w3schools.com/css/css3_animations.asp).
+ *
+ * ### Usage
+ *
+ * In the following example, the offset values describe
+ * when each `backgroundColor` value is applied. The color is red at the start, and changes to
+ * blue when 20% of the total time has elapsed.
+ *
+ * ```typescript
+ * // the provided offset values
+ * animate("5s", keyframes([
+ *   style({ backgroundColor: "red", offset: 0 }),
+ *   style({ backgroundColor: "blue", offset: 0.2 }),
+ *   style({ backgroundColor: "orange", offset: 0.3 }),
+ *   style({ backgroundColor: "black", offset: 1 })
+ * ]))
+ * ```
+ *
+ * If there are no `offset` values specified in the style entries, the offsets
+ * are calculated automatically.
+ *
+ * ```typescript
+ * animate("5s", keyframes([
+ *   style({ backgroundColor: "red" }) // offset = 0
+ *   style({ backgroundColor: "blue" }) // offset = 0.33
+ *   style({ backgroundColor: "orange" }) // offset = 0.66
+ *   style({ backgroundColor: "black" }) // offset = 1
+ * ]))
+ *```
+
+ * @publicApi
+ */
+function keyframes(steps) {
+    return { type: 5 /* Keyframes */, steps };
+}
+/**
+ * Declares an animation transition as a sequence of animation steps to run when a given
+ * condition is satisfied. The condition is a Boolean expression or function that compares
+ * the previous and current animation states, and returns true if this transition should occur.
+ * When the state criteria of a defined transition are met, the associated animation is
+ * triggered.
+ *
+ * @param stateChangeExpr A Boolean expression or function that compares the previous and current
+ * animation states, and returns true if this transition should occur. Note that  "true" and "false"
+ * match 1 and 0, respectively. An expression is evaluated each time a state change occurs in the
+ * animation trigger element.
+ * The animation steps run when the expression evaluates to true.
+ *
+ * - A state-change string takes the form "state1 => state2", where each side is a defined animation
+ * state, or an asterisk (*) to refer to a dynamic start or end state.
+ *   - The expression string can contain multiple comma-separated statements;
+ * for example "state1 => state2, state3 => state4".
+ *   - Special values `:enter` and `:leave` initiate a transition on the entry and exit states,
+ * equivalent to  "void => *"  and "* => void".
+ *   - Special values `:increment` and `:decrement` initiate a transition when a numeric value has
+ * increased or decreased in value.
+ * - A function is executed each time a state change occurs in the animation trigger element.
+ * The animation steps run when the function returns true.
+ *
+ * @param steps One or more animation objects, as returned by the `animate()` or
+ * `sequence()` function, that form a transformation from one state to another.
+ * A sequence is used by default when you pass an array.
+ * @param options An options object that can contain a delay value for the start of the animation,
+ * and additional developer-defined parameters. Provided values for additional parameters are used
+ * as defaults, and override values can be passed to the caller on invocation.
+ * @returns An object that encapsulates the transition data.
+ *
+ * @usageNotes
+ * The template associated with a component binds an animation trigger to an element.
+ *
+ * ```HTML
+ * <!-- somewhere inside of my-component-tpl.html -->
+ * <div [@myAnimationTrigger]="myStatusExp">...</div>
+ * ```
+ *
+ * All transitions are defined within an animation trigger,
+ * along with named states that the transitions change to and from.
+ *
+ * ```typescript
+ * trigger("myAnimationTrigger", [
+ *  // define states
+ *  state("on", style({ background: "green" })),
+ *  state("off", style({ background: "grey" })),
+ *  ...]
+ * ```
+ *
+ * Note that when you call the `sequence()` function within a `{@link animations/group group()}`
+ * or a `transition()` call, execution does not continue to the next instruction
+ * until each of the inner animation steps have completed.
+ *
+ * ### Syntax examples
+ *
+ * The following examples define transitions between the two defined states (and default states),
+ * using various options:
+ *
+ * ```typescript
+ * // Transition occurs when the state value
+ * // bound to "myAnimationTrigger" changes from "on" to "off"
+ * transition("on => off", animate(500))
+ * // Run the same animation for both directions
+ * transition("on <=> off", animate(500))
+ * // Define multiple state-change pairs separated by commas
+ * transition("on => off, off => void", animate(500))
+ * ```
+ *
+ * ### Special values for state-change expressions
+ *
+ * - Catch-all state change for when an element is inserted into the page and the
+ * destination state is unknown:
+ *
+ * ```typescript
+ * transition("void => *", [
+ *  style({ opacity: 0 }),
+ *  animate(500)
+ *  ])
+ * ```
+ *
+ * - Capture a state change between any states:
+ *
+ *  `transition("* => *", animate("1s 0s"))`
+ *
+ * - Entry and exit transitions:
+ *
+ * ```typescript
+ * transition(":enter", [
+ *   style({ opacity: 0 }),
+ *   animate(500, style({ opacity: 1 }))
+ *   ]),
+ * transition(":leave", [
+ *   animate(500, style({ opacity: 0 }))
+ *   ])
+ * ```
+ *
+ * - Use `:increment` and `:decrement` to initiate transitions:
+ *
+ * ```typescript
+ * transition(":increment", group([
+ *  query(':enter', [
+ *     style({ left: '100%' }),
+ *     animate('0.5s ease-out', style('*'))
+ *   ]),
+ *  query(':leave', [
+ *     animate('0.5s ease-out', style({ left: '-100%' }))
+ *  ])
+ * ]))
+ *
+ * transition(":decrement", group([
+ *  query(':enter', [
+ *     style({ left: '100%' }),
+ *     animate('0.5s ease-out', style('*'))
+ *   ]),
+ *  query(':leave', [
+ *     animate('0.5s ease-out', style({ left: '-100%' }))
+ *  ])
+ * ]))
+ * ```
+ *
+ * ### State-change functions
+ *
+ * Here is an example of a `fromState` specified as a state-change function that invokes an
+ * animation when true:
+ *
+ * ```typescript
+ * transition((fromState, toState) =>
+ *  {
+ *   return fromState == "off" && toState == "on";
+ *  },
+ *  animate("1s 0s"))
+ * ```
+ *
+ * ### Animating to the final state
+ *
+ * If the final step in a transition is a call to `animate()` that uses a timing value
+ * with no style data, that step is automatically considered the final animation arc,
+ * for the element to reach the final state. Angular automatically adds or removes
+ * CSS styles to ensure that the element is in the correct final state.
+ *
+ * The following example defines a transition that starts by hiding the element,
+ * then makes sure that it animates properly to whatever state is currently active for trigger:
+ *
+ * ```typescript
+ * transition("void => *", [
+ *   style({ opacity: 0 }),
+ *   animate(500)
+ *  ])
+ * ```
+ * ### Boolean value matching
+ * If a trigger binding value is a Boolean, it can be matched using a transition expression
+ * that compares true and false or 1 and 0. For example:
+ *
+ * ```
+ * // in the template
+ * <div [@openClose]="open ? true : false">...</div>
+ * // in the component metadata
+ * trigger('openClose', [
+ *   state('true', style({ height: '*' })),
+ *   state('false', style({ height: '0px' })),
+ *   transition('false <=> true', animate(500))
+ * ])
+ * ```
+ *
+ * @publicApi
+ **/
+function transition(stateChangeExpr, steps, options = null) {
+    return { type: 1 /* Transition */, expr: stateChangeExpr, animation: steps, options };
+}
+/**
+ * Produces a reusable animation that can be invoked in another animation or sequence,
+ * by calling the `useAnimation()` function.
+ *
+ * @param steps One or more animation objects, as returned by the `animate()`
+ * or `sequence()` function, that form a transformation from one state to another.
+ * A sequence is used by default when you pass an array.
+ * @param options An options object that can contain a delay value for the start of the
+ * animation, and additional developer-defined parameters.
+ * Provided values for additional parameters are used as defaults,
+ * and override values can be passed to the caller on invocation.
+ * @returns An object that encapsulates the animation data.
+ *
+ * @usageNotes
+ * The following example defines a reusable animation, providing some default parameter
+ * values.
+ *
+ * ```typescript
+ * var fadeAnimation = animation([
+ *   style({ opacity: '{{ start }}' }),
+ *   animate('{{ time }}',
+ *   style({ opacity: '{{ end }}'}))
+ *   ],
+ *   { params: { time: '1000ms', start: 0, end: 1 }});
+ * ```
+ *
+ * The following invokes the defined animation with a call to `useAnimation()`,
+ * passing in override parameter values.
+ *
+ * ```js
+ * useAnimation(fadeAnimation, {
+ *   params: {
+ *     time: '2s',
+ *     start: 1,
+ *     end: 0
+ *   }
+ * })
+ * ```
+ *
+ * If any of the passed-in parameter values are missing from this call,
+ * the default values are used. If one or more parameter values are missing before a step is
+ * animated, `useAnimation()` throws an error.
+ *
+ * @publicApi
+ */
+function animation(steps, options = null) {
+    return { type: 8 /* Reference */, animation: steps, options };
+}
+/**
+ * Executes a queried inner animation element within an animation sequence.
+ *
+ * @param options An options object that can contain a delay value for the start of the
+ * animation, and additional override values for developer-defined parameters.
+ * @return An object that encapsulates the child animation data.
+ *
+ * @usageNotes
+ * Each time an animation is triggered in Angular, the parent animation
+ * has priority and any child animations are blocked. In order
+ * for a child animation to run, the parent animation must query each of the elements
+ * containing child animations, and run them using this function.
+ *
+ * Note that this feature is designed to be used with `query()` and it will only work
+ * with animations that are assigned using the Angular animation library. CSS keyframes
+ * and transitions are not handled by this API.
+ *
+ * @publicApi
+ */
+function animateChild(options = null) {
+    return { type: 9 /* AnimateChild */, options };
+}
+/**
+ * Starts a reusable animation that is created using the `animation()` function.
+ *
+ * @param animation The reusable animation to start.
+ * @param options An options object that can contain a delay value for the start of
+ * the animation, and additional override values for developer-defined parameters.
+ * @return An object that contains the animation parameters.
+ *
+ * @publicApi
+ */
+function useAnimation(animation, options = null) {
+    return { type: 10 /* AnimateRef */, animation, options };
+}
+/**
+ * Finds one or more inner elements within the current element that is
+ * being animated within a sequence. Use with `animate()`.
+ *
+ * @param selector The element to query, or a set of elements that contain Angular-specific
+ * characteristics, specified with one or more of the following tokens.
+ *  - `query(":enter")` or `query(":leave")` : Query for newly inserted/removed elements.
+ *  - `query(":animating")` : Query all currently animating elements.
+ *  - `query("@triggerName")` : Query elements that contain an animation trigger.
+ *  - `query("@*")` : Query all elements that contain an animation triggers.
+ *  - `query(":self")` : Include the current element into the animation sequence.
+ *
+ * @param animation One or more animation steps to apply to the queried element or elements.
+ * An array is treated as an animation sequence.
+ * @param options An options object. Use the 'limit' field to limit the total number of
+ * items to collect.
+ * @return An object that encapsulates the query data.
+ *
+ * @usageNotes
+ * Tokens can be merged into a combined query selector string. For example:
+ *
+ * ```typescript
+ *  query(':self, .record:enter, .record:leave, @subTrigger', [...])
+ * ```
+ *
+ * The `query()` function collects multiple elements and works internally by using
+ * `element.querySelectorAll`. Use the `limit` field of an options object to limit
+ * the total number of items to be collected. For example:
+ *
+ * ```js
+ * query('div', [
+ *   animate(...),
+ *   animate(...)
+ * ], { limit: 1 })
+ * ```
+ *
+ * By default, throws an error when zero items are found. Set the
+ * `optional` flag to ignore this error. For example:
+ *
+ * ```js
+ * query('.some-element-that-may-not-be-there', [
+ *   animate(...),
+ *   animate(...)
+ * ], { optional: true })
+ * ```
+ *
+ * ### Usage Example
+ *
+ * The following example queries for inner elements and animates them
+ * individually using `animate()`.
+ *
+ * ```typescript
+ * @Component({
+ *   selector: 'inner',
+ *   template: `
+ *     <div [@queryAnimation]="exp">
+ *       <h1>Title</h1>
+ *       <div class="content">
+ *         Blah blah blah
+ *       </div>
+ *     </div>
+ *   `,
+ *   animations: [
+ *    trigger('queryAnimation', [
+ *      transition('* => goAnimate', [
+ *        // hide the inner elements
+ *        query('h1', style({ opacity: 0 })),
+ *        query('.content', style({ opacity: 0 })),
+ *
+ *        // animate the inner elements in, one by one
+ *        query('h1', animate(1000, style({ opacity: 1 }))),
+ *        query('.content', animate(1000, style({ opacity: 1 }))),
+ *      ])
+ *    ])
+ *  ]
+ * })
+ * class Cmp {
+ *   exp = '';
+ *
+ *   goAnimate() {
+ *     this.exp = 'goAnimate';
+ *   }
+ * }
+ * ```
+ *
+ * @publicApi
+ */
+function query(selector, animation, options = null) {
+    return { type: 11 /* Query */, selector, animation, options };
+}
+/**
+ * Use within an animation `query()` call to issue a timing gap after
+ * each queried item is animated.
+ *
+ * @param timings A delay value.
+ * @param animation One ore more animation steps.
+ * @returns An object that encapsulates the stagger data.
+ *
+ * @usageNotes
+ * In the following example, a container element wraps a list of items stamped out
+ * by an `ngFor`. The container element contains an animation trigger that will later be set
+ * to query for each of the inner items.
+ *
+ * Each time items are added, the opacity fade-in animation runs,
+ * and each removed item is faded out.
+ * When either of these animations occur, the stagger effect is
+ * applied after each item's animation is started.
+ *
+ * ```html
+ * <!-- list.component.html -->
+ * <button (click)="toggle()">Show / Hide Items</button>
+ * <hr />
+ * <div [@listAnimation]="items.length">
+ *   <div *ngFor="let item of items">
+ *     {{ item }}
+ *   </div>
+ * </div>
+ * ```
+ *
+ * Here is the component code:
+ *
+ * ```typescript
+ * import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
+ * @Component({
+ *   templateUrl: 'list.component.html',
+ *   animations: [
+ *     trigger('listAnimation', [
+ *     ...
+ *     ])
+ *   ]
+ * })
+ * class ListComponent {
+ *   items = [];
+ *
+ *   showItems() {
+ *     this.items = [0,1,2,3,4];
+ *   }
+ *
+ *   hideItems() {
+ *     this.items = [];
+ *   }
+ *
+ *   toggle() {
+ *     this.items.length ? this.hideItems() : this.showItems();
+ *    }
+ *  }
+ * ```
+ *
+ * Here is the animation trigger code:
+ *
+ * ```typescript
+ * trigger('listAnimation', [
+ *   transition('* => *', [ // each time the binding value changes
+ *     query(':leave', [
+ *       stagger(100, [
+ *         animate('0.5s', style({ opacity: 0 }))
+ *       ])
+ *     ]),
+ *     query(':enter', [
+ *       style({ opacity: 0 }),
+ *       stagger(100, [
+ *         animate('0.5s', style({ opacity: 1 }))
+ *       ])
+ *     ])
+ *   ])
+ * ])
+ * ```
+ *
+ * @publicApi
+ */
+function stagger(timings, animation) {
+    return { type: 12 /* Stagger */, timings, animation };
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function scheduleMicroTask(cb) {
+    Promise.resolve(null).then(cb);
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * An empty programmatic controller for reusable animations.
+ * Used internally when animations are disabled, to avoid
+ * checking for the null case when an animation player is expected.
+ *
+ * @see `animate()`
+ * @see `AnimationPlayer`
+ * @see `GroupPlayer`
+ *
+ * @publicApi
+ */
+class NoopAnimationPlayer {
+    constructor(duration = 0, delay = 0) {
+        this._onDoneFns = [];
+        this._onStartFns = [];
+        this._onDestroyFns = [];
+        this._started = false;
+        this._destroyed = false;
+        this._finished = false;
+        this._position = 0;
+        this.parentPlayer = null;
+        this.totalTime = duration + delay;
+    }
+    _onFinish() {
+        if (!this._finished) {
+            this._finished = true;
+            this._onDoneFns.forEach(fn => fn());
+            this._onDoneFns = [];
+        }
+    }
+    onStart(fn) {
+        this._onStartFns.push(fn);
+    }
+    onDone(fn) {
+        this._onDoneFns.push(fn);
+    }
+    onDestroy(fn) {
+        this._onDestroyFns.push(fn);
+    }
+    hasStarted() {
+        return this._started;
+    }
+    init() { }
+    play() {
+        if (!this.hasStarted()) {
+            this._onStart();
+            this.triggerMicrotask();
+        }
+        this._started = true;
+    }
+    /** @internal */
+    triggerMicrotask() {
+        scheduleMicroTask(() => this._onFinish());
+    }
+    _onStart() {
+        this._onStartFns.forEach(fn => fn());
+        this._onStartFns = [];
+    }
+    pause() { }
+    restart() { }
+    finish() {
+        this._onFinish();
+    }
+    destroy() {
+        if (!this._destroyed) {
+            this._destroyed = true;
+            if (!this.hasStarted()) {
+                this._onStart();
+            }
+            this.finish();
+            this._onDestroyFns.forEach(fn => fn());
+            this._onDestroyFns = [];
+        }
+    }
+    reset() {
+        this._started = false;
+    }
+    setPosition(position) {
+        this._position = this.totalTime ? position * this.totalTime : 1;
+    }
+    getPosition() {
+        return this.totalTime ? this._position / this.totalTime : 1;
+    }
+    /** @internal */
+    triggerCallback(phaseName) {
+        const methods = phaseName == 'start' ? this._onStartFns : this._onDoneFns;
+        methods.forEach(fn => fn());
+        methods.length = 0;
+    }
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * A programmatic controller for a group of reusable animations.
+ * Used internally to control animations.
+ *
+ * @see `AnimationPlayer`
+ * @see `{@link animations/group group()}`
+ *
+ */
+class AnimationGroupPlayer {
+    constructor(_players) {
+        this._onDoneFns = [];
+        this._onStartFns = [];
+        this._finished = false;
+        this._started = false;
+        this._destroyed = false;
+        this._onDestroyFns = [];
+        this.parentPlayer = null;
+        this.totalTime = 0;
+        this.players = _players;
+        let doneCount = 0;
+        let destroyCount = 0;
+        let startCount = 0;
+        const total = this.players.length;
+        if (total == 0) {
+            scheduleMicroTask(() => this._onFinish());
+        }
+        else {
+            this.players.forEach(player => {
+                player.onDone(() => {
+                    if (++doneCount == total) {
+                        this._onFinish();
+                    }
+                });
+                player.onDestroy(() => {
+                    if (++destroyCount == total) {
+                        this._onDestroy();
+                    }
+                });
+                player.onStart(() => {
+                    if (++startCount == total) {
+                        this._onStart();
+                    }
+                });
+            });
+        }
+        this.totalTime = this.players.reduce((time, player) => Math.max(time, player.totalTime), 0);
+    }
+    _onFinish() {
+        if (!this._finished) {
+            this._finished = true;
+            this._onDoneFns.forEach(fn => fn());
+            this._onDoneFns = [];
+        }
+    }
+    init() {
+        this.players.forEach(player => player.init());
+    }
+    onStart(fn) {
+        this._onStartFns.push(fn);
+    }
+    _onStart() {
+        if (!this.hasStarted()) {
+            this._started = true;
+            this._onStartFns.forEach(fn => fn());
+            this._onStartFns = [];
+        }
+    }
+    onDone(fn) {
+        this._onDoneFns.push(fn);
+    }
+    onDestroy(fn) {
+        this._onDestroyFns.push(fn);
+    }
+    hasStarted() {
+        return this._started;
+    }
+    play() {
+        if (!this.parentPlayer) {
+            this.init();
+        }
+        this._onStart();
+        this.players.forEach(player => player.play());
+    }
+    pause() {
+        this.players.forEach(player => player.pause());
+    }
+    restart() {
+        this.players.forEach(player => player.restart());
+    }
+    finish() {
+        this._onFinish();
+        this.players.forEach(player => player.finish());
+    }
+    destroy() {
+        this._onDestroy();
+    }
+    _onDestroy() {
+        if (!this._destroyed) {
+            this._destroyed = true;
+            this._onFinish();
+            this.players.forEach(player => player.destroy());
+            this._onDestroyFns.forEach(fn => fn());
+            this._onDestroyFns = [];
+        }
+    }
+    reset() {
+        this.players.forEach(player => player.reset());
+        this._destroyed = false;
+        this._finished = false;
+        this._started = false;
+    }
+    setPosition(p) {
+        const timeAtPosition = p * this.totalTime;
+        this.players.forEach(player => {
+            const position = player.totalTime ? Math.min(1, timeAtPosition / player.totalTime) : 1;
+            player.setPosition(position);
+        });
+    }
+    getPosition() {
+        const longestPlayer = this.players.reduce((longestSoFar, player) => {
+            const newPlayerIsLongest = longestSoFar === null || player.totalTime > longestSoFar.totalTime;
+            return newPlayerIsLongest ? player : longestSoFar;
+        }, null);
+        return longestPlayer != null ? longestPlayer.getPosition() : 0;
+    }
+    beforeDestroy() {
+        this.players.forEach(player => {
+            if (player.beforeDestroy) {
+                player.beforeDestroy();
+            }
+        });
+    }
+    /** @internal */
+    triggerCallback(phaseName) {
+        const methods = phaseName == 'start' ? this._onStartFns : this._onDoneFns;
+        methods.forEach(fn => fn());
+        methods.length = 0;
+    }
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+const ɵPRE_STYLE = '!';
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+/***/ }),
+
+/***/ 8120:
+/*!***************************************************************!*\
+  !*** ./node_modules/@angular/animations/fesm2020/browser.mjs ***!
+  \***************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnimationDriver": () => (/* binding */ AnimationDriver),
+/* harmony export */   "ɵAnimation": () => (/* binding */ Animation),
+/* harmony export */   "ɵAnimationEngine": () => (/* binding */ AnimationEngine),
+/* harmony export */   "ɵAnimationStyleNormalizer": () => (/* binding */ AnimationStyleNormalizer),
+/* harmony export */   "ɵCssKeyframesDriver": () => (/* binding */ CssKeyframesDriver),
+/* harmony export */   "ɵCssKeyframesPlayer": () => (/* binding */ CssKeyframesPlayer),
+/* harmony export */   "ɵNoopAnimationDriver": () => (/* binding */ NoopAnimationDriver),
+/* harmony export */   "ɵNoopAnimationStyleNormalizer": () => (/* binding */ NoopAnimationStyleNormalizer),
+/* harmony export */   "ɵWebAnimationsDriver": () => (/* binding */ WebAnimationsDriver),
+/* harmony export */   "ɵWebAnimationsPlayer": () => (/* binding */ WebAnimationsPlayer),
+/* harmony export */   "ɵWebAnimationsStyleNormalizer": () => (/* binding */ WebAnimationsStyleNormalizer),
+/* harmony export */   "ɵallowPreviousPlayerStylesMerge": () => (/* binding */ allowPreviousPlayerStylesMerge),
+/* harmony export */   "ɵcontainsElement": () => (/* binding */ containsElement),
+/* harmony export */   "ɵinvokeQuery": () => (/* binding */ invokeQuery),
+/* harmony export */   "ɵmatchesElement": () => (/* binding */ matchesElement),
+/* harmony export */   "ɵsupportsWebAnimations": () => (/* binding */ supportsWebAnimations),
+/* harmony export */   "ɵvalidateStyleProperty": () => (/* binding */ validateStyleProperty)
+/* harmony export */ });
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/animations */ 6755);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 4001);
+/**
+ * @license Angular v13.0.3
+ * (c) 2010-2021 Google LLC. https://angular.io/
+ * License: MIT
+ */
+
+
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+function isBrowser() {
+  return typeof window !== 'undefined' && typeof window.document !== 'undefined';
+}
+
+function isNode() {
+  // Checking only for `process` isn't enough to identify whether or not we're in a Node
+  // environment, because Webpack by default will polyfill the `process`. While we can discern
+  // that Webpack polyfilled it by looking at `process.browser`, it's very Webpack-specific and
+  // might not be future-proof. Instead we look at the stringified version of `process` which
+  // is `[object process]` in Node and `[object Object]` when polyfilled.
+  return typeof process !== 'undefined' && {}.toString.call(process) === '[object process]';
+}
+
+function optimizeGroupPlayer(players) {
+  switch (players.length) {
+    case 0:
+      return new _angular_animations__WEBPACK_IMPORTED_MODULE_0__.NoopAnimationPlayer();
+
+    case 1:
+      return players[0];
+
+    default:
+      return new _angular_animations__WEBPACK_IMPORTED_MODULE_0__["ɵAnimationGroupPlayer"](players);
+  }
+}
+
+function normalizeKeyframes(driver, normalizer, element, keyframes, preStyles = {}, postStyles = {}) {
+  const errors = [];
+  const normalizedKeyframes = [];
+  let previousOffset = -1;
+  let previousKeyframe = null;
+  keyframes.forEach(kf => {
+    const offset = kf['offset'];
+    const isSameOffset = offset == previousOffset;
+    const normalizedKeyframe = isSameOffset && previousKeyframe || {};
+    Object.keys(kf).forEach(prop => {
+      let normalizedProp = prop;
+      let normalizedValue = kf[prop];
+
+      if (prop !== 'offset') {
+        normalizedProp = normalizer.normalizePropertyName(normalizedProp, errors);
+
+        switch (normalizedValue) {
+          case _angular_animations__WEBPACK_IMPORTED_MODULE_0__["ɵPRE_STYLE"]:
+            normalizedValue = preStyles[prop];
+            break;
+
+          case _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AUTO_STYLE:
+            normalizedValue = postStyles[prop];
+            break;
+
+          default:
+            normalizedValue = normalizer.normalizeStyleValue(prop, normalizedProp, normalizedValue, errors);
+            break;
+        }
+      }
+
+      normalizedKeyframe[normalizedProp] = normalizedValue;
+    });
+
+    if (!isSameOffset) {
+      normalizedKeyframes.push(normalizedKeyframe);
+    }
+
+    previousKeyframe = normalizedKeyframe;
+    previousOffset = offset;
+  });
+
+  if (errors.length) {
+    const LINE_START = '\n - ';
+    throw new Error(`Unable to animate due to the following errors:${LINE_START}${errors.join(LINE_START)}`);
+  }
+
+  return normalizedKeyframes;
+}
+
+function listenOnPlayer(player, eventName, event, callback) {
+  switch (eventName) {
+    case 'start':
+      player.onStart(() => callback(event && copyAnimationEvent(event, 'start', player)));
+      break;
+
+    case 'done':
+      player.onDone(() => callback(event && copyAnimationEvent(event, 'done', player)));
+      break;
+
+    case 'destroy':
+      player.onDestroy(() => callback(event && copyAnimationEvent(event, 'destroy', player)));
+      break;
+  }
+}
+
+function copyAnimationEvent(e, phaseName, player) {
+  const totalTime = player.totalTime;
+  const disabled = player.disabled ? true : false;
+  const event = makeAnimationEvent(e.element, e.triggerName, e.fromState, e.toState, phaseName || e.phaseName, totalTime == undefined ? e.totalTime : totalTime, disabled);
+  const data = e['_data'];
+
+  if (data != null) {
+    event['_data'] = data;
+  }
+
+  return event;
+}
+
+function makeAnimationEvent(element, triggerName, fromState, toState, phaseName = '', totalTime = 0, disabled) {
+  return {
+    element,
+    triggerName,
+    fromState,
+    toState,
+    phaseName,
+    totalTime,
+    disabled: !!disabled
+  };
+}
+
+function getOrSetAsInMap(map, key, defaultValue) {
+  let value;
+
+  if (map instanceof Map) {
+    value = map.get(key);
+
+    if (!value) {
+      map.set(key, value = defaultValue);
+    }
+  } else {
+    value = map[key];
+
+    if (!value) {
+      value = map[key] = defaultValue;
+    }
+  }
+
+  return value;
+}
+
+function parseTimelineCommand(command) {
+  const separatorPos = command.indexOf(':');
+  const id = command.substring(1, separatorPos);
+  const action = command.substr(separatorPos + 1);
+  return [id, action];
+}
+
+let _contains = (elm1, elm2) => false;
+
+let _matches = (element, selector) => false;
+
+let _query = (element, selector, multi) => {
+  return [];
+}; // Define utility methods for browsers and platform-server(domino) where Element
+// and utility methods exist.
+
+
+const _isNode = isNode();
+
+if (_isNode || typeof Element !== 'undefined') {
+  if (!isBrowser()) {
+    _contains = (elm1, elm2) => elm1.contains(elm2);
+  } else {
+    _contains = (elm1, elm2) => {
+      while (elm2 && elm2 !== document.documentElement) {
+        if (elm2 === elm1) {
+          return true;
+        }
+
+        elm2 = elm2.parentNode || elm2.host; // consider host to support shadow DOM
+      }
+
+      return false;
+    };
+  }
+
+  _matches = (() => {
+    if (_isNode || Element.prototype.matches) {
+      return (element, selector) => element.matches(selector);
+    } else {
+      const proto = Element.prototype;
+      const fn = proto.matchesSelector || proto.mozMatchesSelector || proto.msMatchesSelector || proto.oMatchesSelector || proto.webkitMatchesSelector;
+
+      if (fn) {
+        return (element, selector) => fn.apply(element, [selector]);
+      } else {
+        return _matches;
+      }
+    }
+  })();
+
+  _query = (element, selector, multi) => {
+    let results = [];
+
+    if (multi) {
+      // DO NOT REFACTOR TO USE SPREAD SYNTAX.
+      // For element queries that return sufficiently large NodeList objects,
+      // using spread syntax to populate the results array causes a RangeError
+      // due to the call stack limit being reached. `Array.from` can not be used
+      // as well, since NodeList is not iterable in IE 11, see
+      // https://developer.mozilla.org/en-US/docs/Web/API/NodeList
+      // More info is available in #38551.
+      const elems = element.querySelectorAll(selector);
+
+      for (let i = 0; i < elems.length; i++) {
+        results.push(elems[i]);
+      }
+    } else {
+      const elm = element.querySelector(selector);
+
+      if (elm) {
+        results.push(elm);
+      }
+    }
+
+    return results;
+  };
+}
+
+function containsVendorPrefix(prop) {
+  // Webkit is the only real popular vendor prefix nowadays
+  // cc: http://shouldiprefix.com/
+  return prop.substring(1, 6) == 'ebkit'; // webkit or Webkit
+}
+
+let _CACHED_BODY = null;
+let _IS_WEBKIT = false;
+
+function validateStyleProperty(prop) {
+  if (!_CACHED_BODY) {
+    _CACHED_BODY = getBodyNode() || {};
+    _IS_WEBKIT = _CACHED_BODY.style ? 'WebkitAppearance' in _CACHED_BODY.style : false;
+  }
+
+  let result = true;
+
+  if (_CACHED_BODY.style && !containsVendorPrefix(prop)) {
+    result = prop in _CACHED_BODY.style;
+
+    if (!result && _IS_WEBKIT) {
+      const camelProp = 'Webkit' + prop.charAt(0).toUpperCase() + prop.substr(1);
+      result = camelProp in _CACHED_BODY.style;
+    }
+  }
+
+  return result;
+}
+
+function getBodyNode() {
+  if (typeof document != 'undefined') {
+    return document.body;
+  }
+
+  return null;
+}
+
+const matchesElement = _matches;
+const containsElement = _contains;
+const invokeQuery = _query;
+
+function hypenatePropsObject(object) {
+  const newObj = {};
+  Object.keys(object).forEach(prop => {
+    const newProp = prop.replace(/([a-z])([A-Z])/g, '$1-$2');
+    newObj[newProp] = object[prop];
+  });
+  return newObj;
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @publicApi
+ */
+
+
+class NoopAnimationDriver {
+  validateStyleProperty(prop) {
+    return validateStyleProperty(prop);
+  }
+
+  matchesElement(element, selector) {
+    return matchesElement(element, selector);
+  }
+
+  containsElement(elm1, elm2) {
+    return containsElement(elm1, elm2);
+  }
+
+  query(element, selector, multi) {
+    return invokeQuery(element, selector, multi);
+  }
+
+  computeStyle(element, prop, defaultValue) {
+    return defaultValue || '';
+  }
+
+  animate(element, keyframes, duration, delay, easing, previousPlayers = [], scrubberAccessRequested) {
+    return new _angular_animations__WEBPACK_IMPORTED_MODULE_0__.NoopAnimationPlayer(duration, delay);
+  }
+
+}
+
+NoopAnimationDriver.ɵfac = function NoopAnimationDriver_Factory(t) {
+  return new (t || NoopAnimationDriver)();
+};
+
+NoopAnimationDriver.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
+  token: NoopAnimationDriver,
+  factory: NoopAnimationDriver.ɵfac
+});
+
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NoopAnimationDriver, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Injectable
+  }], null, null);
+})();
+/**
+ * @publicApi
+ */
+
+
+class AnimationDriver {}
+
+AnimationDriver.NOOP = /* @__PURE__ */new NoopAnimationDriver();
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+const ONE_SECOND$1 = 1000;
+const SUBSTITUTION_EXPR_START = '{{';
+const SUBSTITUTION_EXPR_END = '}}';
+const ENTER_CLASSNAME = 'ng-enter';
+const LEAVE_CLASSNAME = 'ng-leave';
+const ENTER_SELECTOR = '.ng-enter';
+const LEAVE_SELECTOR = '.ng-leave';
+const NG_TRIGGER_CLASSNAME = 'ng-trigger';
+const NG_TRIGGER_SELECTOR = '.ng-trigger';
+const NG_ANIMATING_CLASSNAME = 'ng-animating';
+const NG_ANIMATING_SELECTOR = '.ng-animating';
+
+function resolveTimingValue(value) {
+  if (typeof value == 'number') return value;
+  const matches = value.match(/^(-?[\.\d]+)(m?s)/);
+  if (!matches || matches.length < 2) return 0;
+  return _convertTimeValueToMS(parseFloat(matches[1]), matches[2]);
+}
+
+function _convertTimeValueToMS(value, unit) {
+  switch (unit) {
+    case 's':
+      return value * ONE_SECOND$1;
+
+    default:
+      // ms or something else
+      return value;
+  }
+}
+
+function resolveTiming(timings, errors, allowNegativeValues) {
+  return timings.hasOwnProperty('duration') ? timings : parseTimeExpression(timings, errors, allowNegativeValues);
+}
+
+function parseTimeExpression(exp, errors, allowNegativeValues) {
+  const regex = /^(-?[\.\d]+)(m?s)(?:\s+(-?[\.\d]+)(m?s))?(?:\s+([-a-z]+(?:\(.+?\))?))?$/i;
+  let duration;
+  let delay = 0;
+  let easing = '';
+
+  if (typeof exp === 'string') {
+    const matches = exp.match(regex);
+
+    if (matches === null) {
+      errors.push(`The provided timing value "${exp}" is invalid.`);
+      return {
+        duration: 0,
+        delay: 0,
+        easing: ''
+      };
+    }
+
+    duration = _convertTimeValueToMS(parseFloat(matches[1]), matches[2]);
+    const delayMatch = matches[3];
+
+    if (delayMatch != null) {
+      delay = _convertTimeValueToMS(parseFloat(delayMatch), matches[4]);
+    }
+
+    const easingVal = matches[5];
+
+    if (easingVal) {
+      easing = easingVal;
+    }
+  } else {
+    duration = exp;
+  }
+
+  if (!allowNegativeValues) {
+    let containsErrors = false;
+    let startIndex = errors.length;
+
+    if (duration < 0) {
+      errors.push(`Duration values below 0 are not allowed for this animation step.`);
+      containsErrors = true;
+    }
+
+    if (delay < 0) {
+      errors.push(`Delay values below 0 are not allowed for this animation step.`);
+      containsErrors = true;
+    }
+
+    if (containsErrors) {
+      errors.splice(startIndex, 0, `The provided timing value "${exp}" is invalid.`);
+    }
+  }
+
+  return {
+    duration,
+    delay,
+    easing
+  };
+}
+
+function copyObj(obj, destination = {}) {
+  Object.keys(obj).forEach(prop => {
+    destination[prop] = obj[prop];
+  });
+  return destination;
+}
+
+function normalizeStyles(styles) {
+  const normalizedStyles = {};
+
+  if (Array.isArray(styles)) {
+    styles.forEach(data => copyStyles(data, false, normalizedStyles));
+  } else {
+    copyStyles(styles, false, normalizedStyles);
+  }
+
+  return normalizedStyles;
+}
+
+function copyStyles(styles, readPrototype, destination = {}) {
+  if (readPrototype) {
+    // we make use of a for-in loop so that the
+    // prototypically inherited properties are
+    // revealed from the backFill map
+    for (let prop in styles) {
+      destination[prop] = styles[prop];
+    }
+  } else {
+    copyObj(styles, destination);
+  }
+
+  return destination;
+}
+
+function getStyleAttributeString(element, key, value) {
+  // Return the key-value pair string to be added to the style attribute for the
+  // given CSS style key.
+  if (value) {
+    return key + ':' + value + ';';
+  } else {
+    return '';
+  }
+}
+
+function writeStyleAttribute(element) {
+  // Read the style property of the element and manually reflect it to the
+  // style attribute. This is needed because Domino on platform-server doesn't
+  // understand the full set of allowed CSS properties and doesn't reflect some
+  // of them automatically.
+  let styleAttrValue = '';
+
+  for (let i = 0; i < element.style.length; i++) {
+    const key = element.style.item(i);
+    styleAttrValue += getStyleAttributeString(element, key, element.style.getPropertyValue(key));
+  }
+
+  for (const key in element.style) {
+    // Skip internal Domino properties that don't need to be reflected.
+    if (!element.style.hasOwnProperty(key) || key.startsWith('_')) {
+      continue;
+    }
+
+    const dashKey = camelCaseToDashCase(key);
+    styleAttrValue += getStyleAttributeString(element, dashKey, element.style[key]);
+  }
+
+  element.setAttribute('style', styleAttrValue);
+}
+
+function setStyles(element, styles, formerStyles) {
+  if (element['style']) {
+    Object.keys(styles).forEach(prop => {
+      const camelProp = dashCaseToCamelCase(prop);
+
+      if (formerStyles && !formerStyles.hasOwnProperty(prop)) {
+        formerStyles[prop] = element.style[camelProp];
+      }
+
+      element.style[camelProp] = styles[prop];
+    }); // On the server set the 'style' attribute since it's not automatically reflected.
+
+    if (isNode()) {
+      writeStyleAttribute(element);
+    }
+  }
+}
+
+function eraseStyles(element, styles) {
+  if (element['style']) {
+    Object.keys(styles).forEach(prop => {
+      const camelProp = dashCaseToCamelCase(prop);
+      element.style[camelProp] = '';
+    }); // On the server set the 'style' attribute since it's not automatically reflected.
+
+    if (isNode()) {
+      writeStyleAttribute(element);
+    }
+  }
+}
+
+function normalizeAnimationEntry(steps) {
+  if (Array.isArray(steps)) {
+    if (steps.length == 1) return steps[0];
+    return (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.sequence)(steps);
+  }
+
+  return steps;
+}
+
+function validateStyleParams(value, options, errors) {
+  const params = options.params || {};
+  const matches = extractStyleParams(value);
+
+  if (matches.length) {
+    matches.forEach(varName => {
+      if (!params.hasOwnProperty(varName)) {
+        errors.push(`Unable to resolve the local animation param ${varName} in the given list of values`);
+      }
+    });
+  }
+}
+
+const PARAM_REGEX = new RegExp(`${SUBSTITUTION_EXPR_START}\\s*(.+?)\\s*${SUBSTITUTION_EXPR_END}`, 'g');
+
+function extractStyleParams(value) {
+  let params = [];
+
+  if (typeof value === 'string') {
+    let match;
+
+    while (match = PARAM_REGEX.exec(value)) {
+      params.push(match[1]);
+    }
+
+    PARAM_REGEX.lastIndex = 0;
+  }
+
+  return params;
+}
+
+function interpolateParams(value, params, errors) {
+  const original = value.toString();
+  const str = original.replace(PARAM_REGEX, (_, varName) => {
+    let localVal = params[varName]; // this means that the value was never overridden by the data passed in by the user
+
+    if (!params.hasOwnProperty(varName)) {
+      errors.push(`Please provide a value for the animation param ${varName}`);
+      localVal = '';
+    }
+
+    return localVal.toString();
+  }); // we do this to assert that numeric values stay as they are
+
+  return str == original ? value : str;
+}
+
+function iteratorToArray(iterator) {
+  const arr = [];
+  let item = iterator.next();
+
+  while (!item.done) {
+    arr.push(item.value);
+    item = iterator.next();
+  }
+
+  return arr;
+}
+
+const DASH_CASE_REGEXP = /-+([a-z0-9])/g;
+
+function dashCaseToCamelCase(input) {
+  return input.replace(DASH_CASE_REGEXP, (...m) => m[1].toUpperCase());
+}
+
+function camelCaseToDashCase(input) {
+  return input.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+}
+
+function allowPreviousPlayerStylesMerge(duration, delay) {
+  return duration === 0 || delay === 0;
+}
+
+function balancePreviousStylesIntoKeyframes(element, keyframes, previousStyles) {
+  const previousStyleProps = Object.keys(previousStyles);
+
+  if (previousStyleProps.length && keyframes.length) {
+    let startingKeyframe = keyframes[0];
+    let missingStyleProps = [];
+    previousStyleProps.forEach(prop => {
+      if (!startingKeyframe.hasOwnProperty(prop)) {
+        missingStyleProps.push(prop);
+      }
+
+      startingKeyframe[prop] = previousStyles[prop];
+    });
+
+    if (missingStyleProps.length) {
+      // tslint:disable-next-line
+      for (var i = 1; i < keyframes.length; i++) {
+        let kf = keyframes[i];
+        missingStyleProps.forEach(function (prop) {
+          kf[prop] = computeStyle(element, prop);
+        });
+      }
+    }
+  }
+
+  return keyframes;
+}
+
+function visitDslNode(visitor, node, context) {
+  switch (node.type) {
+    case 7
+    /* Trigger */
+    :
+      return visitor.visitTrigger(node, context);
+
+    case 0
+    /* State */
+    :
+      return visitor.visitState(node, context);
+
+    case 1
+    /* Transition */
+    :
+      return visitor.visitTransition(node, context);
+
+    case 2
+    /* Sequence */
+    :
+      return visitor.visitSequence(node, context);
+
+    case 3
+    /* Group */
+    :
+      return visitor.visitGroup(node, context);
+
+    case 4
+    /* Animate */
+    :
+      return visitor.visitAnimate(node, context);
+
+    case 5
+    /* Keyframes */
+    :
+      return visitor.visitKeyframes(node, context);
+
+    case 6
+    /* Style */
+    :
+      return visitor.visitStyle(node, context);
+
+    case 8
+    /* Reference */
+    :
+      return visitor.visitReference(node, context);
+
+    case 9
+    /* AnimateChild */
+    :
+      return visitor.visitAnimateChild(node, context);
+
+    case 10
+    /* AnimateRef */
+    :
+      return visitor.visitAnimateRef(node, context);
+
+    case 11
+    /* Query */
+    :
+      return visitor.visitQuery(node, context);
+
+    case 12
+    /* Stagger */
+    :
+      return visitor.visitStagger(node, context);
+
+    default:
+      throw new Error(`Unable to resolve animation metadata node #${node.type}`);
+  }
+}
+
+function computeStyle(element, prop) {
+  return window.getComputedStyle(element)[prop];
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+const ANY_STATE = '*';
+
+function parseTransitionExpr(transitionValue, errors) {
+  const expressions = [];
+
+  if (typeof transitionValue == 'string') {
+    transitionValue.split(/\s*,\s*/).forEach(str => parseInnerTransitionStr(str, expressions, errors));
+  } else {
+    expressions.push(transitionValue);
+  }
+
+  return expressions;
+}
+
+function parseInnerTransitionStr(eventStr, expressions, errors) {
+  if (eventStr[0] == ':') {
+    const result = parseAnimationAlias(eventStr, errors);
+
+    if (typeof result == 'function') {
+      expressions.push(result);
+      return;
+    }
+
+    eventStr = result;
+  }
+
+  const match = eventStr.match(/^(\*|[-\w]+)\s*(<?[=-]>)\s*(\*|[-\w]+)$/);
+
+  if (match == null || match.length < 4) {
+    errors.push(`The provided transition expression "${eventStr}" is not supported`);
+    return expressions;
+  }
+
+  const fromState = match[1];
+  const separator = match[2];
+  const toState = match[3];
+  expressions.push(makeLambdaFromStates(fromState, toState));
+  const isFullAnyStateExpr = fromState == ANY_STATE && toState == ANY_STATE;
+
+  if (separator[0] == '<' && !isFullAnyStateExpr) {
+    expressions.push(makeLambdaFromStates(toState, fromState));
+  }
+}
+
+function parseAnimationAlias(alias, errors) {
+  switch (alias) {
+    case ':enter':
+      return 'void => *';
+
+    case ':leave':
+      return '* => void';
+
+    case ':increment':
+      return (fromState, toState) => parseFloat(toState) > parseFloat(fromState);
+
+    case ':decrement':
+      return (fromState, toState) => parseFloat(toState) < parseFloat(fromState);
+
+    default:
+      errors.push(`The transition alias value "${alias}" is not supported`);
+      return '* => *';
+  }
+} // DO NOT REFACTOR ... keep the follow set instantiations
+// with the values intact (closure compiler for some reason
+// removes follow-up lines that add the values outside of
+// the constructor...
+
+
+const TRUE_BOOLEAN_VALUES = new Set(['true', '1']);
+const FALSE_BOOLEAN_VALUES = new Set(['false', '0']);
+
+function makeLambdaFromStates(lhs, rhs) {
+  const LHS_MATCH_BOOLEAN = TRUE_BOOLEAN_VALUES.has(lhs) || FALSE_BOOLEAN_VALUES.has(lhs);
+  const RHS_MATCH_BOOLEAN = TRUE_BOOLEAN_VALUES.has(rhs) || FALSE_BOOLEAN_VALUES.has(rhs);
+  return (fromState, toState) => {
+    let lhsMatch = lhs == ANY_STATE || lhs == fromState;
+    let rhsMatch = rhs == ANY_STATE || rhs == toState;
+
+    if (!lhsMatch && LHS_MATCH_BOOLEAN && typeof fromState === 'boolean') {
+      lhsMatch = fromState ? TRUE_BOOLEAN_VALUES.has(lhs) : FALSE_BOOLEAN_VALUES.has(lhs);
+    }
+
+    if (!rhsMatch && RHS_MATCH_BOOLEAN && typeof toState === 'boolean') {
+      rhsMatch = toState ? TRUE_BOOLEAN_VALUES.has(rhs) : FALSE_BOOLEAN_VALUES.has(rhs);
+    }
+
+    return lhsMatch && rhsMatch;
+  };
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+const SELF_TOKEN = ':self';
+const SELF_TOKEN_REGEX = new RegExp(`\s*${SELF_TOKEN}\s*,?`, 'g');
+/*
+ * [Validation]
+ * The visitor code below will traverse the animation AST generated by the animation verb functions
+ * (the output is a tree of objects) and attempt to perform a series of validations on the data. The
+ * following corner-cases will be validated:
+ *
+ * 1. Overlap of animations
+ * Given that a CSS property cannot be animated in more than one place at the same time, it's
+ * important that this behavior is detected and validated. The way in which this occurs is that
+ * each time a style property is examined, a string-map containing the property will be updated with
+ * the start and end times for when the property is used within an animation step.
+ *
+ * If there are two or more parallel animations that are currently running (these are invoked by the
+ * group()) on the same element then the validator will throw an error. Since the start/end timing
+ * values are collected for each property then if the current animation step is animating the same
+ * property and its timing values fall anywhere into the window of time that the property is
+ * currently being animated within then this is what causes an error.
+ *
+ * 2. Timing values
+ * The validator will validate to see if a timing value of `duration delay easing` or
+ * `durationNumber` is valid or not.
+ *
+ * (note that upon validation the code below will replace the timing data with an object containing
+ * {duration,delay,easing}.
+ *
+ * 3. Offset Validation
+ * Each of the style() calls are allowed to have an offset value when placed inside of keyframes().
+ * Offsets within keyframes() are considered valid when:
+ *
+ *   - No offsets are used at all
+ *   - Each style() entry contains an offset value
+ *   - Each offset is between 0 and 1
+ *   - Each offset is greater to or equal than the previous one
+ *
+ * Otherwise an error will be thrown.
+ */
+
+function buildAnimationAst(driver, metadata, errors) {
+  return new AnimationAstBuilderVisitor(driver).build(metadata, errors);
+}
+
+const ROOT_SELECTOR = '';
+
+class AnimationAstBuilderVisitor {
+  constructor(_driver) {
+    this._driver = _driver;
+  }
+
+  build(metadata, errors) {
+    const context = new AnimationAstBuilderContext(errors);
+
+    this._resetContextStyleTimingState(context);
+
+    return visitDslNode(this, normalizeAnimationEntry(metadata), context);
+  }
+
+  _resetContextStyleTimingState(context) {
+    context.currentQuerySelector = ROOT_SELECTOR;
+    context.collectedStyles = {};
+    context.collectedStyles[ROOT_SELECTOR] = {};
+    context.currentTime = 0;
+  }
+
+  visitTrigger(metadata, context) {
+    let queryCount = context.queryCount = 0;
+    let depCount = context.depCount = 0;
+    const states = [];
+    const transitions = [];
+
+    if (metadata.name.charAt(0) == '@') {
+      context.errors.push('animation triggers cannot be prefixed with an `@` sign (e.g. trigger(\'@foo\', [...]))');
+    }
+
+    metadata.definitions.forEach(def => {
+      this._resetContextStyleTimingState(context);
+
+      if (def.type == 0
+      /* State */
+      ) {
+        const stateDef = def;
+        const name = stateDef.name;
+        name.toString().split(/\s*,\s*/).forEach(n => {
+          stateDef.name = n;
+          states.push(this.visitState(stateDef, context));
+        });
+        stateDef.name = name;
+      } else if (def.type == 1
+      /* Transition */
+      ) {
+        const transition = this.visitTransition(def, context);
+        queryCount += transition.queryCount;
+        depCount += transition.depCount;
+        transitions.push(transition);
+      } else {
+        context.errors.push('only state() and transition() definitions can sit inside of a trigger()');
+      }
+    });
+    return {
+      type: 7
+      /* Trigger */
+      ,
+      name: metadata.name,
+      states,
+      transitions,
+      queryCount,
+      depCount,
+      options: null
+    };
+  }
+
+  visitState(metadata, context) {
+    const styleAst = this.visitStyle(metadata.styles, context);
+    const astParams = metadata.options && metadata.options.params || null;
+
+    if (styleAst.containsDynamicStyles) {
+      const missingSubs = new Set();
+      const params = astParams || {};
+      styleAst.styles.forEach(value => {
+        if (isObject(value)) {
+          const stylesObj = value;
+          Object.keys(stylesObj).forEach(prop => {
+            extractStyleParams(stylesObj[prop]).forEach(sub => {
+              if (!params.hasOwnProperty(sub)) {
+                missingSubs.add(sub);
+              }
+            });
+          });
+        }
+      });
+
+      if (missingSubs.size) {
+        const missingSubsArr = iteratorToArray(missingSubs.values());
+        context.errors.push(`state("${metadata.name}", ...) must define default values for all the following style substitutions: ${missingSubsArr.join(', ')}`);
+      }
+    }
+
+    return {
+      type: 0
+      /* State */
+      ,
+      name: metadata.name,
+      style: styleAst,
+      options: astParams ? {
+        params: astParams
+      } : null
+    };
+  }
+
+  visitTransition(metadata, context) {
+    context.queryCount = 0;
+    context.depCount = 0;
+    const animation = visitDslNode(this, normalizeAnimationEntry(metadata.animation), context);
+    const matchers = parseTransitionExpr(metadata.expr, context.errors);
+    return {
+      type: 1
+      /* Transition */
+      ,
+      matchers,
+      animation,
+      queryCount: context.queryCount,
+      depCount: context.depCount,
+      options: normalizeAnimationOptions(metadata.options)
+    };
+  }
+
+  visitSequence(metadata, context) {
+    return {
+      type: 2
+      /* Sequence */
+      ,
+      steps: metadata.steps.map(s => visitDslNode(this, s, context)),
+      options: normalizeAnimationOptions(metadata.options)
+    };
+  }
+
+  visitGroup(metadata, context) {
+    const currentTime = context.currentTime;
+    let furthestTime = 0;
+    const steps = metadata.steps.map(step => {
+      context.currentTime = currentTime;
+      const innerAst = visitDslNode(this, step, context);
+      furthestTime = Math.max(furthestTime, context.currentTime);
+      return innerAst;
+    });
+    context.currentTime = furthestTime;
+    return {
+      type: 3
+      /* Group */
+      ,
+      steps,
+      options: normalizeAnimationOptions(metadata.options)
+    };
+  }
+
+  visitAnimate(metadata, context) {
+    const timingAst = constructTimingAst(metadata.timings, context.errors);
+    context.currentAnimateTimings = timingAst;
+    let styleAst;
+    let styleMetadata = metadata.styles ? metadata.styles : (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.style)({});
+
+    if (styleMetadata.type == 5
+    /* Keyframes */
+    ) {
+      styleAst = this.visitKeyframes(styleMetadata, context);
+    } else {
+      let styleMetadata = metadata.styles;
+      let isEmpty = false;
+
+      if (!styleMetadata) {
+        isEmpty = true;
+        const newStyleData = {};
+
+        if (timingAst.easing) {
+          newStyleData['easing'] = timingAst.easing;
+        }
+
+        styleMetadata = (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.style)(newStyleData);
+      }
+
+      context.currentTime += timingAst.duration + timingAst.delay;
+
+      const _styleAst = this.visitStyle(styleMetadata, context);
+
+      _styleAst.isEmptyStep = isEmpty;
+      styleAst = _styleAst;
+    }
+
+    context.currentAnimateTimings = null;
+    return {
+      type: 4
+      /* Animate */
+      ,
+      timings: timingAst,
+      style: styleAst,
+      options: null
+    };
+  }
+
+  visitStyle(metadata, context) {
+    const ast = this._makeStyleAst(metadata, context);
+
+    this._validateStyleAst(ast, context);
+
+    return ast;
+  }
+
+  _makeStyleAst(metadata, context) {
+    const styles = [];
+
+    if (Array.isArray(metadata.styles)) {
+      metadata.styles.forEach(styleTuple => {
+        if (typeof styleTuple == 'string') {
+          if (styleTuple == _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AUTO_STYLE) {
+            styles.push(styleTuple);
+          } else {
+            context.errors.push(`The provided style string value ${styleTuple} is not allowed.`);
+          }
+        } else {
+          styles.push(styleTuple);
+        }
+      });
+    } else {
+      styles.push(metadata.styles);
+    }
+
+    let containsDynamicStyles = false;
+    let collectedEasing = null;
+    styles.forEach(styleData => {
+      if (isObject(styleData)) {
+        const styleMap = styleData;
+        const easing = styleMap['easing'];
+
+        if (easing) {
+          collectedEasing = easing;
+          delete styleMap['easing'];
+        }
+
+        if (!containsDynamicStyles) {
+          for (let prop in styleMap) {
+            const value = styleMap[prop];
+
+            if (value.toString().indexOf(SUBSTITUTION_EXPR_START) >= 0) {
+              containsDynamicStyles = true;
+              break;
+            }
+          }
+        }
+      }
+    });
+    return {
+      type: 6
+      /* Style */
+      ,
+      styles,
+      easing: collectedEasing,
+      offset: metadata.offset,
+      containsDynamicStyles,
+      options: null
+    };
+  }
+
+  _validateStyleAst(ast, context) {
+    const timings = context.currentAnimateTimings;
+    let endTime = context.currentTime;
+    let startTime = context.currentTime;
+
+    if (timings && startTime > 0) {
+      startTime -= timings.duration + timings.delay;
+    }
+
+    ast.styles.forEach(tuple => {
+      if (typeof tuple == 'string') return;
+      Object.keys(tuple).forEach(prop => {
+        if (!this._driver.validateStyleProperty(prop)) {
+          context.errors.push(`The provided animation property "${prop}" is not a supported CSS property for animations`);
+          return;
+        }
+
+        const collectedStyles = context.collectedStyles[context.currentQuerySelector];
+        const collectedEntry = collectedStyles[prop];
+        let updateCollectedStyle = true;
+
+        if (collectedEntry) {
+          if (startTime != endTime && startTime >= collectedEntry.startTime && endTime <= collectedEntry.endTime) {
+            context.errors.push(`The CSS property "${prop}" that exists between the times of "${collectedEntry.startTime}ms" and "${collectedEntry.endTime}ms" is also being animated in a parallel animation between the times of "${startTime}ms" and "${endTime}ms"`);
+            updateCollectedStyle = false;
+          } // we always choose the smaller start time value since we
+          // want to have a record of the entire animation window where
+          // the style property is being animated in between
+
+
+          startTime = collectedEntry.startTime;
+        }
+
+        if (updateCollectedStyle) {
+          collectedStyles[prop] = {
+            startTime,
+            endTime
+          };
+        }
+
+        if (context.options) {
+          validateStyleParams(tuple[prop], context.options, context.errors);
+        }
+      });
+    });
+  }
+
+  visitKeyframes(metadata, context) {
+    const ast = {
+      type: 5
+      /* Keyframes */
+      ,
+      styles: [],
+      options: null
+    };
+
+    if (!context.currentAnimateTimings) {
+      context.errors.push(`keyframes() must be placed inside of a call to animate()`);
+      return ast;
+    }
+
+    const MAX_KEYFRAME_OFFSET = 1;
+    let totalKeyframesWithOffsets = 0;
+    const offsets = [];
+    let offsetsOutOfOrder = false;
+    let keyframesOutOfRange = false;
+    let previousOffset = 0;
+    const keyframes = metadata.steps.map(styles => {
+      const style = this._makeStyleAst(styles, context);
+
+      let offsetVal = style.offset != null ? style.offset : consumeOffset(style.styles);
+      let offset = 0;
+
+      if (offsetVal != null) {
+        totalKeyframesWithOffsets++;
+        offset = style.offset = offsetVal;
+      }
+
+      keyframesOutOfRange = keyframesOutOfRange || offset < 0 || offset > 1;
+      offsetsOutOfOrder = offsetsOutOfOrder || offset < previousOffset;
+      previousOffset = offset;
+      offsets.push(offset);
+      return style;
+    });
+
+    if (keyframesOutOfRange) {
+      context.errors.push(`Please ensure that all keyframe offsets are between 0 and 1`);
+    }
+
+    if (offsetsOutOfOrder) {
+      context.errors.push(`Please ensure that all keyframe offsets are in order`);
+    }
+
+    const length = metadata.steps.length;
+    let generatedOffset = 0;
+
+    if (totalKeyframesWithOffsets > 0 && totalKeyframesWithOffsets < length) {
+      context.errors.push(`Not all style() steps within the declared keyframes() contain offsets`);
+    } else if (totalKeyframesWithOffsets == 0) {
+      generatedOffset = MAX_KEYFRAME_OFFSET / (length - 1);
+    }
+
+    const limit = length - 1;
+    const currentTime = context.currentTime;
+    const currentAnimateTimings = context.currentAnimateTimings;
+    const animateDuration = currentAnimateTimings.duration;
+    keyframes.forEach((kf, i) => {
+      const offset = generatedOffset > 0 ? i == limit ? 1 : generatedOffset * i : offsets[i];
+      const durationUpToThisFrame = offset * animateDuration;
+      context.currentTime = currentTime + currentAnimateTimings.delay + durationUpToThisFrame;
+      currentAnimateTimings.duration = durationUpToThisFrame;
+
+      this._validateStyleAst(kf, context);
+
+      kf.offset = offset;
+      ast.styles.push(kf);
+    });
+    return ast;
+  }
+
+  visitReference(metadata, context) {
+    return {
+      type: 8
+      /* Reference */
+      ,
+      animation: visitDslNode(this, normalizeAnimationEntry(metadata.animation), context),
+      options: normalizeAnimationOptions(metadata.options)
+    };
+  }
+
+  visitAnimateChild(metadata, context) {
+    context.depCount++;
+    return {
+      type: 9
+      /* AnimateChild */
+      ,
+      options: normalizeAnimationOptions(metadata.options)
+    };
+  }
+
+  visitAnimateRef(metadata, context) {
+    return {
+      type: 10
+      /* AnimateRef */
+      ,
+      animation: this.visitReference(metadata.animation, context),
+      options: normalizeAnimationOptions(metadata.options)
+    };
+  }
+
+  visitQuery(metadata, context) {
+    const parentSelector = context.currentQuerySelector;
+    const options = metadata.options || {};
+    context.queryCount++;
+    context.currentQuery = metadata;
+    const [selector, includeSelf] = normalizeSelector(metadata.selector);
+    context.currentQuerySelector = parentSelector.length ? parentSelector + ' ' + selector : selector;
+    getOrSetAsInMap(context.collectedStyles, context.currentQuerySelector, {});
+    const animation = visitDslNode(this, normalizeAnimationEntry(metadata.animation), context);
+    context.currentQuery = null;
+    context.currentQuerySelector = parentSelector;
+    return {
+      type: 11
+      /* Query */
+      ,
+      selector,
+      limit: options.limit || 0,
+      optional: !!options.optional,
+      includeSelf,
+      animation,
+      originalSelector: metadata.selector,
+      options: normalizeAnimationOptions(metadata.options)
+    };
+  }
+
+  visitStagger(metadata, context) {
+    if (!context.currentQuery) {
+      context.errors.push(`stagger() can only be used inside of query()`);
+    }
+
+    const timings = metadata.timings === 'full' ? {
+      duration: 0,
+      delay: 0,
+      easing: 'full'
+    } : resolveTiming(metadata.timings, context.errors, true);
+    return {
+      type: 12
+      /* Stagger */
+      ,
+      animation: visitDslNode(this, normalizeAnimationEntry(metadata.animation), context),
+      timings,
+      options: null
+    };
+  }
+
+}
+
+function normalizeSelector(selector) {
+  const hasAmpersand = selector.split(/\s*,\s*/).find(token => token == SELF_TOKEN) ? true : false;
+
+  if (hasAmpersand) {
+    selector = selector.replace(SELF_TOKEN_REGEX, '');
+  } // Note: the :enter and :leave aren't normalized here since those
+  // selectors are filled in at runtime during timeline building
+
+
+  selector = selector.replace(/@\*/g, NG_TRIGGER_SELECTOR).replace(/@\w+/g, match => NG_TRIGGER_SELECTOR + '-' + match.substr(1)).replace(/:animating/g, NG_ANIMATING_SELECTOR);
+  return [selector, hasAmpersand];
+}
+
+function normalizeParams(obj) {
+  return obj ? copyObj(obj) : null;
+}
+
+class AnimationAstBuilderContext {
+  constructor(errors) {
+    this.errors = errors;
+    this.queryCount = 0;
+    this.depCount = 0;
+    this.currentTransition = null;
+    this.currentQuery = null;
+    this.currentQuerySelector = null;
+    this.currentAnimateTimings = null;
+    this.currentTime = 0;
+    this.collectedStyles = {};
+    this.options = null;
+  }
+
+}
+
+function consumeOffset(styles) {
+  if (typeof styles == 'string') return null;
+  let offset = null;
+
+  if (Array.isArray(styles)) {
+    styles.forEach(styleTuple => {
+      if (isObject(styleTuple) && styleTuple.hasOwnProperty('offset')) {
+        const obj = styleTuple;
+        offset = parseFloat(obj['offset']);
+        delete obj['offset'];
+      }
+    });
+  } else if (isObject(styles) && styles.hasOwnProperty('offset')) {
+    const obj = styles;
+    offset = parseFloat(obj['offset']);
+    delete obj['offset'];
+  }
+
+  return offset;
+}
+
+function isObject(value) {
+  return !Array.isArray(value) && typeof value == 'object';
+}
+
+function constructTimingAst(value, errors) {
+  let timings = null;
+
+  if (value.hasOwnProperty('duration')) {
+    timings = value;
+  } else if (typeof value == 'number') {
+    const duration = resolveTiming(value, errors).duration;
+    return makeTimingAst(duration, 0, '');
+  }
+
+  const strValue = value;
+  const isDynamic = strValue.split(/\s+/).some(v => v.charAt(0) == '{' && v.charAt(1) == '{');
+
+  if (isDynamic) {
+    const ast = makeTimingAst(0, 0, '');
+    ast.dynamic = true;
+    ast.strValue = strValue;
+    return ast;
+  }
+
+  timings = timings || resolveTiming(strValue, errors);
+  return makeTimingAst(timings.duration, timings.delay, timings.easing);
+}
+
+function normalizeAnimationOptions(options) {
+  if (options) {
+    options = copyObj(options);
+
+    if (options['params']) {
+      options['params'] = normalizeParams(options['params']);
+    }
+  } else {
+    options = {};
+  }
+
+  return options;
+}
+
+function makeTimingAst(duration, delay, easing) {
+  return {
+    duration,
+    delay,
+    easing
+  };
+}
+
+function createTimelineInstruction(element, keyframes, preStyleProps, postStyleProps, duration, delay, easing = null, subTimeline = false) {
+  return {
+    type: 1
+    /* TimelineAnimation */
+    ,
+    element,
+    keyframes,
+    preStyleProps,
+    postStyleProps,
+    duration,
+    delay,
+    totalTime: duration + delay,
+    easing,
+    subTimeline
+  };
+}
+
+class ElementInstructionMap {
+  constructor() {
+    this._map = new Map();
+  }
+
+  consume(element) {
+    let instructions = this._map.get(element);
+
+    if (instructions) {
+      this._map.delete(element);
+    } else {
+      instructions = [];
+    }
+
+    return instructions;
+  }
+
+  append(element, instructions) {
+    let existingInstructions = this._map.get(element);
+
+    if (!existingInstructions) {
+      this._map.set(element, existingInstructions = []);
+    }
+
+    existingInstructions.push(...instructions);
+  }
+
+  has(element) {
+    return this._map.has(element);
+  }
+
+  clear() {
+    this._map.clear();
+  }
+
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+const ONE_FRAME_IN_MILLISECONDS = 1;
+const ENTER_TOKEN = ':enter';
+const ENTER_TOKEN_REGEX = new RegExp(ENTER_TOKEN, 'g');
+const LEAVE_TOKEN = ':leave';
+const LEAVE_TOKEN_REGEX = new RegExp(LEAVE_TOKEN, 'g');
+/*
+ * The code within this file aims to generate web-animations-compatible keyframes from Angular's
+ * animation DSL code.
+ *
+ * The code below will be converted from:
+ *
+ * ```
+ * sequence([
+ *   style({ opacity: 0 }),
+ *   animate(1000, style({ opacity: 0 }))
+ * ])
+ * ```
+ *
+ * To:
+ * ```
+ * keyframes = [{ opacity: 0, offset: 0 }, { opacity: 1, offset: 1 }]
+ * duration = 1000
+ * delay = 0
+ * easing = ''
+ * ```
+ *
+ * For this operation to cover the combination of animation verbs (style, animate, group, etc...) a
+ * combination of prototypical inheritance, AST traversal and merge-sort-like algorithms are used.
+ *
+ * [AST Traversal]
+ * Each of the animation verbs, when executed, will return an string-map object representing what
+ * type of action it is (style, animate, group, etc...) and the data associated with it. This means
+ * that when functional composition mix of these functions is evaluated (like in the example above)
+ * then it will end up producing a tree of objects representing the animation itself.
+ *
+ * When this animation object tree is processed by the visitor code below it will visit each of the
+ * verb statements within the visitor. And during each visit it will build the context of the
+ * animation keyframes by interacting with the `TimelineBuilder`.
+ *
+ * [TimelineBuilder]
+ * This class is responsible for tracking the styles and building a series of keyframe objects for a
+ * timeline between a start and end time. The builder starts off with an initial timeline and each
+ * time the AST comes across a `group()`, `keyframes()` or a combination of the two within a
+ * `sequence()` then it will generate a sub timeline for each step as well as a new one after
+ * they are complete.
+ *
+ * As the AST is traversed, the timing state on each of the timelines will be incremented. If a sub
+ * timeline was created (based on one of the cases above) then the parent timeline will attempt to
+ * merge the styles used within the sub timelines into itself (only with group() this will happen).
+ * This happens with a merge operation (much like how the merge works in mergeSort) and it will only
+ * copy the most recently used styles from the sub timelines into the parent timeline. This ensures
+ * that if the styles are used later on in another phase of the animation then they will be the most
+ * up-to-date values.
+ *
+ * [How Missing Styles Are Updated]
+ * Each timeline has a `backFill` property which is responsible for filling in new styles into
+ * already processed keyframes if a new style shows up later within the animation sequence.
+ *
+ * ```
+ * sequence([
+ *   style({ width: 0 }),
+ *   animate(1000, style({ width: 100 })),
+ *   animate(1000, style({ width: 200 })),
+ *   animate(1000, style({ width: 300 }))
+ *   animate(1000, style({ width: 400, height: 400 })) // notice how `height` doesn't exist anywhere
+ * else
+ * ])
+ * ```
+ *
+ * What is happening here is that the `height` value is added later in the sequence, but is missing
+ * from all previous animation steps. Therefore when a keyframe is created it would also be missing
+ * from all previous keyframes up until where it is first used. For the timeline keyframe generation
+ * to properly fill in the style it will place the previous value (the value from the parent
+ * timeline) or a default value of `*` into the backFill object. Given that each of the keyframe
+ * styles are objects that prototypically inherits from the backFill object, this means that if a
+ * value is added into the backFill then it will automatically propagate any missing values to all
+ * keyframes. Therefore the missing `height` value will be properly filled into the already
+ * processed keyframes.
+ *
+ * When a sub-timeline is created it will have its own backFill property. This is done so that
+ * styles present within the sub-timeline do not accidentally seep into the previous/future timeline
+ * keyframes
+ *
+ * (For prototypically-inherited contents to be detected a `for(i in obj)` loop must be used.)
+ *
+ * [Validation]
+ * The code in this file is not responsible for validation. That functionality happens with within
+ * the `AnimationValidatorVisitor` code.
+ */
+
+function buildAnimationTimelines(driver, rootElement, ast, enterClassName, leaveClassName, startingStyles = {}, finalStyles = {}, options, subInstructions, errors = []) {
+  return new AnimationTimelineBuilderVisitor().buildKeyframes(driver, rootElement, ast, enterClassName, leaveClassName, startingStyles, finalStyles, options, subInstructions, errors);
+}
+
+class AnimationTimelineBuilderVisitor {
+  buildKeyframes(driver, rootElement, ast, enterClassName, leaveClassName, startingStyles, finalStyles, options, subInstructions, errors = []) {
+    subInstructions = subInstructions || new ElementInstructionMap();
+    const context = new AnimationTimelineContext(driver, rootElement, subInstructions, enterClassName, leaveClassName, errors, []);
+    context.options = options;
+    context.currentTimeline.setStyles([startingStyles], null, context.errors, options);
+    visitDslNode(this, ast, context); // this checks to see if an actual animation happened
+
+    const timelines = context.timelines.filter(timeline => timeline.containsAnimation());
+
+    if (timelines.length && Object.keys(finalStyles).length) {
+      const tl = timelines[timelines.length - 1];
+
+      if (!tl.allowOnlyTimelineStyles()) {
+        tl.setStyles([finalStyles], null, context.errors, options);
+      }
+    }
+
+    return timelines.length ? timelines.map(timeline => timeline.buildKeyframes()) : [createTimelineInstruction(rootElement, [], [], [], 0, 0, '', false)];
+  }
+
+  visitTrigger(ast, context) {// these values are not visited in this AST
+  }
+
+  visitState(ast, context) {// these values are not visited in this AST
+  }
+
+  visitTransition(ast, context) {// these values are not visited in this AST
+  }
+
+  visitAnimateChild(ast, context) {
+    const elementInstructions = context.subInstructions.consume(context.element);
+
+    if (elementInstructions) {
+      const innerContext = context.createSubContext(ast.options);
+      const startTime = context.currentTimeline.currentTime;
+
+      const endTime = this._visitSubInstructions(elementInstructions, innerContext, innerContext.options);
+
+      if (startTime != endTime) {
+        // we do this on the upper context because we created a sub context for
+        // the sub child animations
+        context.transformIntoNewTimeline(endTime);
+      }
+    }
+
+    context.previousNode = ast;
+  }
+
+  visitAnimateRef(ast, context) {
+    const innerContext = context.createSubContext(ast.options);
+    innerContext.transformIntoNewTimeline();
+    this.visitReference(ast.animation, innerContext);
+    context.transformIntoNewTimeline(innerContext.currentTimeline.currentTime);
+    context.previousNode = ast;
+  }
+
+  _visitSubInstructions(instructions, context, options) {
+    const startTime = context.currentTimeline.currentTime;
+    let furthestTime = startTime; // this is a special-case for when a user wants to skip a sub
+    // animation from being fired entirely.
+
+    const duration = options.duration != null ? resolveTimingValue(options.duration) : null;
+    const delay = options.delay != null ? resolveTimingValue(options.delay) : null;
+
+    if (duration !== 0) {
+      instructions.forEach(instruction => {
+        const instructionTimings = context.appendInstructionToTimeline(instruction, duration, delay);
+        furthestTime = Math.max(furthestTime, instructionTimings.duration + instructionTimings.delay);
+      });
+    }
+
+    return furthestTime;
+  }
+
+  visitReference(ast, context) {
+    context.updateOptions(ast.options, true);
+    visitDslNode(this, ast.animation, context);
+    context.previousNode = ast;
+  }
+
+  visitSequence(ast, context) {
+    const subContextCount = context.subContextCount;
+    let ctx = context;
+    const options = ast.options;
+
+    if (options && (options.params || options.delay)) {
+      ctx = context.createSubContext(options);
+      ctx.transformIntoNewTimeline();
+
+      if (options.delay != null) {
+        if (ctx.previousNode.type == 6
+        /* Style */
+        ) {
+          ctx.currentTimeline.snapshotCurrentStyles();
+          ctx.previousNode = DEFAULT_NOOP_PREVIOUS_NODE;
+        }
+
+        const delay = resolveTimingValue(options.delay);
+        ctx.delayNextStep(delay);
+      }
+    }
+
+    if (ast.steps.length) {
+      ast.steps.forEach(s => visitDslNode(this, s, ctx)); // this is here just in case the inner steps only contain or end with a style() call
+
+      ctx.currentTimeline.applyStylesToKeyframe(); // this means that some animation function within the sequence
+      // ended up creating a sub timeline (which means the current
+      // timeline cannot overlap with the contents of the sequence)
+
+      if (ctx.subContextCount > subContextCount) {
+        ctx.transformIntoNewTimeline();
+      }
+    }
+
+    context.previousNode = ast;
+  }
+
+  visitGroup(ast, context) {
+    const innerTimelines = [];
+    let furthestTime = context.currentTimeline.currentTime;
+    const delay = ast.options && ast.options.delay ? resolveTimingValue(ast.options.delay) : 0;
+    ast.steps.forEach(s => {
+      const innerContext = context.createSubContext(ast.options);
+
+      if (delay) {
+        innerContext.delayNextStep(delay);
+      }
+
+      visitDslNode(this, s, innerContext);
+      furthestTime = Math.max(furthestTime, innerContext.currentTimeline.currentTime);
+      innerTimelines.push(innerContext.currentTimeline);
+    }); // this operation is run after the AST loop because otherwise
+    // if the parent timeline's collected styles were updated then
+    // it would pass in invalid data into the new-to-be forked items
+
+    innerTimelines.forEach(timeline => context.currentTimeline.mergeTimelineCollectedStyles(timeline));
+    context.transformIntoNewTimeline(furthestTime);
+    context.previousNode = ast;
+  }
+
+  _visitTiming(ast, context) {
+    if (ast.dynamic) {
+      const strValue = ast.strValue;
+      const timingValue = context.params ? interpolateParams(strValue, context.params, context.errors) : strValue;
+      return resolveTiming(timingValue, context.errors);
+    } else {
+      return {
+        duration: ast.duration,
+        delay: ast.delay,
+        easing: ast.easing
+      };
+    }
+  }
+
+  visitAnimate(ast, context) {
+    const timings = context.currentAnimateTimings = this._visitTiming(ast.timings, context);
+
+    const timeline = context.currentTimeline;
+
+    if (timings.delay) {
+      context.incrementTime(timings.delay);
+      timeline.snapshotCurrentStyles();
+    }
+
+    const style = ast.style;
+
+    if (style.type == 5
+    /* Keyframes */
+    ) {
+      this.visitKeyframes(style, context);
+    } else {
+      context.incrementTime(timings.duration);
+      this.visitStyle(style, context);
+      timeline.applyStylesToKeyframe();
+    }
+
+    context.currentAnimateTimings = null;
+    context.previousNode = ast;
+  }
+
+  visitStyle(ast, context) {
+    const timeline = context.currentTimeline;
+    const timings = context.currentAnimateTimings; // this is a special case for when a style() call
+    // directly follows  an animate() call (but not inside of an animate() call)
+
+    if (!timings && timeline.getCurrentStyleProperties().length) {
+      timeline.forwardFrame();
+    }
+
+    const easing = timings && timings.easing || ast.easing;
+
+    if (ast.isEmptyStep) {
+      timeline.applyEmptyStep(easing);
+    } else {
+      timeline.setStyles(ast.styles, easing, context.errors, context.options);
+    }
+
+    context.previousNode = ast;
+  }
+
+  visitKeyframes(ast, context) {
+    const currentAnimateTimings = context.currentAnimateTimings;
+    const startTime = context.currentTimeline.duration;
+    const duration = currentAnimateTimings.duration;
+    const innerContext = context.createSubContext();
+    const innerTimeline = innerContext.currentTimeline;
+    innerTimeline.easing = currentAnimateTimings.easing;
+    ast.styles.forEach(step => {
+      const offset = step.offset || 0;
+      innerTimeline.forwardTime(offset * duration);
+      innerTimeline.setStyles(step.styles, step.easing, context.errors, context.options);
+      innerTimeline.applyStylesToKeyframe();
+    }); // this will ensure that the parent timeline gets all the styles from
+    // the child even if the new timeline below is not used
+
+    context.currentTimeline.mergeTimelineCollectedStyles(innerTimeline); // we do this because the window between this timeline and the sub timeline
+    // should ensure that the styles within are exactly the same as they were before
+
+    context.transformIntoNewTimeline(startTime + duration);
+    context.previousNode = ast;
+  }
+
+  visitQuery(ast, context) {
+    // in the event that the first step before this is a style step we need
+    // to ensure the styles are applied before the children are animated
+    const startTime = context.currentTimeline.currentTime;
+    const options = ast.options || {};
+    const delay = options.delay ? resolveTimingValue(options.delay) : 0;
+
+    if (delay && (context.previousNode.type === 6
+    /* Style */
+    || startTime == 0 && context.currentTimeline.getCurrentStyleProperties().length)) {
+      context.currentTimeline.snapshotCurrentStyles();
+      context.previousNode = DEFAULT_NOOP_PREVIOUS_NODE;
+    }
+
+    let furthestTime = startTime;
+    const elms = context.invokeQuery(ast.selector, ast.originalSelector, ast.limit, ast.includeSelf, options.optional ? true : false, context.errors);
+    context.currentQueryTotal = elms.length;
+    let sameElementTimeline = null;
+    elms.forEach((element, i) => {
+      context.currentQueryIndex = i;
+      const innerContext = context.createSubContext(ast.options, element);
+
+      if (delay) {
+        innerContext.delayNextStep(delay);
+      }
+
+      if (element === context.element) {
+        sameElementTimeline = innerContext.currentTimeline;
+      }
+
+      visitDslNode(this, ast.animation, innerContext); // this is here just incase the inner steps only contain or end
+      // with a style() call (which is here to signal that this is a preparatory
+      // call to style an element before it is animated again)
+
+      innerContext.currentTimeline.applyStylesToKeyframe();
+      const endTime = innerContext.currentTimeline.currentTime;
+      furthestTime = Math.max(furthestTime, endTime);
+    });
+    context.currentQueryIndex = 0;
+    context.currentQueryTotal = 0;
+    context.transformIntoNewTimeline(furthestTime);
+
+    if (sameElementTimeline) {
+      context.currentTimeline.mergeTimelineCollectedStyles(sameElementTimeline);
+      context.currentTimeline.snapshotCurrentStyles();
+    }
+
+    context.previousNode = ast;
+  }
+
+  visitStagger(ast, context) {
+    const parentContext = context.parentContext;
+    const tl = context.currentTimeline;
+    const timings = ast.timings;
+    const duration = Math.abs(timings.duration);
+    const maxTime = duration * (context.currentQueryTotal - 1);
+    let delay = duration * context.currentQueryIndex;
+    let staggerTransformer = timings.duration < 0 ? 'reverse' : timings.easing;
+
+    switch (staggerTransformer) {
+      case 'reverse':
+        delay = maxTime - delay;
+        break;
+
+      case 'full':
+        delay = parentContext.currentStaggerTime;
+        break;
+    }
+
+    const timeline = context.currentTimeline;
+
+    if (delay) {
+      timeline.delayNextStep(delay);
+    }
+
+    const startingTime = timeline.currentTime;
+    visitDslNode(this, ast.animation, context);
+    context.previousNode = ast; // time = duration + delay
+    // the reason why this computation is so complex is because
+    // the inner timeline may either have a delay value or a stretched
+    // keyframe depending on if a subtimeline is not used or is used.
+
+    parentContext.currentStaggerTime = tl.currentTime - startingTime + (tl.startTime - parentContext.currentTimeline.startTime);
+  }
+
+}
+
+const DEFAULT_NOOP_PREVIOUS_NODE = {};
+
+class AnimationTimelineContext {
+  constructor(_driver, element, subInstructions, _enterClassName, _leaveClassName, errors, timelines, initialTimeline) {
+    this._driver = _driver;
+    this.element = element;
+    this.subInstructions = subInstructions;
+    this._enterClassName = _enterClassName;
+    this._leaveClassName = _leaveClassName;
+    this.errors = errors;
+    this.timelines = timelines;
+    this.parentContext = null;
+    this.currentAnimateTimings = null;
+    this.previousNode = DEFAULT_NOOP_PREVIOUS_NODE;
+    this.subContextCount = 0;
+    this.options = {};
+    this.currentQueryIndex = 0;
+    this.currentQueryTotal = 0;
+    this.currentStaggerTime = 0;
+    this.currentTimeline = initialTimeline || new TimelineBuilder(this._driver, element, 0);
+    timelines.push(this.currentTimeline);
+  }
+
+  get params() {
+    return this.options.params;
+  }
+
+  updateOptions(options, skipIfExists) {
+    if (!options) return;
+    const newOptions = options;
+    let optionsToUpdate = this.options; // NOTE: this will get patched up when other animation methods support duration overrides
+
+    if (newOptions.duration != null) {
+      optionsToUpdate.duration = resolveTimingValue(newOptions.duration);
+    }
+
+    if (newOptions.delay != null) {
+      optionsToUpdate.delay = resolveTimingValue(newOptions.delay);
+    }
+
+    const newParams = newOptions.params;
+
+    if (newParams) {
+      let paramsToUpdate = optionsToUpdate.params;
+
+      if (!paramsToUpdate) {
+        paramsToUpdate = this.options.params = {};
+      }
+
+      Object.keys(newParams).forEach(name => {
+        if (!skipIfExists || !paramsToUpdate.hasOwnProperty(name)) {
+          paramsToUpdate[name] = interpolateParams(newParams[name], paramsToUpdate, this.errors);
+        }
+      });
+    }
+  }
+
+  _copyOptions() {
+    const options = {};
+
+    if (this.options) {
+      const oldParams = this.options.params;
+
+      if (oldParams) {
+        const params = options['params'] = {};
+        Object.keys(oldParams).forEach(name => {
+          params[name] = oldParams[name];
+        });
+      }
+    }
+
+    return options;
+  }
+
+  createSubContext(options = null, element, newTime) {
+    const target = element || this.element;
+    const context = new AnimationTimelineContext(this._driver, target, this.subInstructions, this._enterClassName, this._leaveClassName, this.errors, this.timelines, this.currentTimeline.fork(target, newTime || 0));
+    context.previousNode = this.previousNode;
+    context.currentAnimateTimings = this.currentAnimateTimings;
+    context.options = this._copyOptions();
+    context.updateOptions(options);
+    context.currentQueryIndex = this.currentQueryIndex;
+    context.currentQueryTotal = this.currentQueryTotal;
+    context.parentContext = this;
+    this.subContextCount++;
+    return context;
+  }
+
+  transformIntoNewTimeline(newTime) {
+    this.previousNode = DEFAULT_NOOP_PREVIOUS_NODE;
+    this.currentTimeline = this.currentTimeline.fork(this.element, newTime);
+    this.timelines.push(this.currentTimeline);
+    return this.currentTimeline;
+  }
+
+  appendInstructionToTimeline(instruction, duration, delay) {
+    const updatedTimings = {
+      duration: duration != null ? duration : instruction.duration,
+      delay: this.currentTimeline.currentTime + (delay != null ? delay : 0) + instruction.delay,
+      easing: ''
+    };
+    const builder = new SubTimelineBuilder(this._driver, instruction.element, instruction.keyframes, instruction.preStyleProps, instruction.postStyleProps, updatedTimings, instruction.stretchStartingKeyframe);
+    this.timelines.push(builder);
+    return updatedTimings;
+  }
+
+  incrementTime(time) {
+    this.currentTimeline.forwardTime(this.currentTimeline.duration + time);
+  }
+
+  delayNextStep(delay) {
+    // negative delays are not yet supported
+    if (delay > 0) {
+      this.currentTimeline.delayNextStep(delay);
+    }
+  }
+
+  invokeQuery(selector, originalSelector, limit, includeSelf, optional, errors) {
+    let results = [];
+
+    if (includeSelf) {
+      results.push(this.element);
+    }
+
+    if (selector.length > 0) {
+      // only if :self is used then the selector can be empty
+      selector = selector.replace(ENTER_TOKEN_REGEX, '.' + this._enterClassName);
+      selector = selector.replace(LEAVE_TOKEN_REGEX, '.' + this._leaveClassName);
+      const multi = limit != 1;
+
+      let elements = this._driver.query(this.element, selector, multi);
+
+      if (limit !== 0) {
+        elements = limit < 0 ? elements.slice(elements.length + limit, elements.length) : elements.slice(0, limit);
+      }
+
+      results.push(...elements);
+    }
+
+    if (!optional && results.length == 0) {
+      errors.push(`\`query("${originalSelector}")\` returned zero elements. (Use \`query("${originalSelector}", { optional: true })\` if you wish to allow this.)`);
+    }
+
+    return results;
+  }
+
+}
+
+class TimelineBuilder {
+  constructor(_driver, element, startTime, _elementTimelineStylesLookup) {
+    this._driver = _driver;
+    this.element = element;
+    this.startTime = startTime;
+    this._elementTimelineStylesLookup = _elementTimelineStylesLookup;
+    this.duration = 0;
+    this._previousKeyframe = {};
+    this._currentKeyframe = {};
+    this._keyframes = new Map();
+    this._styleSummary = {};
+    this._pendingStyles = {};
+    this._backFill = {};
+    this._currentEmptyStepKeyframe = null;
+
+    if (!this._elementTimelineStylesLookup) {
+      this._elementTimelineStylesLookup = new Map();
+    }
+
+    this._localTimelineStyles = Object.create(this._backFill, {});
+    this._globalTimelineStyles = this._elementTimelineStylesLookup.get(element);
+
+    if (!this._globalTimelineStyles) {
+      this._globalTimelineStyles = this._localTimelineStyles;
+
+      this._elementTimelineStylesLookup.set(element, this._localTimelineStyles);
+    }
+
+    this._loadKeyframe();
+  }
+
+  containsAnimation() {
+    switch (this._keyframes.size) {
+      case 0:
+        return false;
+
+      case 1:
+        return this.getCurrentStyleProperties().length > 0;
+
+      default:
+        return true;
+    }
+  }
+
+  getCurrentStyleProperties() {
+    return Object.keys(this._currentKeyframe);
+  }
+
+  get currentTime() {
+    return this.startTime + this.duration;
+  }
+
+  delayNextStep(delay) {
+    // in the event that a style() step is placed right before a stagger()
+    // and that style() step is the very first style() value in the animation
+    // then we need to make a copy of the keyframe [0, copy, 1] so that the delay
+    // properly applies the style() values to work with the stagger...
+    const hasPreStyleStep = this._keyframes.size == 1 && Object.keys(this._pendingStyles).length;
+
+    if (this.duration || hasPreStyleStep) {
+      this.forwardTime(this.currentTime + delay);
+
+      if (hasPreStyleStep) {
+        this.snapshotCurrentStyles();
+      }
+    } else {
+      this.startTime += delay;
+    }
+  }
+
+  fork(element, currentTime) {
+    this.applyStylesToKeyframe();
+    return new TimelineBuilder(this._driver, element, currentTime || this.currentTime, this._elementTimelineStylesLookup);
+  }
+
+  _loadKeyframe() {
+    if (this._currentKeyframe) {
+      this._previousKeyframe = this._currentKeyframe;
+    }
+
+    this._currentKeyframe = this._keyframes.get(this.duration);
+
+    if (!this._currentKeyframe) {
+      this._currentKeyframe = Object.create(this._backFill, {});
+
+      this._keyframes.set(this.duration, this._currentKeyframe);
+    }
+  }
+
+  forwardFrame() {
+    this.duration += ONE_FRAME_IN_MILLISECONDS;
+
+    this._loadKeyframe();
+  }
+
+  forwardTime(time) {
+    this.applyStylesToKeyframe();
+    this.duration = time;
+
+    this._loadKeyframe();
+  }
+
+  _updateStyle(prop, value) {
+    this._localTimelineStyles[prop] = value;
+    this._globalTimelineStyles[prop] = value;
+    this._styleSummary[prop] = {
+      time: this.currentTime,
+      value
+    };
+  }
+
+  allowOnlyTimelineStyles() {
+    return this._currentEmptyStepKeyframe !== this._currentKeyframe;
+  }
+
+  applyEmptyStep(easing) {
+    if (easing) {
+      this._previousKeyframe['easing'] = easing;
+    } // special case for animate(duration):
+    // all missing styles are filled with a `*` value then
+    // if any destination styles are filled in later on the same
+    // keyframe then they will override the overridden styles
+    // We use `_globalTimelineStyles` here because there may be
+    // styles in previous keyframes that are not present in this timeline
+
+
+    Object.keys(this._globalTimelineStyles).forEach(prop => {
+      this._backFill[prop] = this._globalTimelineStyles[prop] || _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AUTO_STYLE;
+      this._currentKeyframe[prop] = _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AUTO_STYLE;
+    });
+    this._currentEmptyStepKeyframe = this._currentKeyframe;
+  }
+
+  setStyles(input, easing, errors, options) {
+    if (easing) {
+      this._previousKeyframe['easing'] = easing;
+    }
+
+    const params = options && options.params || {};
+    const styles = flattenStyles(input, this._globalTimelineStyles);
+    Object.keys(styles).forEach(prop => {
+      const val = interpolateParams(styles[prop], params, errors);
+      this._pendingStyles[prop] = val;
+
+      if (!this._localTimelineStyles.hasOwnProperty(prop)) {
+        this._backFill[prop] = this._globalTimelineStyles.hasOwnProperty(prop) ? this._globalTimelineStyles[prop] : _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AUTO_STYLE;
+      }
+
+      this._updateStyle(prop, val);
+    });
+  }
+
+  applyStylesToKeyframe() {
+    const styles = this._pendingStyles;
+    const props = Object.keys(styles);
+    if (props.length == 0) return;
+    this._pendingStyles = {};
+    props.forEach(prop => {
+      const val = styles[prop];
+      this._currentKeyframe[prop] = val;
+    });
+    Object.keys(this._localTimelineStyles).forEach(prop => {
+      if (!this._currentKeyframe.hasOwnProperty(prop)) {
+        this._currentKeyframe[prop] = this._localTimelineStyles[prop];
+      }
+    });
+  }
+
+  snapshotCurrentStyles() {
+    Object.keys(this._localTimelineStyles).forEach(prop => {
+      const val = this._localTimelineStyles[prop];
+      this._pendingStyles[prop] = val;
+
+      this._updateStyle(prop, val);
+    });
+  }
+
+  getFinalKeyframe() {
+    return this._keyframes.get(this.duration);
+  }
+
+  get properties() {
+    const properties = [];
+
+    for (let prop in this._currentKeyframe) {
+      properties.push(prop);
+    }
+
+    return properties;
+  }
+
+  mergeTimelineCollectedStyles(timeline) {
+    Object.keys(timeline._styleSummary).forEach(prop => {
+      const details0 = this._styleSummary[prop];
+      const details1 = timeline._styleSummary[prop];
+
+      if (!details0 || details1.time > details0.time) {
+        this._updateStyle(prop, details1.value);
+      }
+    });
+  }
+
+  buildKeyframes() {
+    this.applyStylesToKeyframe();
+    const preStyleProps = new Set();
+    const postStyleProps = new Set();
+    const isEmpty = this._keyframes.size === 1 && this.duration === 0;
+    let finalKeyframes = [];
+
+    this._keyframes.forEach((keyframe, time) => {
+      const finalKeyframe = copyStyles(keyframe, true);
+      Object.keys(finalKeyframe).forEach(prop => {
+        const value = finalKeyframe[prop];
+
+        if (value == _angular_animations__WEBPACK_IMPORTED_MODULE_0__["ɵPRE_STYLE"]) {
+          preStyleProps.add(prop);
+        } else if (value == _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AUTO_STYLE) {
+          postStyleProps.add(prop);
+        }
+      });
+
+      if (!isEmpty) {
+        finalKeyframe['offset'] = time / this.duration;
+      }
+
+      finalKeyframes.push(finalKeyframe);
+    });
+
+    const preProps = preStyleProps.size ? iteratorToArray(preStyleProps.values()) : [];
+    const postProps = postStyleProps.size ? iteratorToArray(postStyleProps.values()) : []; // special case for a 0-second animation (which is designed just to place styles onscreen)
+
+    if (isEmpty) {
+      const kf0 = finalKeyframes[0];
+      const kf1 = copyObj(kf0);
+      kf0['offset'] = 0;
+      kf1['offset'] = 1;
+      finalKeyframes = [kf0, kf1];
+    }
+
+    return createTimelineInstruction(this.element, finalKeyframes, preProps, postProps, this.duration, this.startTime, this.easing, false);
+  }
+
+}
+
+class SubTimelineBuilder extends TimelineBuilder {
+  constructor(driver, element, keyframes, preStyleProps, postStyleProps, timings, _stretchStartingKeyframe = false) {
+    super(driver, element, timings.delay);
+    this.keyframes = keyframes;
+    this.preStyleProps = preStyleProps;
+    this.postStyleProps = postStyleProps;
+    this._stretchStartingKeyframe = _stretchStartingKeyframe;
+    this.timings = {
+      duration: timings.duration,
+      delay: timings.delay,
+      easing: timings.easing
+    };
+  }
+
+  containsAnimation() {
+    return this.keyframes.length > 1;
+  }
+
+  buildKeyframes() {
+    let keyframes = this.keyframes;
+    let {
+      delay,
+      duration,
+      easing
+    } = this.timings;
+
+    if (this._stretchStartingKeyframe && delay) {
+      const newKeyframes = [];
+      const totalTime = duration + delay;
+      const startingGap = delay / totalTime; // the original starting keyframe now starts once the delay is done
+
+      const newFirstKeyframe = copyStyles(keyframes[0], false);
+      newFirstKeyframe['offset'] = 0;
+      newKeyframes.push(newFirstKeyframe);
+      const oldFirstKeyframe = copyStyles(keyframes[0], false);
+      oldFirstKeyframe['offset'] = roundOffset(startingGap);
+      newKeyframes.push(oldFirstKeyframe);
+      /*
+        When the keyframe is stretched then it means that the delay before the animation
+        starts is gone. Instead the first keyframe is placed at the start of the animation
+        and it is then copied to where it starts when the original delay is over. This basically
+        means nothing animates during that delay, but the styles are still rendered. For this
+        to work the original offset values that exist in the original keyframes must be "warped"
+        so that they can take the new keyframe + delay into account.
+               delay=1000, duration=1000, keyframes = 0 .5 1
+               turns into
+               delay=0, duration=2000, keyframes = 0 .33 .66 1
+       */
+      // offsets between 1 ... n -1 are all warped by the keyframe stretch
+
+      const limit = keyframes.length - 1;
+
+      for (let i = 1; i <= limit; i++) {
+        let kf = copyStyles(keyframes[i], false);
+        const oldOffset = kf['offset'];
+        const timeAtKeyframe = delay + oldOffset * duration;
+        kf['offset'] = roundOffset(timeAtKeyframe / totalTime);
+        newKeyframes.push(kf);
+      } // the new starting keyframe should be added at the start
+
+
+      duration = totalTime;
+      delay = 0;
+      easing = '';
+      keyframes = newKeyframes;
+    }
+
+    return createTimelineInstruction(this.element, keyframes, this.preStyleProps, this.postStyleProps, duration, delay, easing, true);
+  }
+
+}
+
+function roundOffset(offset, decimalPoints = 3) {
+  const mult = Math.pow(10, decimalPoints - 1);
+  return Math.round(offset * mult) / mult;
+}
+
+function flattenStyles(input, allStyles) {
+  const styles = {};
+  let allProperties;
+  input.forEach(token => {
+    if (token === '*') {
+      allProperties = allProperties || Object.keys(allStyles);
+      allProperties.forEach(prop => {
+        styles[prop] = _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AUTO_STYLE;
+      });
+    } else {
+      copyStyles(token, false, styles);
+    }
+  });
+  return styles;
+}
+
+class Animation {
+  constructor(_driver, input) {
+    this._driver = _driver;
+    const errors = [];
+    const ast = buildAnimationAst(_driver, input, errors);
+
+    if (errors.length) {
+      const errorMessage = `animation validation failed:\n${errors.join('\n')}`;
+      throw new Error(errorMessage);
+    }
+
+    this._animationAst = ast;
+  }
+
+  buildTimelines(element, startingStyles, destinationStyles, options, subInstructions) {
+    const start = Array.isArray(startingStyles) ? normalizeStyles(startingStyles) : startingStyles;
+    const dest = Array.isArray(destinationStyles) ? normalizeStyles(destinationStyles) : destinationStyles;
+    const errors = [];
+    subInstructions = subInstructions || new ElementInstructionMap();
+    const result = buildAnimationTimelines(this._driver, element, this._animationAst, ENTER_CLASSNAME, LEAVE_CLASSNAME, start, dest, options, subInstructions, errors);
+
+    if (errors.length) {
+      const errorMessage = `animation building failed:\n${errors.join('\n')}`;
+      throw new Error(errorMessage);
+    }
+
+    return result;
+  }
+
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @publicApi
+ */
+
+
+class AnimationStyleNormalizer {}
+/**
+ * @publicApi
+ */
+
+
+class NoopAnimationStyleNormalizer {
+  normalizePropertyName(propertyName, errors) {
+    return propertyName;
+  }
+
+  normalizeStyleValue(userProvidedProperty, normalizedProperty, value, errors) {
+    return value;
+  }
+
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+class WebAnimationsStyleNormalizer extends AnimationStyleNormalizer {
+  normalizePropertyName(propertyName, errors) {
+    return dashCaseToCamelCase(propertyName);
+  }
+
+  normalizeStyleValue(userProvidedProperty, normalizedProperty, value, errors) {
+    let unit = '';
+    const strVal = value.toString().trim();
+
+    if (DIMENSIONAL_PROP_MAP[normalizedProperty] && value !== 0 && value !== '0') {
+      if (typeof value === 'number') {
+        unit = 'px';
+      } else {
+        const valAndSuffixMatch = value.match(/^[+-]?[\d\.]+([a-z]*)$/);
+
+        if (valAndSuffixMatch && valAndSuffixMatch[1].length == 0) {
+          errors.push(`Please provide a CSS unit value for ${userProvidedProperty}:${value}`);
+        }
+      }
+    }
+
+    return strVal + unit;
+  }
+
+}
+
+const DIMENSIONAL_PROP_MAP = (() => makeBooleanMap('width,height,minWidth,minHeight,maxWidth,maxHeight,left,top,bottom,right,fontSize,outlineWidth,outlineOffset,paddingTop,paddingLeft,paddingBottom,paddingRight,marginTop,marginLeft,marginBottom,marginRight,borderRadius,borderWidth,borderTopWidth,borderLeftWidth,borderRightWidth,borderBottomWidth,textIndent,perspective'.split(',')))();
+
+function makeBooleanMap(keys) {
+  const map = {};
+  keys.forEach(key => map[key] = true);
+  return map;
+}
+
+function createTransitionInstruction(element, triggerName, fromState, toState, isRemovalTransition, fromStyles, toStyles, timelines, queriedElements, preStyleProps, postStyleProps, totalTime, errors) {
+  return {
+    type: 0
+    /* TransitionAnimation */
+    ,
+    element,
+    triggerName,
+    isRemovalTransition,
+    fromState,
+    fromStyles,
+    toState,
+    toStyles,
+    timelines,
+    queriedElements,
+    preStyleProps,
+    postStyleProps,
+    totalTime,
+    errors
+  };
+}
+
+const EMPTY_OBJECT = {};
+
+class AnimationTransitionFactory {
+  constructor(_triggerName, ast, _stateStyles) {
+    this._triggerName = _triggerName;
+    this.ast = ast;
+    this._stateStyles = _stateStyles;
+  }
+
+  match(currentState, nextState, element, params) {
+    return oneOrMoreTransitionsMatch(this.ast.matchers, currentState, nextState, element, params);
+  }
+
+  buildStyles(stateName, params, errors) {
+    const backupStateStyler = this._stateStyles['*'];
+    const stateStyler = this._stateStyles[stateName];
+    const backupStyles = backupStateStyler ? backupStateStyler.buildStyles(params, errors) : {};
+    return stateStyler ? stateStyler.buildStyles(params, errors) : backupStyles;
+  }
+
+  build(driver, element, currentState, nextState, enterClassName, leaveClassName, currentOptions, nextOptions, subInstructions, skipAstBuild) {
+    const errors = [];
+    const transitionAnimationParams = this.ast.options && this.ast.options.params || EMPTY_OBJECT;
+    const currentAnimationParams = currentOptions && currentOptions.params || EMPTY_OBJECT;
+    const currentStateStyles = this.buildStyles(currentState, currentAnimationParams, errors);
+    const nextAnimationParams = nextOptions && nextOptions.params || EMPTY_OBJECT;
+    const nextStateStyles = this.buildStyles(nextState, nextAnimationParams, errors);
+    const queriedElements = new Set();
+    const preStyleMap = new Map();
+    const postStyleMap = new Map();
+    const isRemoval = nextState === 'void';
+    const animationOptions = {
+      params: { ...transitionAnimationParams,
+        ...nextAnimationParams
+      }
+    };
+    const timelines = skipAstBuild ? [] : buildAnimationTimelines(driver, element, this.ast.animation, enterClassName, leaveClassName, currentStateStyles, nextStateStyles, animationOptions, subInstructions, errors);
+    let totalTime = 0;
+    timelines.forEach(tl => {
+      totalTime = Math.max(tl.duration + tl.delay, totalTime);
+    });
+
+    if (errors.length) {
+      return createTransitionInstruction(element, this._triggerName, currentState, nextState, isRemoval, currentStateStyles, nextStateStyles, [], [], preStyleMap, postStyleMap, totalTime, errors);
+    }
+
+    timelines.forEach(tl => {
+      const elm = tl.element;
+      const preProps = getOrSetAsInMap(preStyleMap, elm, {});
+      tl.preStyleProps.forEach(prop => preProps[prop] = true);
+      const postProps = getOrSetAsInMap(postStyleMap, elm, {});
+      tl.postStyleProps.forEach(prop => postProps[prop] = true);
+
+      if (elm !== element) {
+        queriedElements.add(elm);
+      }
+    });
+    const queriedElementsList = iteratorToArray(queriedElements.values());
+    return createTransitionInstruction(element, this._triggerName, currentState, nextState, isRemoval, currentStateStyles, nextStateStyles, timelines, queriedElementsList, preStyleMap, postStyleMap, totalTime);
+  }
+
+}
+
+function oneOrMoreTransitionsMatch(matchFns, currentState, nextState, element, params) {
+  return matchFns.some(fn => fn(currentState, nextState, element, params));
+}
+
+class AnimationStateStyles {
+  constructor(styles, defaultParams, normalizer) {
+    this.styles = styles;
+    this.defaultParams = defaultParams;
+    this.normalizer = normalizer;
+  }
+
+  buildStyles(params, errors) {
+    const finalStyles = {};
+    const combinedParams = copyObj(this.defaultParams);
+    Object.keys(params).forEach(key => {
+      const value = params[key];
+
+      if (value != null) {
+        combinedParams[key] = value;
+      }
+    });
+    this.styles.styles.forEach(value => {
+      if (typeof value !== 'string') {
+        const styleObj = value;
+        Object.keys(styleObj).forEach(prop => {
+          let val = styleObj[prop];
+
+          if (val.length > 1) {
+            val = interpolateParams(val, combinedParams, errors);
+          }
+
+          const normalizedProp = this.normalizer.normalizePropertyName(prop, errors);
+          val = this.normalizer.normalizeStyleValue(prop, normalizedProp, val, errors);
+          finalStyles[normalizedProp] = val;
+        });
+      }
+    });
+    return finalStyles;
+  }
+
+}
+
+function buildTrigger(name, ast, normalizer) {
+  return new AnimationTrigger(name, ast, normalizer);
+}
+
+class AnimationTrigger {
+  constructor(name, ast, _normalizer) {
+    this.name = name;
+    this.ast = ast;
+    this._normalizer = _normalizer;
+    this.transitionFactories = [];
+    this.states = {};
+    ast.states.forEach(ast => {
+      const defaultParams = ast.options && ast.options.params || {};
+      this.states[ast.name] = new AnimationStateStyles(ast.style, defaultParams, _normalizer);
+    });
+    balanceProperties(this.states, 'true', '1');
+    balanceProperties(this.states, 'false', '0');
+    ast.transitions.forEach(ast => {
+      this.transitionFactories.push(new AnimationTransitionFactory(name, ast, this.states));
+    });
+    this.fallbackTransition = createFallbackTransition(name, this.states, this._normalizer);
+  }
+
+  get containsQueries() {
+    return this.ast.queryCount > 0;
+  }
+
+  matchTransition(currentState, nextState, element, params) {
+    const entry = this.transitionFactories.find(f => f.match(currentState, nextState, element, params));
+    return entry || null;
+  }
+
+  matchStyles(currentState, params, errors) {
+    return this.fallbackTransition.buildStyles(currentState, params, errors);
+  }
+
+}
+
+function createFallbackTransition(triggerName, states, normalizer) {
+  const matchers = [(fromState, toState) => true];
+  const animation = {
+    type: 2
+    /* Sequence */
+    ,
+    steps: [],
+    options: null
+  };
+  const transition = {
+    type: 1
+    /* Transition */
+    ,
+    animation,
+    matchers,
+    options: null,
+    queryCount: 0,
+    depCount: 0
+  };
+  return new AnimationTransitionFactory(triggerName, transition, states);
+}
+
+function balanceProperties(obj, key1, key2) {
+  if (obj.hasOwnProperty(key1)) {
+    if (!obj.hasOwnProperty(key2)) {
+      obj[key2] = obj[key1];
+    }
+  } else if (obj.hasOwnProperty(key2)) {
+    obj[key1] = obj[key2];
+  }
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+const EMPTY_INSTRUCTION_MAP = new ElementInstructionMap();
+
+class TimelineAnimationEngine {
+  constructor(bodyNode, _driver, _normalizer) {
+    this.bodyNode = bodyNode;
+    this._driver = _driver;
+    this._normalizer = _normalizer;
+    this._animations = {};
+    this._playersById = {};
+    this.players = [];
+  }
+
+  register(id, metadata) {
+    const errors = [];
+    const ast = buildAnimationAst(this._driver, metadata, errors);
+
+    if (errors.length) {
+      throw new Error(`Unable to build the animation due to the following errors: ${errors.join('\n')}`);
+    } else {
+      this._animations[id] = ast;
+    }
+  }
+
+  _buildPlayer(i, preStyles, postStyles) {
+    const element = i.element;
+    const keyframes = normalizeKeyframes(this._driver, this._normalizer, element, i.keyframes, preStyles, postStyles);
+    return this._driver.animate(element, keyframes, i.duration, i.delay, i.easing, [], true);
+  }
+
+  create(id, element, options = {}) {
+    const errors = [];
+    const ast = this._animations[id];
+    let instructions;
+    const autoStylesMap = new Map();
+
+    if (ast) {
+      instructions = buildAnimationTimelines(this._driver, element, ast, ENTER_CLASSNAME, LEAVE_CLASSNAME, {}, {}, options, EMPTY_INSTRUCTION_MAP, errors);
+      instructions.forEach(inst => {
+        const styles = getOrSetAsInMap(autoStylesMap, inst.element, {});
+        inst.postStyleProps.forEach(prop => styles[prop] = null);
+      });
+    } else {
+      errors.push('The requested animation doesn\'t exist or has already been destroyed');
+      instructions = [];
+    }
+
+    if (errors.length) {
+      throw new Error(`Unable to create the animation due to the following errors: ${errors.join('\n')}`);
+    }
+
+    autoStylesMap.forEach((styles, element) => {
+      Object.keys(styles).forEach(prop => {
+        styles[prop] = this._driver.computeStyle(element, prop, _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AUTO_STYLE);
+      });
+    });
+    const players = instructions.map(i => {
+      const styles = autoStylesMap.get(i.element);
+      return this._buildPlayer(i, {}, styles);
+    });
+    const player = optimizeGroupPlayer(players);
+    this._playersById[id] = player;
+    player.onDestroy(() => this.destroy(id));
+    this.players.push(player);
+    return player;
+  }
+
+  destroy(id) {
+    const player = this._getPlayer(id);
+
+    player.destroy();
+    delete this._playersById[id];
+    const index = this.players.indexOf(player);
+
+    if (index >= 0) {
+      this.players.splice(index, 1);
+    }
+  }
+
+  _getPlayer(id) {
+    const player = this._playersById[id];
+
+    if (!player) {
+      throw new Error(`Unable to find the timeline player referenced by ${id}`);
+    }
+
+    return player;
+  }
+
+  listen(id, element, eventName, callback) {
+    // triggerName, fromState, toState are all ignored for timeline animations
+    const baseEvent = makeAnimationEvent(element, '', '', '');
+    listenOnPlayer(this._getPlayer(id), eventName, baseEvent, callback);
+    return () => {};
+  }
+
+  command(id, element, command, args) {
+    if (command == 'register') {
+      this.register(id, args[0]);
+      return;
+    }
+
+    if (command == 'create') {
+      const options = args[0] || {};
+      this.create(id, element, options);
+      return;
+    }
+
+    const player = this._getPlayer(id);
+
+    switch (command) {
+      case 'play':
+        player.play();
+        break;
+
+      case 'pause':
+        player.pause();
+        break;
+
+      case 'reset':
+        player.reset();
+        break;
+
+      case 'restart':
+        player.restart();
+        break;
+
+      case 'finish':
+        player.finish();
+        break;
+
+      case 'init':
+        player.init();
+        break;
+
+      case 'setPosition':
+        player.setPosition(parseFloat(args[0]));
+        break;
+
+      case 'destroy':
+        this.destroy(id);
+        break;
+    }
+  }
+
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+const QUEUED_CLASSNAME = 'ng-animate-queued';
+const QUEUED_SELECTOR = '.ng-animate-queued';
+const DISABLED_CLASSNAME = 'ng-animate-disabled';
+const DISABLED_SELECTOR = '.ng-animate-disabled';
+const STAR_CLASSNAME = 'ng-star-inserted';
+const STAR_SELECTOR = '.ng-star-inserted';
+const EMPTY_PLAYER_ARRAY = [];
+const NULL_REMOVAL_STATE = {
+  namespaceId: '',
+  setForRemoval: false,
+  setForMove: false,
+  hasAnimation: false,
+  removedBeforeQueried: false
+};
+const NULL_REMOVED_QUERIED_STATE = {
+  namespaceId: '',
+  setForMove: false,
+  setForRemoval: false,
+  hasAnimation: false,
+  removedBeforeQueried: true
+};
+const REMOVAL_FLAG = '__ng_removed';
+
+class StateValue {
+  constructor(input, namespaceId = '') {
+    this.namespaceId = namespaceId;
+    const isObj = input && input.hasOwnProperty('value');
+    const value = isObj ? input['value'] : input;
+    this.value = normalizeTriggerValue(value);
+
+    if (isObj) {
+      const options = copyObj(input);
+      delete options['value'];
+      this.options = options;
+    } else {
+      this.options = {};
+    }
+
+    if (!this.options.params) {
+      this.options.params = {};
+    }
+  }
+
+  get params() {
+    return this.options.params;
+  }
+
+  absorbOptions(options) {
+    const newParams = options.params;
+
+    if (newParams) {
+      const oldParams = this.options.params;
+      Object.keys(newParams).forEach(prop => {
+        if (oldParams[prop] == null) {
+          oldParams[prop] = newParams[prop];
+        }
+      });
+    }
+  }
+
+}
+
+const VOID_VALUE = 'void';
+const DEFAULT_STATE_VALUE = new StateValue(VOID_VALUE);
+
+class AnimationTransitionNamespace {
+  constructor(id, hostElement, _engine) {
+    this.id = id;
+    this.hostElement = hostElement;
+    this._engine = _engine;
+    this.players = [];
+    this._triggers = {};
+    this._queue = [];
+    this._elementListeners = new Map();
+    this._hostClassName = 'ng-tns-' + id;
+    addClass(hostElement, this._hostClassName);
+  }
+
+  listen(element, name, phase, callback) {
+    if (!this._triggers.hasOwnProperty(name)) {
+      throw new Error(`Unable to listen on the animation trigger event "${phase}" because the animation trigger "${name}" doesn\'t exist!`);
+    }
+
+    if (phase == null || phase.length == 0) {
+      throw new Error(`Unable to listen on the animation trigger "${name}" because the provided event is undefined!`);
+    }
+
+    if (!isTriggerEventValid(phase)) {
+      throw new Error(`The provided animation trigger event "${phase}" for the animation trigger "${name}" is not supported!`);
+    }
+
+    const listeners = getOrSetAsInMap(this._elementListeners, element, []);
+    const data = {
+      name,
+      phase,
+      callback
+    };
+    listeners.push(data);
+    const triggersWithStates = getOrSetAsInMap(this._engine.statesByElement, element, {});
+
+    if (!triggersWithStates.hasOwnProperty(name)) {
+      addClass(element, NG_TRIGGER_CLASSNAME);
+      addClass(element, NG_TRIGGER_CLASSNAME + '-' + name);
+      triggersWithStates[name] = DEFAULT_STATE_VALUE;
+    }
+
+    return () => {
+      // the event listener is removed AFTER the flush has occurred such
+      // that leave animations callbacks can fire (otherwise if the node
+      // is removed in between then the listeners would be deregistered)
+      this._engine.afterFlush(() => {
+        const index = listeners.indexOf(data);
+
+        if (index >= 0) {
+          listeners.splice(index, 1);
+        }
+
+        if (!this._triggers[name]) {
+          delete triggersWithStates[name];
+        }
+      });
+    };
+  }
+
+  register(name, ast) {
+    if (this._triggers[name]) {
+      // throw
+      return false;
+    } else {
+      this._triggers[name] = ast;
+      return true;
+    }
+  }
+
+  _getTrigger(name) {
+    const trigger = this._triggers[name];
+
+    if (!trigger) {
+      throw new Error(`The provided animation trigger "${name}" has not been registered!`);
+    }
+
+    return trigger;
+  }
+
+  trigger(element, triggerName, value, defaultToFallback = true) {
+    const trigger = this._getTrigger(triggerName);
+
+    const player = new TransitionAnimationPlayer(this.id, triggerName, element);
+
+    let triggersWithStates = this._engine.statesByElement.get(element);
+
+    if (!triggersWithStates) {
+      addClass(element, NG_TRIGGER_CLASSNAME);
+      addClass(element, NG_TRIGGER_CLASSNAME + '-' + triggerName);
+
+      this._engine.statesByElement.set(element, triggersWithStates = {});
+    }
+
+    let fromState = triggersWithStates[triggerName];
+    const toState = new StateValue(value, this.id);
+    const isObj = value && value.hasOwnProperty('value');
+
+    if (!isObj && fromState) {
+      toState.absorbOptions(fromState.options);
+    }
+
+    triggersWithStates[triggerName] = toState;
+
+    if (!fromState) {
+      fromState = DEFAULT_STATE_VALUE;
+    }
+
+    const isRemoval = toState.value === VOID_VALUE; // normally this isn't reached by here, however, if an object expression
+    // is passed in then it may be a new object each time. Comparing the value
+    // is important since that will stay the same despite there being a new object.
+    // The removal arc here is special cased because the same element is triggered
+    // twice in the event that it contains animations on the outer/inner portions
+    // of the host container
+
+    if (!isRemoval && fromState.value === toState.value) {
+      // this means that despite the value not changing, some inner params
+      // have changed which means that the animation final styles need to be applied
+      if (!objEquals(fromState.params, toState.params)) {
+        const errors = [];
+        const fromStyles = trigger.matchStyles(fromState.value, fromState.params, errors);
+        const toStyles = trigger.matchStyles(toState.value, toState.params, errors);
+
+        if (errors.length) {
+          this._engine.reportError(errors);
+        } else {
+          this._engine.afterFlush(() => {
+            eraseStyles(element, fromStyles);
+            setStyles(element, toStyles);
+          });
+        }
+      }
+
+      return;
+    }
+
+    const playersOnElement = getOrSetAsInMap(this._engine.playersByElement, element, []);
+    playersOnElement.forEach(player => {
+      // only remove the player if it is queued on the EXACT same trigger/namespace
+      // we only also deal with queued players here because if the animation has
+      // started then we want to keep the player alive until the flush happens
+      // (which is where the previousPlayers are passed into the new player)
+      if (player.namespaceId == this.id && player.triggerName == triggerName && player.queued) {
+        player.destroy();
+      }
+    });
+    let transition = trigger.matchTransition(fromState.value, toState.value, element, toState.params);
+    let isFallbackTransition = false;
+
+    if (!transition) {
+      if (!defaultToFallback) return;
+      transition = trigger.fallbackTransition;
+      isFallbackTransition = true;
+    }
+
+    this._engine.totalQueuedPlayers++;
+
+    this._queue.push({
+      element,
+      triggerName,
+      transition,
+      fromState,
+      toState,
+      player,
+      isFallbackTransition
+    });
+
+    if (!isFallbackTransition) {
+      addClass(element, QUEUED_CLASSNAME);
+      player.onStart(() => {
+        removeClass(element, QUEUED_CLASSNAME);
+      });
+    }
+
+    player.onDone(() => {
+      let index = this.players.indexOf(player);
+
+      if (index >= 0) {
+        this.players.splice(index, 1);
+      }
+
+      const players = this._engine.playersByElement.get(element);
+
+      if (players) {
+        let index = players.indexOf(player);
+
+        if (index >= 0) {
+          players.splice(index, 1);
+        }
+      }
+    });
+    this.players.push(player);
+    playersOnElement.push(player);
+    return player;
+  }
+
+  deregister(name) {
+    delete this._triggers[name];
+
+    this._engine.statesByElement.forEach((stateMap, element) => {
+      delete stateMap[name];
+    });
+
+    this._elementListeners.forEach((listeners, element) => {
+      this._elementListeners.set(element, listeners.filter(entry => {
+        return entry.name != name;
+      }));
+    });
+  }
+
+  clearElementCache(element) {
+    this._engine.statesByElement.delete(element);
+
+    this._elementListeners.delete(element);
+
+    const elementPlayers = this._engine.playersByElement.get(element);
+
+    if (elementPlayers) {
+      elementPlayers.forEach(player => player.destroy());
+
+      this._engine.playersByElement.delete(element);
+    }
+  }
+
+  _signalRemovalForInnerTriggers(rootElement, context) {
+    const elements = this._engine.driver.query(rootElement, NG_TRIGGER_SELECTOR, true); // emulate a leave animation for all inner nodes within this node.
+    // If there are no animations found for any of the nodes then clear the cache
+    // for the element.
+
+
+    elements.forEach(elm => {
+      // this means that an inner remove() operation has already kicked off
+      // the animation on this element...
+      if (elm[REMOVAL_FLAG]) return;
+
+      const namespaces = this._engine.fetchNamespacesByElement(elm);
+
+      if (namespaces.size) {
+        namespaces.forEach(ns => ns.triggerLeaveAnimation(elm, context, false, true));
+      } else {
+        this.clearElementCache(elm);
+      }
+    }); // If the child elements were removed along with the parent, their animations might not
+    // have completed. Clear all the elements from the cache so we don't end up with a memory leak.
+
+    this._engine.afterFlushAnimationsDone(() => elements.forEach(elm => this.clearElementCache(elm)));
+  }
+
+  triggerLeaveAnimation(element, context, destroyAfterComplete, defaultToFallback) {
+    const triggerStates = this._engine.statesByElement.get(element);
+
+    if (triggerStates) {
+      const players = [];
+      Object.keys(triggerStates).forEach(triggerName => {
+        // this check is here in the event that an element is removed
+        // twice (both on the host level and the component level)
+        if (this._triggers[triggerName]) {
+          const player = this.trigger(element, triggerName, VOID_VALUE, defaultToFallback);
+
+          if (player) {
+            players.push(player);
+          }
+        }
+      });
+
+      if (players.length) {
+        this._engine.markElementAsRemoved(this.id, element, true, context);
+
+        if (destroyAfterComplete) {
+          optimizeGroupPlayer(players).onDone(() => this._engine.processLeaveNode(element));
+        }
+
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  prepareLeaveAnimationListeners(element) {
+    const listeners = this._elementListeners.get(element);
+
+    const elementStates = this._engine.statesByElement.get(element); // if this statement fails then it means that the element was picked up
+    // by an earlier flush (or there are no listeners at all to track the leave).
+
+
+    if (listeners && elementStates) {
+      const visitedTriggers = new Set();
+      listeners.forEach(listener => {
+        const triggerName = listener.name;
+        if (visitedTriggers.has(triggerName)) return;
+        visitedTriggers.add(triggerName);
+        const trigger = this._triggers[triggerName];
+        const transition = trigger.fallbackTransition;
+        const fromState = elementStates[triggerName] || DEFAULT_STATE_VALUE;
+        const toState = new StateValue(VOID_VALUE);
+        const player = new TransitionAnimationPlayer(this.id, triggerName, element);
+        this._engine.totalQueuedPlayers++;
+
+        this._queue.push({
+          element,
+          triggerName,
+          transition,
+          fromState,
+          toState,
+          player,
+          isFallbackTransition: true
+        });
+      });
+    }
+  }
+
+  removeNode(element, context) {
+    const engine = this._engine;
+
+    if (element.childElementCount) {
+      this._signalRemovalForInnerTriggers(element, context);
+    } // this means that a * => VOID animation was detected and kicked off
+
+
+    if (this.triggerLeaveAnimation(element, context, true)) return; // find the player that is animating and make sure that the
+    // removal is delayed until that player has completed
+
+    let containsPotentialParentTransition = false;
+
+    if (engine.totalAnimations) {
+      const currentPlayers = engine.players.length ? engine.playersByQueriedElement.get(element) : []; // when this `if statement` does not continue forward it means that
+      // a previous animation query has selected the current element and
+      // is animating it. In this situation want to continue forwards and
+      // allow the element to be queued up for animation later.
+
+      if (currentPlayers && currentPlayers.length) {
+        containsPotentialParentTransition = true;
+      } else {
+        let parent = element;
+
+        while (parent = parent.parentNode) {
+          const triggers = engine.statesByElement.get(parent);
+
+          if (triggers) {
+            containsPotentialParentTransition = true;
+            break;
+          }
+        }
+      }
+    } // at this stage we know that the element will either get removed
+    // during flush or will be picked up by a parent query. Either way
+    // we need to fire the listeners for this element when it DOES get
+    // removed (once the query parent animation is done or after flush)
+
+
+    this.prepareLeaveAnimationListeners(element); // whether or not a parent has an animation we need to delay the deferral of the leave
+    // operation until we have more information (which we do after flush() has been called)
+
+    if (containsPotentialParentTransition) {
+      engine.markElementAsRemoved(this.id, element, false, context);
+    } else {
+      const removalFlag = element[REMOVAL_FLAG];
+
+      if (!removalFlag || removalFlag === NULL_REMOVAL_STATE) {
+        // we do this after the flush has occurred such
+        // that the callbacks can be fired
+        engine.afterFlush(() => this.clearElementCache(element));
+        engine.destroyInnerAnimations(element);
+
+        engine._onRemovalComplete(element, context);
+      }
+    }
+  }
+
+  insertNode(element, parent) {
+    addClass(element, this._hostClassName);
+  }
+
+  drainQueuedTransitions(microtaskId) {
+    const instructions = [];
+
+    this._queue.forEach(entry => {
+      const player = entry.player;
+      if (player.destroyed) return;
+      const element = entry.element;
+
+      const listeners = this._elementListeners.get(element);
+
+      if (listeners) {
+        listeners.forEach(listener => {
+          if (listener.name == entry.triggerName) {
+            const baseEvent = makeAnimationEvent(element, entry.triggerName, entry.fromState.value, entry.toState.value);
+            baseEvent['_data'] = microtaskId;
+            listenOnPlayer(entry.player, listener.phase, baseEvent, listener.callback);
+          }
+        });
+      }
+
+      if (player.markedForDestroy) {
+        this._engine.afterFlush(() => {
+          // now we can destroy the element properly since the event listeners have
+          // been bound to the player
+          player.destroy();
+        });
+      } else {
+        instructions.push(entry);
+      }
+    });
+
+    this._queue = [];
+    return instructions.sort((a, b) => {
+      // if depCount == 0 them move to front
+      // otherwise if a contains b then move back
+      const d0 = a.transition.ast.depCount;
+      const d1 = b.transition.ast.depCount;
+
+      if (d0 == 0 || d1 == 0) {
+        return d0 - d1;
+      }
+
+      return this._engine.driver.containsElement(a.element, b.element) ? 1 : -1;
+    });
+  }
+
+  destroy(context) {
+    this.players.forEach(p => p.destroy());
+
+    this._signalRemovalForInnerTriggers(this.hostElement, context);
+  }
+
+  elementContainsData(element) {
+    let containsData = false;
+    if (this._elementListeners.has(element)) containsData = true;
+    containsData = (this._queue.find(entry => entry.element === element) ? true : false) || containsData;
+    return containsData;
+  }
+
+}
+
+class TransitionAnimationEngine {
+  constructor(bodyNode, driver, _normalizer) {
+    this.bodyNode = bodyNode;
+    this.driver = driver;
+    this._normalizer = _normalizer;
+    this.players = [];
+    this.newHostElements = new Map();
+    this.playersByElement = new Map();
+    this.playersByQueriedElement = new Map();
+    this.statesByElement = new Map();
+    this.disabledNodes = new Set();
+    this.totalAnimations = 0;
+    this.totalQueuedPlayers = 0;
+    this._namespaceLookup = {};
+    this._namespaceList = [];
+    this._flushFns = [];
+    this._whenQuietFns = [];
+    this.namespacesByHostElement = new Map();
+    this.collectedEnterElements = [];
+    this.collectedLeaveElements = []; // this method is designed to be overridden by the code that uses this engine
+
+    this.onRemovalComplete = (element, context) => {};
+  }
+  /** @internal */
+
+
+  _onRemovalComplete(element, context) {
+    this.onRemovalComplete(element, context);
+  }
+
+  get queuedPlayers() {
+    const players = [];
+
+    this._namespaceList.forEach(ns => {
+      ns.players.forEach(player => {
+        if (player.queued) {
+          players.push(player);
+        }
+      });
+    });
+
+    return players;
+  }
+
+  createNamespace(namespaceId, hostElement) {
+    const ns = new AnimationTransitionNamespace(namespaceId, hostElement, this);
+
+    if (this.bodyNode && this.driver.containsElement(this.bodyNode, hostElement)) {
+      this._balanceNamespaceList(ns, hostElement);
+    } else {
+      // defer this later until flush during when the host element has
+      // been inserted so that we know exactly where to place it in
+      // the namespace list
+      this.newHostElements.set(hostElement, ns); // given that this host element is a part of the animation code, it
+      // may or may not be inserted by a parent node that is of an
+      // animation renderer type. If this happens then we can still have
+      // access to this item when we query for :enter nodes. If the parent
+      // is a renderer then the set data-structure will normalize the entry
+
+      this.collectEnterElement(hostElement);
+    }
+
+    return this._namespaceLookup[namespaceId] = ns;
+  }
+
+  _balanceNamespaceList(ns, hostElement) {
+    const limit = this._namespaceList.length - 1;
+
+    if (limit >= 0) {
+      let found = false;
+
+      for (let i = limit; i >= 0; i--) {
+        const nextNamespace = this._namespaceList[i];
+
+        if (this.driver.containsElement(nextNamespace.hostElement, hostElement)) {
+          this._namespaceList.splice(i + 1, 0, ns);
+
+          found = true;
+          break;
+        }
+      }
+
+      if (!found) {
+        this._namespaceList.splice(0, 0, ns);
+      }
+    } else {
+      this._namespaceList.push(ns);
+    }
+
+    this.namespacesByHostElement.set(hostElement, ns);
+    return ns;
+  }
+
+  register(namespaceId, hostElement) {
+    let ns = this._namespaceLookup[namespaceId];
+
+    if (!ns) {
+      ns = this.createNamespace(namespaceId, hostElement);
+    }
+
+    return ns;
+  }
+
+  registerTrigger(namespaceId, name, trigger) {
+    let ns = this._namespaceLookup[namespaceId];
+
+    if (ns && ns.register(name, trigger)) {
+      this.totalAnimations++;
+    }
+  }
+
+  destroy(namespaceId, context) {
+    if (!namespaceId) return;
+
+    const ns = this._fetchNamespace(namespaceId);
+
+    this.afterFlush(() => {
+      this.namespacesByHostElement.delete(ns.hostElement);
+      delete this._namespaceLookup[namespaceId];
+
+      const index = this._namespaceList.indexOf(ns);
+
+      if (index >= 0) {
+        this._namespaceList.splice(index, 1);
+      }
+    });
+    this.afterFlushAnimationsDone(() => ns.destroy(context));
+  }
+
+  _fetchNamespace(id) {
+    return this._namespaceLookup[id];
+  }
+
+  fetchNamespacesByElement(element) {
+    // normally there should only be one namespace per element, however
+    // if @triggers are placed on both the component element and then
+    // its host element (within the component code) then there will be
+    // two namespaces returned. We use a set here to simply deduplicate
+    // the namespaces in case (for the reason described above) there are multiple triggers
+    const namespaces = new Set();
+    const elementStates = this.statesByElement.get(element);
+
+    if (elementStates) {
+      const keys = Object.keys(elementStates);
+
+      for (let i = 0; i < keys.length; i++) {
+        const nsId = elementStates[keys[i]].namespaceId;
+
+        if (nsId) {
+          const ns = this._fetchNamespace(nsId);
+
+          if (ns) {
+            namespaces.add(ns);
+          }
+        }
+      }
+    }
+
+    return namespaces;
+  }
+
+  trigger(namespaceId, element, name, value) {
+    if (isElementNode(element)) {
+      const ns = this._fetchNamespace(namespaceId);
+
+      if (ns) {
+        ns.trigger(element, name, value);
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  insertNode(namespaceId, element, parent, insertBefore) {
+    if (!isElementNode(element)) return; // special case for when an element is removed and reinserted (move operation)
+    // when this occurs we do not want to use the element for deletion later
+
+    const details = element[REMOVAL_FLAG];
+
+    if (details && details.setForRemoval) {
+      details.setForRemoval = false;
+      details.setForMove = true;
+      const index = this.collectedLeaveElements.indexOf(element);
+
+      if (index >= 0) {
+        this.collectedLeaveElements.splice(index, 1);
+      }
+    } // in the event that the namespaceId is blank then the caller
+    // code does not contain any animation code in it, but it is
+    // just being called so that the node is marked as being inserted
+
+
+    if (namespaceId) {
+      const ns = this._fetchNamespace(namespaceId); // This if-statement is a workaround for router issue #21947.
+      // The router sometimes hits a race condition where while a route
+      // is being instantiated a new navigation arrives, triggering leave
+      // animation of DOM that has not been fully initialized, until this
+      // is resolved, we need to handle the scenario when DOM is not in a
+      // consistent state during the animation.
+
+
+      if (ns) {
+        ns.insertNode(element, parent);
+      }
+    } // only *directives and host elements are inserted before
+
+
+    if (insertBefore) {
+      this.collectEnterElement(element);
+    }
+  }
+
+  collectEnterElement(element) {
+    this.collectedEnterElements.push(element);
+  }
+
+  markElementAsDisabled(element, value) {
+    if (value) {
+      if (!this.disabledNodes.has(element)) {
+        this.disabledNodes.add(element);
+        addClass(element, DISABLED_CLASSNAME);
+      }
+    } else if (this.disabledNodes.has(element)) {
+      this.disabledNodes.delete(element);
+      removeClass(element, DISABLED_CLASSNAME);
+    }
+  }
+
+  removeNode(namespaceId, element, isHostElement, context) {
+    if (isElementNode(element)) {
+      const ns = namespaceId ? this._fetchNamespace(namespaceId) : null;
+
+      if (ns) {
+        ns.removeNode(element, context);
+      } else {
+        this.markElementAsRemoved(namespaceId, element, false, context);
+      }
+
+      if (isHostElement) {
+        const hostNS = this.namespacesByHostElement.get(element);
+
+        if (hostNS && hostNS.id !== namespaceId) {
+          hostNS.removeNode(element, context);
+        }
+      }
+    } else {
+      this._onRemovalComplete(element, context);
+    }
+  }
+
+  markElementAsRemoved(namespaceId, element, hasAnimation, context) {
+    this.collectedLeaveElements.push(element);
+    element[REMOVAL_FLAG] = {
+      namespaceId,
+      setForRemoval: context,
+      hasAnimation,
+      removedBeforeQueried: false
+    };
+  }
+
+  listen(namespaceId, element, name, phase, callback) {
+    if (isElementNode(element)) {
+      return this._fetchNamespace(namespaceId).listen(element, name, phase, callback);
+    }
+
+    return () => {};
+  }
+
+  _buildInstruction(entry, subTimelines, enterClassName, leaveClassName, skipBuildAst) {
+    return entry.transition.build(this.driver, entry.element, entry.fromState.value, entry.toState.value, enterClassName, leaveClassName, entry.fromState.options, entry.toState.options, subTimelines, skipBuildAst);
+  }
+
+  destroyInnerAnimations(containerElement) {
+    let elements = this.driver.query(containerElement, NG_TRIGGER_SELECTOR, true);
+    elements.forEach(element => this.destroyActiveAnimationsForElement(element));
+    if (this.playersByQueriedElement.size == 0) return;
+    elements = this.driver.query(containerElement, NG_ANIMATING_SELECTOR, true);
+    elements.forEach(element => this.finishActiveQueriedAnimationOnElement(element));
+  }
+
+  destroyActiveAnimationsForElement(element) {
+    const players = this.playersByElement.get(element);
+
+    if (players) {
+      players.forEach(player => {
+        // special case for when an element is set for destruction, but hasn't started.
+        // in this situation we want to delay the destruction until the flush occurs
+        // so that any event listeners attached to the player are triggered.
+        if (player.queued) {
+          player.markedForDestroy = true;
+        } else {
+          player.destroy();
+        }
+      });
+    }
+  }
+
+  finishActiveQueriedAnimationOnElement(element) {
+    const players = this.playersByQueriedElement.get(element);
+
+    if (players) {
+      players.forEach(player => player.finish());
+    }
+  }
+
+  whenRenderingDone() {
+    return new Promise(resolve => {
+      if (this.players.length) {
+        return optimizeGroupPlayer(this.players).onDone(() => resolve());
+      } else {
+        resolve();
+      }
+    });
+  }
+
+  processLeaveNode(element) {
+    const details = element[REMOVAL_FLAG];
+
+    if (details && details.setForRemoval) {
+      // this will prevent it from removing it twice
+      element[REMOVAL_FLAG] = NULL_REMOVAL_STATE;
+
+      if (details.namespaceId) {
+        this.destroyInnerAnimations(element);
+
+        const ns = this._fetchNamespace(details.namespaceId);
+
+        if (ns) {
+          ns.clearElementCache(element);
+        }
+      }
+
+      this._onRemovalComplete(element, details.setForRemoval);
+    }
+
+    if (this.driver.matchesElement(element, DISABLED_SELECTOR)) {
+      this.markElementAsDisabled(element, false);
+    }
+
+    this.driver.query(element, DISABLED_SELECTOR, true).forEach(node => {
+      this.markElementAsDisabled(node, false);
+    });
+  }
+
+  flush(microtaskId = -1) {
+    let players = [];
+
+    if (this.newHostElements.size) {
+      this.newHostElements.forEach((ns, element) => this._balanceNamespaceList(ns, element));
+      this.newHostElements.clear();
+    }
+
+    if (this.totalAnimations && this.collectedEnterElements.length) {
+      for (let i = 0; i < this.collectedEnterElements.length; i++) {
+        const elm = this.collectedEnterElements[i];
+        addClass(elm, STAR_CLASSNAME);
+      }
+    }
+
+    if (this._namespaceList.length && (this.totalQueuedPlayers || this.collectedLeaveElements.length)) {
+      const cleanupFns = [];
+
+      try {
+        players = this._flushAnimations(cleanupFns, microtaskId);
+      } finally {
+        for (let i = 0; i < cleanupFns.length; i++) {
+          cleanupFns[i]();
+        }
+      }
+    } else {
+      for (let i = 0; i < this.collectedLeaveElements.length; i++) {
+        const element = this.collectedLeaveElements[i];
+        this.processLeaveNode(element);
+      }
+    }
+
+    this.totalQueuedPlayers = 0;
+    this.collectedEnterElements.length = 0;
+    this.collectedLeaveElements.length = 0;
+
+    this._flushFns.forEach(fn => fn());
+
+    this._flushFns = [];
+
+    if (this._whenQuietFns.length) {
+      // we move these over to a variable so that
+      // if any new callbacks are registered in another
+      // flush they do not populate the existing set
+      const quietFns = this._whenQuietFns;
+      this._whenQuietFns = [];
+
+      if (players.length) {
+        optimizeGroupPlayer(players).onDone(() => {
+          quietFns.forEach(fn => fn());
+        });
+      } else {
+        quietFns.forEach(fn => fn());
+      }
+    }
+  }
+
+  reportError(errors) {
+    throw new Error(`Unable to process animations due to the following failed trigger transitions\n ${errors.join('\n')}`);
+  }
+
+  _flushAnimations(cleanupFns, microtaskId) {
+    const subTimelines = new ElementInstructionMap();
+    const skippedPlayers = [];
+    const skippedPlayersMap = new Map();
+    const queuedInstructions = [];
+    const queriedElements = new Map();
+    const allPreStyleElements = new Map();
+    const allPostStyleElements = new Map();
+    const disabledElementsSet = new Set();
+    this.disabledNodes.forEach(node => {
+      disabledElementsSet.add(node);
+      const nodesThatAreDisabled = this.driver.query(node, QUEUED_SELECTOR, true);
+
+      for (let i = 0; i < nodesThatAreDisabled.length; i++) {
+        disabledElementsSet.add(nodesThatAreDisabled[i]);
+      }
+    });
+    const bodyNode = this.bodyNode;
+    const allTriggerElements = Array.from(this.statesByElement.keys());
+    const enterNodeMap = buildRootMap(allTriggerElements, this.collectedEnterElements); // this must occur before the instructions are built below such that
+    // the :enter queries match the elements (since the timeline queries
+    // are fired during instruction building).
+
+    const enterNodeMapIds = new Map();
+    let i = 0;
+    enterNodeMap.forEach((nodes, root) => {
+      const className = ENTER_CLASSNAME + i++;
+      enterNodeMapIds.set(root, className);
+      nodes.forEach(node => addClass(node, className));
+    });
+    const allLeaveNodes = [];
+    const mergedLeaveNodes = new Set();
+    const leaveNodesWithoutAnimations = new Set();
+
+    for (let i = 0; i < this.collectedLeaveElements.length; i++) {
+      const element = this.collectedLeaveElements[i];
+      const details = element[REMOVAL_FLAG];
+
+      if (details && details.setForRemoval) {
+        allLeaveNodes.push(element);
+        mergedLeaveNodes.add(element);
+
+        if (details.hasAnimation) {
+          this.driver.query(element, STAR_SELECTOR, true).forEach(elm => mergedLeaveNodes.add(elm));
+        } else {
+          leaveNodesWithoutAnimations.add(element);
+        }
+      }
+    }
+
+    const leaveNodeMapIds = new Map();
+    const leaveNodeMap = buildRootMap(allTriggerElements, Array.from(mergedLeaveNodes));
+    leaveNodeMap.forEach((nodes, root) => {
+      const className = LEAVE_CLASSNAME + i++;
+      leaveNodeMapIds.set(root, className);
+      nodes.forEach(node => addClass(node, className));
+    });
+    cleanupFns.push(() => {
+      enterNodeMap.forEach((nodes, root) => {
+        const className = enterNodeMapIds.get(root);
+        nodes.forEach(node => removeClass(node, className));
+      });
+      leaveNodeMap.forEach((nodes, root) => {
+        const className = leaveNodeMapIds.get(root);
+        nodes.forEach(node => removeClass(node, className));
+      });
+      allLeaveNodes.forEach(element => {
+        this.processLeaveNode(element);
+      });
+    });
+    const allPlayers = [];
+    const erroneousTransitions = [];
+
+    for (let i = this._namespaceList.length - 1; i >= 0; i--) {
+      const ns = this._namespaceList[i];
+      ns.drainQueuedTransitions(microtaskId).forEach(entry => {
+        const player = entry.player;
+        const element = entry.element;
+        allPlayers.push(player);
+
+        if (this.collectedEnterElements.length) {
+          const details = element[REMOVAL_FLAG]; // move animations are currently not supported...
+
+          if (details && details.setForMove) {
+            player.destroy();
+            return;
+          }
+        }
+
+        const nodeIsOrphaned = !bodyNode || !this.driver.containsElement(bodyNode, element);
+        const leaveClassName = leaveNodeMapIds.get(element);
+        const enterClassName = enterNodeMapIds.get(element);
+
+        const instruction = this._buildInstruction(entry, subTimelines, enterClassName, leaveClassName, nodeIsOrphaned);
+
+        if (instruction.errors && instruction.errors.length) {
+          erroneousTransitions.push(instruction);
+          return;
+        } // even though the element may not be in the DOM, it may still
+        // be added at a later point (due to the mechanics of content
+        // projection and/or dynamic component insertion) therefore it's
+        // important to still style the element.
+
+
+        if (nodeIsOrphaned) {
+          player.onStart(() => eraseStyles(element, instruction.fromStyles));
+          player.onDestroy(() => setStyles(element, instruction.toStyles));
+          skippedPlayers.push(player);
+          return;
+        } // if an unmatched transition is queued and ready to go
+        // then it SHOULD NOT render an animation and cancel the
+        // previously running animations.
+
+
+        if (entry.isFallbackTransition) {
+          player.onStart(() => eraseStyles(element, instruction.fromStyles));
+          player.onDestroy(() => setStyles(element, instruction.toStyles));
+          skippedPlayers.push(player);
+          return;
+        } // this means that if a parent animation uses this animation as a sub-trigger
+        // then it will instruct the timeline builder not to add a player delay, but
+        // instead stretch the first keyframe gap until the animation starts. This is
+        // important in order to prevent extra initialization styles from being
+        // required by the user for the animation.
+
+
+        instruction.timelines.forEach(tl => tl.stretchStartingKeyframe = true);
+        subTimelines.append(element, instruction.timelines);
+        const tuple = {
+          instruction,
+          player,
+          element
+        };
+        queuedInstructions.push(tuple);
+        instruction.queriedElements.forEach(element => getOrSetAsInMap(queriedElements, element, []).push(player));
+        instruction.preStyleProps.forEach((stringMap, element) => {
+          const props = Object.keys(stringMap);
+
+          if (props.length) {
+            let setVal = allPreStyleElements.get(element);
+
+            if (!setVal) {
+              allPreStyleElements.set(element, setVal = new Set());
+            }
+
+            props.forEach(prop => setVal.add(prop));
+          }
+        });
+        instruction.postStyleProps.forEach((stringMap, element) => {
+          const props = Object.keys(stringMap);
+          let setVal = allPostStyleElements.get(element);
+
+          if (!setVal) {
+            allPostStyleElements.set(element, setVal = new Set());
+          }
+
+          props.forEach(prop => setVal.add(prop));
+        });
+      });
+    }
+
+    if (erroneousTransitions.length) {
+      const errors = [];
+      erroneousTransitions.forEach(instruction => {
+        errors.push(`@${instruction.triggerName} has failed due to:\n`);
+        instruction.errors.forEach(error => errors.push(`- ${error}\n`));
+      });
+      allPlayers.forEach(player => player.destroy());
+      this.reportError(errors);
+    }
+
+    const allPreviousPlayersMap = new Map(); // this map tells us which element in the DOM tree is contained by
+    // which animation. Further down this map will get populated once
+    // the players are built and in doing so we can use it to efficiently
+    // figure out if a sub player is skipped due to a parent player having priority.
+
+    const animationElementMap = new Map();
+    queuedInstructions.forEach(entry => {
+      const element = entry.element;
+
+      if (subTimelines.has(element)) {
+        animationElementMap.set(element, element);
+
+        this._beforeAnimationBuild(entry.player.namespaceId, entry.instruction, allPreviousPlayersMap);
+      }
+    });
+    skippedPlayers.forEach(player => {
+      const element = player.element;
+
+      const previousPlayers = this._getPreviousPlayers(element, false, player.namespaceId, player.triggerName, null);
+
+      previousPlayers.forEach(prevPlayer => {
+        getOrSetAsInMap(allPreviousPlayersMap, element, []).push(prevPlayer);
+        prevPlayer.destroy();
+      });
+    }); // this is a special case for nodes that will be removed either by
+    // having their own leave animations or by being queried in a container
+    // that will be removed once a parent animation is complete. The idea
+    // here is that * styles must be identical to ! styles because of
+    // backwards compatibility (* is also filled in by default in many places).
+    // Otherwise * styles will return an empty value or "auto" since the element
+    // passed to getComputedStyle will not be visible (since * === destination)
+
+    const replaceNodes = allLeaveNodes.filter(node => {
+      return replacePostStylesAsPre(node, allPreStyleElements, allPostStyleElements);
+    }); // POST STAGE: fill the * styles
+
+    const postStylesMap = new Map();
+    const allLeaveQueriedNodes = cloakAndComputeStyles(postStylesMap, this.driver, leaveNodesWithoutAnimations, allPostStyleElements, _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AUTO_STYLE);
+    allLeaveQueriedNodes.forEach(node => {
+      if (replacePostStylesAsPre(node, allPreStyleElements, allPostStyleElements)) {
+        replaceNodes.push(node);
+      }
+    }); // PRE STAGE: fill the ! styles
+
+    const preStylesMap = new Map();
+    enterNodeMap.forEach((nodes, root) => {
+      cloakAndComputeStyles(preStylesMap, this.driver, new Set(nodes), allPreStyleElements, _angular_animations__WEBPACK_IMPORTED_MODULE_0__["ɵPRE_STYLE"]);
+    });
+    replaceNodes.forEach(node => {
+      const post = postStylesMap.get(node);
+      const pre = preStylesMap.get(node);
+      postStylesMap.set(node, { ...post,
+        ...pre
+      });
+    });
+    const rootPlayers = [];
+    const subPlayers = [];
+    const NO_PARENT_ANIMATION_ELEMENT_DETECTED = {};
+    queuedInstructions.forEach(entry => {
+      const {
+        element,
+        player,
+        instruction
+      } = entry; // this means that it was never consumed by a parent animation which
+      // means that it is independent and therefore should be set for animation
+
+      if (subTimelines.has(element)) {
+        if (disabledElementsSet.has(element)) {
+          player.onDestroy(() => setStyles(element, instruction.toStyles));
+          player.disabled = true;
+          player.overrideTotalTime(instruction.totalTime);
+          skippedPlayers.push(player);
+          return;
+        } // this will flow up the DOM and query the map to figure out
+        // if a parent animation has priority over it. In the situation
+        // that a parent is detected then it will cancel the loop. If
+        // nothing is detected, or it takes a few hops to find a parent,
+        // then it will fill in the missing nodes and signal them as having
+        // a detected parent (or a NO_PARENT value via a special constant).
+
+
+        let parentWithAnimation = NO_PARENT_ANIMATION_ELEMENT_DETECTED;
+
+        if (animationElementMap.size > 1) {
+          let elm = element;
+          const parentsToAdd = [];
+
+          while (elm = elm.parentNode) {
+            const detectedParent = animationElementMap.get(elm);
+
+            if (detectedParent) {
+              parentWithAnimation = detectedParent;
+              break;
+            }
+
+            parentsToAdd.push(elm);
+          }
+
+          parentsToAdd.forEach(parent => animationElementMap.set(parent, parentWithAnimation));
+        }
+
+        const innerPlayer = this._buildAnimation(player.namespaceId, instruction, allPreviousPlayersMap, skippedPlayersMap, preStylesMap, postStylesMap);
+
+        player.setRealPlayer(innerPlayer);
+
+        if (parentWithAnimation === NO_PARENT_ANIMATION_ELEMENT_DETECTED) {
+          rootPlayers.push(player);
+        } else {
+          const parentPlayers = this.playersByElement.get(parentWithAnimation);
+
+          if (parentPlayers && parentPlayers.length) {
+            player.parentPlayer = optimizeGroupPlayer(parentPlayers);
+          }
+
+          skippedPlayers.push(player);
+        }
+      } else {
+        eraseStyles(element, instruction.fromStyles);
+        player.onDestroy(() => setStyles(element, instruction.toStyles)); // there still might be a ancestor player animating this
+        // element therefore we will still add it as a sub player
+        // even if its animation may be disabled
+
+        subPlayers.push(player);
+
+        if (disabledElementsSet.has(element)) {
+          skippedPlayers.push(player);
+        }
+      }
+    }); // find all of the sub players' corresponding inner animation players
+
+    subPlayers.forEach(player => {
+      // even if no players are found for a sub animation it
+      // will still complete itself after the next tick since it's Noop
+      const playersForElement = skippedPlayersMap.get(player.element);
+
+      if (playersForElement && playersForElement.length) {
+        const innerPlayer = optimizeGroupPlayer(playersForElement);
+        player.setRealPlayer(innerPlayer);
+      }
+    }); // the reason why we don't actually play the animation is
+    // because all that a skipped player is designed to do is to
+    // fire the start/done transition callback events
+
+    skippedPlayers.forEach(player => {
+      if (player.parentPlayer) {
+        player.syncPlayerEvents(player.parentPlayer);
+      } else {
+        player.destroy();
+      }
+    }); // run through all of the queued removals and see if they
+    // were picked up by a query. If not then perform the removal
+    // operation right away unless a parent animation is ongoing.
+
+    for (let i = 0; i < allLeaveNodes.length; i++) {
+      const element = allLeaveNodes[i];
+      const details = element[REMOVAL_FLAG];
+      removeClass(element, LEAVE_CLASSNAME); // this means the element has a removal animation that is being
+      // taken care of and therefore the inner elements will hang around
+      // until that animation is over (or the parent queried animation)
+
+      if (details && details.hasAnimation) continue;
+      let players = []; // if this element is queried or if it contains queried children
+      // then we want for the element not to be removed from the page
+      // until the queried animations have finished
+
+      if (queriedElements.size) {
+        let queriedPlayerResults = queriedElements.get(element);
+
+        if (queriedPlayerResults && queriedPlayerResults.length) {
+          players.push(...queriedPlayerResults);
+        }
+
+        let queriedInnerElements = this.driver.query(element, NG_ANIMATING_SELECTOR, true);
+
+        for (let j = 0; j < queriedInnerElements.length; j++) {
+          let queriedPlayers = queriedElements.get(queriedInnerElements[j]);
+
+          if (queriedPlayers && queriedPlayers.length) {
+            players.push(...queriedPlayers);
+          }
+        }
+      }
+
+      const activePlayers = players.filter(p => !p.destroyed);
+
+      if (activePlayers.length) {
+        removeNodesAfterAnimationDone(this, element, activePlayers);
+      } else {
+        this.processLeaveNode(element);
+      }
+    } // this is required so the cleanup method doesn't remove them
+
+
+    allLeaveNodes.length = 0;
+    rootPlayers.forEach(player => {
+      this.players.push(player);
+      player.onDone(() => {
+        player.destroy();
+        const index = this.players.indexOf(player);
+        this.players.splice(index, 1);
+      });
+      player.play();
+    });
+    return rootPlayers;
+  }
+
+  elementContainsData(namespaceId, element) {
+    let containsData = false;
+    const details = element[REMOVAL_FLAG];
+    if (details && details.setForRemoval) containsData = true;
+    if (this.playersByElement.has(element)) containsData = true;
+    if (this.playersByQueriedElement.has(element)) containsData = true;
+    if (this.statesByElement.has(element)) containsData = true;
+    return this._fetchNamespace(namespaceId).elementContainsData(element) || containsData;
+  }
+
+  afterFlush(callback) {
+    this._flushFns.push(callback);
+  }
+
+  afterFlushAnimationsDone(callback) {
+    this._whenQuietFns.push(callback);
+  }
+
+  _getPreviousPlayers(element, isQueriedElement, namespaceId, triggerName, toStateValue) {
+    let players = [];
+
+    if (isQueriedElement) {
+      const queriedElementPlayers = this.playersByQueriedElement.get(element);
+
+      if (queriedElementPlayers) {
+        players = queriedElementPlayers;
+      }
+    } else {
+      const elementPlayers = this.playersByElement.get(element);
+
+      if (elementPlayers) {
+        const isRemovalAnimation = !toStateValue || toStateValue == VOID_VALUE;
+        elementPlayers.forEach(player => {
+          if (player.queued) return;
+          if (!isRemovalAnimation && player.triggerName != triggerName) return;
+          players.push(player);
+        });
+      }
+    }
+
+    if (namespaceId || triggerName) {
+      players = players.filter(player => {
+        if (namespaceId && namespaceId != player.namespaceId) return false;
+        if (triggerName && triggerName != player.triggerName) return false;
+        return true;
+      });
+    }
+
+    return players;
+  }
+
+  _beforeAnimationBuild(namespaceId, instruction, allPreviousPlayersMap) {
+    const triggerName = instruction.triggerName;
+    const rootElement = instruction.element; // when a removal animation occurs, ALL previous players are collected
+    // and destroyed (even if they are outside of the current namespace)
+
+    const targetNameSpaceId = instruction.isRemovalTransition ? undefined : namespaceId;
+    const targetTriggerName = instruction.isRemovalTransition ? undefined : triggerName;
+
+    for (const timelineInstruction of instruction.timelines) {
+      const element = timelineInstruction.element;
+      const isQueriedElement = element !== rootElement;
+      const players = getOrSetAsInMap(allPreviousPlayersMap, element, []);
+
+      const previousPlayers = this._getPreviousPlayers(element, isQueriedElement, targetNameSpaceId, targetTriggerName, instruction.toState);
+
+      previousPlayers.forEach(player => {
+        const realPlayer = player.getRealPlayer();
+
+        if (realPlayer.beforeDestroy) {
+          realPlayer.beforeDestroy();
+        }
+
+        player.destroy();
+        players.push(player);
+      });
+    } // this needs to be done so that the PRE/POST styles can be
+    // computed properly without interfering with the previous animation
+
+
+    eraseStyles(rootElement, instruction.fromStyles);
+  }
+
+  _buildAnimation(namespaceId, instruction, allPreviousPlayersMap, skippedPlayersMap, preStylesMap, postStylesMap) {
+    const triggerName = instruction.triggerName;
+    const rootElement = instruction.element; // we first run this so that the previous animation player
+    // data can be passed into the successive animation players
+
+    const allQueriedPlayers = [];
+    const allConsumedElements = new Set();
+    const allSubElements = new Set();
+    const allNewPlayers = instruction.timelines.map(timelineInstruction => {
+      const element = timelineInstruction.element;
+      allConsumedElements.add(element); // FIXME (matsko): make sure to-be-removed animations are removed properly
+
+      const details = element[REMOVAL_FLAG];
+      if (details && details.removedBeforeQueried) return new _angular_animations__WEBPACK_IMPORTED_MODULE_0__.NoopAnimationPlayer(timelineInstruction.duration, timelineInstruction.delay);
+      const isQueriedElement = element !== rootElement;
+      const previousPlayers = flattenGroupPlayers((allPreviousPlayersMap.get(element) || EMPTY_PLAYER_ARRAY).map(p => p.getRealPlayer())).filter(p => {
+        // the `element` is not apart of the AnimationPlayer definition, but
+        // Mock/WebAnimations
+        // use the element within their implementation. This will be added in Angular5 to
+        // AnimationPlayer
+        const pp = p;
+        return pp.element ? pp.element === element : false;
+      });
+      const preStyles = preStylesMap.get(element);
+      const postStyles = postStylesMap.get(element);
+      const keyframes = normalizeKeyframes(this.driver, this._normalizer, element, timelineInstruction.keyframes, preStyles, postStyles);
+
+      const player = this._buildPlayer(timelineInstruction, keyframes, previousPlayers); // this means that this particular player belongs to a sub trigger. It is
+      // important that we match this player up with the corresponding (@trigger.listener)
+
+
+      if (timelineInstruction.subTimeline && skippedPlayersMap) {
+        allSubElements.add(element);
+      }
+
+      if (isQueriedElement) {
+        const wrappedPlayer = new TransitionAnimationPlayer(namespaceId, triggerName, element);
+        wrappedPlayer.setRealPlayer(player);
+        allQueriedPlayers.push(wrappedPlayer);
+      }
+
+      return player;
+    });
+    allQueriedPlayers.forEach(player => {
+      getOrSetAsInMap(this.playersByQueriedElement, player.element, []).push(player);
+      player.onDone(() => deleteOrUnsetInMap(this.playersByQueriedElement, player.element, player));
+    });
+    allConsumedElements.forEach(element => addClass(element, NG_ANIMATING_CLASSNAME));
+    const player = optimizeGroupPlayer(allNewPlayers);
+    player.onDestroy(() => {
+      allConsumedElements.forEach(element => removeClass(element, NG_ANIMATING_CLASSNAME));
+      setStyles(rootElement, instruction.toStyles);
+    }); // this basically makes all of the callbacks for sub element animations
+    // be dependent on the upper players for when they finish
+
+    allSubElements.forEach(element => {
+      getOrSetAsInMap(skippedPlayersMap, element, []).push(player);
+    });
+    return player;
+  }
+
+  _buildPlayer(instruction, keyframes, previousPlayers) {
+    if (keyframes.length > 0) {
+      return this.driver.animate(instruction.element, keyframes, instruction.duration, instruction.delay, instruction.easing, previousPlayers);
+    } // special case for when an empty transition|definition is provided
+    // ... there is no point in rendering an empty animation
+
+
+    return new _angular_animations__WEBPACK_IMPORTED_MODULE_0__.NoopAnimationPlayer(instruction.duration, instruction.delay);
+  }
+
+}
+
+class TransitionAnimationPlayer {
+  constructor(namespaceId, triggerName, element) {
+    this.namespaceId = namespaceId;
+    this.triggerName = triggerName;
+    this.element = element;
+    this._player = new _angular_animations__WEBPACK_IMPORTED_MODULE_0__.NoopAnimationPlayer();
+    this._containsRealPlayer = false;
+    this._queuedCallbacks = {};
+    this.destroyed = false;
+    this.markedForDestroy = false;
+    this.disabled = false;
+    this.queued = true;
+    this.totalTime = 0;
+  }
+
+  setRealPlayer(player) {
+    if (this._containsRealPlayer) return;
+    this._player = player;
+    Object.keys(this._queuedCallbacks).forEach(phase => {
+      this._queuedCallbacks[phase].forEach(callback => listenOnPlayer(player, phase, undefined, callback));
+    });
+    this._queuedCallbacks = {};
+    this._containsRealPlayer = true;
+    this.overrideTotalTime(player.totalTime);
+    this.queued = false;
+  }
+
+  getRealPlayer() {
+    return this._player;
+  }
+
+  overrideTotalTime(totalTime) {
+    this.totalTime = totalTime;
+  }
+
+  syncPlayerEvents(player) {
+    const p = this._player;
+
+    if (p.triggerCallback) {
+      player.onStart(() => p.triggerCallback('start'));
+    }
+
+    player.onDone(() => this.finish());
+    player.onDestroy(() => this.destroy());
+  }
+
+  _queueEvent(name, callback) {
+    getOrSetAsInMap(this._queuedCallbacks, name, []).push(callback);
+  }
+
+  onDone(fn) {
+    if (this.queued) {
+      this._queueEvent('done', fn);
+    }
+
+    this._player.onDone(fn);
+  }
+
+  onStart(fn) {
+    if (this.queued) {
+      this._queueEvent('start', fn);
+    }
+
+    this._player.onStart(fn);
+  }
+
+  onDestroy(fn) {
+    if (this.queued) {
+      this._queueEvent('destroy', fn);
+    }
+
+    this._player.onDestroy(fn);
+  }
+
+  init() {
+    this._player.init();
+  }
+
+  hasStarted() {
+    return this.queued ? false : this._player.hasStarted();
+  }
+
+  play() {
+    !this.queued && this._player.play();
+  }
+
+  pause() {
+    !this.queued && this._player.pause();
+  }
+
+  restart() {
+    !this.queued && this._player.restart();
+  }
+
+  finish() {
+    this._player.finish();
+  }
+
+  destroy() {
+    this.destroyed = true;
+
+    this._player.destroy();
+  }
+
+  reset() {
+    !this.queued && this._player.reset();
+  }
+
+  setPosition(p) {
+    if (!this.queued) {
+      this._player.setPosition(p);
+    }
+  }
+
+  getPosition() {
+    return this.queued ? 0 : this._player.getPosition();
+  }
+  /** @internal */
+
+
+  triggerCallback(phaseName) {
+    const p = this._player;
+
+    if (p.triggerCallback) {
+      p.triggerCallback(phaseName);
+    }
+  }
+
+}
+
+function deleteOrUnsetInMap(map, key, value) {
+  let currentValues;
+
+  if (map instanceof Map) {
+    currentValues = map.get(key);
+
+    if (currentValues) {
+      if (currentValues.length) {
+        const index = currentValues.indexOf(value);
+        currentValues.splice(index, 1);
+      }
+
+      if (currentValues.length == 0) {
+        map.delete(key);
+      }
+    }
+  } else {
+    currentValues = map[key];
+
+    if (currentValues) {
+      if (currentValues.length) {
+        const index = currentValues.indexOf(value);
+        currentValues.splice(index, 1);
+      }
+
+      if (currentValues.length == 0) {
+        delete map[key];
+      }
+    }
+  }
+
+  return currentValues;
+}
+
+function normalizeTriggerValue(value) {
+  // we use `!= null` here because it's the most simple
+  // way to test against a "falsy" value without mixing
+  // in empty strings or a zero value. DO NOT OPTIMIZE.
+  return value != null ? value : null;
+}
+
+function isElementNode(node) {
+  return node && node['nodeType'] === 1;
+}
+
+function isTriggerEventValid(eventName) {
+  return eventName == 'start' || eventName == 'done';
+}
+
+function cloakElement(element, value) {
+  const oldValue = element.style.display;
+  element.style.display = value != null ? value : 'none';
+  return oldValue;
+}
+
+function cloakAndComputeStyles(valuesMap, driver, elements, elementPropsMap, defaultStyle) {
+  const cloakVals = [];
+  elements.forEach(element => cloakVals.push(cloakElement(element)));
+  const failedElements = [];
+  elementPropsMap.forEach((props, element) => {
+    const styles = {};
+    props.forEach(prop => {
+      const value = styles[prop] = driver.computeStyle(element, prop, defaultStyle); // there is no easy way to detect this because a sub element could be removed
+      // by a parent animation element being detached.
+
+      if (!value || value.length == 0) {
+        element[REMOVAL_FLAG] = NULL_REMOVED_QUERIED_STATE;
+        failedElements.push(element);
+      }
+    });
+    valuesMap.set(element, styles);
+  }); // we use a index variable here since Set.forEach(a, i) does not return
+  // an index value for the closure (but instead just the value)
+
+  let i = 0;
+  elements.forEach(element => cloakElement(element, cloakVals[i++]));
+  return failedElements;
+}
+/*
+Since the Angular renderer code will return a collection of inserted
+nodes in all areas of a DOM tree, it's up to this algorithm to figure
+out which nodes are roots for each animation @trigger.
+
+By placing each inserted node into a Set and traversing upwards, it
+is possible to find the @trigger elements and well any direct *star
+insertion nodes, if a @trigger root is found then the enter element
+is placed into the Map[@trigger] spot.
+ */
+
+
+function buildRootMap(roots, nodes) {
+  const rootMap = new Map();
+  roots.forEach(root => rootMap.set(root, []));
+  if (nodes.length == 0) return rootMap;
+  const NULL_NODE = 1;
+  const nodeSet = new Set(nodes);
+  const localRootMap = new Map();
+
+  function getRoot(node) {
+    if (!node) return NULL_NODE;
+    let root = localRootMap.get(node);
+    if (root) return root;
+    const parent = node.parentNode;
+
+    if (rootMap.has(parent)) {
+      // ngIf inside @trigger
+      root = parent;
+    } else if (nodeSet.has(parent)) {
+      // ngIf inside ngIf
+      root = NULL_NODE;
+    } else {
+      // recurse upwards
+      root = getRoot(parent);
+    }
+
+    localRootMap.set(node, root);
+    return root;
+  }
+
+  nodes.forEach(node => {
+    const root = getRoot(node);
+
+    if (root !== NULL_NODE) {
+      rootMap.get(root).push(node);
+    }
+  });
+  return rootMap;
+}
+
+const CLASSES_CACHE_KEY = '$$classes';
+
+function containsClass(element, className) {
+  if (element.classList) {
+    return element.classList.contains(className);
+  } else {
+    const classes = element[CLASSES_CACHE_KEY];
+    return classes && classes[className];
+  }
+}
+
+function addClass(element, className) {
+  if (element.classList) {
+    element.classList.add(className);
+  } else {
+    let classes = element[CLASSES_CACHE_KEY];
+
+    if (!classes) {
+      classes = element[CLASSES_CACHE_KEY] = {};
+    }
+
+    classes[className] = true;
+  }
+}
+
+function removeClass(element, className) {
+  if (element.classList) {
+    element.classList.remove(className);
+  } else {
+    let classes = element[CLASSES_CACHE_KEY];
+
+    if (classes) {
+      delete classes[className];
+    }
+  }
+}
+
+function removeNodesAfterAnimationDone(engine, element, players) {
+  optimizeGroupPlayer(players).onDone(() => engine.processLeaveNode(element));
+}
+
+function flattenGroupPlayers(players) {
+  const finalPlayers = [];
+
+  _flattenGroupPlayersRecur(players, finalPlayers);
+
+  return finalPlayers;
+}
+
+function _flattenGroupPlayersRecur(players, finalPlayers) {
+  for (let i = 0; i < players.length; i++) {
+    const player = players[i];
+
+    if (player instanceof _angular_animations__WEBPACK_IMPORTED_MODULE_0__["ɵAnimationGroupPlayer"]) {
+      _flattenGroupPlayersRecur(player.players, finalPlayers);
+    } else {
+      finalPlayers.push(player);
+    }
+  }
+}
+
+function objEquals(a, b) {
+  const k1 = Object.keys(a);
+  const k2 = Object.keys(b);
+  if (k1.length != k2.length) return false;
+
+  for (let i = 0; i < k1.length; i++) {
+    const prop = k1[i];
+    if (!b.hasOwnProperty(prop) || a[prop] !== b[prop]) return false;
+  }
+
+  return true;
+}
+
+function replacePostStylesAsPre(element, allPreStyleElements, allPostStyleElements) {
+  const postEntry = allPostStyleElements.get(element);
+  if (!postEntry) return false;
+  let preEntry = allPreStyleElements.get(element);
+
+  if (preEntry) {
+    postEntry.forEach(data => preEntry.add(data));
+  } else {
+    allPreStyleElements.set(element, postEntry);
+  }
+
+  allPostStyleElements.delete(element);
+  return true;
+}
+
+class AnimationEngine {
+  constructor(bodyNode, _driver, _normalizer) {
+    this.bodyNode = bodyNode;
+    this._driver = _driver;
+    this._normalizer = _normalizer;
+    this._triggerCache = {}; // this method is designed to be overridden by the code that uses this engine
+
+    this.onRemovalComplete = (element, context) => {};
+
+    this._transitionEngine = new TransitionAnimationEngine(bodyNode, _driver, _normalizer);
+    this._timelineEngine = new TimelineAnimationEngine(bodyNode, _driver, _normalizer);
+
+    this._transitionEngine.onRemovalComplete = (element, context) => this.onRemovalComplete(element, context);
+  }
+
+  registerTrigger(componentId, namespaceId, hostElement, name, metadata) {
+    const cacheKey = componentId + '-' + name;
+    let trigger = this._triggerCache[cacheKey];
+
+    if (!trigger) {
+      const errors = [];
+      const ast = buildAnimationAst(this._driver, metadata, errors);
+
+      if (errors.length) {
+        throw new Error(`The animation trigger "${name}" has failed to build due to the following errors:\n - ${errors.join('\n - ')}`);
+      }
+
+      trigger = buildTrigger(name, ast, this._normalizer);
+      this._triggerCache[cacheKey] = trigger;
+    }
+
+    this._transitionEngine.registerTrigger(namespaceId, name, trigger);
+  }
+
+  register(namespaceId, hostElement) {
+    this._transitionEngine.register(namespaceId, hostElement);
+  }
+
+  destroy(namespaceId, context) {
+    this._transitionEngine.destroy(namespaceId, context);
+  }
+
+  onInsert(namespaceId, element, parent, insertBefore) {
+    this._transitionEngine.insertNode(namespaceId, element, parent, insertBefore);
+  }
+
+  onRemove(namespaceId, element, context, isHostElement) {
+    this._transitionEngine.removeNode(namespaceId, element, isHostElement || false, context);
+  }
+
+  disableAnimations(element, disable) {
+    this._transitionEngine.markElementAsDisabled(element, disable);
+  }
+
+  process(namespaceId, element, property, value) {
+    if (property.charAt(0) == '@') {
+      const [id, action] = parseTimelineCommand(property);
+      const args = value;
+
+      this._timelineEngine.command(id, element, action, args);
+    } else {
+      this._transitionEngine.trigger(namespaceId, element, property, value);
+    }
+  }
+
+  listen(namespaceId, element, eventName, eventPhase, callback) {
+    // @@listen
+    if (eventName.charAt(0) == '@') {
+      const [id, action] = parseTimelineCommand(eventName);
+      return this._timelineEngine.listen(id, element, action, callback);
+    }
+
+    return this._transitionEngine.listen(namespaceId, element, eventName, eventPhase, callback);
+  }
+
+  flush(microtaskId = -1) {
+    this._transitionEngine.flush(microtaskId);
+  }
+
+  get players() {
+    return this._transitionEngine.players.concat(this._timelineEngine.players);
+  }
+
+  whenRenderingDone() {
+    return this._transitionEngine.whenRenderingDone();
+  }
+
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * Returns an instance of `SpecialCasedStyles` if and when any special (non animateable) styles are
+ * detected.
+ *
+ * In CSS there exist properties that cannot be animated within a keyframe animation
+ * (whether it be via CSS keyframes or web-animations) and the animation implementation
+ * will ignore them. This function is designed to detect those special cased styles and
+ * return a container that will be executed at the start and end of the animation.
+ *
+ * @returns an instance of `SpecialCasedStyles` if any special styles are detected otherwise `null`
+ */
+
+
+function packageNonAnimatableStyles(element, styles) {
+  let startStyles = null;
+  let endStyles = null;
+
+  if (Array.isArray(styles) && styles.length) {
+    startStyles = filterNonAnimatableStyles(styles[0]);
+
+    if (styles.length > 1) {
+      endStyles = filterNonAnimatableStyles(styles[styles.length - 1]);
+    }
+  } else if (styles) {
+    startStyles = filterNonAnimatableStyles(styles);
+  }
+
+  return startStyles || endStyles ? new SpecialCasedStyles(element, startStyles, endStyles) : null;
+}
+/**
+ * Designed to be executed during a keyframe-based animation to apply any special-cased styles.
+ *
+ * When started (when the `start()` method is run) then the provided `startStyles`
+ * will be applied. When finished (when the `finish()` method is called) the
+ * `endStyles` will be applied as well any any starting styles. Finally when
+ * `destroy()` is called then all styles will be removed.
+ */
+
+
+class SpecialCasedStyles {
+  constructor(_element, _startStyles, _endStyles) {
+    this._element = _element;
+    this._startStyles = _startStyles;
+    this._endStyles = _endStyles;
+    this._state = 0
+    /* Pending */
+    ;
+    let initialStyles = SpecialCasedStyles.initialStylesByElement.get(_element);
+
+    if (!initialStyles) {
+      SpecialCasedStyles.initialStylesByElement.set(_element, initialStyles = {});
+    }
+
+    this._initialStyles = initialStyles;
+  }
+
+  start() {
+    if (this._state < 1
+    /* Started */
+    ) {
+      if (this._startStyles) {
+        setStyles(this._element, this._startStyles, this._initialStyles);
+      }
+
+      this._state = 1
+      /* Started */
+      ;
+    }
+  }
+
+  finish() {
+    this.start();
+
+    if (this._state < 2
+    /* Finished */
+    ) {
+      setStyles(this._element, this._initialStyles);
+
+      if (this._endStyles) {
+        setStyles(this._element, this._endStyles);
+        this._endStyles = null;
+      }
+
+      this._state = 1
+      /* Started */
+      ;
+    }
+  }
+
+  destroy() {
+    this.finish();
+
+    if (this._state < 3
+    /* Destroyed */
+    ) {
+      SpecialCasedStyles.initialStylesByElement.delete(this._element);
+
+      if (this._startStyles) {
+        eraseStyles(this._element, this._startStyles);
+        this._endStyles = null;
+      }
+
+      if (this._endStyles) {
+        eraseStyles(this._element, this._endStyles);
+        this._endStyles = null;
+      }
+
+      setStyles(this._element, this._initialStyles);
+      this._state = 3
+      /* Destroyed */
+      ;
+    }
+  }
+
+}
+
+SpecialCasedStyles.initialStylesByElement = /* @__PURE__ */new WeakMap();
+
+function filterNonAnimatableStyles(styles) {
+  let result = null;
+  const props = Object.keys(styles);
+
+  for (let i = 0; i < props.length; i++) {
+    const prop = props[i];
+
+    if (isNonAnimatableStyle(prop)) {
+      result = result || {};
+      result[prop] = styles[prop];
+    }
+  }
+
+  return result;
+}
+
+function isNonAnimatableStyle(prop) {
+  return prop === 'display' || prop === 'position';
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+const ELAPSED_TIME_MAX_DECIMAL_PLACES = 3;
+const ANIMATION_PROP = 'animation';
+const ANIMATIONEND_EVENT = 'animationend';
+const ONE_SECOND = 1000;
+
+class ElementAnimationStyleHandler {
+  constructor(_element, _name, _duration, _delay, _easing, _fillMode, _onDoneFn) {
+    this._element = _element;
+    this._name = _name;
+    this._duration = _duration;
+    this._delay = _delay;
+    this._easing = _easing;
+    this._fillMode = _fillMode;
+    this._onDoneFn = _onDoneFn;
+    this._finished = false;
+    this._destroyed = false;
+    this._startTime = 0;
+    this._position = 0;
+
+    this._eventFn = e => this._handleCallback(e);
+  }
+
+  apply() {
+    applyKeyframeAnimation(this._element, `${this._duration}ms ${this._easing} ${this._delay}ms 1 normal ${this._fillMode} ${this._name}`);
+    addRemoveAnimationEvent(this._element, this._eventFn, false);
+    this._startTime = Date.now();
+  }
+
+  pause() {
+    playPauseAnimation(this._element, this._name, 'paused');
+  }
+
+  resume() {
+    playPauseAnimation(this._element, this._name, 'running');
+  }
+
+  setPosition(position) {
+    const index = findIndexForAnimation(this._element, this._name);
+    this._position = position * this._duration;
+    setAnimationStyle(this._element, 'Delay', `-${this._position}ms`, index);
+  }
+
+  getPosition() {
+    return this._position;
+  }
+
+  _handleCallback(event) {
+    const timestamp = event._ngTestManualTimestamp || Date.now();
+    const elapsedTime = parseFloat(event.elapsedTime.toFixed(ELAPSED_TIME_MAX_DECIMAL_PLACES)) * ONE_SECOND;
+
+    if (event.animationName == this._name && Math.max(timestamp - this._startTime, 0) >= this._delay && elapsedTime >= this._duration) {
+      this.finish();
+    }
+  }
+
+  finish() {
+    if (this._finished) return;
+    this._finished = true;
+
+    this._onDoneFn();
+
+    addRemoveAnimationEvent(this._element, this._eventFn, true);
+  }
+
+  destroy() {
+    if (this._destroyed) return;
+    this._destroyed = true;
+    this.finish();
+    removeKeyframeAnimation(this._element, this._name);
+  }
+
+}
+
+function playPauseAnimation(element, name, status) {
+  const index = findIndexForAnimation(element, name);
+  setAnimationStyle(element, 'PlayState', status, index);
+}
+
+function applyKeyframeAnimation(element, value) {
+  const anim = getAnimationStyle(element, '').trim();
+  let index = 0;
+
+  if (anim.length) {
+    index = countChars(anim, ',') + 1;
+    value = `${anim}, ${value}`;
+  }
+
+  setAnimationStyle(element, '', value);
+  return index;
+}
+
+function removeKeyframeAnimation(element, name) {
+  const anim = getAnimationStyle(element, '');
+  const tokens = anim.split(',');
+  const index = findMatchingTokenIndex(tokens, name);
+
+  if (index >= 0) {
+    tokens.splice(index, 1);
+    const newValue = tokens.join(',');
+    setAnimationStyle(element, '', newValue);
+  }
+}
+
+function findIndexForAnimation(element, value) {
+  const anim = getAnimationStyle(element, '');
+
+  if (anim.indexOf(',') > 0) {
+    const tokens = anim.split(',');
+    return findMatchingTokenIndex(tokens, value);
+  }
+
+  return findMatchingTokenIndex([anim], value);
+}
+
+function findMatchingTokenIndex(tokens, searchToken) {
+  for (let i = 0; i < tokens.length; i++) {
+    if (tokens[i].indexOf(searchToken) >= 0) {
+      return i;
+    }
+  }
+
+  return -1;
+}
+
+function addRemoveAnimationEvent(element, fn, doRemove) {
+  doRemove ? element.removeEventListener(ANIMATIONEND_EVENT, fn) : element.addEventListener(ANIMATIONEND_EVENT, fn);
+}
+
+function setAnimationStyle(element, name, value, index) {
+  const prop = ANIMATION_PROP + name;
+
+  if (index != null) {
+    const oldValue = element.style[prop];
+
+    if (oldValue.length) {
+      const tokens = oldValue.split(',');
+      tokens[index] = value;
+      value = tokens.join(',');
+    }
+  }
+
+  element.style[prop] = value;
+}
+
+function getAnimationStyle(element, name) {
+  return element.style[ANIMATION_PROP + name] || '';
+}
+
+function countChars(value, char) {
+  let count = 0;
+
+  for (let i = 0; i < value.length; i++) {
+    const c = value.charAt(i);
+    if (c === char) count++;
+  }
+
+  return count;
+}
+
+const DEFAULT_FILL_MODE = 'forwards';
+const DEFAULT_EASING = 'linear';
+
+class CssKeyframesPlayer {
+  constructor(element, keyframes, animationName, _duration, _delay, easing, _finalStyles, _specialStyles) {
+    this.element = element;
+    this.keyframes = keyframes;
+    this.animationName = animationName;
+    this._duration = _duration;
+    this._delay = _delay;
+    this._finalStyles = _finalStyles;
+    this._specialStyles = _specialStyles;
+    this._onDoneFns = [];
+    this._onStartFns = [];
+    this._onDestroyFns = [];
+    this.currentSnapshot = {};
+    this._state = 0;
+    this.easing = easing || DEFAULT_EASING;
+    this.totalTime = _duration + _delay;
+
+    this._buildStyler();
+  }
+
+  onStart(fn) {
+    this._onStartFns.push(fn);
+  }
+
+  onDone(fn) {
+    this._onDoneFns.push(fn);
+  }
+
+  onDestroy(fn) {
+    this._onDestroyFns.push(fn);
+  }
+
+  destroy() {
+    this.init();
+    if (this._state >= 4
+    /* DESTROYED */
+    ) return;
+    this._state = 4
+    /* DESTROYED */
+    ;
+
+    this._styler.destroy();
+
+    this._flushStartFns();
+
+    this._flushDoneFns();
+
+    if (this._specialStyles) {
+      this._specialStyles.destroy();
+    }
+
+    this._onDestroyFns.forEach(fn => fn());
+
+    this._onDestroyFns = [];
+  }
+
+  _flushDoneFns() {
+    this._onDoneFns.forEach(fn => fn());
+
+    this._onDoneFns = [];
+  }
+
+  _flushStartFns() {
+    this._onStartFns.forEach(fn => fn());
+
+    this._onStartFns = [];
+  }
+
+  finish() {
+    this.init();
+    if (this._state >= 3
+    /* FINISHED */
+    ) return;
+    this._state = 3
+    /* FINISHED */
+    ;
+
+    this._styler.finish();
+
+    this._flushStartFns();
+
+    if (this._specialStyles) {
+      this._specialStyles.finish();
+    }
+
+    this._flushDoneFns();
+  }
+
+  setPosition(value) {
+    this._styler.setPosition(value);
+  }
+
+  getPosition() {
+    return this._styler.getPosition();
+  }
+
+  hasStarted() {
+    return this._state >= 2
+    /* STARTED */
+    ;
+  }
+
+  init() {
+    if (this._state >= 1
+    /* INITIALIZED */
+    ) return;
+    this._state = 1
+    /* INITIALIZED */
+    ;
+    const elm = this.element;
+
+    this._styler.apply();
+
+    if (this._delay) {
+      this._styler.pause();
+    }
+  }
+
+  play() {
+    this.init();
+
+    if (!this.hasStarted()) {
+      this._flushStartFns();
+
+      this._state = 2
+      /* STARTED */
+      ;
+
+      if (this._specialStyles) {
+        this._specialStyles.start();
+      }
+    }
+
+    this._styler.resume();
+  }
+
+  pause() {
+    this.init();
+
+    this._styler.pause();
+  }
+
+  restart() {
+    this.reset();
+    this.play();
+  }
+
+  reset() {
+    this._state = 0
+    /* RESET */
+    ;
+
+    this._styler.destroy();
+
+    this._buildStyler();
+
+    this._styler.apply();
+  }
+
+  _buildStyler() {
+    this._styler = new ElementAnimationStyleHandler(this.element, this.animationName, this._duration, this._delay, this.easing, DEFAULT_FILL_MODE, () => this.finish());
+  }
+  /** @internal */
+
+
+  triggerCallback(phaseName) {
+    const methods = phaseName == 'start' ? this._onStartFns : this._onDoneFns;
+    methods.forEach(fn => fn());
+    methods.length = 0;
+  }
+
+  beforeDestroy() {
+    this.init();
+    const styles = {};
+
+    if (this.hasStarted()) {
+      const finished = this._state >= 3
+      /* FINISHED */
+      ;
+      Object.keys(this._finalStyles).forEach(prop => {
+        if (prop != 'offset') {
+          styles[prop] = finished ? this._finalStyles[prop] : computeStyle(this.element, prop);
+        }
+      });
+    }
+
+    this.currentSnapshot = styles;
+  }
+
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+class DirectStylePlayer extends _angular_animations__WEBPACK_IMPORTED_MODULE_0__.NoopAnimationPlayer {
+  constructor(element, styles) {
+    super();
+    this.element = element;
+    this._startingStyles = {};
+    this.__initialized = false;
+    this._styles = hypenatePropsObject(styles);
+  }
+
+  init() {
+    if (this.__initialized || !this._startingStyles) return;
+    this.__initialized = true;
+    Object.keys(this._styles).forEach(prop => {
+      this._startingStyles[prop] = this.element.style[prop];
+    });
+    super.init();
+  }
+
+  play() {
+    if (!this._startingStyles) return;
+    this.init();
+    Object.keys(this._styles).forEach(prop => this.element.style.setProperty(prop, this._styles[prop]));
+    super.play();
+  }
+
+  destroy() {
+    if (!this._startingStyles) return;
+    Object.keys(this._startingStyles).forEach(prop => {
+      const value = this._startingStyles[prop];
+
+      if (value) {
+        this.element.style.setProperty(prop, value);
+      } else {
+        this.element.style.removeProperty(prop);
+      }
+    });
+    this._startingStyles = null;
+    super.destroy();
+  }
+
+}
+
+const KEYFRAMES_NAME_PREFIX = 'gen_css_kf_';
+const TAB_SPACE = ' ';
+
+class CssKeyframesDriver {
+  constructor() {
+    this._count = 0;
+  }
+
+  validateStyleProperty(prop) {
+    return validateStyleProperty(prop);
+  }
+
+  matchesElement(element, selector) {
+    return matchesElement(element, selector);
+  }
+
+  containsElement(elm1, elm2) {
+    return containsElement(elm1, elm2);
+  }
+
+  query(element, selector, multi) {
+    return invokeQuery(element, selector, multi);
+  }
+
+  computeStyle(element, prop, defaultValue) {
+    return window.getComputedStyle(element)[prop];
+  }
+
+  buildKeyframeElement(element, name, keyframes) {
+    keyframes = keyframes.map(kf => hypenatePropsObject(kf));
+    let keyframeStr = `@keyframes ${name} {\n`;
+    let tab = '';
+    keyframes.forEach(kf => {
+      tab = TAB_SPACE;
+      const offset = parseFloat(kf['offset']);
+      keyframeStr += `${tab}${offset * 100}% {\n`;
+      tab += TAB_SPACE;
+      Object.keys(kf).forEach(prop => {
+        const value = kf[prop];
+
+        switch (prop) {
+          case 'offset':
+            return;
+
+          case 'easing':
+            if (value) {
+              keyframeStr += `${tab}animation-timing-function: ${value};\n`;
+            }
+
+            return;
+
+          default:
+            keyframeStr += `${tab}${prop}: ${value};\n`;
+            return;
+        }
+      });
+      keyframeStr += `${tab}}\n`;
+    });
+    keyframeStr += `}\n`;
+    const kfElm = document.createElement('style');
+    kfElm.textContent = keyframeStr;
+    return kfElm;
+  }
+
+  animate(element, keyframes, duration, delay, easing, previousPlayers = [], scrubberAccessRequested) {
+    if ((typeof ngDevMode === 'undefined' || ngDevMode) && scrubberAccessRequested) {
+      notifyFaultyScrubber();
+    }
+
+    const previousCssKeyframePlayers = previousPlayers.filter(player => player instanceof CssKeyframesPlayer);
+    const previousStyles = {};
+
+    if (allowPreviousPlayerStylesMerge(duration, delay)) {
+      previousCssKeyframePlayers.forEach(player => {
+        let styles = player.currentSnapshot;
+        Object.keys(styles).forEach(prop => previousStyles[prop] = styles[prop]);
+      });
+    }
+
+    keyframes = balancePreviousStylesIntoKeyframes(element, keyframes, previousStyles);
+    const finalStyles = flattenKeyframesIntoStyles(keyframes); // if there is no animation then there is no point in applying
+    // styles and waiting for an event to get fired. This causes lag.
+    // It's better to just directly apply the styles to the element
+    // via the direct styling animation player.
+
+    if (duration == 0) {
+      return new DirectStylePlayer(element, finalStyles);
+    }
+
+    const animationName = `${KEYFRAMES_NAME_PREFIX}${this._count++}`;
+    const kfElm = this.buildKeyframeElement(element, animationName, keyframes);
+    const nodeToAppendKfElm = findNodeToAppendKeyframeElement(element);
+    nodeToAppendKfElm.appendChild(kfElm);
+    const specialStyles = packageNonAnimatableStyles(element, keyframes);
+    const player = new CssKeyframesPlayer(element, keyframes, animationName, duration, delay, easing, finalStyles, specialStyles);
+    player.onDestroy(() => removeElement(kfElm));
+    return player;
+  }
+
+}
+
+function findNodeToAppendKeyframeElement(element) {
+  const rootNode = element.getRootNode?.();
+
+  if (typeof ShadowRoot !== 'undefined' && rootNode instanceof ShadowRoot) {
+    return rootNode;
+  }
+
+  return document.head;
+}
+
+function flattenKeyframesIntoStyles(keyframes) {
+  let flatKeyframes = {};
+
+  if (keyframes) {
+    const kfs = Array.isArray(keyframes) ? keyframes : [keyframes];
+    kfs.forEach(kf => {
+      Object.keys(kf).forEach(prop => {
+        if (prop == 'offset' || prop == 'easing') return;
+        flatKeyframes[prop] = kf[prop];
+      });
+    });
+  }
+
+  return flatKeyframes;
+}
+
+function removeElement(node) {
+  node.parentNode.removeChild(node);
+}
+
+let warningIssued = false;
+
+function notifyFaultyScrubber() {
+  if (warningIssued) return;
+  console.warn('@angular/animations: please load the web-animations.js polyfill to allow programmatic access...\n', '  visit https://bit.ly/IWukam to learn more about using the web-animation-js polyfill.');
+  warningIssued = true;
+}
+
+class WebAnimationsPlayer {
+  constructor(element, keyframes, options, _specialStyles) {
+    this.element = element;
+    this.keyframes = keyframes;
+    this.options = options;
+    this._specialStyles = _specialStyles;
+    this._onDoneFns = [];
+    this._onStartFns = [];
+    this._onDestroyFns = [];
+    this._initialized = false;
+    this._finished = false;
+    this._started = false;
+    this._destroyed = false;
+    this.time = 0;
+    this.parentPlayer = null;
+    this.currentSnapshot = {};
+    this._duration = options['duration'];
+    this._delay = options['delay'] || 0;
+    this.time = this._duration + this._delay;
+  }
+
+  _onFinish() {
+    if (!this._finished) {
+      this._finished = true;
+
+      this._onDoneFns.forEach(fn => fn());
+
+      this._onDoneFns = [];
+    }
+  }
+
+  init() {
+    this._buildPlayer();
+
+    this._preparePlayerBeforeStart();
+  }
+
+  _buildPlayer() {
+    if (this._initialized) return;
+    this._initialized = true;
+    const keyframes = this.keyframes;
+    this.domPlayer = this._triggerWebAnimation(this.element, keyframes, this.options);
+    this._finalKeyframe = keyframes.length ? keyframes[keyframes.length - 1] : {};
+    this.domPlayer.addEventListener('finish', () => this._onFinish());
+  }
+
+  _preparePlayerBeforeStart() {
+    // this is required so that the player doesn't start to animate right away
+    if (this._delay) {
+      this._resetDomPlayerState();
+    } else {
+      this.domPlayer.pause();
+    }
+  }
+  /** @internal */
+
+
+  _triggerWebAnimation(element, keyframes, options) {
+    // jscompiler doesn't seem to know animate is a native property because it's not fully
+    // supported yet across common browsers (we polyfill it for Edge/Safari) [CL #143630929]
+    return element['animate'](keyframes, options);
+  }
+
+  onStart(fn) {
+    this._onStartFns.push(fn);
+  }
+
+  onDone(fn) {
+    this._onDoneFns.push(fn);
+  }
+
+  onDestroy(fn) {
+    this._onDestroyFns.push(fn);
+  }
+
+  play() {
+    this._buildPlayer();
+
+    if (!this.hasStarted()) {
+      this._onStartFns.forEach(fn => fn());
+
+      this._onStartFns = [];
+      this._started = true;
+
+      if (this._specialStyles) {
+        this._specialStyles.start();
+      }
+    }
+
+    this.domPlayer.play();
+  }
+
+  pause() {
+    this.init();
+    this.domPlayer.pause();
+  }
+
+  finish() {
+    this.init();
+
+    if (this._specialStyles) {
+      this._specialStyles.finish();
+    }
+
+    this._onFinish();
+
+    this.domPlayer.finish();
+  }
+
+  reset() {
+    this._resetDomPlayerState();
+
+    this._destroyed = false;
+    this._finished = false;
+    this._started = false;
+  }
+
+  _resetDomPlayerState() {
+    if (this.domPlayer) {
+      this.domPlayer.cancel();
+    }
+  }
+
+  restart() {
+    this.reset();
+    this.play();
+  }
+
+  hasStarted() {
+    return this._started;
+  }
+
+  destroy() {
+    if (!this._destroyed) {
+      this._destroyed = true;
+
+      this._resetDomPlayerState();
+
+      this._onFinish();
+
+      if (this._specialStyles) {
+        this._specialStyles.destroy();
+      }
+
+      this._onDestroyFns.forEach(fn => fn());
+
+      this._onDestroyFns = [];
+    }
+  }
+
+  setPosition(p) {
+    if (this.domPlayer === undefined) {
+      this.init();
+    }
+
+    this.domPlayer.currentTime = p * this.time;
+  }
+
+  getPosition() {
+    return this.domPlayer.currentTime / this.time;
+  }
+
+  get totalTime() {
+    return this._delay + this._duration;
+  }
+
+  beforeDestroy() {
+    const styles = {};
+
+    if (this.hasStarted()) {
+      Object.keys(this._finalKeyframe).forEach(prop => {
+        if (prop != 'offset') {
+          styles[prop] = this._finished ? this._finalKeyframe[prop] : computeStyle(this.element, prop);
+        }
+      });
+    }
+
+    this.currentSnapshot = styles;
+  }
+  /** @internal */
+
+
+  triggerCallback(phaseName) {
+    const methods = phaseName == 'start' ? this._onStartFns : this._onDoneFns;
+    methods.forEach(fn => fn());
+    methods.length = 0;
+  }
+
+}
+
+class WebAnimationsDriver {
+  constructor() {
+    this._isNativeImpl = /\{\s*\[native\s+code\]\s*\}/.test(getElementAnimateFn().toString());
+    this._cssKeyframesDriver = new CssKeyframesDriver();
+  }
+
+  validateStyleProperty(prop) {
+    return validateStyleProperty(prop);
+  }
+
+  matchesElement(element, selector) {
+    return matchesElement(element, selector);
+  }
+
+  containsElement(elm1, elm2) {
+    return containsElement(elm1, elm2);
+  }
+
+  query(element, selector, multi) {
+    return invokeQuery(element, selector, multi);
+  }
+
+  computeStyle(element, prop, defaultValue) {
+    return window.getComputedStyle(element)[prop];
+  }
+
+  overrideWebAnimationsSupport(supported) {
+    this._isNativeImpl = supported;
+  }
+
+  animate(element, keyframes, duration, delay, easing, previousPlayers = [], scrubberAccessRequested) {
+    const useKeyframes = !scrubberAccessRequested && !this._isNativeImpl;
+
+    if (useKeyframes) {
+      return this._cssKeyframesDriver.animate(element, keyframes, duration, delay, easing, previousPlayers);
+    }
+
+    const fill = delay == 0 ? 'both' : 'forwards';
+    const playerOptions = {
+      duration,
+      delay,
+      fill
+    }; // we check for this to avoid having a null|undefined value be present
+    // for the easing (which results in an error for certain browsers #9752)
+
+    if (easing) {
+      playerOptions['easing'] = easing;
+    }
+
+    const previousStyles = {};
+    const previousWebAnimationPlayers = previousPlayers.filter(player => player instanceof WebAnimationsPlayer);
+
+    if (allowPreviousPlayerStylesMerge(duration, delay)) {
+      previousWebAnimationPlayers.forEach(player => {
+        let styles = player.currentSnapshot;
+        Object.keys(styles).forEach(prop => previousStyles[prop] = styles[prop]);
+      });
+    }
+
+    keyframes = keyframes.map(styles => copyStyles(styles, false));
+    keyframes = balancePreviousStylesIntoKeyframes(element, keyframes, previousStyles);
+    const specialStyles = packageNonAnimatableStyles(element, keyframes);
+    return new WebAnimationsPlayer(element, keyframes, playerOptions, specialStyles);
+  }
+
+}
+
+function supportsWebAnimations() {
+  return typeof getElementAnimateFn() === 'function';
+}
+
+function getElementAnimateFn() {
+  return isBrowser() && Element.prototype['animate'] || {};
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+/***/ }),
+
 /***/ 8267:
 /*!**********************************************************!*\
   !*** ./node_modules/@angular/common/fesm2020/common.mjs ***!
   \**********************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "APP_BASE_HREF": () => (/* binding */ APP_BASE_HREF),
@@ -23230,6 +37951,7 @@ class XhrFactory {}
   \********************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "HTTP_INTERCEPTORS": () => (/* binding */ HTTP_INTERCEPTORS),
@@ -26066,6 +40788,7 @@ const XhrFactory = _angular_common__WEBPACK_IMPORTED_MODULE_6__.XhrFactory;
   \******************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ANALYZE_FOR_ENTRY_COMPONENTS": () => (/* binding */ ANALYZE_FOR_ENTRY_COMPONENTS),
@@ -59852,6 +74575,7 @@ if (typeof ngDevMode !== 'undefined' && ngDevMode) {
   \********************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AbstractControl": () => (/* binding */ AbstractControl),
@@ -69153,12 +83877,751 @@ const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('13.0.3')
 
 /***/ }),
 
+/***/ 2650:
+/*!************************************************************************!*\
+  !*** ./node_modules/@angular/platform-browser/fesm2020/animations.mjs ***!
+  \************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ANIMATION_MODULE_TYPE": () => (/* binding */ ANIMATION_MODULE_TYPE),
+/* harmony export */   "BrowserAnimationsModule": () => (/* binding */ BrowserAnimationsModule),
+/* harmony export */   "NoopAnimationsModule": () => (/* binding */ NoopAnimationsModule),
+/* harmony export */   "ɵAnimationRenderer": () => (/* binding */ AnimationRenderer),
+/* harmony export */   "ɵAnimationRendererFactory": () => (/* binding */ AnimationRendererFactory),
+/* harmony export */   "ɵBrowserAnimationBuilder": () => (/* binding */ BrowserAnimationBuilder),
+/* harmony export */   "ɵBrowserAnimationFactory": () => (/* binding */ BrowserAnimationFactory),
+/* harmony export */   "ɵInjectableAnimationEngine": () => (/* binding */ InjectableAnimationEngine)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 4001);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ 6219);
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/animations */ 6755);
+/* harmony import */ var _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/animations/browser */ 8120);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 8267);
+/**
+ * @license Angular v13.0.3
+ * (c) 2010-2021 Google LLC. https://angular.io/
+ * License: MIT
+ */
+
+
+
+
+
+
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+class BrowserAnimationBuilder extends _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AnimationBuilder {
+  constructor(rootRenderer, doc) {
+    super();
+    this._nextAnimationId = 0;
+    const typeData = {
+      id: '0',
+      encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewEncapsulation.None,
+      styles: [],
+      data: {
+        animation: []
+      }
+    };
+    this._renderer = rootRenderer.createRenderer(doc.body, typeData);
+  }
+
+  build(animation) {
+    const id = this._nextAnimationId.toString();
+
+    this._nextAnimationId++;
+    const entry = Array.isArray(animation) ? (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.sequence)(animation) : animation;
+    issueAnimationCommand(this._renderer, null, id, 'register', [entry]);
+    return new BrowserAnimationFactory(id, this._renderer);
+  }
+
+}
+
+BrowserAnimationBuilder.ɵfac = function BrowserAnimationBuilder_Factory(t) {
+  return new (t || BrowserAnimationBuilder)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.RendererFactory2), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT));
+};
+
+BrowserAnimationBuilder.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
+  token: BrowserAnimationBuilder,
+  factory: BrowserAnimationBuilder.ɵfac
+});
+
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](BrowserAnimationBuilder, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Injectable
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.RendererFactory2
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Inject,
+        args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT]
+      }]
+    }];
+  }, null);
+})();
+
+class BrowserAnimationFactory extends _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AnimationFactory {
+  constructor(_id, _renderer) {
+    super();
+    this._id = _id;
+    this._renderer = _renderer;
+  }
+
+  create(element, options) {
+    return new RendererAnimationPlayer(this._id, element, options || {}, this._renderer);
+  }
+
+}
+
+class RendererAnimationPlayer {
+  constructor(id, element, options, _renderer) {
+    this.id = id;
+    this.element = element;
+    this._renderer = _renderer;
+    this.parentPlayer = null;
+    this._started = false;
+    this.totalTime = 0;
+
+    this._command('create', options);
+  }
+
+  _listen(eventName, callback) {
+    return this._renderer.listen(this.element, `@@${this.id}:${eventName}`, callback);
+  }
+
+  _command(command, ...args) {
+    return issueAnimationCommand(this._renderer, this.element, this.id, command, args);
+  }
+
+  onDone(fn) {
+    this._listen('done', fn);
+  }
+
+  onStart(fn) {
+    this._listen('start', fn);
+  }
+
+  onDestroy(fn) {
+    this._listen('destroy', fn);
+  }
+
+  init() {
+    this._command('init');
+  }
+
+  hasStarted() {
+    return this._started;
+  }
+
+  play() {
+    this._command('play');
+
+    this._started = true;
+  }
+
+  pause() {
+    this._command('pause');
+  }
+
+  restart() {
+    this._command('restart');
+  }
+
+  finish() {
+    this._command('finish');
+  }
+
+  destroy() {
+    this._command('destroy');
+  }
+
+  reset() {
+    this._command('reset');
+
+    this._started = false;
+  }
+
+  setPosition(p) {
+    this._command('setPosition', p);
+  }
+
+  getPosition() {
+    return this._renderer.engine.players[+this.id]?.getPosition() ?? 0;
+  }
+
+}
+
+function issueAnimationCommand(renderer, element, id, command, args) {
+  return renderer.setProperty(element, `@@${id}:${command}`, args);
+}
+
+const ANIMATION_PREFIX = '@';
+const DISABLE_ANIMATIONS_FLAG = '@.disabled';
+
+class AnimationRendererFactory {
+  constructor(delegate, engine, _zone) {
+    this.delegate = delegate;
+    this.engine = engine;
+    this._zone = _zone;
+    this._currentId = 0;
+    this._microtaskId = 1;
+    this._animationCallbacksBuffer = [];
+    this._rendererCache = new Map();
+    this._cdRecurDepth = 0;
+    this.promise = Promise.resolve(0);
+
+    engine.onRemovalComplete = (element, delegate) => {
+      // Note: if a component element has a leave animation, and a host leave animation,
+      // the view engine will call `removeChild` for the parent
+      // component renderer as well as for the child component renderer.
+      // Therefore, we need to check if we already removed the element.
+      const parentNode = delegate?.parentNode(element);
+
+      if (parentNode) {
+        delegate.removeChild(parentNode, element);
+      }
+    };
+  }
+
+  createRenderer(hostElement, type) {
+    const EMPTY_NAMESPACE_ID = ''; // cache the delegates to find out which cached delegate can
+    // be used by which cached renderer
+
+    const delegate = this.delegate.createRenderer(hostElement, type);
+
+    if (!hostElement || !type || !type.data || !type.data['animation']) {
+      let renderer = this._rendererCache.get(delegate);
+
+      if (!renderer) {
+        renderer = new BaseAnimationRenderer(EMPTY_NAMESPACE_ID, delegate, this.engine); // only cache this result when the base renderer is used
+
+        this._rendererCache.set(delegate, renderer);
+      }
+
+      return renderer;
+    }
+
+    const componentId = type.id;
+    const namespaceId = type.id + '-' + this._currentId;
+    this._currentId++;
+    this.engine.register(namespaceId, hostElement);
+
+    const registerTrigger = trigger => {
+      if (Array.isArray(trigger)) {
+        trigger.forEach(registerTrigger);
+      } else {
+        this.engine.registerTrigger(componentId, namespaceId, hostElement, trigger.name, trigger);
+      }
+    };
+
+    const animationTriggers = type.data['animation'];
+    animationTriggers.forEach(registerTrigger);
+    return new AnimationRenderer(this, namespaceId, delegate, this.engine);
+  }
+
+  begin() {
+    this._cdRecurDepth++;
+
+    if (this.delegate.begin) {
+      this.delegate.begin();
+    }
+  }
+
+  _scheduleCountTask() {
+    // always use promise to schedule microtask instead of use Zone
+    this.promise.then(() => {
+      this._microtaskId++;
+    });
+  }
+  /** @internal */
+
+
+  scheduleListenerCallback(count, fn, data) {
+    if (count >= 0 && count < this._microtaskId) {
+      this._zone.run(() => fn(data));
+
+      return;
+    }
+
+    if (this._animationCallbacksBuffer.length == 0) {
+      Promise.resolve(null).then(() => {
+        this._zone.run(() => {
+          this._animationCallbacksBuffer.forEach(tuple => {
+            const [fn, data] = tuple;
+            fn(data);
+          });
+
+          this._animationCallbacksBuffer = [];
+        });
+      });
+    }
+
+    this._animationCallbacksBuffer.push([fn, data]);
+  }
+
+  end() {
+    this._cdRecurDepth--; // this is to prevent animations from running twice when an inner
+    // component does CD when a parent component instead has inserted it
+
+    if (this._cdRecurDepth == 0) {
+      this._zone.runOutsideAngular(() => {
+        this._scheduleCountTask();
+
+        this.engine.flush(this._microtaskId);
+      });
+    }
+
+    if (this.delegate.end) {
+      this.delegate.end();
+    }
+  }
+
+  whenRenderingDone() {
+    return this.engine.whenRenderingDone();
+  }
+
+}
+
+AnimationRendererFactory.ɵfac = function AnimationRendererFactory_Factory(t) {
+  return new (t || AnimationRendererFactory)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.RendererFactory2), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵAnimationEngine"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone));
+};
+
+AnimationRendererFactory.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
+  token: AnimationRendererFactory,
+  factory: AnimationRendererFactory.ɵfac
+});
+
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AnimationRendererFactory, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Injectable
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.RendererFactory2
+    }, {
+      type: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵAnimationEngine"]
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone
+    }];
+  }, null);
+})();
+
+class BaseAnimationRenderer {
+  constructor(namespaceId, delegate, engine) {
+    this.namespaceId = namespaceId;
+    this.delegate = delegate;
+    this.engine = engine;
+    this.destroyNode = this.delegate.destroyNode ? n => delegate.destroyNode(n) : null;
+  }
+
+  get data() {
+    return this.delegate.data;
+  }
+
+  destroy() {
+    this.engine.destroy(this.namespaceId, this.delegate);
+    this.delegate.destroy();
+  }
+
+  createElement(name, namespace) {
+    return this.delegate.createElement(name, namespace);
+  }
+
+  createComment(value) {
+    return this.delegate.createComment(value);
+  }
+
+  createText(value) {
+    return this.delegate.createText(value);
+  }
+
+  appendChild(parent, newChild) {
+    this.delegate.appendChild(parent, newChild);
+    this.engine.onInsert(this.namespaceId, newChild, parent, false);
+  }
+
+  insertBefore(parent, newChild, refChild, isMove = true) {
+    this.delegate.insertBefore(parent, newChild, refChild); // If `isMove` true than we should animate this insert.
+
+    this.engine.onInsert(this.namespaceId, newChild, parent, isMove);
+  }
+
+  removeChild(parent, oldChild, isHostElement) {
+    this.engine.onRemove(this.namespaceId, oldChild, this.delegate, isHostElement);
+  }
+
+  selectRootElement(selectorOrNode, preserveContent) {
+    return this.delegate.selectRootElement(selectorOrNode, preserveContent);
+  }
+
+  parentNode(node) {
+    return this.delegate.parentNode(node);
+  }
+
+  nextSibling(node) {
+    return this.delegate.nextSibling(node);
+  }
+
+  setAttribute(el, name, value, namespace) {
+    this.delegate.setAttribute(el, name, value, namespace);
+  }
+
+  removeAttribute(el, name, namespace) {
+    this.delegate.removeAttribute(el, name, namespace);
+  }
+
+  addClass(el, name) {
+    this.delegate.addClass(el, name);
+  }
+
+  removeClass(el, name) {
+    this.delegate.removeClass(el, name);
+  }
+
+  setStyle(el, style, value, flags) {
+    this.delegate.setStyle(el, style, value, flags);
+  }
+
+  removeStyle(el, style, flags) {
+    this.delegate.removeStyle(el, style, flags);
+  }
+
+  setProperty(el, name, value) {
+    if (name.charAt(0) == ANIMATION_PREFIX && name == DISABLE_ANIMATIONS_FLAG) {
+      this.disableAnimations(el, !!value);
+    } else {
+      this.delegate.setProperty(el, name, value);
+    }
+  }
+
+  setValue(node, value) {
+    this.delegate.setValue(node, value);
+  }
+
+  listen(target, eventName, callback) {
+    return this.delegate.listen(target, eventName, callback);
+  }
+
+  disableAnimations(element, value) {
+    this.engine.disableAnimations(element, value);
+  }
+
+}
+
+class AnimationRenderer extends BaseAnimationRenderer {
+  constructor(factory, namespaceId, delegate, engine) {
+    super(namespaceId, delegate, engine);
+    this.factory = factory;
+    this.namespaceId = namespaceId;
+  }
+
+  setProperty(el, name, value) {
+    if (name.charAt(0) == ANIMATION_PREFIX) {
+      if (name.charAt(1) == '.' && name == DISABLE_ANIMATIONS_FLAG) {
+        value = value === undefined ? true : !!value;
+        this.disableAnimations(el, value);
+      } else {
+        this.engine.process(this.namespaceId, el, name.substr(1), value);
+      }
+    } else {
+      this.delegate.setProperty(el, name, value);
+    }
+  }
+
+  listen(target, eventName, callback) {
+    if (eventName.charAt(0) == ANIMATION_PREFIX) {
+      const element = resolveElementFromTarget(target);
+      let name = eventName.substr(1);
+      let phase = ''; // @listener.phase is for trigger animation callbacks
+      // @@listener is for animation builder callbacks
+
+      if (name.charAt(0) != ANIMATION_PREFIX) {
+        [name, phase] = parseTriggerCallbackName(name);
+      }
+
+      return this.engine.listen(this.namespaceId, element, name, phase, event => {
+        const countId = event['_data'] || -1;
+        this.factory.scheduleListenerCallback(countId, callback, event);
+      });
+    }
+
+    return this.delegate.listen(target, eventName, callback);
+  }
+
+}
+
+function resolveElementFromTarget(target) {
+  switch (target) {
+    case 'body':
+      return document.body;
+
+    case 'document':
+      return document;
+
+    case 'window':
+      return window;
+
+    default:
+      return target;
+  }
+}
+
+function parseTriggerCallbackName(triggerName) {
+  const dotIndex = triggerName.indexOf('.');
+  const trigger = triggerName.substring(0, dotIndex);
+  const phase = triggerName.substr(dotIndex + 1);
+  return [trigger, phase];
+}
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+class InjectableAnimationEngine extends _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵAnimationEngine"] {
+  constructor(doc, driver, normalizer) {
+    super(doc.body, driver, normalizer);
+  }
+
+  ngOnDestroy() {
+    this.flush();
+  }
+
+}
+
+InjectableAnimationEngine.ɵfac = function InjectableAnimationEngine_Factory(t) {
+  return new (t || InjectableAnimationEngine)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__.AnimationDriver), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵAnimationStyleNormalizer"]));
+};
+
+InjectableAnimationEngine.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
+  token: InjectableAnimationEngine,
+  factory: InjectableAnimationEngine.ɵfac
+});
+
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](InjectableAnimationEngine, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Injectable
+  }], function () {
+    return [{
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Inject,
+        args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT]
+      }]
+    }, {
+      type: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__.AnimationDriver
+    }, {
+      type: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵAnimationStyleNormalizer"]
+    }];
+  }, null);
+})();
+
+function instantiateSupportedAnimationDriver() {
+  return (0,_angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵsupportsWebAnimations"])() ? new _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵWebAnimationsDriver"]() : new _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵCssKeyframesDriver"]();
+}
+
+function instantiateDefaultStyleNormalizer() {
+  return new _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵWebAnimationsStyleNormalizer"]();
+}
+
+function instantiateRendererFactory(renderer, engine, zone) {
+  return new AnimationRendererFactory(renderer, engine, zone);
+}
+/**
+ * @publicApi
+ */
+
+
+const ANIMATION_MODULE_TYPE = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('AnimationModuleType');
+const SHARED_ANIMATION_PROVIDERS = [{
+  provide: _angular_animations__WEBPACK_IMPORTED_MODULE_0__.AnimationBuilder,
+  useClass: BrowserAnimationBuilder
+}, {
+  provide: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵAnimationStyleNormalizer"],
+  useFactory: instantiateDefaultStyleNormalizer
+}, {
+  provide: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵAnimationEngine"],
+  useClass: InjectableAnimationEngine
+}, {
+  provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.RendererFactory2,
+  useFactory: instantiateRendererFactory,
+  deps: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["ɵDomRendererFactory2"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵAnimationEngine"], _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone]
+}];
+/**
+ * Separate providers from the actual module so that we can do a local modification in Google3 to
+ * include them in the BrowserModule.
+ */
+
+const BROWSER_ANIMATIONS_PROVIDERS = [{
+  provide: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__.AnimationDriver,
+  useFactory: instantiateSupportedAnimationDriver
+}, {
+  provide: ANIMATION_MODULE_TYPE,
+  useValue: 'BrowserAnimations'
+}, ...SHARED_ANIMATION_PROVIDERS];
+/**
+ * Separate providers from the actual module so that we can do a local modification in Google3 to
+ * include them in the BrowserTestingModule.
+ */
+
+const BROWSER_NOOP_ANIMATIONS_PROVIDERS = [{
+  provide: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__.AnimationDriver,
+  useClass: _angular_animations_browser__WEBPACK_IMPORTED_MODULE_3__["ɵNoopAnimationDriver"]
+}, {
+  provide: ANIMATION_MODULE_TYPE,
+  useValue: 'NoopAnimations'
+}, ...SHARED_ANIMATION_PROVIDERS];
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * Exports `BrowserModule` with additional [dependency-injection providers](guide/glossary#provider)
+ * for use with animations. See [Animations](guide/animations).
+ * @publicApi
+ */
+
+class BrowserAnimationsModule {
+  /**
+   * Configures the module based on the specified object.
+   *
+   * @param config Object used to configure the behavior of the `BrowserAnimationsModule`.
+   * @see `BrowserAnimationsModuleConfig`
+   *
+   * @usageNotes
+   * When registering the `BrowserAnimationsModule`, you can use the `withConfig`
+   * function as follows:
+   * ```
+   * @NgModule({
+   *   imports: [BrowserAnimationsModule.withConfig(config)]
+   * })
+   * class MyNgModule {}
+   * ```
+   */
+  static withConfig(config) {
+    return {
+      ngModule: BrowserAnimationsModule,
+      providers: config.disableAnimations ? BROWSER_NOOP_ANIMATIONS_PROVIDERS : BROWSER_ANIMATIONS_PROVIDERS
+    };
+  }
+
+}
+
+BrowserAnimationsModule.ɵfac = function BrowserAnimationsModule_Factory(t) {
+  return new (t || BrowserAnimationsModule)();
+};
+
+BrowserAnimationsModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
+  type: BrowserAnimationsModule
+});
+BrowserAnimationsModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
+  providers: BROWSER_ANIMATIONS_PROVIDERS,
+  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule]
+});
+
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](BrowserAnimationsModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModule,
+    args: [{
+      exports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule],
+      providers: BROWSER_ANIMATIONS_PROVIDERS
+    }]
+  }], null, null);
+})();
+/**
+ * A null player that must be imported to allow disabling of animations.
+ * @publicApi
+ */
+
+
+class NoopAnimationsModule {}
+
+NoopAnimationsModule.ɵfac = function NoopAnimationsModule_Factory(t) {
+  return new (t || NoopAnimationsModule)();
+};
+
+NoopAnimationsModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
+  type: NoopAnimationsModule
+});
+NoopAnimationsModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
+  providers: BROWSER_NOOP_ANIMATIONS_PROVIDERS,
+  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule]
+});
+
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NoopAnimationsModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModule,
+    args: [{
+      exports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__.BrowserModule],
+      providers: BROWSER_NOOP_ANIMATIONS_PROVIDERS
+    }]
+  }], null, null);
+})();
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+/***/ }),
+
 /***/ 6219:
 /*!******************************************************************************!*\
   !*** ./node_modules/@angular/platform-browser/fesm2020/platform-browser.mjs ***!
   \******************************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ɵgetDOM": () => (/* reexport safe */ _angular_common__WEBPACK_IMPORTED_MODULE_0__["ɵgetDOM"]),
@@ -71973,6 +87436,7 @@ const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('13.0.3')
   \**********************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ActivatedRoute": () => (/* binding */ ActivatedRoute),

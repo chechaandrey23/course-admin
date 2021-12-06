@@ -12,31 +12,59 @@ import {RolesService} from './roles.service';
 	styleUrls: []
 })
 export class RolesComponent implements AfterViewInit {
-	constructor(private readonly rolesService:RolesService) {
-		this.service = this.rolesService;
-	}
-	
-	@ViewChild('baseTable')
-	public baseTable: any;
-	
-	public querys: any = [
-		{namespace: 'gets', method: 'GET', success: (data:any) => this.baseTable.injectData(data)},
-		{namespace: 'add', method: 'POST', success: (data:any) => this.baseTable.injectOneData(data), error: (e: any) => this.baseTable.injectErrorAdd(e)},
-		{namespace: 'edit', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'remove', method: 'POST', success: (data:any) => this.baseTable.patchData(data), error: (e: any) => this.baseTable.filterError(e)},
-		{namespace: 'delete', method: 'POST', success: (data:any) => this.baseTable.filterData(data), error: (e: any) => this.baseTable.filterError(e)},
-	];
-	
+	constructor(private readonly rolesService:RolesService) {}
+
+
+	@ViewChild('viewTable')
+	public viewTable: any;
+
+	@ViewChild('modalButton')
+	public modalButton: any;
+
 	public fields: any = [
-		{name: "id", title: "id", width: 5},
-		{name: "role", title: "role", width: 10, editTitle: 'UID role', editType: 'input', formControlName: 'role', editRequire: true},
-		{name: "title", title: "title", width: 20, editTitle: 'Title role', editType: 'input', formControlName: 'title'},
-		{name: "description", title: "description", width: 35, editTitle: 'Group description', editType: 'textarea', formControlName: 'description'}
+		{name: "id", title: "id"},
+		{name: "role", title: "role"},
+		{name: "title", title: "title"},
+		{name: "description", title: "description"}
 	];
-	
-	public service: any;
-	
+
+	public editFields: any = [
+		{name: 'id', title: 'id', type: 'hidden', formControlName: 'id', required: true},
+		{name: "role", title: "UID role", type: 'input', formControlName: 'role'},
+		{name: "title", title: "Title role", type: 'input', formControlName: 'title', editFn: (o: any) => {return o;}, editReceiveFn: async() => {}},
+		{name: "description", title: "Role description", type: 'textarea', formControlName: 'description'}
+	];
+
+	public fetch: any = async (o: any) => {
+		await this.rolesService.fetch('gets', o);
+	}
+
+	public fetchMore: any = async (o: any) => {
+		await this.rolesService.fetch('gets', o);
+	}
+
+	public fetchEditSave: any = async(o: any) => {
+		await this.rolesService.fetch('edit', o);
+	}
+
+	public fetchNewSave: any = async(o: any) => {
+		await this.rolesService.fetch('add', o);
+	}
+
+	public fetchRemove: any = async(o: any) => {
+		await this.rolesService.fetch('remove', o);
+	}
+
+	public fetchRestore: any = async(o: any) => {
+		await this.rolesService.fetch('restore', o);
+	}
+
+	public fetchDelete: any = async(o: any) => {
+		await this.rolesService.fetch('delete', o);
+	}
+
 	ngAfterViewInit() {
-		this.baseTable.refreshSettings();
+		this.viewTable.refreshSettings();
+		this.modalButton.refreshSettings();
 	}
 }

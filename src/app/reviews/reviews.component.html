@@ -1,1 +1,6 @@
-<base-table #baseTable [fields]="fields" [querys]="querys" [service]="service" [isEdit]="true" [isCreate]="true" [isMore]="true" ></base-table>
+<div class="container-fluid row justify-content-end mt-2 mb-2">
+	<button-modal #modalButton [newFields]="editFields" [fetchNewSave]="fetchNewSave" [added]="viewTable" ></button-modal>
+</div>
+<view-table #viewTable [fields]="fields" [editFields]="editFields"
+			[fetch]="fetch" [fetchEdit]="fetchEdit" [fetchMore]="fetchMore" [fetchEditSave]="fetchEditSave"
+			[fetchRemove]="fetchRemove" [fetchRestore]="fetchRestore" [fetchDelete]="fetchDelete"></view-table>
