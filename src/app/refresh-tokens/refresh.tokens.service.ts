@@ -10,5 +10,6 @@ export class RefreshTokensService extends AbstractRequestService {
 
 		this.addEntry('gets', 'GET', '/admin/api/refresh-tokens');
 		this.addEntry('delete', 'POST', '/admin/api/refresh-tokens/delete');
+		this.addEntry('erase', 'POST', '/admin/api/refresh-tokens/erase');
 	}
 }

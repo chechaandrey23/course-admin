@@ -51,6 +51,11 @@
 								<span>H</span>
 							</button>
 						</ng-container>
+						<ng-container *ngIf="isErase">
+							<button *ngIf="!entry.deletedAt" class="btn-sm btn-warning" type="button" (click)="onErase($event, entry, i)">
+								<span>E</span>
+							</button>
+						</ng-container>
 					</td>
 					<td>
 						<ng-container *ngIf="isDelete">

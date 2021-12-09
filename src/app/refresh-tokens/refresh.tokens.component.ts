@@ -36,6 +36,10 @@ export class RefreshTokensComponent implements AfterViewInit {
 		await this.refreshTokensService.fetch('delete', o);
 	}
 
+	public fetchErase: any = async(o: any) => {
+		await this.refreshTokensService.fetch('erase', o);
+	}
+
 	ngAfterViewInit() {
 		this.viewTable.refreshSettings();
 	}

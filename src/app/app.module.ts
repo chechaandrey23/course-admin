@@ -36,7 +36,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {RefreshTokensModule} from './refresh-tokens/refresh.tokens.module';
 
-//import {BaseFieldEditComponent} from './groups/base.field.edit.component';
+import {SearchReviewsModule} from './search-reviews/search.reviews.module';
 
 @NgModule({
 	declarations: [
@@ -71,6 +71,8 @@ import {RefreshTokensModule} from './refresh-tokens/refresh.tokens.module';
 		LikesModule,
 		CommentsModule,
 		ImagesModule,
+
+		SearchReviewsModule,
 
 		//NgbModule,
 		FormsModule,

@@ -20,6 +20,8 @@ import {ImagesComponent} from './images/images.component';
 
 import {RefreshTokensComponent} from './refresh-tokens/refresh.tokens.component';
 
+import {SearchReviewsComponent} from './search-reviews/search.reviews.component';
+
 const routes: Routes = [
 	{path: 'titles', component: TitlesComponent},
 	{path: 'title-groups', component: TitleGroupsComponent},
@@ -31,6 +33,7 @@ const routes: Routes = [
 	{path: 'users', component: UsersComponent},
 	{path: 'user-infos', component: UserInfosComponent},
 	{path: 'reviews', component: ReviewsComponent},
+	{path: 'search-reviews', component: SearchReviewsComponent},
 	{path: 'tags', component: TagsComponent},
 	{path: 'review-tags', component: ReviewTagsComponent},
 	{path: 'ratings', component: RatingsComponent},

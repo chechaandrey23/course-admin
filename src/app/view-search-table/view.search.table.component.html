@@ -1,0 +1,107 @@
+<div class="container-fluid">
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<ng-container *ngFor="let field of fields">
+					<th scope="col">{{field.title}}</th>
+				</ng-container>
+				<th scope="col" colspan="3" class="text-center">actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<ng-container *ngIf="dataLoading">
+				<tr>
+					<td>
+						<div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+					</td>
+					<td [attr.colspan]="fields.length + 1 + 3 - 2">
+						<div class="text-center">
+							<span class="h5">First Data Loading...</span>
+						</div>
+					</td>
+					<td>
+						<div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+					</td>
+				</tr>
+			</ng-container>
+			<ng-container *ngFor="let entry of data; let i=index">
+				<tr *ngIf="!rowsLoading.includes(entry.id)">
+					<td>
+						<span class="text-secondary">{{i+1}}</span>
+					</td>
+					<ng-container *ngFor="let field of fields">
+						<td>
+							<span>{{field.viewFn?field.viewFn(entry[field.name]):entry[field.name]}}</span>
+						</td>
+					</ng-container>
+					<td>
+						<ng-container *ngIf="isWatch && idFullData !== entry.id">
+							<button class="btn-sm btn-warning" type="button" (click)="onWatch($event, entry, i)">
+								<span>W</span>
+							</button>
+						</ng-container>
+						<ng-container *ngIf="isWatch && idFullData === entry.id">
+							<button class="btn-sm btn-secondary" type="button" (click)="onHide($event, entry, i)">
+								<span>H</span>
+							</button>
+						</ng-container>
+					</td>
+					<td>
+						<ng-container *ngIf="isCreateIndex && !entry.searchId">
+							<button class="btn-sm btn-success" type="button" (click)="onIndexing($event, entry, i)">
+								<span>CI</span>
+							</button>
+						</ng-container>
+					</td>
+					<td>
+						<ng-container *ngIf="isDeleteIndex && entry.searchId">
+							<button class="btn-sm btn-danger" type="button" (click)="onDeleteIndex($event, entry, i)">
+								<span>DI</span>
+							</button>
+						</ng-container>
+					</td>
+				</tr>
+
+				<ng-container *ngIf="idFullData===entry.id">
+					<tr>
+						<td [attr.colspan]="fields.length + 1 + 3">
+							<div class="row">
+								<div class="col">
+									<h4 class='text-center'>Full Review with All comments</h4>
+									<pre>{{fullData.review}}</pre>
+								</div>
+								<div class="col">
+									<h4 class='text-center'>Index Review with comments</h4>
+									<pre>{{fullData.index}}</pre>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</ng-container>
+
+				<tr *ngIf="rowsLoading.includes(entry.id)">
+					<td>
+						<div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+					</td>
+					<td [attr.colspan]="fields.length + 1 + 3 - 2">
+						<div class="text-center">
+							<span class="h5">Loading...</span>
+						</div>
+					</td>
+					<td>
+						<div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+					</td>
+				</tr>
+			</ng-container>
+			<tr>
+				<td [attr.colspan]="fields.length + 1 + 3">
+					<button class="btn btn-info" [style]="'width:100%; display: block;'" [disabled]="moreLoading" type="button" (click)="onMore($event)">
+						<span *ngIf="moreLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+						<span>more</span>
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -50,6 +50,12 @@ export class ViewTableComponent implements OnInit, OnDestroy {
 	public fetchMore: (o: any) => Promise<void> = async () => {throw new Error('Callback Fetch more is NOT DEFINED')};
 
 	@Input()
+	public fetchErase: (o: any) => Promise<void> = async () => {throw new Error('Callback Fetch ERASE is NOT DEFINED')};
+
+	@Input()
+	public isErase: boolean = false;
+
+	@Input()
 	public isEdit: boolean = true;
 
 	@Input()
@@ -279,9 +285,27 @@ export class ViewTableComponent implements OnInit, OnDestroy {
 		});
 	}
 
+	public onErase(e: Event, entry: any, index: number) {
+		this.fetchErase({
+			data: {id: entry.id},
+			successFn: (result: any) => {
+				this.mutateData(result);
+			},
+			errorLoadFn: (e: any) => {
+				console.error(e);
+			},
+			startLoadFn: () => {
+				this.rowsLoading = [...this.rowsLoading, entry.id];
+			},
+			endLoadFn: () => {
+				this.rowsLoading = this.rowsLoading.filter((item) => item !== entry.id);
+			}
+		});
+	}
+
 	protected mutateData(data: any) {
 		this.data = this.data.map((item) => {
-			if(item.id == data.id) item = {...item, ...{deletedAt: data.deletedAt}};
+			if(item.id == data.id) item = {...item, ...data};
 			return item;
 		});
 	}
