@@ -816,7 +816,7 @@ class ButtonModalComponent {
   getFormValue() {
     let fields = this.newModalForm.controls;
     return Object.keys(fields).reduce((acc, key) => {
-      acc[key] = fields[key].value;
+      acc[key] = fields[key].value === undefined ? '' : fields[key].value;
       return acc;
     }, {});
   }
@@ -1490,7 +1490,7 @@ class EditFieldComponent {
     ngOnDestroy() { }
 }
 EditFieldComponent.ɵfac = function EditFieldComponent_Factory(t) { return new (t || EditFieldComponent)(); };
-EditFieldComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: EditFieldComponent, selectors: [["edit-field"]], inputs: { fn: "fn", type: "type", control: "control", valid: "valid" }, decls: 2, vars: 2, consts: [[4, "ngIf"], [1, "row", "justify-content-center"], ["role", "status", 1, "col-auto", "spinner-border", 2, "width", "2.5rem", "height", "2.5rem"], ["type", "text", 1, "form-control", 3, "formControl"], ["type", "password", 1, "form-control", 3, "formControl"], ["rows", "5", 1, "form-control", 3, "formControl"], ["type", "checkbox", 1, "form-control", 3, "formControl"], ["multiple", "", 1, "form-control", 3, "formControl"], [3, "ngValue", 4, "ngFor", "ngForOf"], [3, "ngValue"], [1, "form-control", 3, "formControl"], ["type", "file", "multiple", "", "accept", "image/*", 1, "form-control", 3, "formControl", "change"]], template: function EditFieldComponent_Template(rf, ctx) { if (rf & 1) {
+EditFieldComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: EditFieldComponent, selectors: [["edit-field"]], inputs: { fn: "fn", type: "type", control: "control", valid: "valid" }, decls: 2, vars: 2, consts: [[4, "ngIf"], [1, "row", "justify-content-center"], ["role", "status", 1, "col-auto", "spinner-border", 2, "width", "2.5rem", "height", "2.5rem"], ["type", "text", 1, "form-control", 3, "formControl"], ["type", "password", 1, "form-control", 3, "formControl"], ["rows", "5", 1, "form-control", 3, "formControl"], ["type", "checkbox", 1, "form-control", 3, "formControl"], ["multiple", "", 1, "form-control", 3, "formControl"], [3, "ngValue", 4, "ngFor", "ngForOf"], [3, "ngValue"], [1, "form-control", 3, "formControl"], ["type", "file", "multiple", "", 1, "form-control", 3, "formControl", "change"]], template: function EditFieldComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, EditFieldComponent_ng_container_0_Template, 3, 0, "ng-container", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, EditFieldComponent_div_1_Template, 9, 8, "div", 0);
     } if (rf & 2) {
@@ -3633,7 +3633,11 @@ class ReviewsComponent {
 
     this.fetchEdit = /*#__PURE__*/function () {
       var _ref3 = (0,_home_chechaandrey_Projects_itransition_course_admin_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (o) {
-        yield _this.reviewsService.fetch('getFull', o);
+        yield _this.reviewsService.fetch('getFull', Object.assign(Object.assign({}, o), {
+          params: Object.assign(Object.assign({}, o.params), {
+            reviewId: o.params.id
+          })
+        }));
       });
 
       return function (_x3) {
@@ -5314,7 +5318,7 @@ class UserInfosComponent {
       name: "lang",
       title: "lang user",
       type: 'select',
-      formControlName: 'lang',
+      formControlName: 'langId',
       editFn: data => {
         return data.id;
       },
@@ -5334,7 +5338,7 @@ class UserInfosComponent {
       name: "theme",
       title: "theme user",
       type: 'select',
-      formControlName: 'theme',
+      formControlName: 'themeId',
       editFn: data => {
         return data.id;
       },
@@ -6613,7 +6617,7 @@ ViewSearchTableComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MO
   },
   decls: 18,
   vars: 8,
-  consts: [[1, "container-fluid"], [1, "table"], ["scope", "col"], [4, "ngFor", "ngForOf"], ["scope", "col", "colspan", "3", 1, "text-center"], [4, "ngIf"], ["type", "button", 1, "btn", "btn-info", 3, "disabled", "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "ml-auto"], [1, "text-center"], [1, "h5"], [1, "text-secondary"], ["type", "button", 1, "btn-sm", "btn-warning", 3, "click"], ["type", "button", 1, "btn-sm", "btn-secondary", 3, "click"], ["type", "button", 1, "btn-sm", "btn-success", 3, "click"], ["type", "button", 1, "btn-sm", "btn-danger", 3, "click"], [1, "row"], [1, "col"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"]],
+  consts: [[1, "container-fluid"], [1, "table"], ["scope", "col"], [4, "ngFor", "ngForOf"], ["scope", "col", "colspan", "3", 1, "text-center"], [4, "ngIf"], ["type", "button", 1, "btn", "btn-info", 3, "disabled", "click"], ["class", "spinner-border spinner-border-sm", "role", "status", "aria-hidden", "true", 4, "ngIf"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "ml-auto"], [1, "text-center"], [1, "h5"], [1, "text-secondary"], ["type", "button", 1, "btn-sm", "btn-warning", 3, "click"], ["type", "button", 1, "btn-sm", "btn-secondary", 3, "click"], ["type", "button", 1, "btn-sm", "btn-success", 3, "click"], ["type", "button", 1, "btn-sm", "btn-danger", 3, "click"], [1, "row", "row-cols-2"], [1, "col"], ["role", "status", "aria-hidden", "true", 1, "spinner-border", "spinner-border-sm"]],
   template: function ViewSearchTableComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);

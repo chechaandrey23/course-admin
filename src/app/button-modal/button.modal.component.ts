@@ -119,7 +119,7 @@ export class ButtonModalComponent implements OnInit, OnDestroy {
 	protected getFormValue() {
 		let fields = this.newModalForm.controls;
 		return Object.keys(fields).reduce((acc: any, key) => {
-			acc[key] = fields[key].value;
+			acc[key] = fields[key].value===undefined?'':fields[key].value;
 			return acc;
 		}, {});
 	}

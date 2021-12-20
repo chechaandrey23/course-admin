@@ -102,7 +102,7 @@ export class ReviewsComponent implements AfterViewInit {
 	}
 
 	public fetchEdit: any = async(o: any) => {
-		await this.reviewsService.fetch('getFull', o);
+		await this.reviewsService.fetch('getFull', {...o, params: {...o.params, reviewId: o.params.id}});
 	}
 
 	public fetchEditSave: any = async(o: any) => {

@@ -51,7 +51,7 @@ export class UserInfosComponent implements AfterViewInit {
 		}},
 		{name: "first_name", title: "first name", type: 'input', formControlName: 'first_name'},
 		{name: "last_name", title: "last name", type: 'input', formControlName: 'last_name'},
-		{name: "lang", title: "lang user", type: 'select', formControlName: 'lang', editFn: (data: any) => {
+		{name: "lang", title: "lang user", type: 'select', formControlName: 'langId', editFn: (data: any) => {
 			return data.id;
 		}, editReceiveFn: () => {
 			return new Promise((res, rej) => {
@@ -60,7 +60,7 @@ export class UserInfosComponent implements AfterViewInit {
 				});
 			})
 		}},
-		{name: "theme", title: "theme user", type: 'select', formControlName: 'theme', editFn: (data: any) => {
+		{name: "theme", title: "theme user", type: 'select', formControlName: 'themeId', editFn: (data: any) => {
 			return data.id;
 		}, editReceiveFn: () => {
 			return new Promise((res, rej) => {

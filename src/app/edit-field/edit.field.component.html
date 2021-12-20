@@ -20,6 +20,6 @@
 		</select>
 	</span>
 	<span *ngIf="type === 'file-upload'">
-		<input class="form-control" type="file" multiple [class.is-invalid]="!valid" [formControl]="$any(control)" (change)="onFileChange($event)" accept="image/*" />
+		<input class="form-control" type="file" multiple [class.is-invalid]="!valid" [formControl]="$any(control)" (change)="onFileChange($event)" />
 	</span>
 </div>
